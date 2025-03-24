@@ -49,10 +49,12 @@
 			<div class="flex max-w-1/2 grow flex-wrap justify-end">
 				{#each menus as menu (menu.title)}
 					<div class="wrapper w-1/3">
-						<h3 class="text-xl font-bold mb-4">{menu.title}</h3>
+						<h3 class="mb-4 text-xl font-bold">{menu.title}</h3>
 						<ul class="space-y-1">
 							{#each menu.links as link (link.label)}
-								<li class="text-sm"><a href={link.link} class="hover:text-blue-600 text-gray-500">{link.label}</a></li>
+								<li class="text-sm">
+									<a href={link.link} class="text-gray-500 hover:text-blue-600">{link.label}</a>
+								</li>
 							{/each}
 						</ul>
 					</div>
@@ -62,12 +64,12 @@
 	</div>
 	<div class="container border-t py-4">
 		<div class="flex items-start justify-between text-sm">
-			<div class=""> © {(new Date()).getFullYear()} PixelUI. All rights reserved.</div>
+			<div class="">© {new Date().getFullYear()} PixelUI. All rights reserved.</div>
 			<div class="flex flex-nowrap justify-end gap-2">
 				{#each socials as item (item.label)}
 					<a
 						href={item.href}
-						class="flex size-8 items-center justify-center rounded-sm  hover:bg-gray-100 hover:dark:bg-gray-800"
+						class="flex size-8 items-center justify-center rounded-sm hover:bg-gray-100 hover:dark:bg-gray-800"
 					>
 						<svelte:component this={item.icon} class="size-4" />
 

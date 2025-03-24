@@ -1,0 +1,8 @@
+{
+	"title": "Basic Simple Error 404 Page",
+	"category": "errors",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
+}
