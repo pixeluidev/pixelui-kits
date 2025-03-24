@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { PixelUiLogo } from '../pixel-ui-logo';
 
-	const data = [
+	const menus = [
 		{
 			title: 'About',
 			links: [
@@ -38,6 +38,16 @@
 			<div class="mr-6 flex items-center space-x-2">
 				<PixelUiLogo class="size-8" />
 				<span class="hidden text-lg font-bold xl:inline-block">PixelUI</span>
+			</div>
+			<div class="flex flex-wrap">
+				{#each menus as menu (menu.title)}
+					<div class="wrapper">
+						<h3>{menu.title}</h3>
+						{#each menu.links as link (link.label)}
+							<a href={link.link}>{link.label}</a>
+						{/each}
+					</div>
+					{/each}
 			</div>
 		</div>
 	</div>
