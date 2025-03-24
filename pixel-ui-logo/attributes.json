@@ -1,0 +1,8 @@
+{
+	"title": "Logo",
+	"category": "logo",
+	"canvas": {
+		"center": true,
+		"maxWidth": 420
+	}
+}
