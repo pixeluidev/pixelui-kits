@@ -1,0 +1,9 @@
+{
+  "title": "Error 500 image",
+  "category": "errors",
+  "responsive": true,
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}

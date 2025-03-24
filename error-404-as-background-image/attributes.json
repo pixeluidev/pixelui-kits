@@ -1,0 +1,9 @@
+{
+  "title": "Error 404 as background image",
+  "category": "errors",
+  "responsive": true,
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}
