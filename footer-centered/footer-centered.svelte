@@ -30,7 +30,7 @@
 				</a>
 			{/each}
 		</div>
-		<div class="flex flex-nowrap justify-end">
+		<div class="flex flex-nowrap justify-end gap-2">
 			{#each socials as item (item.label)}
 				<a
 					href={item.href}

@@ -1,8 +1,8 @@
 {
-  "title": "Footer with links",
-  "category": "footers",
-  "responsive": true,
-  "canvas": {
-    "center": false
-  }
+	"title": "Footer with links",
+	"category": "footers",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
 }
