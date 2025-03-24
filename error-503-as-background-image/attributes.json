@@ -1,9 +1,9 @@
 {
-  "title": "Error 503 as background image",
-  "category": "errors",
-  "responsive": true,
-  "canvas": {
-    "center": true,
-    "maxWidth": 1200
-  }
+	"title": "Error 503 as background image",
+	"category": "errors",
+	"responsive": true,
+	"canvas": {
+		"center": true,
+		"maxWidth": 1200
+	}
 }
