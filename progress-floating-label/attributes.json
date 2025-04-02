@@ -1,0 +1,8 @@
+{
+	"title": "Progress bar with Floating Label",
+	"category": "progress",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
+}

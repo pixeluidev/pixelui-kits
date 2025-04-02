@@ -21,3 +21,15 @@ export { default as Error500 } from './error-500/error-500.svelte';
 
 export {default as ActionCard} from './action-card/action-card.svelte';
 export {default as ActionListCard} from './action-list-card/action-list-card.svelte';
+export {default as CardThumbnail} from './card-thumbnail/card-thumbnail.svelte';
+
+/**
+ * Progress
+ */
+export {default as ProgressBasic} from './progress-basic/progress-basic.svelte';
+export {default as ProgressLabelWithin} from './progress-label-within/progress-label-within.svelte';
+export {default as ProgressLabelEnd} from './progress-label-end/progress-label-end.svelte';
+export {default as ProgressTitle} from './progress-title/progress-title.svelte';
+export {default as ProgressFloatingLabel} from './progress-floating-label/progress-floating-label.svelte';
+export {default as ProgressVertical} from './progress-vertical/progress-vertical.svelte';
+export {default as ProgressCircular} from './progress-circular/progress-circular.svelte';

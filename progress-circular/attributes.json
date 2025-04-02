@@ -1,0 +1,8 @@
+{
+	"title": "Circular Progress",
+	"category": "progress",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
+}

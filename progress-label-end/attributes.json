@@ -1,0 +1,8 @@
+{
+	"title": "Progress bar with label at the end",
+	"category": "progress",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
+}

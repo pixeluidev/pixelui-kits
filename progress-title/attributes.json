@@ -1,0 +1,8 @@
+{
+	"title": "Progress bar with Title",
+	"category": "progress",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Card with Thumbnail",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 640
+  }
+}
