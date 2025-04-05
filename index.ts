@@ -22,6 +22,7 @@ export { default as Error500 } from './error-500/error-500.svelte';
 export {default as ActionCard} from './action-card/action-card.svelte';
 export {default as ActionListCard} from './action-list-card/action-list-card.svelte';
 export {default as CardThumbnail} from './card-thumbnail/card-thumbnail.svelte';
+export {default as CardRetro} from './card-retro/card-retro.svelte';
 
 /**
  * Progress

@@ -1,0 +1,8 @@
+{
+  "title": "Retro Cards",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}
