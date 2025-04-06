@@ -43,15 +43,17 @@
 </script>
 
 <div class="container">
-	<div class="flex max-w-sm flex-col gap-3 mx-auto">
+	<div class="mx-auto flex max-w-sm flex-col gap-3">
 		{#each actions as { title, description, icon: Icon } (title)}
 			<button
-				class="bg-background data-[focus-visible=true]:outline-focus  transition-transform-background relative mx-auto box-border flex h-auto w-full max-w-[500px] flex-col overflow-hidden rounded-lg border px-4 py-2 shadow-sm outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
+				class="bg-background data-[focus-visible=true]:outline-focus transition-transform-background relative mx-auto box-border flex h-auto w-full max-w-[500px] flex-col overflow-hidden rounded-lg border px-4 py-2 shadow-sm outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 motion-reduce:transition-none"
 			>
 				<div
 					class="place-content-inherit align-items-inherit relative flex h-full w-full flex-auto flex-row items-start gap-3 overflow-y-auto p-4 text-left break-words"
 				>
-					<div class="item-center justify-center flex rounded-md border border-gray-100 bg-gray-50 dark:bg-gray-800 dark:border-gray-900 p-2">
+					<div
+						class="item-center flex justify-center rounded-md border border-gray-100 bg-gray-50 p-2 dark:border-gray-900 dark:bg-gray-800"
+					>
 						<Icon class="size-6 dark:text-gray-200" />
 					</div>
 					<div class="flex flex-col dark:text-gray-200">

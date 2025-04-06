@@ -1,8 +1,8 @@
 {
-  "title": "Card with Actions List",
-  "category": "cards",
-  "canvas": {
-    "center": true,
-    "maxWidth": 640
-  }
+	"title": "Card with Actions List",
+	"category": "cards",
+	"canvas": {
+		"center": true,
+		"maxWidth": 640
+	}
 }
