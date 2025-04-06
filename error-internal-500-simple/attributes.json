@@ -1,0 +1,8 @@
+{
+  "title": "Internal Server Error Simple",
+  "category": "errors",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}
