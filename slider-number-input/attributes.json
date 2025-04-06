@@ -1,0 +1,8 @@
+{
+	"title": "Number Input Slider",
+	"category": "sliders",
+	"canvas": {
+		"center": true,
+		"maxWidth": 640
+	}
+}

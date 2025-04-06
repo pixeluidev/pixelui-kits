@@ -1,0 +1,8 @@
+{
+	"title": "Range Slider",
+	"category": "sliders",
+	"canvas": {
+		"center": true,
+		"maxWidth": 640
+	}
+}

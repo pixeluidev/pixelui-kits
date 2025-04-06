@@ -1,0 +1,8 @@
+{
+	"title": "Hover Thumb Slider",
+	"category": "sliders",
+	"canvas": {
+		"center": true,
+		"maxWidth": 640
+	}
+}

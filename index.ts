@@ -34,3 +34,12 @@ export { default as ProgressTitle } from './progress-title/progress-title.svelte
 export { default as ProgressFloatingLabel } from './progress-floating-label/progress-floating-label.svelte';
 export { default as ProgressVertical } from './progress-vertical/progress-vertical.svelte';
 export { default as ProgressCircular } from './progress-circular/progress-circular.svelte';
+
+/**
+ * Sliders
+ */
+
+export { default as SliderHoverThumb } from './slider-hover-thumb/slider-hover-thumb.svelte';
+export { default as SliderCustomIconThumb } from './slider-custom-icon-thumb/slider-custom-icon-thumb.svelte';
+export { default as SliderNumberInput } from './slider-number-input/slider-number-input.svelte';
+export { default as RangeSlider } from './range-slider/range-slider.svelte';
