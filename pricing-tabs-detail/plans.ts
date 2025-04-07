@@ -25,7 +25,7 @@ export const plans = [
 		name: 'Standard',
 		icon: CheckCircle2,
 		price: '$99',
-		priceSuffix: '/Year',
+		priceSuffix: 'Year',
 		discountBadge: 'Save 30%',
 		isRecommended: true, // Tandai sebagai rekomendasi
 		features: [
@@ -43,7 +43,7 @@ export const plans = [
 		name: 'Pro',
 		icon: CheckCircle2, // Atau ikon lain
 		price: '$149',
-		priceSuffix: '/Year', // Sesuaikan jika perlu (misal: /Month)
+		priceSuffix: 'Year', // Sesuaikan jika perlu (misal: /Month)
 		discountBadge: 'Save 20%',
 		isRecommended: false,
 		features: [

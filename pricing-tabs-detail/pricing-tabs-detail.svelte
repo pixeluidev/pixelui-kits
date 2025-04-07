@@ -87,7 +87,7 @@
 							{plan.price}
 							{#if plan.priceSuffix}
 								<span class="text-base font-medium text-gray-500 dark:text-gray-400"
-								>{plan.priceSuffix}</span
+								>/{plan.priceSuffix}</span
 								>
 							{/if}
 						</h2>
