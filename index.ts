@@ -49,3 +49,12 @@ export { default as SliderHoverThumb } from './slider-hover-thumb/slider-hover-t
 export { default as SliderCustomIconThumb } from './slider-custom-icon-thumb/slider-custom-icon-thumb.svelte';
 export { default as SliderNumberInput } from './slider-number-input/slider-number-input.svelte';
 export { default as RangeSlider } from './range-slider/range-slider.svelte';
+
+/**
+ * Pricing
+ */
+
+export { default as PricingSimple } from './pricing-simple/pricing-simple.svelte';
+export { default as PricingSideBySide } from './pricing-side-by-side/pricing-side-by-side.svelte';
+export { default as PricingTabsDetail } from './pricing-tabs-detail/pricing-tabs-detail.svelte';
+export { default as PricingCardRadio } from './pricing-card-radio/pricing-card-radio.svelte';

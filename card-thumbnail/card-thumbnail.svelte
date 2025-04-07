@@ -57,14 +57,12 @@
 						type="button"
 						class="group data-[focus-visible=true]:outline-focus transition-transform-colors-opacity data-[hover=true]:bg-default/40 relative z-0 box-border inline-flex h-10 w-full min-w-20 appearance-none items-center justify-center gap-2 overflow-hidden rounded-md bg-transparent px-4 text-sm font-normal whitespace-nowrap subpixel-antialiased outline-none select-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[pressed=true]:scale-[0.97] motion-reduce:transition-none [&amp;>svg]:max-w-[theme(spacing.8)]"
 					>Cancel
-					</button
-					>
+					</button>
 					<button
 						type="button"
 						class="group data-[focus-visible=true]:outline-focus transition-transform-colors-opacity relative z-0 box-border inline-flex h-10 w-full min-w-20 appearance-none items-center justify-center gap-2 overflow-hidden rounded-md bg-gray-200 px-4 text-sm font-normal whitespace-nowrap subpixel-antialiased outline-none select-none hover:opacity-80 data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-offset-2 data-[pressed=true]:scale-[0.97] motion-reduce:transition-none dark:bg-gray-800 [&amp;>svg]:max-w-[theme(spacing.8)]"
 					>Continue
-					</button
-					>
+					</button>
 				</div>
 			</div>
 		{/each}
