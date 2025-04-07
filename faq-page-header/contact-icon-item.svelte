@@ -8,11 +8,11 @@
 </script>
 
 <svelte:element
+	this={tag}
 	class="group flex items-start gap-4"
 	href={contact.href}
 	rel={tag === 'a' ? 'noopener noreferrer' : undefined}
 	target={tag === 'a' ? '_blank' : undefined}
-	this={tag}
 >
 	<div
 		class="mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 text-orange-600 dark:bg-orange-900/50 dark:text-orange-400"
