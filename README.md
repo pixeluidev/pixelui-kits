@@ -1,5 +1,6 @@
 <div align="center">
-![Pixel UI](/assets/logo.svg)
+
+  ![Pixel UI](/logo.png.png)
 ## Pixel UI Components
 
 `svelte` `tailwindcss`
