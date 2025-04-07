@@ -1,6 +1,6 @@
 <div align="center">
- 
-![Pixel UI](/logo.png)
+
+<div style="max-width: 90px;margin-left: auto;margin-right: auto">![Pixel UI](/logo.png)</div>
  
 ## Pixel UI Components
 
