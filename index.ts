@@ -67,3 +67,11 @@ export { default as FaqCentered } from './faq-centered/faq-centered.svelte';
 export { default as FaqGrid } from './faq-grid/faq-grid.svelte';
 export { default as FaqCollapsed } from './faq-collapsed/faq-collapsed.svelte';
 export { default as FaqPageHeader } from './faq-page-header/faq-page-header.svelte';
+
+/**
+ * Headers
+ */
+
+export { default as HeaderMegaMenu } from './header-mega-menu/header-mega-menu.svelte';
+export { default as HeaderMegaMenuTabs } from './header-mega-menu-tabs/header-mega-menu-tabs.svelte';
+export { default as HeaderMegaMenuWithIcon } from './header-mega-menu-with-icon/header-mega-menu-with-icon.svelte';

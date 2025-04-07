@@ -1,0 +1,8 @@
+{
+  "title": "Header Mega Menu",
+  "category": "headers",
+  "responsive": true,
+  "canvas": {
+    "center": false
+  }
+}

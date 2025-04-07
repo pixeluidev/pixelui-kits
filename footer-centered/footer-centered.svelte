@@ -17,11 +17,11 @@
 	];
 </script>
 
-<footer class="mt-30 border-t border-t-gray-100 dark:border-t-gray-500">
+<footer class="mt-30 border-t border-t-gray-100 bg-white dark:border-t-gray-500 dark:bg-zinc-950">
 	<div class="flex flex-col items-center justify-between p-6 md:flex-row">
 		<div class="mr-6 flex items-center space-x-2">
 			<PixelUiLogo class="size-8" />
-			<span class="hidden text-lg font-bold xl:inline-block">PixelUI</span>
+			<span class=" text-lg font-bold">PixelUI</span>
 		</div>
 		<div class="flex items-center gap-2">
 			{#each links as item (item.label)}

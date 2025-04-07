@@ -41,12 +41,14 @@
 
 <footer class="mt-20 bg-gray-100 py-6 dark:bg-gray-900">
 	<div class="container pb-8">
-		<div class="flex items-start justify-between">
+		<div
+			class="flex flex-col items-center justify-center md:flex-row md:items-start md:justify-between"
+		>
 			<div class="mr-6 flex items-center space-x-2">
 				<PixelUiLogo class="size-8" />
-				<span class="hidden text-lg font-bold xl:inline-block">PixelUI</span>
+				<span class=" text-lg font-bold">PixelUI</span>
 			</div>
-			<div class="flex max-w-1/2 grow flex-wrap justify-end">
+			<div class="mt-10 flex w-full grow flex-wrap justify-end md:mt-0 md:max-w-1/2">
 				{#each menus as menu (menu.title)}
 					<div class="wrapper w-1/3">
 						<h3 class="mb-4 text-xl font-bold">{menu.title}</h3>
