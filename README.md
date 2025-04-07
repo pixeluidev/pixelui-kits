@@ -1,4 +1,10 @@
-# Pixel UI Components
+<div align="center">
+![Pixel UI](/assets/logo.svg)
+## Pixel UI Components
+
+`svelte` `tailwindcss`
+</div>
+
 
 [Pixel UI](https://pixelui.dev)
 
