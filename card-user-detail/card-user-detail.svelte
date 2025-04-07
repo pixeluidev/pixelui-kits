@@ -5,8 +5,8 @@
 		src="https://images.unsplash.com/photo-1695898137720-35a6352a4514?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
 	/>
 
-	<div class="flex items-center bg-gray-900 px-6 py-3 pl-24 relative">
-		<div class="absolute size-16 left-6 shadow rounded-full">
+	<div class="relative flex items-center bg-gray-900 px-6 py-3 pl-24">
+		<div class="absolute left-6 size-16 rounded-full shadow">
 			<img
 				alt="Avatar"
 				class="size-16 w-full object-cover object-center"

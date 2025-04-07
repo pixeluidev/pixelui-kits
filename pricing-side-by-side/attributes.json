@@ -1,0 +1,8 @@
+{
+  "title": "Pricing Side By Side",
+  "category": "pricing",
+  "responsive": true,
+  "canvas": {
+    "center": false
+  }
+}
