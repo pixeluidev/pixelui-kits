@@ -31,24 +31,23 @@
 		console.log('Saving changes:', settingStates);
 		alert('Settings (pretend) saved! Check the console.');
 	}
-
 </script>
 
 <!-- Card Container -->
 <div
-	class="w-full max-w-md bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+	class="w-full max-w-md overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg dark:border-gray-700 dark:bg-gray-800"
+>
 	<!-- Card Body -->
 	<div class="flex flex-col gap-5">
-
 		<!-- Header -->
-		<div class="p-5 md:p-6  w-full flex flex-col border-b">
+		<div class="flex w-full flex-col border-b p-5 md:p-6">
 			<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Notification Settings</h2>
 			<p class="text-sm text-gray-500 dark:text-gray-400">Manage your notification preferences</p>
 		</div>
 
 		<!-- Settings List with Scroll -->
 		<!-- Using standard overflow-y-auto. Styling scrollbar is optional -->
-		<div class="p-5 md:p-6 flex flex-col gap-3 w-full overflow-y-auto  scrollbar-track-transparent">
+		<div class="scrollbar-track-transparent flex w-full flex-col gap-3 overflow-y-auto p-5 md:p-6">
 			{#each settingsData as setting (setting.id)}
 				<NotificationSettingItem
 					{setting}
@@ -59,16 +58,18 @@
 		</div>
 
 		<!-- Action Buttons -->
-		<div class="w-full flex justify-end items-center gap-3 p-5 md:p-6 border-t border-gray-200 dark:border-gray-700">
+		<div
+			class="flex w-full items-center justify-end gap-3 border-t border-gray-200 p-5 md:p-6 dark:border-gray-700"
+		>
 			<button
-				class="px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 bg-red-100/50 dark:bg-red-900/30 rounded-md transition-colors duration-200 ease-in-out hover:bg-red-100 dark:hover:bg-red-900/50 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800"
+				class="rounded-md bg-red-100/50 px-4 py-2 text-sm font-medium text-red-600 transition-colors duration-200 ease-in-out hover:bg-red-100 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50 dark:focus:ring-offset-gray-800"
 				on:click={resetSettings}
 				type="button"
 			>
 				Reset To Default
 			</button>
 			<button
-				class="px-4 py-2 text-sm font-medium text-white bg-orange-500 rounded-md shadow-sm transition-colors duration-200 ease-in-out hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800"
+				class="rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 ease-in-out hover:bg-orange-600 focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:focus:ring-offset-gray-800"
 				on:click={saveChanges}
 				type="button"
 			>
