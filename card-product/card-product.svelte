@@ -49,7 +49,9 @@
 							</h6>
 							<img src={product.thumbnail} alt="" class="h-auto max-w-full" />
 							<div
-								class="bg-opacity-50 absolute top-0 right-0 bottom-0 left-0 flex h-full w-full items-center justify-center bg-black opacity-0 transition duration-500 group-hover:opacity-100"
+								class="opacity-0 bg-opacity-50 absolute top-0 right-0 bottom-0 left-0 bg-black group-hover:opacity-35 transition duration-500 transform group-hover:translate-y-0 -translate-y-full-"></div>
+							<div
+								class="bg-opacity-50 absolute top-0 right-0 bottom-0 left-0 flex h-full w-full items-center justify-center  opacity-0 transition duration-500 group-hover:opacity-100"
 							>
 								<div
 									class="absolute top-1/2 left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-md bg-white"

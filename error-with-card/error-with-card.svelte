@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
-
 </script>
-<div class="container flex items-center justify-center  px-6 py-12 mx-auto">
+<div class="container flex items-center justify-center  px-6 py-12 mx-auto ml-auto">
 	<div class="w-full ">
 		<div class="flex flex-col items-center max-w-lg mx-auto text-center">
 			<p class="text-sm font-medium text-blue-500 dark:text-blue-400">{page?.status ?? 404} error</p>
