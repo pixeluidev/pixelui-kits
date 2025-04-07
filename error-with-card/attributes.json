@@ -1,0 +1,8 @@
+{
+	"title": "Centered Error With Card",
+	"category": "errors",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
+}

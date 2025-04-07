@@ -1,0 +1,8 @@
+{
+  "title": "Simple Article Card with Image",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 800
+  }
+}
