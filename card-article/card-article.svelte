@@ -22,9 +22,7 @@
 	</div>
 
 	<div class="mt-4 flex items-center justify-between">
-		<a class="text-blue-600 hover:underline dark:text-blue-400" href="#" tabindex="0"
-		>Read more</a
-		>
+		<a class="text-blue-600 hover:underline dark:text-blue-400" href="#" tabindex="0">Read more</a>
 
 		<div class="flex items-center">
 			<img
@@ -32,9 +30,7 @@
 				class="mx-4 hidden h-10 w-10 rounded-full object-cover sm:block"
 				src="https://ui-avatars.com/api/?name=Budi"
 			/>
-			<a class="cursor-pointer font-bold text-gray-700 dark:text-gray-200" tabindex="0"
-			>Budi</a
-			>
+			<a class="cursor-pointer font-bold text-gray-700 dark:text-gray-200" tabindex="0">Budi</a>
 		</div>
 	</div>
 </div>
