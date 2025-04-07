@@ -12,7 +12,6 @@
 		<a
 			class="text-xl font-bold text-gray-700 hover:text-gray-600 hover:underline dark:text-white dark:hover:text-gray-200"
 			href="#"
-			role="link"
 			tabindex="0">Accessibility tools for designers and developers</a
 		>
 		<p class="mt-2 text-gray-600 dark:text-gray-300">
@@ -23,7 +22,7 @@
 	</div>
 
 	<div class="mt-4 flex items-center justify-between">
-		<a class="text-blue-600 hover:underline dark:text-blue-400" href="#" role="link" tabindex="0"
+		<a class="text-blue-600 hover:underline dark:text-blue-400" href="#" tabindex="0"
 		>Read more</a
 		>
 
@@ -33,7 +32,7 @@
 				class="mx-4 hidden h-10 w-10 rounded-full object-cover sm:block"
 				src="https://ui-avatars.com/api/?name=Budi"
 			/>
-			<a class="cursor-pointer font-bold text-gray-700 dark:text-gray-200" role="link" tabindex="0"
+			<a class="cursor-pointer font-bold text-gray-700 dark:text-gray-200" tabindex="0"
 			>Budi</a
 			>
 		</div>
