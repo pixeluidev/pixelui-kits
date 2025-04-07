@@ -29,6 +29,7 @@ export { default as CardProduct } from './card-product/card-product.svelte';
 export { default as CardArticle } from './card-article/card-article.svelte';
 export { default as CardArticleImage } from './card-article-image/card-article-image.svelte';
 export { default as CardUserDetail } from './card-user-detail/card-user-detail.svelte';
+export { default as CardNotificationSetting } from './card-notification-setting/card-notification-setting.svelte';
 
 /**
  * Progress
