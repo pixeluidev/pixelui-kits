@@ -14,6 +14,8 @@ export { default as Error404AsBackgroundImage } from './error-404-as-background-
 export { default as Error503AsBackgroundImage } from './error-503-as-background-image/error-503-as-background-image.svelte';
 export { default as Error500 } from './error-500/error-500.svelte';
 export { default as ErrorInternal500Simple } from './error-internal-500-simple/error-internal-500-simple.svelte';
+export { default as ErrorWithCard } from './error-with-card/error-with-card.svelte';
+export { default as ErrorWithImageLinks } from './error-with-image-links/error-with-image-links.svelte';
 
 /**
  * Cards
