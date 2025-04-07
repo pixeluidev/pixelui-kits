@@ -29,6 +29,7 @@ export { default as CardProduct } from './card-product/card-product.svelte';
 export { default as CardArticle } from './card-article/card-article.svelte';
 export { default as CardArticleImage } from './card-article-image/card-article-image.svelte';
 export { default as CardUserDetail } from './card-user-detail/card-user-detail.svelte';
+export { default as CardNotificationSetting } from './card-notification-setting/card-notification-setting.svelte';
 
 /**
  * Progress
@@ -58,3 +59,11 @@ export { default as PricingSimple } from './pricing-simple/pricing-simple.svelte
 export { default as PricingSideBySide } from './pricing-side-by-side/pricing-side-by-side.svelte';
 export { default as PricingTabsDetail } from './pricing-tabs-detail/pricing-tabs-detail.svelte';
 export { default as PricingCardRadio } from './pricing-card-radio/pricing-card-radio.svelte';
+
+/**
+ * FAQ
+ */
+export { default as FaqCentered } from './faq-centered/faq-centered.svelte';
+export { default as FaqGrid } from './faq-grid/faq-grid.svelte';
+export { default as FaqCollapsed } from './faq-collapsed/faq-collapsed.svelte';
+export { default as FaqPageHeader } from './faq-page-header/faq-page-header.svelte';
