@@ -1,0 +1,8 @@
+{
+  "title": "Card User Profile",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 640
+  }
+}

@@ -1,4 +1,4 @@
-<div class="w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg dark:bg-gray-800">
+<div class="overflow-hidden rounded-lg bg-white shadow-lg dark:bg-gray-800">
 	<img
 		alt="avatar"
 		class="h-56 w-full object-cover object-center"
