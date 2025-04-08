@@ -49,8 +49,8 @@
 				<button
 					class="flex flex-col items-center justify-center gap-4 rounded-md bg-gray-100 p-4 hover:bg-gray-200 dark:bg-gray-900 dark:text-gray-50 dark:hover:bg-gray-800"
 				>
-					<Icon class="size-10" />
-					<span>{label}</span>
+					<Icon class="size-6 md:size-10" />
+					<span class="text-xs hidden md:block">{label}</span>
 				</button>
 			{/each}
 		</div>
