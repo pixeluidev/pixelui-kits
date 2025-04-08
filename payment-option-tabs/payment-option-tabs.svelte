@@ -221,7 +221,7 @@
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
 				class="font-medium text-orange-600 underline hover:no-underline dark:text-orange-400"
-				href="#"
+				href="/components"
 				title="Payment Processor">SecurePay Inc.</a
 			>
 			</p>

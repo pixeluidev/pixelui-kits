@@ -44,7 +44,7 @@
 				<div>
 					<a
 						class="inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-						href="#"
+						href="/components"
 					>
 						<span>Documentation</span>
 
@@ -72,7 +72,7 @@
 				<div>
 					<a
 						class="inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-						href="#"
+						href="/components"
 					>
 						<span>Our blog</span>
 
@@ -100,7 +100,7 @@
 				<div>
 					<a
 						class="inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-						href="#"
+						href="/components"
 					>
 						<span>Chat to support</span>
 

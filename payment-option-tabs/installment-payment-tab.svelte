@@ -106,7 +106,7 @@
 			/>
 		</div>
 		<label class="text-sm font-medium text-gray-700 dark:text-neutral-300" for="installment-terms"
-		>I accept the <a class="text-orange-600 hover:underline dark:text-orange-400" href="#"
+		>I accept the <a class="text-orange-600 hover:underline dark:text-orange-400" href="/components"
 		>Terms and Conditions</a
 		></label
 		>

@@ -16,10 +16,10 @@
 <!-- Wrapper for positioning, background, and shadow -->
 <div
 	aria-labelledby="mega-menu-icons-dropdown-button"
-	aria-orientation="vertical"
+
 	class="absolute start-0 top-full z-20 mt-1 w-auto min-w-[30rem]"
-	on:click|stopPropagation={handleLinkClick}
-	role="menu"
+	onclick={handleLinkClick}
+	role="button"
 	tabindex="0"
 >
 	<div
@@ -28,7 +28,7 @@
 	>
 		{#each menuData as link (link.id)}
 			<a
-				href={link.href}
+				href={ "/"}
 				class="group flex items-center gap-3 rounded-lg p-2.5 text-sm text-gray-600
                        transition-colors duration-150 ease-in-out hover:bg-orange-50
                        hover:text-orange-700 focus:bg-orange-50 focus:text-orange-700 focus:outline-none dark:text-neutral-300

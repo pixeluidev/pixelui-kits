@@ -127,7 +127,7 @@
 
 				<a
 					class="focus:ring-opacity-80 mt-8 block w-full transform rounded-lg border-2 border-blue-600 px-6 py-3 text-center font-medium tracking-wide text-blue-600 capitalize transition-colors duration-300 hover:bg-blue-50 focus:ring focus:ring-blue-300 focus:outline-none dark:border-blue-400 dark:text-blue-400 dark:hover:bg-gray-700"
-					href="#"
+					href="/components"
 				>
 					Choose Plan
 				</a>
@@ -261,7 +261,7 @@
 
 				<a
 					class="focus:ring-opacity-80 mt-8 block w-full transform rounded-lg bg-blue-600 px-6 py-3 text-center font-medium tracking-wide text-white capitalize transition-colors duration-300 hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:outline-none"
-					href="#"
+					href="/components"
 				>
 					Get Lifetime Access
 				</a>

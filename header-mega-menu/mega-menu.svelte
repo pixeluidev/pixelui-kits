@@ -39,19 +39,19 @@
 					</h4>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						About
 					</a>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Services
 					</a>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Customer Story
 					</a>
@@ -64,19 +64,19 @@
 					</h4>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Careers Overview
 					</a>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Current Openings
 					</a>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Apply Now
 					</a>
@@ -89,13 +89,13 @@
 					</h4>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Log In
 					</a>
 					<a
 						class="flex items-center gap-x-3 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:outline-none dark:text-gray-300 dark:hover:bg-gray-700"
-						href="#"
+						href="/components"
 					>
 						Sign Up
 					</a>

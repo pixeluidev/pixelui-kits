@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { fade, fly } from 'svelte/transition';
 	import {
 		generateMiniCalendarDays,
@@ -7,8 +6,8 @@
 		miniWeekdaysShort,
 		type MiniCalendarDay,
 		type MiniCalendarEvent
-	} from './calendar-utils.ts'; // Adjust path
-	import { addMonths, subMonths, startOfToday, format, isSameDay } from 'date-fns';
+	} from './calendar-utils'; // Adjust path
+	import { addMonths, subMonths, startOfToday, format } from 'date-fns';
 
 	// Icons
 	import ChevronLeft from 'lucide-svelte/icons/chevron-left';

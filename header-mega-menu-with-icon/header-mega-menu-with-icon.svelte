@@ -86,7 +86,7 @@
 >
 	<nav class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
 		<!-- Logo -->
-		<a class="flex items-center space-x-3 rtl:space-x-reverse" href="/">
+		<a class="flex items-center space-x-3 rtl:space-x-reverse" href="/category/headers">
 			<Logo class="size-8" />
 			<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
 			>Pixel UI</span
@@ -97,11 +97,11 @@
 		<div class="flex items-center space-x-2 md:order-2 md:space-x-3 rtl:space-x-reverse">
 			<a
 				class="hidden rounded-lg px-4 py-2 text-sm font-medium text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:outline-none sm:inline-block dark:text-white dark:hover:bg-neutral-700 dark:focus:ring-offset-neutral-900"
-				href="#">Login</a
+				href="/category/headers">Login</a
 			>
 			<a
 				class="rounded-lg bg-orange-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800"
-				href="#">Sign up</a
+				href="/category/headers">Sign up</a
 			>
 			<button
 				aria-controls="mega-menu-icons-container"

@@ -10,7 +10,7 @@
 			<span class="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">Article</span>
 			<a
 				class="mt-2 block transform text-xl font-semibold text-gray-800 transition-colors duration-300 hover:text-gray-600 hover:underline dark:text-white"
-				href="#"
+				href="/components"
 				tabindex="0">8 Crazy New Mac Apps That You Must Have on Your Mac</a
 			>
 			<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
@@ -28,7 +28,7 @@
 						class="h-10 rounded-full object-cover"
 						src="https://ui-avatars.com/api/?name=John+Doe"
 					/>
-					<a class="mx-2 font-semibold text-gray-700 dark:text-gray-200" href="#" tabindex="0"
+					<a class="mx-2 font-semibold text-gray-700 dark:text-gray-200" href="/components" tabindex="0"
 					>Jone Doe</a
 					>
 				</div>

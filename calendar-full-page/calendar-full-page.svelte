@@ -60,7 +60,6 @@
 
 	// Update displayed data based on current view and date
 	$: {
-		console.log(`View: ${currentView}, Date: ${currentDate.toDateString()}`); // Debug
 		if (currentView === 'month') {
 			monthDays = generateMonthDays(currentDate);
 			weekDays = [];
@@ -445,7 +444,7 @@
 				>
 					<div class="hidden w-full lg:grid lg:grid-cols-7 lg:grid-rows-6 lg:gap-px">
 						{#each monthDays as day (day.isoString)}
-							<div
+							<button
 								tabindex="0"
 								aria-labelledby="Month view"
 								aria-label="Month view"
@@ -498,7 +497,7 @@
 										{/each}
 									</ol>
 								{/if}
-							</div>
+							</button>
 						{/each}
 					</div>
 					<!-- Mobile View for Month (Simplified) -->

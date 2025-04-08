@@ -71,7 +71,7 @@
 
 				<a
 					class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-					href="#"
+					href="/components"
 				>
 					<span>Start learning</span>
 
@@ -116,7 +116,7 @@
 
 				<a
 					class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-					href="#"
+					href="/components"
 				>
 					<span>View lastest posts</span>
 
@@ -161,7 +161,7 @@
 
 				<a
 					class="mt-4 inline-flex items-center gap-x-2 text-sm text-blue-500 hover:underline dark:text-blue-400"
-					href="#"
+					href="/components"
 				>
 					<span>Chat to our team</span>
 
