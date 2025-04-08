@@ -1,0 +1,9 @@
+{
+  "title": "Payment form with tabs",
+  "category": "payments",
+  "responsive": true,
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}

@@ -4,7 +4,7 @@
 	export let max = 100;
 	export let step = 1;
 
-	let isHovered = false;
+	// let isHovered = false;
 
 	function handleInput(event: Event) {
 		const target = event.target as HTMLInputElement;

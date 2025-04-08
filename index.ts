@@ -75,3 +75,13 @@ export { default as FaqPageHeader } from './faq-page-header/faq-page-header.svel
 export { default as HeaderMegaMenu } from './header-mega-menu/header-mega-menu.svelte';
 export { default as HeaderMegaMenuTabs } from './header-mega-menu-tabs/header-mega-menu-tabs.svelte';
 export { default as HeaderMegaMenuWithIcon } from './header-mega-menu-with-icon/header-mega-menu-with-icon.svelte';
+
+/**
+ * payments forms
+ */
+
+export { default as PaymentCreditCard } from './payment-credit-card/payment-credit-card.svelte';
+export { default as PaymentCreditCardDetail } from './payment-credit-card-detail/payment-credit-card-detail.svelte';
+export { default as PaymentStep } from './payment-step/payment-step.svelte';
+export { default as PaymentOption } from './payment-option/payment-option.svelte';
+export { default as PaymentOptionTabs } from '$uikits/payment-option-tabs/payment-option-tabs.svelte';

@@ -1,6 +1,5 @@
 <script>
 	// Impor data dan ikon yang mungkin digunakan di luar loop (jika ada)
-	// import { RadioOptions } from '$lib/data'; // Sesuaikan path jika perlu
 
 	// State untuk menyimpan value radio yang dipilih
 	import { radioOptions } from './data.js';

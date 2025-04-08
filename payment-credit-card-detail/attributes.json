@@ -1,0 +1,9 @@
+{
+  "title": "Form Payment With Credit Card With Detail",
+  "category": "payments",
+  "responsive": true,
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}

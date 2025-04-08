@@ -9,8 +9,8 @@
 ## Pixel UI Components
 
 `svelte` `tailwindcss`
-</div>
 
+</div>
 
 [Pixel UI](https://pixelui.dev)
 
