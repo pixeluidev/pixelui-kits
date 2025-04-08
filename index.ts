@@ -84,4 +84,10 @@ export { default as PaymentCreditCard } from './payment-credit-card/payment-cred
 export { default as PaymentCreditCardDetail } from './payment-credit-card-detail/payment-credit-card-detail.svelte';
 export { default as PaymentStep } from './payment-step/payment-step.svelte';
 export { default as PaymentOption } from './payment-option/payment-option.svelte';
-export { default as PaymentOptionTabs } from '$uikits/payment-option-tabs/payment-option-tabs.svelte';
+export { default as PaymentOptionTabs } from './payment-option-tabs/payment-option-tabs.svelte';
+
+/**
+ * Calendars
+ */
+export { default as CalendarFullPage } from './calendar-full-page/calendar-full-page.svelte';
+export { default as CalendarMini } from './calendar-mini/calendar-mini.svelte';

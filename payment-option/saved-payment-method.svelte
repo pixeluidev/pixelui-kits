@@ -56,16 +56,14 @@
 			on:click|stopPropagation={handleDelete}
 			type="button"
 		>Delete
-		</button
-		>
+		</button>
 		<div class="h-4 w-px bg-gray-300 dark:bg-neutral-600"></div>
 		<button
 			class="text-xs font-medium text-gray-600 hover:underline focus:underline focus:outline-none dark:text-gray-400"
 			on:click|stopPropagation={handleEdit}
 			type="button"
 		>Edit
-		</button
-		>
+		</button>
 	</div>
 
 	<!-- Icon -->

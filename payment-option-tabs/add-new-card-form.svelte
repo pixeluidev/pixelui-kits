@@ -114,8 +114,7 @@
 				<div
 					class="pointer-events-none absolute inset-y-0 end-0 top-9 flex items-center pe-2.5 text-gray-400 dark:text-neutral-500"
 				>
-					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-					>
+					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
 						<path
 							stroke="currentColor"
 							stroke-linecap="round"
@@ -123,8 +122,7 @@
 							stroke-width="1.5"
 							d="M6 8l4 4 4-4"
 						/>
-					</svg
-					>
+					</svg>
 				</div>
 			</div>
 
@@ -149,8 +147,7 @@
 				<div
 					class="pointer-events-none absolute inset-y-0 end-0 top-9 flex items-center pe-2.5 text-gray-400 dark:text-neutral-500"
 				>
-					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"
-					>
+					<svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
 						<path
 							stroke="currentColor"
 							stroke-linecap="round"
@@ -158,8 +155,7 @@
 							stroke-width="1.5"
 							d="M6 8l4 4 4-4"
 						/>
-					</svg
-					>
+					</svg>
 				</div>
 			</div>
 

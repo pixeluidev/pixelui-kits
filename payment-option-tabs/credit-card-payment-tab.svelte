@@ -7,7 +7,8 @@
 
 	// State specific to this tab
 	export let selectedSubMethodId: string = savedPaymentMethodsData[0]?.id ?? 'new';
-	export let newCardDetails: { // Prop from parent for binding
+	export let newCardDetails: {
+		// Prop from parent for binding
 		fullName: string;
 		cardNumberRaw: string;
 		expiryMonth: string;
@@ -42,11 +43,11 @@
 	</div>
 
 	<!-- Divider / Or -->
-	<div class="relative flex items-center justify-center my-6">
+	<div class="relative my-6 flex items-center justify-center">
 		<div aria-hidden="true" class="absolute inset-0 flex items-center">
 			<div class="w-full border-t border-gray-200 dark:border-neutral-700"></div>
 		</div>
-		<div class="relative bg-white dark:bg-neutral-800 px-3">
+		<div class="relative bg-white px-3 dark:bg-neutral-800">
 			<span class="text-sm font-medium text-gray-500 dark:text-neutral-400">or</span>
 		</div>
 	</div>
@@ -54,7 +55,7 @@
 	<!-- Add New Card Option + Form -->
 	<div>
 		<label
-			class="relative flex cursor-pointer items-center justify-between rounded-lg border p-4 mb-4 transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
+			class="relative mb-4 flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
 			class:border-gray-200={!isAddingNewCard}
 			class:border-orange-500={isAddingNewCard}
 			class:dark:border-neutral-700={!isAddingNewCard}
@@ -92,5 +93,4 @@
 			isVisible={isAddingNewCard}
 		/>
 	</div>
-
 </div>

@@ -8,7 +8,8 @@
 		orderCurrency,
 		promoData,
 		paymentTabsData,
-		type PaymentTab, savedPaymentMethodsData
+		type PaymentTab,
+		savedPaymentMethodsData
 	} from './data'; // Adjust path
 
 	// Components
@@ -221,8 +222,7 @@
 				Payment processed securely by <a
 				class="font-medium text-orange-600 underline hover:no-underline dark:text-orange-400"
 				href="#"
-				title="Payment Processor"
-			>SecurePay Inc.</a
+				title="Payment Processor">SecurePay Inc.</a
 			>
 			</p>
 		</div>

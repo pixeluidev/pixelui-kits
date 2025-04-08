@@ -23,23 +23,24 @@
 </script>
 
 <!-- Outer Label makes the whole area clickable for the radio -->
-<label class="relative flex items-center justify-between p-4 border rounded-lg cursor-pointer transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
-			 class:border-gray-200={selectedValue !== method.id}
-			 class:border-orange-500={selectedValue === method.id}
-			 class:dark:border-neutral-700={selectedValue !== method.id}
-			 class:dark:border-orange-400={selectedValue === method.id}
-			 class:dark:ring-opacity-50={selectedValue === method.id}
-			 class:dark:ring-orange-600={selectedValue === method.id}
-			 class:ring-2={selectedValue === method.id}
-			 class:ring-orange-200={selectedValue === method.id}
-			 for={`radio-${method.id}`}
+<label
+	class="relative flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
+	class:border-gray-200={selectedValue !== method.id}
+	class:border-orange-500={selectedValue === method.id}
+	class:dark:border-neutral-700={selectedValue !== method.id}
+	class:dark:border-orange-400={selectedValue === method.id}
+	class:dark:ring-opacity-50={selectedValue === method.id}
+	class:dark:ring-orange-600={selectedValue === method.id}
+	class:ring-2={selectedValue === method.id}
+	class:ring-orange-200={selectedValue === method.id}
+	for={`radio-${method.id}`}
 >
 	<!-- Radio input and Text details -->
-	<div class="flex items-center grow">
+	<div class="flex grow items-center">
 		<!-- The actual radio button -->
 		<input
 			bind:group={selectedValue}
-			class="w-4 h-4 text-orange-600 bg-gray-100 border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-neutral-800 focus:ring-2 dark:bg-neutral-700 dark:border-neutral-600"
+			class="h-4 w-4 border-gray-300 bg-gray-100 text-orange-600 focus:ring-2 focus:ring-orange-500 dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-orange-600"
 			id={`radio-${method.id}`}
 			name={groupName}
 			type="radio"
@@ -56,19 +57,20 @@
 	</div>
 
 	<!-- Action Buttons (conditionally shown on larger screens) -->
-	<div class="hidden sm:flex items-center space-x-3 ms-4 shrink-0">
+	<div class="ms-4 hidden shrink-0 items-center space-x-3 sm:flex">
 		<button
 			aria-label={`Delete ${method.label}`}
-			class="text-xs font-medium text-red-600 dark:text-red-400 hover:underline focus:outline-none focus:underline"
+			class="text-xs font-medium text-red-600 hover:underline focus:underline focus:outline-none dark:text-red-400"
 			on:click|stopPropagation={handleDelete}
 			type="button"
 		>
 			Delete
 		</button>
-		<div class="h-4 w-px bg-gray-300 dark:bg-neutral-600"></div> <!-- Vertical separator -->
+		<div class="h-4 w-px bg-gray-300 dark:bg-neutral-600"></div>
+		<!-- Vertical separator -->
 		<button
 			aria-label={`Edit ${method.label}`}
-			class="text-xs font-medium text-orange-600 dark:text-orange-400 hover:underline focus:outline-none focus:underline"
+			class="text-xs font-medium text-orange-600 hover:underline focus:underline focus:outline-none dark:text-orange-400"
 			on:click|stopPropagation={handleEdit}
 			type="button"
 		>
@@ -79,10 +81,14 @@
 	<!-- Payment Method Icon -->
 	<div class="ms-4 shrink-0">
 		{#if method.iconUrlLight}
-			<img class="h-6 sm:h-8 w-auto dark:hidden" src={method.iconUrlLight} alt={method.type} />
+			<img class="h-6 w-auto sm:h-8 dark:hidden" src={method.iconUrlLight} alt={method.type} />
 		{/if}
 		{#if method.iconUrlDark}
-			<img class="h-6 sm:h-8 w-auto hidden dark:block" src={method.iconUrlDark} alt={`${method.type} Dark`} />
+			<img
+				class="hidden h-6 w-auto sm:h-8 dark:block"
+				src={method.iconUrlDark}
+				alt={`${method.type} Dark`}
+			/>
 		{/if}
 	</div>
 </label>

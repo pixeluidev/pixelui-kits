@@ -1,0 +1,11 @@
+{
+  "title": "Calendar Full Page",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  },
+  "packages": [
+    "date-fns"
+  ]
+}

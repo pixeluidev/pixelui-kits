@@ -147,8 +147,7 @@
 						<div class="relative col-span-2 sm:col-span-1">
 							<label
 								class="mb-2 block text-sm font-medium text-gray-700 dark:text-neutral-300"
-								for="expiry-month"
-							>Month*</label
+								for="expiry-month">Month*</label
 							>
 							<select
 								bind:value={expiryMonth}
@@ -179,16 +178,14 @@
 										stroke-linejoin="round"
 										stroke-width="1.5"
 									/>
-								</svg
-								>
+								</svg>
 							</div>
 						</div>
 						<!-- Expiry Year -->
 						<div class="relative col-span-2 sm:col-span-1">
 							<label
 								class="mb-2 block text-sm font-medium text-gray-700 dark:text-neutral-300"
-								for="expiry-year"
-							>Year*</label
+								for="expiry-year">Year*</label
 							>
 							<select
 								bind:value={expiryYear}
@@ -219,8 +216,7 @@
 										stroke-linejoin="round"
 										stroke-width="1.5"
 									/>
-								</svg
-								>
+								</svg>
 							</div>
 						</div>
 
@@ -376,8 +372,7 @@
 				Payment processed securely by <a
 				class="font-medium text-orange-600 underline hover:no-underline dark:text-orange-400"
 				href="#"
-				title="Payment Processor"
-			>SecurePay Inc.</a
+				title="Payment Processor">SecurePay Inc.</a
 			>
 			</p>
 		</div>

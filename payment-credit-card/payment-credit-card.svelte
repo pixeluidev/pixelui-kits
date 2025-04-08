@@ -180,8 +180,7 @@
 					<!-- Expiry Label -->
 					<label
 						class="col-span-4 -mb-2 text-sm font-medium text-gray-600 dark:text-neutral-300"
-						for="expiryMonth"
-					>Expiry Date</label
+						for="expiryMonth">Expiry Date</label
 					>
 
 					<!-- Month Select -->
@@ -214,8 +213,7 @@
 									stroke-linejoin="round"
 									stroke-width="1.5"
 								/>
-							</svg
-							>
+							</svg>
 						</div>
 					</div>
 
@@ -249,8 +247,7 @@
 									stroke-linejoin="round"
 									stroke-width="1.5"
 								/>
-							</svg
-							>
+							</svg>
 						</div>
 					</div>
 
