@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
+	import type { SvelteComponent } from 'svelte';
 	import type { MegaMenuTab } from './data';
+	import type { Icon } from 'lucide-svelte';
 
 	export let menuData: MegaMenuTab[];
 	export let onClose: () => void = () => {
@@ -87,9 +89,11 @@
 								class="space-y-6"
 								tabindex={0}
 							>
-								{#each activeTabData.content as contentBlock (contentBlock.title)}
+								<!-- Gunakan index sebagai fallback key jika title tidak unik -->
+								{#each activeTabData.content as contentBlock, i (contentBlock.title ?? i)}
 									{#if contentBlock.type === 'text'}
 										<p class="text-sm leading-relaxed text-gray-600 dark:text-neutral-300">
+											<!-- TS tahu value adalah string di sini -->
 											{contentBlock.value}
 										</p>
 									{:else if contentBlock.type === 'links' && Array.isArray(contentBlock.value)}
@@ -100,7 +104,7 @@
 												>
 													{#if contentBlock.icon}
 														<svelte:component
-															this={contentBlock.icon}
+															this={contentBlock.icon as typeof SvelteComponent<Icon>}
 															class="h-4 w-4 text-orange-500"
 															strokeWidth={2}
 														/>
@@ -115,28 +119,29 @@
 															class="group flex flex-col text-sm text-gray-600 hover:text-orange-600 focus:text-orange-600 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 															href={link.href}
 														>
-															<span class="font-medium underline-offset-2 group-hover:underline"
-															>{link.label}</span
-															>
+                                            <span class="font-medium underline-offset-2 group-hover:underline"
+																						>{link.label}</span
+																						>
 															{#if link.description}
-																<span class="text-xs text-gray-500 dark:text-neutral-500"
-																>{link.description}</span
-																>
+                                                <span class="text-xs text-gray-500 dark:text-neutral-500"
+																								>{link.description}</span
+																								>
 															{/if}
 														</a>
 													</li>
 												{/each}
 											</ul>
 										</div>
-									{:else if contentBlock.type === 'component'}
-										<!-- Placeholder for rendering a Svelte component -->
-										<svelte:component this={contentBlock.value} />
+									{:else if contentBlock.type === 'component' }
+										<!-- *** FIX: Gunakan Type Assertion di sini *** -->
+										<svelte:component this={contentBlock.value as typeof SvelteComponent} />
 									{/if}
 								{/each}
 							</div>
 						{/if}
 					{/key}
 				</div>
+
 			</div>
 		</div>
 	</div>

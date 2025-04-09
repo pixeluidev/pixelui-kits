@@ -1,5 +1,5 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
+import { SvelteComponent } from 'svelte';
 import type { Icon } from 'lucide-svelte';
 import Info from 'lucide-svelte/icons/info';
 import Settings from 'lucide-svelte/icons/settings';
@@ -11,9 +11,9 @@ import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
 
 export interface MegaMenuTabContent {
 	type: 'text' | 'component' | 'links'; // Type of content
-	value: string | ComponentType | MegaMenuLink[]; // Content value
+	value: string | typeof SvelteComponent | MegaMenuLink[]; // Content value
 	title?: string; // Optional title for link lists
-	icon?: ComponentType<Icon>; // Optional icon for link lists
+	icon?: typeof SvelteComponent<Icon>; // Optional icon for link lists
 }
 
 export interface MegaMenuLink {
@@ -25,7 +25,7 @@ export interface MegaMenuLink {
 export interface MegaMenuTab {
 	id: string; // Unique ID for the tab
 	label: string; // Text displayed on the tab button
-	icon?: ComponentType<Icon>; // Optional icon for the tab
+	icon?: typeof SvelteComponent<Icon>; // Optional icon for the tab
 	content: MegaMenuTabContent[]; // Array of content blocks for the panel
 }
 
@@ -34,7 +34,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'overview',
 		label: 'Overview',
-		icon: Info,
+		icon: Info as typeof SvelteComponent<Icon>,
 		content: [
 			{
 				type: 'text',
@@ -44,7 +44,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Key Sections',
-				icon: Settings,
+				icon: Settings as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'Core Features' },
 					{ href: '#', label: 'Pricing Plans' },
@@ -56,7 +56,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'features',
 		label: 'Features',
-		icon: Settings,
+		icon: Settings as typeof SvelteComponent<Icon>,
 		content: [
 			{
 				type: 'text',
@@ -66,7 +66,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Feature Categories',
-				icon: Briefcase,
+				icon: Briefcase as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'Automation Tools', description: 'Save time on repetitive tasks.' },
 					{ href: '#', label: 'Collaboration Suite', description: 'Work better together.' },
@@ -83,7 +83,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'solutions',
 		label: 'Solutions',
-		icon: Users,
+		icon: Users as typeof SvelteComponent<Icon>,
 		content: [
 			{
 				type: 'text',
@@ -93,7 +93,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'By Industry',
-				icon: BarChart,
+				icon: BarChart as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'E-commerce' },
 					{ href: '#', label: 'Healthcare' },
@@ -103,7 +103,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'By Team Size',
-				icon: Users,
+				icon: Users as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'Startups' },
 					{ href: '#', label: 'SMBs' },
@@ -115,7 +115,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'support',
 		label: 'Support',
-		icon: LifeBuoy,
+		icon: LifeBuoy as typeof SvelteComponent<Icon>,
 		content: [
 			{
 				type: 'text',
@@ -125,7 +125,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Get Help',
-				icon: ShoppingCart,
+				icon: ShoppingCart as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'Knowledge Base' },
 					{ href: '#', label: 'Community Forum' },
@@ -137,7 +137,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'pricing',
 		label: 'Pricing',
-		icon: ShoppingCart,
+		icon: ShoppingCart as typeof SvelteComponent<Icon>,
 		content: [
 			{
 				type: 'text',
@@ -147,7 +147,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Plans',
-				icon: Briefcase,
+				icon: Briefcase as typeof SvelteComponent<Icon>,
 				value: [
 					{ href: '#', label: 'Free Tier' },
 					{ href: '#', label: 'Pro Plan' },
