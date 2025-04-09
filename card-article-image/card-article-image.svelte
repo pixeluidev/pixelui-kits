@@ -28,8 +28,10 @@
 						class="h-10 rounded-full object-cover"
 						src="https://ui-avatars.com/api/?name=John+Doe"
 					/>
-					<a class="mx-2 font-semibold text-gray-700 dark:text-gray-200" href="/components" tabindex="0"
-					>Jone Doe</a
+					<a
+						class="mx-2 font-semibold text-gray-700 dark:text-gray-200"
+						href="/components"
+						tabindex="0">Jone Doe</a
 					>
 				</div>
 				<span class="mx-1 text-xs text-gray-600 dark:text-gray-300"

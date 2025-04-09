@@ -119,20 +119,20 @@
 															class="group flex flex-col text-sm text-gray-600 hover:text-orange-600 focus:text-orange-600 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 															href={link.href}
 														>
-                                            <span class="font-medium underline-offset-2 group-hover:underline"
-																						>{link.label}</span
-																						>
+															<span class="font-medium underline-offset-2 group-hover:underline"
+															>{link.label}</span
+															>
 															{#if link.description}
-                                                <span class="text-xs text-gray-500 dark:text-neutral-500"
-																								>{link.description}</span
-																								>
+																<span class="text-xs text-gray-500 dark:text-neutral-500"
+																>{link.description}</span
+																>
 															{/if}
 														</a>
 													</li>
 												{/each}
 											</ul>
 										</div>
-									{:else if contentBlock.type === 'component' }
+									{:else if contentBlock.type === 'component'}
 										<!-- *** FIX: Gunakan Type Assertion di sini *** -->
 										<svelte:component this={contentBlock.value as typeof SvelteComponent} />
 									{/if}
@@ -141,7 +141,6 @@
 						{/if}
 					{/key}
 				</div>
-
 			</div>
 		</div>
 	</div>

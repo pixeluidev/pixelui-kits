@@ -16,7 +16,6 @@
 <!-- Wrapper for positioning, background, and shadow -->
 <div
 	aria-labelledby="mega-menu-icons-dropdown-button"
-
 	class="absolute start-0 top-full z-20 mt-1 w-auto min-w-[30rem]"
 	onclick={handleLinkClick}
 	role="button"
@@ -28,7 +27,7 @@
 	>
 		{#each menuData as link (link.id)}
 			<a
-				href={ "/"}
+				href={'/'}
 				class="group flex items-center gap-3 rounded-lg p-2.5 text-sm text-gray-600
                        transition-colors duration-150 ease-in-out hover:bg-orange-50
                        hover:text-orange-700 focus:bg-orange-50 focus:text-orange-700 focus:outline-none dark:text-neutral-300

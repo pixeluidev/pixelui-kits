@@ -250,9 +250,9 @@
 				<button
 					class="hidden border-y border-gray-300 px-3.5 text-sm font-semibold text-gray-700 transition-colors duration-150 hover:bg-gray-50 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none md:block dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-600"
 					on:click={() => navigate('today')}
-					type="button">Today
-				</button
-				>
+					type="button"
+				>Today
+				</button>
 				<span class="relative -mx-px h-5 w-px bg-gray-300 md:hidden dark:bg-neutral-600"></span>
 				<button
 					class="flex h-9 w-10 items-center justify-center rounded-r-md border border-s-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
@@ -298,36 +298,36 @@
 									class:dark:bg-neutral-600={currentView === 'day'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 									role="menuitem"
-									tabindex="-1">Day view
-								</button
-								>
+									tabindex="-1"
+								>Day view
+								</button>
 								<button
 									on:click={() => setView('week')}
 									class:bg-gray-100={currentView === 'week'}
 									class:dark:bg-neutral-600={currentView === 'week'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 									role="menuitem"
-									tabindex="-1">Week view
-								</button
-								>
+									tabindex="-1"
+								>Week view
+								</button>
 								<button
 									on:click={() => setView('month')}
 									class:bg-gray-100={currentView === 'month'}
 									class:dark:bg-neutral-600={currentView === 'month'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-600"
 									role="menuitem"
-									tabindex="-1">Month view
-								</button
-								>
+									tabindex="-1"
+								>Month view
+								</button>
 								<button
 									on:click={() => setView('year')}
 									class:bg-gray-100={currentView === 'year'}
 									class:dark:bg-neutral-600={currentView === 'year'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 									role="menuitem"
-									tabindex="-1">Year view
-								</button
-								>
+									tabindex="-1"
+								>Year view
+								</button>
 							</div>
 						</div>
 					{/if}
@@ -370,48 +370,48 @@
 								on:click={addEvent}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Create event
-							</button
-							>
+								tabindex="-1"
+							>Create event
+							</button>
 						</div>
 						<div class="py-1" role="none">
 							<button
 								on:click={() => navigate('today')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Go to today
-							</button
-							>
+								tabindex="-1"
+							>Go to today
+							</button>
 						</div>
 						<div class="py-1" role="none">
 							<button
 								on:click={() => setView('day')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Day view
-							</button
-							>
+								tabindex="-1"
+							>Day view
+							</button>
 							<button
 								on:click={() => setView('week')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Week view
-							</button
-							>
+								tabindex="-1"
+							>Week view
+							</button>
 							<button
 								on:click={() => setView('month')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Month view
-							</button
-							>
+								tabindex="-1"
+							>Month view
+							</button>
 							<button
 								on:click={() => setView('year')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
-								tabindex="-1">Year view
-							</button
-							>
+								tabindex="-1"
+							>Year view
+							</button>
 						</div>
 					</div>
 				{/if}

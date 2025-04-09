@@ -28,30 +28,32 @@
 	];
 </script>
 
-<section class="mx-auto py-16 ">
-	<div class="mx-auto flex justify-center object-center px-4 py-16 ">
+<section class="mx-auto py-16">
+	<div class="mx-auto flex justify-center object-center px-4 py-16">
 		<div class="flex flex-col justify-center gap-12 object-center sm:gap-16">
-			<h2 class="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+			<h2 class="text-foreground text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
 				Services
 			</h2>
 			<div class="mx-auto grid grid-cols-1 gap-12 space-y-10 sm:gap-16 md:space-y-0 lg:grid-cols-3">
 				{#each services as service (service.name)}
-					<div class="group h-96 w-96 [perspective:1000px] col-span-1">
+					<div class="group col-span-1 h-96 w-96 [perspective:1000px]">
 						<div
-							class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] ease-linear"
+							class="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 ease-linear [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
 						>
 							<!--Front face with image-->
 							<div class="absolute inset-0 h-full w-full rounded-xl [backface-visibility:hidden]">
 								{#if service.imageUrl}
 									<img
-										class="h-full w-full cursor-pointer rounded-xl object-cover object-left "
+										class="h-full w-full cursor-pointer rounded-xl object-cover object-left"
 										src={service.imageUrl}
 										alt={service.name}
 										width={320}
 										height={320}
 									/>
 								{/if}
-								<p class=" text-2xl md:my-6 group-hover:opacity-0 transition-opacity delay-150">{service.name}</p>
+								<p class=" text-2xl transition-opacity delay-150 group-hover:opacity-0 md:my-6">
+									{service.name}
+								</p>
 							</div>
 							<!--  Back face with text-->
 							<div
@@ -66,7 +68,7 @@
 									</p>
 									<a href="tel:555-555-5555" class="inline-flex">
 										<button
-											class="my-2 inline-flex w-auto items-center rounded-full bg-yellow-800 px-4 py-2 font-bold text-white hover:bg-yellow-700 gap-2"
+											class="my-2 inline-flex w-auto items-center gap-2 rounded-full bg-yellow-800 px-4 py-2 font-bold text-white hover:bg-yellow-700"
 										>
 											<span>Schedule Service</span>
 											<WrenchIcon class="size-4" />

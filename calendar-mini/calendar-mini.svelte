@@ -62,8 +62,7 @@
 			<div class="flex items-center justify-between">
 				<span
 					class="text-base font-semibold text-gray-800 focus:outline-none dark:text-gray-100"
-					tabindex="0"
-				>{monthYearDisplay}</span
+					tabindex="0">{monthYearDisplay}</span
 				>
 				<div class="flex items-center">
 					<button
