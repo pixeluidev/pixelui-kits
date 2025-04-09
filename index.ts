@@ -31,6 +31,7 @@ export { default as CardArticleImage } from './card-article-image/card-article-i
 export { default as CardUserDetail } from './card-user-detail/card-user-detail.svelte';
 export { default as CardNotificationSetting } from './card-notification-setting/card-notification-setting.svelte';
 export { default as CardUserProfile } from './card-user-profile/card-user-profile.svelte';
+export { default as CardFlip } from './card-flip/card-flip.svelte';
 
 /**
  * Progress

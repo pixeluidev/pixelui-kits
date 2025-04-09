@@ -1,0 +1,8 @@
+{
+  "title": "Simple Flip Card",
+  "category": "cards",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  }
+}
