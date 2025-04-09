@@ -41,6 +41,11 @@ So if you're looking for a top-notch set of components for your next web design 
 - [Lucide](https://lucide.dev/)
 - [Svelte](https://svelte.dev)
 
+### Roadmap
+
+- [ ] Data Tables (with sorting/pagination)
+- [ ] Complex Forms (multi-step, validation)
+
 ### License
 
 The MIT License (MIT). Please see [License File](https://github.com/pixeluidev/pixelui-kits/blob/master/LICENSE) for
