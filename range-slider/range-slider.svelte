@@ -61,7 +61,7 @@
 
 		<div class="absolute mt-6 flex w-full justify-between">
 			{#each labels as label (label)}
-				<span class="text-sm text-gray-600">{label}</span>
+				<span class="text-sm text-gray-600 label">{label}</span>
 			{/each}
 		</div>
 	</div>
