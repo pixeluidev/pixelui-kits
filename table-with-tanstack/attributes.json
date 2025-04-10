@@ -1,5 +1,5 @@
 {
-  "title": "Table with Pagination and Filter",
+  "title": "Advance Tables with tanstack Table",
   "category": "tables",
   "canvas": {
     "center": true
