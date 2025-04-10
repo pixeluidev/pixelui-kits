@@ -1,6 +1,7 @@
 {
   "title": "Advance Tables with tanstack Table",
   "category": "tables",
+  "responsive": false,
   "canvas": {
     "center": true
   },
