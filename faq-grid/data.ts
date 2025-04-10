@@ -1,5 +1,3 @@
-
-
 // Define the structure for a single FAQ item in the grid
 export interface FaqGridItemData {
 	id: number | string; // Unique identifier for the key

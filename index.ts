@@ -96,7 +96,6 @@ export { default as PaymentOptionTabs } from './payment-option-tabs/payment-opti
 export { default as CalendarFullPage } from './calendar-full-page/calendar-full-page.svelte';
 export { default as CalendarMini } from './calendar-mini/calendar-mini.svelte';
 
-
 /**
  * Tables
  */

@@ -130,7 +130,6 @@
 	}
 
 	function updatePaginationButtons() {
-
 		let startPage: number, endPage: number;
 		if (totalPages <= pageRangeDisplayed) {
 			startPage = 1;
@@ -171,7 +170,6 @@
 	async function goToPage(pageNumber: number) {
 		const targetPage = Math.max(1, Math.min(pageNumber, totalPages > 0 ? totalPages : 1));
 		await currentPageTweened.set(targetPage);
-
 	}
 
 	function handleBrandToggle(brand: string, checked: boolean) {
@@ -224,7 +222,6 @@
 	}
 
 	$: if (currentPage || totalPages !== undefined) {
-
 		updateDisplayedItems();
 		updatePaginationButtons();
 	}
@@ -237,11 +234,9 @@
 <section class="bg-gray-50 py-20 dark:bg-gray-900">
 	<div class="mx-auto max-w-screen-xl px-4 lg:px-12">
 		<div class="relative overflow-hidden bg-white shadow-md sm:rounded-lg dark:bg-gray-800">
-
 			<div
 				class="flex flex-col items-start justify-between space-y-3 border-b p-4 md:flex-row md:items-center md:space-y-0 md:space-x-4 dark:border-gray-700"
 			>
-
 				<div class="w-full md:w-2/3 lg:w-1/2">
 					<form class="mb-2 flex items-center">
 						<label class="sr-only" for="simple-search">Search</label>
@@ -306,7 +301,6 @@
 					{/if}
 				</div>
 
-
 				<div
 					class="flex w-full flex-shrink-0 flex-col items-stretch justify-end space-y-2 md:w-auto md:flex-row md:items-center md:space-y-0 md:space-x-3"
 				>
@@ -317,7 +311,6 @@
 						<Plus class="mr-2 h-3.5 w-3.5" />
 						Add product
 					</button>
-
 
 					<div class="relative">
 						<button
@@ -333,28 +326,25 @@
 								use:clickOutside={closeActionsDropdown}
 								class="absolute top-full right-0 z-10 mt-2 w-44 divide-y divide-gray-100 rounded bg-white shadow dark:divide-gray-600 dark:bg-gray-700"
 							>
-
-								<div class="flex flex-col items-start text-sm text-left">
+								<div class="flex flex-col items-start text-left text-sm">
 									<button
 										onclick={() => console.log('Mass Edit')}
-										class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+										class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
 									>
 										<Edit class="mr-2 inline-block h-4 w-4" />
 										Mass Edit
 									</button>
 									<button
 										onclick={() => console.log('Delete All')}
-										class="w-full text-left block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+										class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
 									>
 										<Trash2 class="mr-2 inline-block h-4 w-4" />
 										Delete all
 									</button>
 								</div>
-
 							</div>
 						{/if}
 					</div>
-
 
 					<div class="relative">
 						<button
@@ -364,8 +354,7 @@
 						>
 							<FilterIcon class="mr-2 h-3 w-3" />
 							Filter
-							{#if hasActiveFilters}({selectedBrands.size +
-							selectedCategories.size})
+							{#if hasActiveFilters}({selectedBrands.size + selectedCategories.size})
 							{/if}
 						</button>
 						{#if filterDropdownOpen}
@@ -373,7 +362,6 @@
 								use:clickOutside={closeFilterDropdown}
 								class="absolute top-full right-0 z-10 mt-2 max-h-96 w-64 overflow-y-auto rounded-lg bg-white p-3 shadow dark:bg-gray-700"
 							>
-
 								<h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Brand</h6>
 								<ul class="mb-4 space-y-2 text-sm">
 									{#each uniqueBrands as brand (brand)}
@@ -445,7 +433,6 @@
 				</div>
 			</div>
 
-
 			<div class="overflow-x-auto">
 				<table class="w-full text-left text-sm text-gray-500 dark:text-gray-400">
 					<thead
@@ -461,8 +448,6 @@
 					<tbody>
 					{#each displayedItems as item (item.id)}
 						<tr class="border-b hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-600">
-
-
 							<th
 								scope="row"
 								class="px-4 py-3 font-medium whitespace-nowrap text-gray-900 dark:text-white"
@@ -472,8 +457,6 @@
 							<td class="px-4 py-3">{item.brand}</td>
 
 							<td class="px-4 py-3">{item.price}</td>
-
-
 						</tr>
 					{:else}
 						<tr>
@@ -483,7 +466,6 @@
 								{:else if items.length === 0}
 									No products available.
 								{:else if totalItems === 0 && !searchTerm && !hasActiveFilters}
-
 									No data.
 								{:else}
 									No results for this page.
@@ -494,7 +476,6 @@
 					</tbody>
 				</table>
 			</div>
-
 
 			<nav
 				aria-label="Table navigation"

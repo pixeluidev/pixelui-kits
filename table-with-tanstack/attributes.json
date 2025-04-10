@@ -1,11 +1,11 @@
 {
-  "title": "Advance Tables with tanstack Table",
-  "category": "tables",
-  "responsive": false,
-  "canvas": {
-    "center": true
-  },
-  "packages": [
-    "@tanstack/table-core"
-  ]
+	"title": "Advance Tables with tanstack Table",
+	"category": "tables",
+	"responsive": false,
+	"canvas": {
+		"center": true
+	},
+	"packages": [
+		"@tanstack/table-core"
+	]
 }

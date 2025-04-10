@@ -138,10 +138,8 @@
 			(columnFilters = typeof updater === 'function' ? updater(columnFilters) : updater),
 		onColumnVisibilityChange: (updater) =>
 			(columnVisibility = typeof updater === 'function' ? updater(columnVisibility) : updater),
-		onRowSelectionChange: updater => {
-			rowSelection = typeof updater === 'function'
-				? updater(rowSelection)
-				: updater;
+		onRowSelectionChange: (updater) => {
+			rowSelection = typeof updater === 'function' ? updater(rowSelection) : updater;
 		},
 		onPaginationChange: (updater) =>
 			(pagination = typeof updater === 'function' ? updater(pagination) : updater),
@@ -179,9 +177,7 @@
 </script>
 
 <div class="w-full p-4">
-
 	<div class="flex items-center justify-between space-x-4 py-4">
-
 		<div class="relative w-full max-w-sm">
 			<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
 				<Search class="h-5 w-5 text-gray-500 dark:text-gray-400" />
@@ -256,7 +252,6 @@
 									/>
 								{/if}
 							{/if}
-
 						</th>
 					{/each}
 				</tr>
@@ -316,7 +311,7 @@
 			</button>
 
 			<select
-				class="rounded-md border border-gray-300 text-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white px-3 py-2  font-medium text-gray-700"
+				class="rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
 				onchange={(e) => {
 					table.setPageSize(Number(e.currentTarget.value));
 				}}

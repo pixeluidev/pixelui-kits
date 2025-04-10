@@ -26,7 +26,7 @@
 	let { content, context }: Props = $props();
 </script>
 
-{#if typeof content === "string"}
+{#if typeof content === 'string'}
 	{content}
 {:else if content instanceof Function}
 	<!-- It's unlikely that a CellContext will be passed to a Header -->
