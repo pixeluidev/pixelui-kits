@@ -73,6 +73,12 @@ export { default as FaqCollapsed } from './faq-collapsed/faq-collapsed.svelte';
 export { default as FaqPageHeader } from './faq-page-header/faq-page-header.svelte';
 
 /**
+ * Features Section
+ */
+export { default as FeatureWithIcons } from './feature-with-icons/feature-with-icons.svelte';
+
+
+/**
  * Headers
  */
 
