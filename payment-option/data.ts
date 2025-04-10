@@ -40,23 +40,23 @@ export const savedPaymentMethodsData: SavedPaymentMethod[] = [
 		type: 'visa',
 		label: 'Visa ending in 7658',
 		details: 'Expiry 10/2024',
-		iconUrlLight: '/components-images/visa.svg',
-		iconUrlDark: '/components-images/visa-dark.svg'
+		iconUrlLight: '/components-icons/visa.svg',
+		iconUrlDark: '/components-icons/visa-dark.svg'
 	},
 	{
 		id: 'pm_mc_8429',
 		type: 'mastercard',
 		label: 'Mastercard ending in 8429',
 		details: 'Expiry 04/2026',
-		iconUrlLight: '/components-images/mastercard.svg',
-		iconUrlDark: '/components-images/mastercard-dark.svg'
+		iconUrlLight: '/components-icons/mastercard.svg',
+		iconUrlDark: '/components-icons/mastercard-dark.svg'
 	},
 	{
 		id: 'pm_paypal_user',
 		type: 'paypal',
 		label: 'Paypal account',
-		iconUrlLight: '/components-images/paypal.svg',
-		iconUrlDark: '/components-images/paypal-dark.svg'
+		iconUrlLight: '/components-icons/paypal.svg',
+		iconUrlDark: '/components-icons/paypal-dark.svg'
 	}
 ];
 

@@ -75,8 +75,12 @@ export { default as FaqPageHeader } from './faq-page-header/faq-page-header.svel
 /**
  * Features Section
  */
-export { default as FeatureWithIcons } from './feature-with-icons/feature-with-icons.svelte';
+export { default as FeatureList } from './feature-list/feature-list.svelte';
+export { default as FeatureWithCards } from './feature-with-cards/feature-with-cards.svelte';
 
+export { default as FeatureWithIcons } from './feature-with-icons/feature-with-icons.svelte';
+export { default as FeatureWithImageIcons } from './feature-with-image-icons/feature-with-image-icons.svelte';
+export { default as FeatureWithTitle } from './feature-with-title/feature-with-title.svelte';
 
 /**
  * Headers
