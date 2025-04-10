@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { OrderSummaryItem } from './data'; // Adjust path
 
-	import { formatCurrency } from '$uikits/payment-option/helper';
+	import { formatCurrency } from './helper';
 
 	export let summaryData: OrderSummaryItem[];
 	export let currency: string;

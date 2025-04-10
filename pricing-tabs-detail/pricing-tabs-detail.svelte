@@ -1,7 +1,7 @@
 <script>
 	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
 	import XCircle from 'lucide-svelte/icons/x-circle';
-	import { plans } from './plans';
+	import { plans } from './plans.js';
 
 	// --- 1. Data Plans ---
 

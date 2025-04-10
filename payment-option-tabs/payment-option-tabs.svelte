@@ -22,7 +22,7 @@
 	import InstallmentPaymentTab from './installment-payment-tab.svelte';
 	import CyptoPaymentTab from './cypto-payment-tab.svelte';
 	import PaypalPaymentTab from './paypal-payment-tab.svelte';
-	import { formatCurrency } from '$uikits/payment-option/helper';
+	import { formatCurrency } from './helper';
 
 	// --- Component State ---
 	let currentStepId: string = 'payment';

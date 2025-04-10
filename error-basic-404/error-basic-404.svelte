@@ -13,7 +13,7 @@
 					</h4>
 					<p class="mb-8 text-lg text-white">The page you are looking for it maybe deleted</p>
 					<a
-						href="/"
+						href="/static"
 						class="hover:text-primary inline-block rounded-lg border border-white px-8 py-3 text-center text-base font-semibold text-white transition hover:bg-white dark:border-slate-500 dark:bg-slate-900 dark:hover:bg-slate-950"
 					>
 						Go To Home

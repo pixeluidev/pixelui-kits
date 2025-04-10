@@ -1,4 +1,4 @@
-// src/lib/data.ts
+
 
 // Define the structure for a single FAQ item in the grid
 export interface FaqGridItemData {

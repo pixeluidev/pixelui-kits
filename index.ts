@@ -101,3 +101,4 @@ export { default as CalendarMini } from './calendar-mini/calendar-mini.svelte';
  * Tables
  */
 export { default as TableFilter } from './table-filter/table-filter.svelte';
+export { default as TableWithTanstack } from './table-with-tanstack/table-with-tanstack.svelte';

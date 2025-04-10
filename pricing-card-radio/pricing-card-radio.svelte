@@ -2,7 +2,7 @@
 	// Impor data dan ikon yang mungkin digunakan di luar loop (jika ada)
 
 	// State untuk menyimpan value radio yang dipilih
-	import { radioOptions } from './data.js';
+	import { radioOptions } from './data.ts';
 
 	let selectedPlan = 'team'; // Nilai default (sesuaikan dengan value di data.js)
 

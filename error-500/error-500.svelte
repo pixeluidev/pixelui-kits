@@ -14,7 +14,7 @@
 				page. Our team is already working on this issue.
 			</p>
 			<div class="flex items-center justify-center">
-				<a href="/" class="rounded-md border bg-white px-4 py-2 text-blue-500"
+				<a class="rounded-md border bg-white px-4 py-2 text-blue-500" href="/static"
 					>Take me back to home page</a
 				>
 			</div>

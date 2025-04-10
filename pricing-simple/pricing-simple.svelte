@@ -1,6 +1,6 @@
 <script>
 	// Import data dan komponen anak
-	import { PricingList, PricingTabsOptions } from './data'; // Sesuaikan path
+	import { PricingList, PricingTabsOptions } from './data.js'; // Sesuaikan path
 	import PricingItem from './pricing-item.svelte';
 
 	// State Svelte (gunakan let untuk reaktivitas)

@@ -10,7 +10,7 @@
 			</p>
 			<a
 				rel="noopener noreferrer"
-				href="/"
+				href="/static"
 				class="rounded px-8 py-3 font-semibold dark:bg-violet-600 dark:text-gray-50"
 				>Back to homepage</a
 			>

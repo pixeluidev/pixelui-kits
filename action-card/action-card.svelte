@@ -42,7 +42,7 @@
 	>
 		<header class="mb-6 flex items-center justify-between">
 			<h3 class="font-bold">Services</h3>
-			<a href="/" class="text-xs hover:underline">21 Other services</a>
+			<a class="text-xs hover:underline" href="/static">21 Other services</a>
 		</header>
 		<div class="grid grid-cols-3 gap-6">
 			{#each actions as { label, icon: Icon } (label)}

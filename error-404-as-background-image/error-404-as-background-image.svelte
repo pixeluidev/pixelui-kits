@@ -19,7 +19,7 @@
 				has been moved to another URL. If you think this is an error contact support.
 			</p>
 			<div class="flex items-center justify-center">
-				<a href="/" class="rounded-md border bg-blue-500 px-4 py-2 text-white"
+				<a class="rounded-md border bg-blue-500 px-4 py-2 text-white" href="/static"
 					>Take me back to home page</a
 				>
 			</div>

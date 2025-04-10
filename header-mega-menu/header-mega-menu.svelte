@@ -95,7 +95,7 @@
 			<a
 				aria-label="Brand"
 				class="flex-none text-xl font-bold text-gray-800 focus:opacity-80 focus:outline-none dark:text-white"
-				href="/"
+				href="/static"
 			>
 				Pixel UI
 			</a>

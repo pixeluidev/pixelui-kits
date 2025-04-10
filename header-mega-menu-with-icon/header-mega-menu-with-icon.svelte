@@ -135,7 +135,7 @@
 					<ul class="flex flex-col space-y-2 font-medium">
 						<li>
 							<a
-								href="/"
+								href="/static"
 								class="block rounded px-3 py-2"
 								class:text-orange-600={currentPath === '/'}
 								class:dark:text-orange-400={currentPath === '/'}
@@ -203,7 +203,7 @@
 						class:md:bg-transparent={true}
 						class:text-gray-900={currentPath !== '/'}
 						class:text-orange-600={currentPath === '/'}
-						href="/">Home</a
+						href="/static">Home</a
 					>
 				</li>
 				<li class="relative">

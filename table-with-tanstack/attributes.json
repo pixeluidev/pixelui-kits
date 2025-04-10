@@ -1,0 +1,10 @@
+{
+  "title": "Table with Pagination and Filter",
+  "category": "tables",
+  "canvas": {
+    "center": true
+  },
+  "packages": [
+    "@tanstack/table-core"
+  ]
+}
