@@ -316,7 +316,7 @@
 			</button>
 
 			<select
-				class="rounded-md border-gray-300 text-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white"
+				class="rounded-md border border-gray-300 text-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white px-3 py-2  font-medium text-gray-700"
 				onchange={(e) => {
 					table.setPageSize(Number(e.currentTarget.value));
 				}}
