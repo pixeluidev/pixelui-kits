@@ -151,7 +151,7 @@
 	});
 
 	// === State Tambahan untuk UI ===
-	let columnsDropdownOpen: boolean = false;
+	let columnsDropdownOpen: boolean = $state(false);
 
 	function toggleColumnsDropdown() {
 		columnsDropdownOpen = !columnsDropdownOpen;
