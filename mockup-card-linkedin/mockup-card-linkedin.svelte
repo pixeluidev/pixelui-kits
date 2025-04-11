@@ -291,9 +291,7 @@
 <!-- <GitlabIcon ... /> -->
 
 <style lang="postcss">
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
+    @reference "tailwindcss";
     @layer utilities {
         .scrollbar-hide {
             scrollbar-width: none;
