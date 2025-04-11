@@ -10,7 +10,7 @@
 			<img
 				alt="Banner"
 				class="absolute flex h-32 w-full justify-center rounded-xl bg-cover"
-				src="/components-images/banner-gradient.png"
+				src="/images/banner-gradient.png"
 			/>
 			<div
 				class="dark:!border-navy-700 absolute -bottom-12 flex h-[87px] w-[87px] items-center justify-center rounded-full border border-[4px] bg-white"

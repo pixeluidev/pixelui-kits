@@ -2,17 +2,17 @@
 	const products = [
 		{
 			title: 'Airpods',
-			imageUrl: '/components-icons/airpods.png',
+			imageUrl: '/images/icons/airpods.png',
 			description: 'This is a card with a thumbnail image on top.'
 		},
 		{
 			title: 'Apple Watch',
-			imageUrl: '/components-icons/apple-watch.png',
+			imageUrl: '/images/icons/apple-watch.png',
 			description: 'This is a card with a thumbnail image on top.'
 		},
 		{
 			title: ' AirPods Max - Midnight',
-			imageUrl: '/components-icons/airpods-black.png',
+			imageUrl: '/images/icons/airpods-black.png',
 			description: 'This is a card with a thumbnail image on top.'
 		}
 	];

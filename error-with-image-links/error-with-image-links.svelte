@@ -131,7 +131,7 @@
 			<img
 				alt=""
 				class=" h-80 w-full rounded-lg object-cover md:h-96 lg:h-[32rem]"
-				src="/components-images/kaset-kusut.png"
+				src="/images/kaset-kusut.png"
 			/>
 		</div>
 	</div>

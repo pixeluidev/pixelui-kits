@@ -4,8 +4,8 @@
 	import { checkoutSteps, orderSummaryData, orderCurrency } from './data'; // Adjust path if needed
 
 	// Import icons
-	// import GoogleIcon from '$lib/components/icons/GoogleIcon.svelte'; // Assuming you create these simple SVG components
-	// import PaypalIcon from '$lib/components/icons/PaypalIcon.svelte';
+	// import GoogleIcon from './components/icons/GoogleIcon.svelte'; // Assuming you create these simple SVG components
+	// import PaypalIcon from './components/icons/PaypalIcon.svelte';
 	// import Calendar from 'lucide-svelte/icons/calendar-days';
 	import CreditCardIcon from 'lucide-svelte/icons/credit-card';
 	import HelpCircle from 'lucide-svelte/icons/help-circle';
@@ -317,7 +317,7 @@
 							class="flex w-full items-center justify-center gap-x-2.5 rounded-lg border border-gray-600 bg-black px-5 py-3 text-sm font-medium text-gray-100 transition-colors duration-150 hover:bg-gray-700 focus:ring-2 focus:ring-orange-400 focus:ring-offset-1 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-offset-neutral-800"
 							type="button"
 						>
-							<img alt="Google" class=" size-5 w-auto" src="/components-images/google-symbol.svg" />
+							<img alt="Google" class=" size-5 w-auto" src="/images/google-symbol.svg" />
 							Google Pay
 						</button>
 						<button
@@ -327,13 +327,9 @@
 							<img
 								alt="PayPal Dark"
 								class="hidden size-5 w-auto dark:block"
-								src="/components-images/paypal-dark.svg"
+								src="/images/paypal-dark.svg"
 							/>
-							<img
-								alt="PayPal"
-								class="h-7 w-auto dark:hidden"
-								src="/components-images/paypal.svg"
-							/>
+							<img alt="PayPal" class="h-7 w-auto dark:hidden" src="/images/paypal.svg" />
 							Paypal
 						</button>
 					</div>

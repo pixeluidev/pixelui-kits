@@ -341,27 +341,19 @@
 
 					<!-- Payment Method Icons -->
 					<div class="mt-6 flex items-center justify-center gap-6 px-4">
-						<img alt="PayPal" class="h-7 w-auto dark:hidden" src="/components-images/paypal.svg" />
+						<img alt="PayPal" class="h-7 w-auto dark:hidden" src="/images/paypal.svg" />
 						<img
 							alt="PayPal Dark"
 							class="hidden h-7 w-auto dark:block"
-							src="/components-images/paypal-dark.svg"
+							src="/images/paypal-dark.svg"
 						/>
-						<img alt="Visa" class="h-7 w-auto dark:hidden" src="/components-images/visa.svg" />
-						<img
-							alt="Visa Dark"
-							class="hidden h-7 w-auto dark:block"
-							src="/components-images/visa-dark.svg"
-						/>
-						<img
-							alt="MasterCard"
-							class="h-7 w-auto dark:hidden"
-							src="/components-images/mastercard.svg"
-						/>
+						<img alt="Visa" class="h-7 w-auto dark:hidden" src="/images/visa.svg" />
+						<img alt="Visa Dark" class="hidden h-7 w-auto dark:block" src="/images/visa-dark.svg" />
+						<img alt="MasterCard" class="h-7 w-auto dark:hidden" src="/images/mastercard.svg" />
 						<img
 							alt="MasterCard Dark"
 							class="hidden h-7 w-auto dark:block"
-							src="/components-images/mastercard-dark.svg"
+							src="/images/mastercard-dark.svg"
 						/>
 					</div>
 				</div>

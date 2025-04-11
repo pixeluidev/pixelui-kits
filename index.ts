@@ -111,3 +111,17 @@ export { default as CalendarMini } from './calendar-mini/calendar-mini.svelte';
  */
 export { default as TableFilter } from './table-filter/table-filter.svelte';
 export { default as TableWithTanstack } from './table-with-tanstack/table-with-tanstack.svelte';
+
+/**
+ * Testimonials
+ */
+export { default as TestimonialsGridSimple } from './testimonials-grid-simple/testimonials-grid-simple.svelte';
+export { default as TestimonialCardList } from './testimonial-card-list/testimonial-card-list.svelte';
+export {
+	default as TestimonialBackgroundImage
+} from './testimonial-background-image/testimonial-background-image.svelte';
+export {
+	default as TestimonialWithProfileImages
+} from './testimonial-with-profile-images/testimonial-with-profile-images.svelte';
+export { default as TestimonialCardCarousel } from './testimonial-card-carousel/testimonial-card-carousel.svelte';
+export { default as TestimonialAngledCarousel } from './testimonial-angled-carousel/testimonial-angled-carousel.svelte';

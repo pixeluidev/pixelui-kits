@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { FeatureCardData } from '$lib/data'; // Adjust path if needed
+	import type { FeatureCardData } from './data'; // Adjust path if needed
 
 	export let feature: FeatureCardData;
 </script>

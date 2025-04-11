@@ -10,12 +10,8 @@
 		class="inline-flex items-center justify-center gap-x-2.5 rounded-lg border border-transparent bg-[#00457C] px-8 py-3 text-sm font-medium text-white transition-colors duration-150 hover:bg-[#003057] focus:ring-2 focus:ring-[#0079C1] focus:ring-offset-2 focus:outline-none dark:focus:ring-offset-neutral-800"
 		type="button"
 	>
-		<img alt="PayPal" class="h-5 w-auto dark:hidden" src="/components-images/paypal.svg" />
-		<img
-			alt="PayPal Dark"
-			class="hidden h-5 w-auto dark:block"
-			src="/components-images/paypal-dark.svg"
-		/>
+		<img alt="PayPal" class="h-5 w-auto dark:hidden" src="/images/paypal.svg" />
+		<img alt="PayPal Dark" class="hidden h-5 w-auto dark:block" src="/images/paypal-dark.svg" />
 		Pay now with Paypal
 	</button>
 </div>
