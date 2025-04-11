@@ -1,8 +1,8 @@
 {
-  "title": "Smartwatch Mockup",
-  "category": "mockups",
-  "responsive": true,
-  "canvas": {
-    "center": false
-  }
+	"title": "Smartwatch Mockup",
+	"category": "mockups",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
 }

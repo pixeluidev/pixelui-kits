@@ -1,8 +1,8 @@
 {
-  "title": "macOS Finder Mockup",
-  "category": "mockups",
-  "responsive": true,
-  "canvas": {
-    "center": false
-  }
+	"title": "macOS Finder Mockup",
+	"category": "mockups",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
 }

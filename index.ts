@@ -140,3 +140,6 @@ export { default as MockupOsxFinder } from './mockup-osx-finder/mockup-osx-finde
 export { default as MockupEbook3d } from './mockup-ebook-3d/mockup-ebook-3d.svelte';
 export { default as MockupGithubRepository } from './mockup-github-repository/mockup-github-repository.svelte';
 export { default as MockupGitlabRepository } from './mockup-gitlab-repository/mockup-gitlab-repository.svelte';
+export { default as MockupCardTwitter } from '$uikits/mockup-card-twitter/mockup-card-twitter.svelte';
+export { default as MockupCardInstagram } from '$uikits/mockup-card-instagram/mockup-card-instagram.svelte';
+export { default as MockupCardLinkedin } from '$uikits/mockup-card-linkedin/mockup-card-linkedin.svelte';

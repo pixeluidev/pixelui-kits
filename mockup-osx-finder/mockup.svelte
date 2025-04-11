@@ -173,15 +173,13 @@
 							disabled
 						>
 							<ChevronLeft class="h-4 w-4" />
-						</button
-						>
+						</button>
 						<button
 							on:click={() => console.log('Forward')}
 							class={`rounded p-1 text-neutral-500 dark:text-neutral-400 ${sidebarHoverBg} focus:bg-black/10 focus:outline-none dark:focus:bg-white/10`}
 						>
 							<ChevronRight class="h-4 w-4" />
-						</button
-						>
+						</button>
 					</div>
 				{/if}
 

@@ -119,15 +119,13 @@
 						<a
 							class={`-ml-0.5 rounded px-0.5 hover:underline focus:ring-1 focus:ring-orange-400 focus:outline-none ${textColor}`}
 							href="https://github.com/pixeluidev/pixelui-kits"
-							target="_blank"
-						>{username}</a
+							target="_blank">{username}</a
 						>
 						<span class={`${mutedTextColor} mx-1`}>/</span>
 						<a
 							class={`-ml-0.5 rounded px-0.5 hover:underline focus:ring-1 focus:ring-orange-400 focus:outline-none ${textColor} font-bold`}
 							href="https://github.com/pixeluidev/pixelui-kits"
-							target="_blank"
-						>{repoName}</a
+							target="_blank">{repoName}</a
 						>
 					</h1>
 					<span

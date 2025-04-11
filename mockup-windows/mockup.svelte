@@ -119,10 +119,10 @@
 							stroke-width="2"
 							stroke-linecap="round"
 							stroke-linejoin="round"
-							class="h-3 w-3">
-							<line x1="5" y1="12" x2="19" y2="12"></line>
-						</svg
+							class="h-3 w-3"
 						>
+							<line x1="5" y1="12" x2="19" y2="12"></line>
+						</svg>
 					</button>
 					<!-- Maximize -->
 					<button
@@ -144,8 +144,7 @@
 							class="h-2.5 w-2.5"
 						>
 							<rect x="3" y="3" width="18" height="18" rx="0" ry="0"></rect>
-						</svg
-						>
+						</svg>
 						<!-- Persegi sederhana -->
 					</button>
 					<!-- Close -->
@@ -168,10 +167,8 @@
 							class="h-3 w-3"
 						>
 							<line x1="18" y1="6" x2="6" y2="18"></line>
-							<line x1="6" y1="6" x2="18" y2="18"
-							></line>
-						</svg
-						>
+							<line x1="6" y1="6" x2="18" y2="18"></line>
+						</svg>
 					</button>
 				</div>
 			{/if}
