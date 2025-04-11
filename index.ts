@@ -144,3 +144,6 @@ export { default as MockupCardTwitter } from './mockup-card-twitter/mockup-card-
 export { default as MockupCardInstagram } from './mockup-card-instagram/mockup-card-instagram.svelte';
 export { default as MockupCardLinkedin } from './mockup-card-linkedin/mockup-card-linkedin.svelte';
 export { default as MockupCardFacebook } from './mockup-card-facebook/mockup-card-facebook.svelte';
+
+
+export { default as FlowchartProcess } from './flowchart-process/flowchart-process.svelte';
