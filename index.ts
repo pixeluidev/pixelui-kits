@@ -117,11 +117,26 @@ export { default as TableWithTanstack } from './table-with-tanstack/table-with-t
  */
 export { default as TestimonialsGridSimple } from './testimonials-grid-simple/testimonials-grid-simple.svelte';
 export { default as TestimonialCardList } from './testimonial-card-list/testimonial-card-list.svelte';
-export {
-	default as TestimonialBackgroundImage
-} from './testimonial-background-image/testimonial-background-image.svelte';
-export {
-	default as TestimonialWithProfileImages
-} from './testimonial-with-profile-images/testimonial-with-profile-images.svelte';
+export { default as TestimonialBackgroundImage } from './testimonial-background-image/testimonial-background-image.svelte';
+export { default as TestimonialWithProfileImages } from './testimonial-with-profile-images/testimonial-with-profile-images.svelte';
 export { default as TestimonialCardCarousel } from './testimonial-card-carousel/testimonial-card-carousel.svelte';
 export { default as TestimonialAngledCarousel } from './testimonial-angled-carousel/testimonial-angled-carousel.svelte';
+
+/**
+ * Mockups
+ */
+
+export { default as MockupBrowserChrome } from './mockup-browser-chrome/mockup-browser-chrome.svelte';
+export { default as MockupBrowserSafari } from './mockup-browser-safari/mockup-browser-safari.svelte';
+export { default as MockupIphone } from './mockup-iphone/mockup-iphone.svelte';
+export { default as MockupGooglePixel } from './mockup-google-pixel/mockup-google-pixel.svelte';
+export { default as MockupIpad } from './mockup-ipad/mockup-ipad.svelte';
+export { default as MockupLaptop } from './mockup-laptop/mockup-laptop.svelte';
+export { default as MockupDesktop } from './mockup-desktop/mockup-desktop.svelte';
+export { default as MockupSmartwatch } from './mockup-smartwatch/mockup-smartwatch.svelte';
+export { default as MockupTerminal } from './mockup-terminal/mockup-terminal.svelte';
+export { default as MockupWindows } from './mockup-windows/mockup-windows.svelte';
+export { default as MockupOsxFinder } from './mockup-osx-finder/mockup-osx-finder.svelte';
+export { default as MockupEbook3d } from './mockup-ebook-3d/mockup-ebook-3d.svelte';
+export { default as MockupGithubRepository } from './mockup-github-repository/mockup-github-repository.svelte';
+export { default as MockupGitlabRepository } from './mockup-gitlab-repository/mockup-gitlab-repository.svelte';
