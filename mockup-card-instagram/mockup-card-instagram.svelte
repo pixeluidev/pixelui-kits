@@ -223,8 +223,7 @@
 						onclick={toggleCaption}
 						class="ml-1 text-gray-400 hover:text-gray-600 dark:text-neutral-500 dark:hover:text-neutral-400"
 					>more
-					</button
-					>
+					</button>
 				{/if}
 			</div>
 
