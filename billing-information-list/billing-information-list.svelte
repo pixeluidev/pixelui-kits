@@ -40,7 +40,7 @@
 			class="mx-4 mt-4 flex flex-col items-start justify-between gap-4 rounded-t-xl border-b border-gray-100 px-2 py-4 md:flex-row md:items-center md:px-6 md:py-5 dark:border-neutral-700"
 		>
 			<div class="w-full">
-				<h2 class="text-lg font-semibold text-gray-900 dark:text-white">Billing Information</h2>
+				<h2 class="text-lg font-semibold text-gray-900 dark:text-neutral-300">Billing Information</h2>
 				<p class="mt-1 text-sm font-normal text-gray-600 dark:text-neutral-400">
 					View, update, and manage your billing details here.
 				</p>
