@@ -47,7 +47,8 @@
 			likeActiveTextColor = 'text-blue-400'; // Biru Facebook di dark mode
 			likeActiveIconColor = 'text-blue-400 fill-blue-400';
 			cardShadow = 'shadow-none'; // Kurangi shadow di dark mode
-		} else { // light theme
+		} else {
+			// light theme
 			bgColor = 'bg-white border border-gray-200';
 			textColor = 'text-[#050505]'; // Hitam pekat FB
 			mutedTextColor = 'text-[#65676b]'; // Abu-abu FB
@@ -72,7 +73,11 @@
 	// --- Parsing & Truncation ---
 	$: parsedContent = parseFacebookText(post.contentText);
 	$: needsTruncation = post.contentText.length > truncateLength;
-	$: displayContent = showFullText ? parsedContent : (needsTruncation ? parseFacebookText(post.contentText.substring(0, truncateLength) + '...') : parsedContent);
+	$: displayContent = showFullText
+		? parsedContent
+		: needsTruncation
+			? parseFacebookText(post.contentText.substring(0, truncateLength) + '...')
+			: parsedContent;
 
 	// --- Handlers ---
 	function toggleLike() {
@@ -87,7 +92,6 @@
 	function handleAction(action: string) {
 		console.log(`${action} clicked`);
 	}
-
 </script>
 
 <!-- Mockup Kartu Postingan Facebook -->
@@ -95,62 +99,84 @@
 	<!-- Header Postingan -->
 	<header class="flex items-center justify-between gap-3 p-3 sm:p-4">
 		<div class="flex items-center space-x-3">
-			<a class="block flex-shrink-0" href="#" on:click|preventDefault={() => handleAction('Profile')}>
+			<button class="block flex-shrink-0" onclick={() => handleAction('Profile')}>
 				<img
 					alt={`${post.authorName}'s avatar`}
 					class="h-10 w-10 rounded-full object-cover"
 					loading="lazy"
 					src={post.authorAvatarUrl}
 				/>
-			</a>
-			<div class="text-xs min-w-0">
-				<a class={`text-sm font-semibold ${textColor} hover:underline block truncate`} href="#"
-					 on:click|preventDefault={() => handleAction('Profile')}>{post.authorName}</a>
+			</button>
+			<div class="min-w-0 text-xs">
+				<button
+					class={`text-sm font-semibold ${textColor} block truncate hover:underline`}
+					onclick={() => handleAction('Profile')}>{post.authorName}</button
+				>
 				<div class={`flex items-center gap-1 ${mutedTextColor}`}>
-					<a class="hover:underline" href="#" on:click|preventDefault={() => handleAction('Timestamp')}>
+					<button class="hover:underline" onclick={() => handleAction('Timestamp')}>
 						<span>{post.timestamp}</span>
-					</a>
+					</button>
 					{#if post?.isEdited && !post.timestamp.includes('Edited')}<span>· Edited</span>{/if}
 					<span>·</span>
-					<svelte:component class={`w-3 h-3 ${darkerMutedTextColor}`} this={privacyIcons[post.privacy]}
-														title={`Privacy: ${post.privacy}`} />
+					<svelte:component
+						this={privacyIcons[post.privacy]}
+						class={`h-3 w-3 ${darkerMutedTextColor}`}
+					/>
 				</div>
 			</div>
 		</div>
-		<button class={`p-2 -m-2 rounded-full ${mutedTextColor} ${hoverBgColor} transition-colors`}
-						on:click|stopPropagation={() => handleAction('More')}>
+		<button
+			class={`-m-2 rounded-full p-2 ${mutedTextColor} ${hoverBgColor} transition-colors`}
+			onclick={() => handleAction('More')}
+		>
 			<span class="sr-only">More options</span>
-			<Ellipsis class="w-5 h-5" strokeWidth={2} />
+			<Ellipsis class="h-5 w-5" strokeWidth={2} />
 		</button>
 	</header>
 
 	<!-- Konten Postingan -->
-	<div class="px-3 sm:px-4 pb-2 space-y-3">
+	<div class="space-y-3 px-3 pb-2 sm:px-4">
 		<!-- Teks Postingan -->
-		<div class={`text-sm sm:text-[15px] ${textColor} leading-normal whitespace-pre-wrap break-words`}>
+		<div
+			class={`text-sm sm:text-[15px] ${textColor} leading-normal break-words whitespace-pre-wrap`}
+		>
 			{@html displayContent}
 			{#if needsTruncation}
-				<button on:click={toggleSeeMore} class={`text-sm font-semibold ${mutedTextColor} hover:underline ml-1`}>
-					{showFullText ? "See less" : "See more"}
+				<button
+					onclick={toggleSeeMore}
+					class={`text-sm font-semibold ${mutedTextColor} ml-1 hover:underline`}
+				>
+					{showFullText ? 'See less' : 'See more'}
 				</button>
 			{/if}
 		</div>
 
 		<!-- Link Preview (jika ada) -->
 		{#if post.linkPreview}
-			<a href={post.linkPreview.url} target="_blank" rel="noopener noreferrer"
-				 class={`block border ${borderColor} rounded-lg overflow-hidden ${hoverBgColor} transition-colors group`}>
+			<a
+				href={post.linkPreview.url}
+				target="_blank"
+				rel="noopener noreferrer"
+				class={`block border ${borderColor} overflow-hidden rounded-lg ${hoverBgColor} group transition-colors`}
+			>
 				{#if post.linkPreview.imageUrl}
 					<div class="aspect-video bg-gray-100 dark:bg-neutral-700">
-						<img src={post.linkPreview.imageUrl} alt={`Preview for ${post.linkPreview.title}`}
-								 class="w-full h-full object-cover" />
+						<img
+							src={post.linkPreview.imageUrl}
+							alt={`Preview for ${post.linkPreview.title}`}
+							class="h-full w-full object-cover"
+						/>
 					</div>
 				{/if}
 				<div class="px-3 py-2">
 					<p class={`text-[10px] uppercase ${mutedTextColor}`}>{post.linkPreview.domain}</p>
-					<p class={`text-sm font-medium ${textColor} group-hover:underline truncate`}>{post.linkPreview.title}</p>
+					<p class={`text-sm font-medium ${textColor} truncate group-hover:underline`}>
+						{post.linkPreview.title}
+					</p>
 					{#if post.linkPreview.description}
-						<p class={`text-xs ${mutedTextColor} mt-0.5 line-clamp-2`}>{post.linkPreview.description}</p>
+						<p class={`text-xs ${mutedTextColor} mt-0.5 line-clamp-2`}>
+							{post.linkPreview.description}
+						</p>
 					{/if}
 				</div>
 			</a>
@@ -159,12 +185,18 @@
 
 	<!-- Media Utama (jika ada & bukan link preview) -->
 	{#if post.mediaUrl && !post.linkPreview}
-		<div class={`w-full max-h-[60vh] overflow-hidden ${bgColor}`}> <!-- Batasi tinggi media -->
+		<div class={`max-h-[60vh] w-full overflow-hidden ${bgColor}`}>
+			<!-- Batasi tinggi media -->
 			{#if post.mediaType === 'image'}
-				<img src={post.mediaUrl} alt="Post media" class="w-full h-auto object-contain" loading="lazy" />
+				<img
+					src={post.mediaUrl}
+					alt="Post media"
+					class="h-auto w-full object-contain"
+					loading="lazy"
+				/>
 			{:else if post.mediaType === 'video'}
-				<div class="w-full aspect-video flex items-center justify-center bg-black">
-					<span class="text-white/50 text-sm">(Video Placeholder)</span>
+				<div class="flex aspect-video w-full items-center justify-center bg-black">
+					<span class="text-sm text-white/50">(Video Placeholder)</span>
 				</div>
 			{/if}
 		</div>
@@ -173,21 +205,32 @@
 	<!-- Info Engagement (Likes, Comments, Shares) -->
 	{#if post.reactionCount > 0 || post.commentCount > 0 || post.shareCount > 0}
 		<div
-			class={`flex items-center justify-between text-xs ${mutedTextColor} px-3 sm:px-4 py-2 border-b border-t ${borderColor}`}>
+			class={`flex items-center justify-between text-xs ${mutedTextColor} border-t border-b px-3 py-2 sm:px-4 ${borderColor}`}
+		>
 			<!-- Jumlah Reaksi (Likes) -->
-			<button on:click={() => handleAction('View Reactions')} class={`hover:underline ${hoverBgColor} px-1 rounded`}>
+			<button
+				onclick={() => handleAction('View Reactions')}
+				class={`hover:underline ${hoverBgColor} rounded px-1`}
+			>
 				<!-- Placeholder ikon reaksi kecil jika diperlukan -->
-				{formatFacebookCount(likeCountState)} {likeCountState === 1 ? 'like' : 'likes'}
+				{formatFacebookCount(likeCountState)}
+				{likeCountState === 1 ? 'like' : 'likes'}
 			</button>
 			<!-- Jumlah Komentar & Share -->
 			<div class="flex space-x-3">
 				{#if post.commentCount > 0}
-					<button on:click={() => handleAction('View Comments')} class={`hover:underline ${hoverBgColor} px-1 rounded`}>
+					<button
+						onclick={() => handleAction('View Comments')}
+						class={`hover:underline ${hoverBgColor} rounded px-1`}
+					>
 						{formatFacebookCount(post.commentCount)} comments
 					</button>
 				{/if}
 				{#if post.shareCount > 0}
-					<button on:click={() => handleAction('View Shares')} class={`hover:underline ${hoverBgColor} px-1 rounded`}>
+					<button
+						onclick={() => handleAction('View Shares')}
+						class={`hover:underline ${hoverBgColor} rounded px-1`}
+					>
 						{formatFacebookCount(post.shareCount)} shares
 					</button>
 				{/if}
@@ -195,33 +238,37 @@
 		</div>
 	{/if}
 
-
 	<!-- Tombol Aksi Footer -->
-	<footer class={`flex justify-around items-center px-2 py-1 border-t ${borderColor}`}>
+	<footer class={`flex items-center justify-around border-t px-2 py-1 ${borderColor}`}>
 		<!-- Tombol Like -->
 		<button
 			aria-pressed={isLikedState}
-			class={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md text-sm transition-colors duration-150 focus:outline-none focus:bg-blue-100/50 dark:focus:bg-blue-900/30 ${hoverBgColor}
-                  ${isLikedState ? likeActiveTextColor : actionTextColor}`
-            }
+			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-blue-100/50 focus:outline-none dark:focus:bg-blue-900/30 ${hoverBgColor}
+                  ${isLikedState ? likeActiveTextColor : actionTextColor}`}
 			class:font-semibold={isLikedState}
-			on:click|preventDefault={toggleLike}
+			onclick={toggleLike}
 		>
 			<ThumbsUp
-				class={`w-5 h-5 sm:w-[20px] sm:h-[20px] transition-transform group-hover:scale-110 ${isLikedState ? likeActiveIconColor : ''}`}
-				fill={isLikedState ? 'currentColor' : 'none'} strokeWidth={isLikedState ? 0 : 2} />
+				class={`h-5 w-5 transition-transform group-hover:scale-110 sm:h-[20px] sm:w-[20px] ${isLikedState ? likeActiveIconColor : ''}`}
+				fill={isLikedState ? 'currentColor' : 'none'}
+				strokeWidth={isLikedState ? 0 : 2}
+			/>
 			<span>Like</span>
 		</button>
 		<!-- Tombol Komen -->
-		<button class={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md text-sm transition-colors duration-150 focus:outline-none focus:bg-gray-100 dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
-						on:click|preventDefault={() => handleAction('Comment')}>
-			<MessageCircle class="w-5 h-5 sm:w-[20px] sm:h-[20px]" strokeWidth={2} />
+		<button
+			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-gray-100 focus:outline-none dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
+			onclick={() => handleAction('Comment')}
+		>
+			<MessageCircle class="h-5 w-5 sm:h-[20px] sm:w-[20px]" strokeWidth={2} />
 			<span class="font-medium">Comment</span>
 		</button>
 		<!-- Tombol Share -->
-		<button class={`flex-1 flex items-center justify-center gap-1.5 py-2 rounded-md text-sm transition-colors duration-150 focus:outline-none focus:bg-gray-100 dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
-						on:click|preventDefault={() => handleAction('Share')}>
-			<Forward class="w-5 h-5 sm:w-[20px] sm:h-[20px]" strokeWidth={2} />
+		<button
+			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-gray-100 focus:outline-none dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
+			onclick={() => handleAction('Share')}
+		>
+			<Forward class="h-5 w-5 sm:h-[20px] sm:w-[20px]" strokeWidth={2} />
 			<span class="font-medium">Share</span>
 		</button>
 	</footer>

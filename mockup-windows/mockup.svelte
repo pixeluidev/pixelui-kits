@@ -104,7 +104,7 @@
 				<div class="flex flex-shrink-0 items-center">
 					<!-- Minimize -->
 					<button
-						on:click={minimize}
+						onclick={minimize}
 						aria-label="Minimize"
 						title="Minimize"
 						class={`flex h-6 w-7 items-center justify-center text-[10px] ${headerTextColor} ${controlHoverBg} transition-colors focus:bg-gray-200 focus:outline-none dark:focus:bg-neutral-600`}
@@ -126,7 +126,7 @@
 					</button>
 					<!-- Maximize -->
 					<button
-						on:click={maximize}
+						onclick={maximize}
 						aria-label="Maximize"
 						title="Maximize"
 						class={`flex h-6 w-7 items-center justify-center text-[10px] ${headerTextColor} ${controlHoverBg} transition-colors focus:bg-gray-200 focus:outline-none dark:focus:bg-neutral-600`}
@@ -149,7 +149,7 @@
 					</button>
 					<!-- Close -->
 					<button
-						on:click={close}
+						onclick={close}
 						aria-label="Close"
 						title="Close"
 						class={`flex h-6 w-7 items-center justify-center text-[10px] ${headerTextColor} ${controlCloseHoverBg} ${controlCloseHoverText} transition-colors focus:bg-red-500 focus:text-white focus:outline-none`}

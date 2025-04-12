@@ -240,7 +240,7 @@
 			>
 				<button
 					class="flex h-9 w-10 items-center justify-center rounded-l-md border border-e-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
-					on:click={() => navigate('prev')}
+					onclick={() => navigate('prev')}
 					title="Previous"
 					type="button"
 				>
@@ -249,14 +249,14 @@
 				</button>
 				<button
 					class="hidden border-y border-gray-300 px-3.5 text-sm font-semibold text-gray-700 transition-colors duration-150 hover:bg-gray-50 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none md:block dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-600"
-					on:click={() => navigate('today')}
+					onclick={() => navigate('today')}
 					type="button"
 				>Today
 				</button>
 				<span class="relative -mx-px h-5 w-px bg-gray-300 md:hidden dark:bg-neutral-600"></span>
 				<button
 					class="flex h-9 w-10 items-center justify-center rounded-r-md border border-s-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
-					on:click={() => navigate('next')}
+					onclick={() => navigate('next')}
 					title="Next"
 					type="button"
 				>
@@ -273,7 +273,7 @@
 						aria-haspopup="true"
 						bind:this={viewMenuButtonEl}
 						class="flex items-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 capitalize shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:bg-neutral-700 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:bg-neutral-600"
-						on:click|stopPropagation={toggleViewMenu}
+						onclick={toggleViewMenu}
 						type="button"
 					>
 						{currentView} view
@@ -293,7 +293,7 @@
 						>
 							<div class="py-1" role="none">
 								<button
-									on:click={() => setView('day')}
+									onclick={() => setView('day')}
 									class:bg-gray-100={currentView === 'day'}
 									class:dark:bg-neutral-600={currentView === 'day'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
@@ -302,7 +302,7 @@
 								>Day view
 								</button>
 								<button
-									on:click={() => setView('week')}
+									onclick={() => setView('week')}
 									class:bg-gray-100={currentView === 'week'}
 									class:dark:bg-neutral-600={currentView === 'week'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
@@ -311,7 +311,7 @@
 								>Week view
 								</button>
 								<button
-									on:click={() => setView('month')}
+									onclick={() => setView('month')}
 									class:bg-gray-100={currentView === 'month'}
 									class:dark:bg-neutral-600={currentView === 'month'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-600"
@@ -320,7 +320,7 @@
 								>Month view
 								</button>
 								<button
-									on:click={() => setView('year')}
+									onclick={() => setView('year')}
 									class:bg-gray-100={currentView === 'year'}
 									class:dark:bg-neutral-600={currentView === 'year'}
 									class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
@@ -335,7 +335,7 @@
 				<div class="ml-6 h-6 w-px bg-gray-300 dark:bg-neutral-600"></div>
 				<button
 					class="ml-6 inline-flex items-center gap-1 rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
-					on:click={addEvent}
+					onclick={addEvent}
 					type="button"
 				>
 					<Plus class="-ml-0.5 h-4 w-4" strokeWidth={3} />
@@ -350,7 +350,7 @@
 					aria-haspopup="true"
 					bind:this={mobileMenuButtonEl}
 					class="-mx-2 flex items-center rounded-full border border-transparent p-1.5 text-gray-400 hover:text-gray-600 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200"
-					on:click|stopPropagation={toggleMobileMenu}
+					onclick={toggleMobileMenu}
 					type="button"
 				>
 					<span class="sr-only">Open menu</span>
@@ -367,7 +367,7 @@
 					>
 						<div class="py-1" role="none">
 							<button
-								on:click={addEvent}
+								onclick={addEvent}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
@@ -376,7 +376,7 @@
 						</div>
 						<div class="py-1" role="none">
 							<button
-								on:click={() => navigate('today')}
+								onclick={() => navigate('today')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
@@ -385,28 +385,28 @@
 						</div>
 						<div class="py-1" role="none">
 							<button
-								on:click={() => setView('day')}
+								onclick={() => setView('day')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
 							>Day view
 							</button>
 							<button
-								on:click={() => setView('week')}
+								onclick={() => setView('week')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
 							>Week view
 							</button>
 							<button
-								on:click={() => setView('month')}
+								onclick={() => setView('month')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
 							>Month view
 							</button>
 							<button
-								on:click={() => setView('year')}
+								onclick={() => setView('year')}
 								class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-600"
 								role="menuitem"
 								tabindex="-1"
@@ -459,7 +459,7 @@
 								class:dark:hover:bg-neutral-700={!day.isToday && day.isCurrentMonth}
 								class:hover:bg-gray-200={!day.isToday && !day.isCurrentMonth}
 								class:dark:hover:bg-neutral-500={!day.isToday && !day.isCurrentMonth}
-								on:click={() => selectDay(day.isoString)}
+								onclick={() => selectDay(day.isoString)}
 							>
 								<time
 									datetime={day.isoString}
@@ -480,7 +480,7 @@
 											<li>
 												<a
 													href={event.href ?? '#'}
-													on:click|preventDefault|stopPropagation={() => viewEvent(event)}
+													onclick={() => viewEvent(event)}
 													class="group flex items-center rounded-sm p-0.5 hover:bg-orange-50 dark:hover:bg-orange-900/30"
 												>
 													<span
@@ -505,7 +505,7 @@
 						{#each monthDays as day (day)}
 							<button
 								type="button"
-								on:click={() => selectDay(day.isoString)}
+								onclick={() => selectDay(day.isoString)}
 								class="flex h-14 flex-col px-3 py-2 transition-colors duration-100 hover:bg-gray-100 focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:hover:bg-neutral-700"
 								class:bg-white={day.isCurrentMonth}
 								class:dark:bg-neutral-800={day.isCurrentMonth}
@@ -582,7 +582,7 @@
 								{#each day.events as event (event.id)}
 									<a
 										href={event.href ?? '#'}
-										on:click|preventDefault={() => viewEvent(event)}
+										onclick={() => viewEvent(event)}
 										class="block rounded-md p-1.5 transition-colors duration-150 hover:bg-orange-50 dark:hover:bg-orange-900/30"
 									>
 										<p class="truncate text-xs font-semibold text-gray-800 dark:text-neutral-100">
@@ -614,7 +614,7 @@
 							<li>
 								<a
 									href={event.href ?? '#'}
-									on:click|preventDefault={() => viewEvent(event)}
+									onclick={() => viewEvent(event)}
 									class="group flex items-center rounded-lg p-3 transition-colors duration-150 hover:bg-gray-100 dark:hover:bg-neutral-700"
 								>
 									<!-- Event Dot -->
@@ -654,7 +654,7 @@
 				{#each yearMonths as month (month.monthIndex)}
 					<button
 						type="button"
-						on:click={() => selectMonth(month.monthIndex)}
+						onclick={() => selectMonth(month.monthIndex)}
 						class="rounded-lg border p-4 transition-colors duration-150 focus:ring-2 focus:ring-orange-400 focus:ring-offset-1 focus:outline-none dark:focus:ring-offset-neutral-900"
 						class:bg-orange-50={month.isCurrentMonth}
 						class:dark:bg-orange-300={month.isCurrentMonth}

@@ -63,14 +63,14 @@
 		>
 			<button
 				class="rounded-md bg-red-100/50 px-4 py-2 text-sm font-medium text-red-600 transition-colors duration-200 ease-in-out hover:bg-red-100 focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:bg-red-900/30 dark:text-red-400 dark:hover:bg-red-900/50 dark:focus:ring-offset-gray-800"
-				on:click={resetSettings}
+				onclick={resetSettings}
 				type="button"
 			>
 				Reset To Default
 			</button>
 			<button
 				class="rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 ease-in-out hover:bg-orange-600 focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:focus:ring-offset-gray-800"
-				on:click={saveChanges}
+				onclick={saveChanges}
 				type="button"
 			>
 				Save Changes

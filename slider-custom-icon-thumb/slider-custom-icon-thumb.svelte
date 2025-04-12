@@ -25,7 +25,7 @@
 			{max}
 			{step}
 			{value}
-			on:input={handleInput}
+			oninput={handleInput}
 			class="absolute z-10 h-2 w-full cursor-pointer appearance-none bg-transparent"
 		/>
 

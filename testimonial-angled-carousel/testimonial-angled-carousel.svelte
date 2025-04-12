@@ -208,7 +208,7 @@
 			<!-- Navigation Buttons (Positioned relative to the main wrapper) -->
 			{#if totalSlides > 1}
 				<button
-					on:click={prevSlide}
+					onclick={prevSlide}
 					class="absolute top-1/2 left-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-left-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Previous testimonial"
 					disabled={totalSlides <= 1}
@@ -216,7 +216,7 @@
 					<ChevronLeft class="h-5 w-5 md:h-6 md:w-6" strokeWidth={2.5} />
 				</button>
 				<button
-					on:click={nextSlide}
+					onclick={nextSlide}
 					class="absolute top-1/2 right-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-right-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Next testimonial"
 					disabled={totalSlides <= 1}
@@ -235,7 +235,7 @@
 			>
 				{#each testimonials as a, i (i)}
 					<button
-						on:click={() => goToSlide(i)}
+						onclick={() => goToSlide(i)}
 						class="block h-2 rounded-full transition-all duration-300 ease-in-out focus:ring-1 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-gray-100 focus:outline-none dark:focus:ring-offset-neutral-900"
 						class:w-6={currentCenterIndex === i}
 						class:bg-orange-500={currentCenterIndex === i}

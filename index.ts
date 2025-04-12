@@ -101,6 +101,18 @@ export { default as PaymentOption } from './payment-option/payment-option.svelte
 export { default as PaymentOptionTabs } from './payment-option-tabs/payment-option-tabs.svelte';
 
 /**
+ * Billings
+ */
+export { default as BillingInformationList } from './billing-information-list/billing-information-list.svelte';
+export { default as BillingCardInformation } from './billing-card-information/billing-card-information.svelte';
+export { default as BillingPaymentMethod } from './billing-payment-method/billing-payment-method.svelte';
+export { default as BillingTransactionHistory } from './billing-transaction-history/billing-transaction-history.svelte';
+export { default as BillingInvoiceList } from './billing-invoice-list/billing-invoice-list.svelte';
+export {
+	default as BillingSimpleInvoiceDetail
+} from './billing-simple-invoice-detail/billing-simple-invoice-detail.svelte';
+
+/**
  * Calendars
  */
 export { default as CalendarFullPage } from './calendar-full-page/calendar-full-page.svelte';
@@ -144,6 +156,5 @@ export { default as MockupCardTwitter } from './mockup-card-twitter/mockup-card-
 export { default as MockupCardInstagram } from './mockup-card-instagram/mockup-card-instagram.svelte';
 export { default as MockupCardLinkedin } from './mockup-card-linkedin/mockup-card-linkedin.svelte';
 export { default as MockupCardFacebook } from './mockup-card-facebook/mockup-card-facebook.svelte';
-
 
 export { default as FlowchartProcess } from './flowchart-process/flowchart-process.svelte';

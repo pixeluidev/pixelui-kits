@@ -1,0 +1,13 @@
+{
+  "title": "Billing Information Block",
+  "category": "billings",
+  "description": "",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1200
+  },
+  "packages": [
+    "sveltekit-superforms",
+    "zod"
+  ]
+}

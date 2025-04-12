@@ -112,7 +112,7 @@
 		<div class="mx-auto max-w-5xl">
 			<CheckoutStepper {currentStepId} steps={checkoutStepsData} />
 
-			<form on:submit|preventDefault={handleSubmit}>
+			<form onclick={handleSubmit}>
 				<div class="lg:grid lg:grid-cols-12 lg:gap-12 xl:gap-16">
 					<!-- Payment Tabs & Content Column -->
 					<div class="w-full space-y-8 lg:col-span-7 xl:col-span-8">
@@ -143,7 +143,7 @@
 												role="tab"
 												aria-controls={`tab-panel-${tab.id}`}
 												aria-selected={activePaymentTabId === tab.id}
-												on:click={() => setActiveTab(tab.id)}
+												onclick={() => setActiveTab(tab.id)}
 											>
 												<svelte:component
 													this={tab.icon}

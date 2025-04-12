@@ -33,7 +33,7 @@
 				{@const isSelected = plan.id === selectedPlanId}
 				<button
 					type="button"
-					on:click={() => (selectedPlanId = plan.id)}
+					onclick={() => (selectedPlanId = plan.id)}
 					aria-pressed={isSelected}
 					class="relative flex flex-col justify-between rounded-xl border px-6 py-5 text-left transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-50 sm:flex-row sm:items-center dark:focus-visible:ring-offset-gray-950"
 					class:border-orange-500={isSelected}

@@ -114,7 +114,7 @@
 		<!-- Tombol Prev/Next -->
 		{#if totalSlides > 1}
 			<button
-				on:click={prevSlide}
+				onclick={prevSlide}
 				class="absolute top-1/2 left-2 -translate-y-1/2 rounded-full p-2.5 text-white/60 transition-all duration-200 hover:bg-white/10 hover:text-white focus:bg-white/20 focus:ring-2 focus:ring-white/50 focus:outline-none disabled:pointer-events-none disabled:opacity-40 md:left-4 lg:left-6"
 				aria-label="Previous testimonial"
 				disabled={totalSlides <= 1}
@@ -122,7 +122,7 @@
 				<ChevronLeft class="h-6 w-6 md:h-7 md:w-7" strokeWidth={2} />
 			</button>
 			<button
-				on:click={nextSlide}
+				onclick={nextSlide}
 				class="absolute top-1/2 right-2 -translate-y-1/2 rounded-full p-2.5 text-white/60 transition-all duration-200 hover:bg-white/10 hover:text-white focus:bg-white/20 focus:ring-2 focus:ring-white/50 focus:outline-none disabled:pointer-events-none disabled:opacity-40 md:right-4 lg:right-6"
 				aria-label="Next testimonial"
 				disabled={totalSlides <= 1}
@@ -140,7 +140,7 @@
 			>
 				{#each testimonials as _, i (i)}
 					<button
-						on:click={() => goToSlide(i)}
+						onclick={() => goToSlide(i)}
 						class={`block h-2 w-2 rounded-full transition-all duration-300 ease-in-out focus:ring-1 focus:ring-white/80 focus:ring-offset-2 focus:ring-offset-neutral-900/50 focus:outline-none
 
 					${currentSlideIndex === 1 ? 'w-4 bg-white opacity-100' : 'bg-white/40 hover:bg-white/60'}

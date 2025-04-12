@@ -73,8 +73,8 @@
 	<div
 		aria-label={altText}
 		class="book preserve-3d relative transition-transform duration-500 ease-out"
-		on:mouseenter={handleMouseEnter}
-		on:mouseleave={handleMouseLeave}
+		onmouseenter={handleMouseEnter}
+		onmouseleave={handleMouseLeave}
 		role="img"
 		style={bookStyle}
 	>

@@ -61,7 +61,7 @@
 		<button
 			aria-label={`Delete ${method.label}`}
 			class="text-xs font-medium text-red-600 hover:underline focus:underline focus:outline-none dark:text-red-400"
-			on:click|stopPropagation={handleDelete}
+			onclick={handleDelete}
 			type="button"
 		>
 			Delete
@@ -71,7 +71,7 @@
 		<button
 			aria-label={`Edit ${method.label}`}
 			class="text-xs font-medium text-orange-600 hover:underline focus:underline focus:outline-none dark:text-orange-400"
-			on:click|stopPropagation={handleEdit}
+			onclick={handleEdit}
 			type="button"
 		>
 			Edit

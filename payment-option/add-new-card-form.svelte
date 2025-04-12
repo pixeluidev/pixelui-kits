@@ -86,7 +86,7 @@
 					inputmode="numeric"
 					maxlength="16"
 					bind:value={cardNumberRaw}
-					on:input={formatCardNumber}
+					oninput={formatCardNumber}
 				/>
 				<div class="pointer-events-none absolute inset-y-0 end-0 top-9 flex items-center pe-3.5">
 					<CreditCardIcon class="h-5 w-5 text-gray-400 dark:text-neutral-500" strokeWidth={1.5} />
@@ -169,10 +169,10 @@
 					<button
 						type="button"
 						class="text-gray-400 hover:text-gray-700 dark:text-neutral-500 dark:hover:text-neutral-300"
-						on:mouseenter={showCvvTooltip}
-						on:mouseleave={hideCvvTooltip}
-						on:focus={showCvvTooltip}
-						on:blur={hideCvvTooltip}
+						onmouseenter={showCvvTooltip}
+						onmouseleave={hideCvvTooltip}
+						onfocus={showCvvTooltip}
+						onblur={hideCvvTooltip}
 						aria-describedby="new-cvv-tooltip"
 					>
 						<HelpCircle class="h-4 w-4" />
@@ -198,7 +198,7 @@
 					inputmode="numeric"
 					maxlength="3"
 					bind:value={cvv}
-					on:input={formatCvv}
+					oninput={formatCvv}
 				/>
 			</div>
 		</div>

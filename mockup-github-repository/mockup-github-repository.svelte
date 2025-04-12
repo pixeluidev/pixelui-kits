@@ -173,7 +173,7 @@
 				{#each navItems as item (item.id)}
 					<button
 						type="button"
-						on:click={() => setActiveTab(item.id)}
+						onclick={() => setActiveTab(item.id)}
 						class={`group inline-flex items-center gap-2 border-b-2 px-1 py-3 text-sm font-medium whitespace-nowrap transition-colors duration-150 ease-in-out focus:outline-none
                             ${
 															activeTabId === item.id

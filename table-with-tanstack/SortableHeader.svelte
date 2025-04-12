@@ -14,7 +14,7 @@
 	class="flex w-full items-center rounded px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-600"
 	class:dark:text-indigo-400={column.getIsSorted()}
 	class:text-indigo-600={column.getIsSorted()}
-	on:click={() => column.toggleSorting(column.getIsSorted() === 'asc')}
+	onclick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
 	title={column.getIsSorted()
 		? column.getIsSorted() === 'asc'
 			? 'Sorted ascending'
