@@ -21,12 +21,13 @@
 	}
 </script>
 
-<div class="rounded-lg border border-gray-200 p-4 transition-shadow duration-200 hover:shadow-md">
+<div
+	class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 transition-shadow duration-200 hover:shadow-md">
 	<div class="mb-4 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
 		<!-- Bagian Kiri: Info Perusahaan -->
 		<div class="flex items-center gap-3">
-			<div class="rounded-lg border border-gray-200 bg-gray-50 p-2.5">
-				<Building2 class="h-6 w-6 text-gray-600" />
+			<div class="rounded-lg border border-gray-200 bg-gray-50 dark:bg-neutral-800 dark:border-neutral-800  p-2.5">
+				<Building2 class="h-6 w-6 text-gray-600 dark:text-neutral-500" />
 			</div>
 			<div>
 				<p class="mb-0.5 font-semibold text-gray-800">{item.name}</p>
@@ -38,7 +39,7 @@
 		<div class="flex w-full items-center justify-end gap-2 sm:w-auto">
 			<button
 				type="button"
-				class="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-semibold text-gray-600 transition-colors hover:bg-gray-100 active:bg-gray-200"
+				class="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-semibold text-gray-600 transition-colors hover:bg-gray-100 active:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-950"
 				onclick={handleEdit}
 				aria-label="Edit {item.name}"
 			>
@@ -58,7 +59,7 @@
 	</div>
 
 	<!-- Detail Kontak -->
-	<div class="space-y-1 border-t border-gray-100 pt-3">
+	<div class="space-y-1 border-t border-gray-100 dark:border-neutral-700 pt-3">
 		<div class="flex items-center gap-1.5 text-xs">
 			<p class="w-24 shrink-0 font-medium text-gray-500">Contact:</p>
 			<p class="font-semibold text-gray-800">{item.contactName}</p>
