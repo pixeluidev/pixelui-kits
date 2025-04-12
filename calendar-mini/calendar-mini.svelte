@@ -68,14 +68,14 @@
 					<button
 						aria-label="calendar backward"
 						class="rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-orange-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
-						on:click={goToPreviousMonth}
+						onclick={goToPreviousMonth}
 					>
 						<ChevronLeft class="h-5 w-5" />
 					</button>
 					<button
 						aria-label="calendar forward"
 						class="ml-2 rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-orange-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
-						on:click={goToNextMonth}
+						onclick={goToNextMonth}
 					>
 						<ChevronRight class="h-5 w-5" />
 					</button>
@@ -98,7 +98,7 @@
 						<!-- Padding top for aspect ratio -->
 						<button
 							type="button"
-							on:click={() => selectDay(day)}
+							onclick={() => selectDay(day)}
 							class="flex aspect-square h-full w-full items-center justify-center rounded-full text-sm transition-colors duration-150 ease-in-out focus:ring-2 focus:ring-orange-400 focus:ring-offset-1 focus:outline-none dark:focus:ring-offset-neutral-800"
 							class:text-gray-700={day.isCurrentMonth && !day.isSelected && !day.isToday}
 							class:dark:text-neutral-200={day.isCurrentMonth && !day.isSelected && !day.isToday}

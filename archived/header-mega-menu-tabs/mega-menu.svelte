@@ -32,7 +32,7 @@
 	aria-labelledby="hs-mega-menu"
 	aria-orientation="vertical"
 	class="absolute top-full right-0 z-20 w-full max-w-[85rem] min-w-[600px] py-2 sm:py-3"
-	on:click|stopPropagation={handleContentClick}
+	onclick={handleContentClick}
 	role="menu"
 >
 	<div class="mx-auto w-full px-4 sm:px-6 lg:px-8">
@@ -66,8 +66,8 @@
 							class:dark:hover:bg-neutral-700={activeTabId !== tab.id}
 							class:hover:text-gray-800={activeTabId !== tab.id}
 							class:dark:hover:text-neutral-200={activeTabId !== tab.id}
-							on:click={() => setActiveTab(tab.id)}
-							on:mouseenter={() => setActiveTab(tab.id)}
+							onclick={() => setActiveTab(tab.id)}
+							onmouseenter={() => setActiveTab(tab.id)}
 						>
 							{#if tab.icon}
 								<svelte:component this={tab.icon} class="h-4 w-4 shrink-0" strokeWidth={2.5} />

@@ -53,14 +53,14 @@
 	<div class="ms-4 hidden shrink-0 items-center space-x-3 sm:flex">
 		<button
 			class="text-xs font-medium text-gray-600 hover:underline focus:underline focus:outline-none dark:text-gray-400"
-			on:click|stopPropagation={handleDelete}
+			onclick={handleDelete}
 			type="button"
 		>Delete
 		</button>
 		<div class="h-4 w-px bg-gray-300 dark:bg-neutral-600"></div>
 		<button
 			class="text-xs font-medium text-gray-600 hover:underline focus:underline focus:outline-none dark:text-gray-400"
-			on:click|stopPropagation={handleEdit}
+			onclick={handleEdit}
 			type="button"
 		>Edit
 		</button>

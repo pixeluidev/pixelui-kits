@@ -108,8 +108,7 @@
 					aria-label="Toggle navigation"
 					bind:this={mobileToggleBtnEl}
 					class="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-800"
-					on:click|stopPropagation={toggleMobileMenu}
-					type="button"
+					onclick={toggleMobileMenu}
 				>
 					{#if !isMobileMenuOpen}
 						<Menu class="size-5 shrink-0" />
@@ -153,7 +152,7 @@
 								class:dark:hover:bg-gray-700={currentPath !== '/active'}
 								href="/active"
 								aria-current={currentPath === '/active' ? 'page' : undefined}
-								on:click={closeMobileMenu}
+								onclick={closeMobileMenu}
 							>
 								Active
 							</a>
@@ -167,7 +166,7 @@
 									class="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-orange-400 focus:outline-none sm:w-auto sm:justify-start sm:py-5 sm:text-sm dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white"
 									aria-haspopup="menu"
 									aria-expanded={isMegaMenuOpen}
-									on:click|stopPropagation={toggleMegaMenu}
+									onclick={toggleMegaMenu}
 								>
 									Mega Menu
 									<ChevronDown
@@ -194,7 +193,7 @@
 								class:hover:bg-gray-100={currentPath !== '/project'}
 								class:dark:hover:bg-gray-700={currentPath !== '/project'}
 								href="/project"
-								on:click={closeMobileMenu}
+								onclick={closeMobileMenu}
 							>
 								Project
 							</a>
@@ -227,7 +226,7 @@
 								class="flex w-full items-center text-sm font-medium text-gray-700 hover:text-orange-600 focus:text-orange-600 focus:outline-none sm:w-auto sm:px-3 sm:py-5 dark:text-gray-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
 								aria-haspopup="menu"
 								aria-expanded={isMegaMenuOpen}
-								on:click|stopPropagation={toggleMegaMenu}
+								onclick={toggleMegaMenu}
 							>
 								Mega Menu
 								<ChevronDown

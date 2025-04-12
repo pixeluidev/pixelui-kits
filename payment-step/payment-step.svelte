@@ -124,7 +124,7 @@
 				<!-- Payment Form Section (adjust column span as needed) -->
 				<form
 					class="w-full space-y-6 rounded-xl border border-gray-200 bg-white p-6 shadow-lg sm:p-8 lg:col-span-7 xl:col-span-8 dark:border-neutral-700 dark:bg-neutral-800"
-					on:submit|preventDefault={handleSubmit}
+					onclick={handleSubmit}
 				>
 					<h2 class="text-xl font-semibold text-gray-900 dark:text-white">Pay with Credit Card</h2>
 
@@ -164,7 +164,7 @@
 								inputmode="numeric"
 								maxlength="16"
 								name="cardNumber"
-								on:input={formatCardNumber}
+								oninput={formatCardNumber}
 								placeholder="0000 0000 0000 0000"
 								required
 								type="text"
@@ -265,10 +265,10 @@
 								<button
 									aria-describedby="cvv-tooltip"
 									class="text-gray-400 hover:text-gray-700 dark:text-neutral-500 dark:hover:text-neutral-300"
-									on:blur={hideCvvTooltip}
-									on:focus={showCvvTooltip}
-									on:mouseenter={showCvvTooltip}
-									on:mouseleave={hideCvvTooltip}
+									onblur={hideCvvTooltip}
+									onfocus={showCvvTooltip}
+									onmouseenter={showCvvTooltip}
+									onmouseleave={hideCvvTooltip}
 									type="button"
 								>
 									<HelpCircle class="h-4 w-4" />
@@ -291,7 +291,7 @@
 								inputmode="numeric"
 								maxlength="3"
 								name="cvv"
-								on:input={formatCvv}
+								oninput={formatCvv}
 								placeholder="•••"
 								required
 								type="text"

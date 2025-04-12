@@ -227,7 +227,7 @@
 					{:else}
 						<button
 							type="button"
-							on:click={() => handleSidebarClick(item)}
+							onclick={() => handleSidebarClick(item)}
 							class={`relative flex w-full items-center gap-2.5 rounded-md px-2.5 py-1.5 text-left text-sm font-medium transition-colors duration-100 ease-in-out focus:z-10  focus:outline-none
                                     ${
 																			item.id === activeSidebarItemId
@@ -294,7 +294,7 @@
 					{#each tabItems as item (item.id)}
 						<button
 							type="button"
-							on:click={() => handleTabClick(item.id)}
+							onclick={() => handleTabClick(item.id)}
 							class={`group inline-flex items-center gap-1.5 border-b-2 px-1 py-2.5 text-sm font-medium whitespace-nowrap transition-colors duration-150 ease-in-out focus:outline-none
                                     ${
 																			activeTabId === item.id

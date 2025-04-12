@@ -102,11 +102,7 @@
 		<header class="flex items-start justify-between gap-4">
 			<!-- Info Penulis Kiri -->
 			<div class="flex items-center gap-2">
-				<a
-					class="block flex-shrink-0"
-					href="#"
-					on:click|preventDefault={() => handleAction('Profile')}
-				>
+				<a class="block flex-shrink-0" href="#" onclick={() => handleAction('Profile')}>
 					<img
 						alt={`${post.authorName}'s avatar`}
 						class={`object-cover shadow-sm ${post.authorType === 'user' ? 'h-10 w-10 rounded-full sm:h-12 sm:w-12' : 'h-10 w-10 rounded border border-gray-200 sm:h-12 sm:w-12 dark:border-neutral-700'}`}
@@ -119,7 +115,7 @@
 						<a
 							class={`font-semibold ${textColor} truncate hover:underline`}
 							href="#"
-							on:click|preventDefault={() => handleAction('Profile')}>{post.authorName}</a
+							onclick={() => handleAction('Profile')}>{post.authorName}</a
 						>
 						{#if post.isPremium}
 							<CheckCircle2 class="h-3 w-3 flex-shrink-0 text-yellow-600 dark:text-yellow-500" />
@@ -140,7 +136,7 @@
 			<!-- Tombol More Kanan -->
 			<button
 				class={`ml-2 rounded-full p-1.5 ${mutedTextColor} ${hoverBgColor} transition-colors`}
-				on:click|stopPropagation={() => handleAction('More')}
+				onclick={() => handleAction('More')}
 			>
 				<span class="sr-only">More options</span>
 				<Ellipsis class="h-5 w-5" strokeWidth={2} />
@@ -154,7 +150,7 @@
 			{@html displayContent}
 			{#if needsTruncation}
 				<button
-					on:click={toggleSeeMore}
+					onclick={toggleSeeMore}
 					class={`text-sm font-semibold ${mutedTextColor} ml-1 hover:underline`}
 				>{showFullText ? 'see less' : '.see more'}</button
 				>
@@ -219,7 +215,7 @@
 			class={`flex items-center justify-between text-xs ${mutedTextColor} px-4 pt-2 pb-1 sm:px-5`}
 		>
 			<button
-				on:click={() => handleAction('View Likes')}
+				onclick={() => handleAction('View Likes')}
 				class={`hover:underline ${hoverBgColor} rounded px-1`}
 			>
 				{formatLinkedinCount(likeCountState)} likes
@@ -227,7 +223,7 @@
 			<div class="flex space-x-3">
 				{#if post.commentCount > 0}
 					<button
-						on:click={() => handleAction('View Comments')}
+						onclick={() => handleAction('View Comments')}
 						class="rounded px-1 hover:text-blue-700 hover:underline"
 					>
 						{formatLinkedinCount(post.commentCount)} comments
@@ -235,7 +231,7 @@
 				{/if}
 				{#if post.repostCount > 0}
 					<button
-						on:click={() => handleAction('View Reposts')}
+						onclick={() => handleAction('View Reposts')}
 						class="rounded px-1 hover:text-blue-700 hover:underline"
 					>
 						{formatLinkedinCount(post.repostCount)} reposts
@@ -252,7 +248,7 @@
 			aria-pressed={isLikedState}
 			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-blue-100/50 focus:outline-none dark:focus:bg-blue-900/30 ${hoverBgColor}
                   ${isLikedState ? actionActiveTextColor : actionTextColor} ${isLikedState ? actionActiveBgColor : ''}`}
-			on:click|preventDefault={toggleLike}
+			onclick={toggleLike}
 		>
 			<ThumbsUp
 				class={`h-4 w-4 transition-transform group-hover:scale-110 sm:h-5 sm:w-5 ${isLikedState ? 'fill-current' : ''}`}
@@ -263,7 +259,7 @@
 		<!-- Tombol Komen -->
 		<button
 			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-gray-100 focus:outline-none dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
-			on:click|preventDefault={() => handleAction('Comment')}
+			onclick={() => handleAction('Comment')}
 		>
 			<MessageSquare class="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2} />
 			<span class="font-medium">Comment</span>
@@ -271,7 +267,7 @@
 		<!-- Tombol Repost -->
 		<button
 			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-gray-100 focus:outline-none dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
-			on:click|preventDefault={() => handleAction('Repost')}
+			onclick={() => handleAction('Repost')}
 		>
 			<Repeat class="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2} />
 			<span class="font-medium">Repost</span>
@@ -279,7 +275,7 @@
 		<!-- Tombol Send -->
 		<button
 			class={`flex flex-1 items-center justify-center gap-1.5 rounded-md py-2 text-sm transition-colors duration-150 focus:bg-gray-100 focus:outline-none dark:focus:bg-neutral-700 ${actionTextColor} ${actionHoverTextColor} ${hoverBgColor}`}
-			on:click|preventDefault={() => handleAction('Send')}
+			onclick={() => handleAction('Send')}
 		>
 			<Send class="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2} />
 			<span class="font-medium">Send</span>

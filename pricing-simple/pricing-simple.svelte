@@ -33,7 +33,7 @@
 				class:hover:text-default-800={pricingOption !== option.title}
 				class:shadow-md={pricingOption === option.title}
 				aria-pressed={pricingOption === option.title}
-				on:click={() => {
+				onclick={() => {
 					pricingOption = option.title;
 				}}
 			>

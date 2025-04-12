@@ -147,17 +147,17 @@
 					<!-- Kontrol Jendela -->
 					<div class="mr-3 flex space-x-1.5">
 						<button
-							on:click={() => handleControlClick('close')}
+							onclick={() => handleControlClick('close')}
 							aria-label="Close"
 							class={`h-3 w-3 rounded-full border bg-[#FF5F57] ${controlBorderColor} ${controlBgColor} hover:brightness-110 focus:ring-1 focus:ring-red-400 focus:outline-none dark:hover:brightness-125`}
 						></button>
 						<button
-							on:click={() => handleControlClick('minimize')}
+							onclick={() => handleControlClick('minimize')}
 							aria-label="Minimize"
 							class={`h-3 w-3 rounded-full border bg-[#FEBC2E] ${controlBorderColor} ${controlBgColor} hover:brightness-110 focus:ring-1 focus:ring-yellow-400 focus:outline-none dark:hover:brightness-125`}
 						></button>
 						<button
-							on:click={() => handleControlClick('maximize')}
+							onclick={() => handleControlClick('maximize')}
 							aria-label="Maximize"
 							class={`h-3 w-3 rounded-full border bg-[#28C840] ${controlBorderColor} ${controlBgColor} hover:brightness-110 focus:ring-1 focus:ring-green-400 focus:outline-none dark:hover:brightness-125`}
 						></button>
@@ -168,14 +168,14 @@
 				{#if showToolbar}
 					<div class="flex items-center gap-1">
 						<button
-							on:click={() => console.log('Back')}
+							onclick={() => console.log('Back')}
 							class={`rounded p-1 text-neutral-500 dark:text-neutral-400 ${sidebarHoverBg} focus:bg-black/10 focus:outline-none disabled:opacity-40 dark:focus:bg-white/10`}
 							disabled
 						>
 							<ChevronLeft class="h-4 w-4" />
 						</button>
 						<button
-							on:click={() => console.log('Forward')}
+							onclick={() => console.log('Forward')}
 							class={`rounded p-1 text-neutral-500 dark:text-neutral-400 ${sidebarHoverBg} focus:bg-black/10 focus:outline-none dark:focus:bg-white/10`}
 						>
 							<ChevronRight class="h-4 w-4" />
@@ -196,7 +196,7 @@
 						{#each toolbarItems as item (item.id)}
 							<button
 								type="button"
-								on:click={() => handleToolbarItemClick(item)}
+								onclick={() => handleToolbarItemClick(item)}
 								disabled={item.isDisabled}
 								title={item.label}
 								class={`rounded p-1 text-neutral-500 dark:text-neutral-400 ${sidebarHoverBg} focus:bg-black/10 focus:outline-none disabled:opacity-50 dark:focus:bg-white/10`}
@@ -244,7 +244,7 @@
 							{:else}
 								<button
 									type="button"
-									on:click|preventDefault={() => handleSidebarItemClick(item)}
+									onclick={() => handleSidebarItemClick(item)}
 									class="{getSidebarItemClasses(item)} w-full"
 									aria-current={item.id === activeSidebarItemId ? 'page' : undefined}
 								>

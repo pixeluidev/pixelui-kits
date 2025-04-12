@@ -38,7 +38,7 @@
 				{max}
 				{step}
 				{value}
-				on:input={handleSliderInput}
+				oninput={handleSliderInput}
 				class="absolute z-10 h-2 w-full cursor-pointer appearance-none bg-transparent"
 			/>
 
@@ -54,7 +54,7 @@
 			{max}
 			{step}
 			{value}
-			on:input={handleNumberInput}
+			oninput={handleNumberInput}
 			class="w-20 rounded-md border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-green-500 focus:outline-none"
 		/>
 	</div>

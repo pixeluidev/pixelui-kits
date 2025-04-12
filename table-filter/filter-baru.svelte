@@ -283,7 +283,7 @@
 						{#if hasActiveFilters}
 							<button
 								type="button"
-								on:click={resetFilters}
+								onclick={resetFilters}
 								class="ml-2 p-2 text-gray-500 hover:text-gray-700 focus:outline-none dark:text-gray-400 dark:hover:text-white"
 								title="Reset all filters"
 							>
@@ -301,7 +301,7 @@
 									Brand: {brand}
 									<button
 										type="button"
-										on:click={() => removeBrandFilter(brand)}
+										onclick={() => removeBrandFilter(brand)}
 										class="-mr-0.5 ml-1 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-blue-400 hover:bg-blue-200 hover:text-blue-500 focus:bg-blue-500 focus:text-white focus:outline-none dark:hover:bg-blue-800 dark:hover:text-blue-200"
 										aria-label="Remove filter: {brand}"
 									>
@@ -316,7 +316,7 @@
 									Cat: {category}
 									<button
 										type="button"
-										on:click={() => removeCategoryFilter(category)}
+										onclick={() => removeCategoryFilter(category)}
 										class="-mr-0.5 ml-1 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full text-green-400 hover:bg-green-200 hover:text-green-500 focus:bg-green-500 focus:text-white focus:outline-none dark:hover:bg-green-800 dark:hover:text-green-200"
 										aria-label="Remove filter: {category}"
 									>
@@ -342,7 +342,7 @@
 
 					<!-- Actions Dropdown -->
 					<div class="relative">
-						<button class="..." on:click={toggleActionsDropdown} type="button">
+						<button class="..." onclick={toggleActionsDropdown} type="button">
 							<ChevronDown class="mr-2 h-3 w-3" />
 							Actions
 						</button>
@@ -351,7 +351,7 @@
 								<!-- Items Actions -->
 								<ul class="py-1 ...">
 									<li>
-										<a href="#" on:click|preventDefault class="...">
+										<a href="#" onclick class="...">
 											<Edit class="..." />
 											Mass Edit</a
 										>
@@ -359,7 +359,7 @@
 								</ul>
 								<div class="py-1">
 									<li>
-										<a href="#" on:click|preventDefault class="...">
+										<a href="#" onclick class="...">
 											<Trash2 class="..." />
 											Delete all</a
 										>
@@ -371,7 +371,7 @@
 
 					<!-- Filter Dropdown -->
 					<div class="relative">
-						<button class="..." on:click={toggleFilterDropdown} type="button">
+						<button class="..." onclick={toggleFilterDropdown} type="button">
 							<Filter class="mr-2 h-3 w-3" />
 							Filter
 							{#if hasActiveFilters}({selectedBrands.size + selectedCategories.size}){/if}
@@ -440,7 +440,7 @@
 								{#if hasActiveFilters}
 									<div class="mt-4 border-t border-gray-200 pt-4 dark:border-gray-600">
 										<button
-											on:click={resetFilters}
+											onclick={resetFilters}
 											class="focus:ring-primary-500 flex w-full items-center justify-center rounded-md bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-200 focus:ring-2 focus:ring-offset-2 focus:outline-none dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500"
 										>
 											<X class="mr-2 h-4 w-4" />
@@ -510,7 +510,7 @@
 					<ul class="inline-flex items-center -space-x-px">
 						<li>
 							<button
-								on:click={previousPage}
+								onclick={previousPage}
 								disabled={currentPage === 1}
 								class="..."
 								aria-label="Previous page"
@@ -520,7 +520,7 @@
 						{#each pagesToShow as pageNumber (pageNumber)}
 							<li>
 								<button
-									on:click={() => goToPage(pageNumber)}
+									onclick={() => goToPage(pageNumber)}
 									aria-current={pageNumber === currentPage ? 'page' : undefined}
 									class="..."
 								>
@@ -530,7 +530,7 @@
 						{/each}
 						<li>
 							<button
-								on:click={nextPage}
+								onclick={nextPage}
 								disabled={currentPage === totalPages}
 								class="..."
 								aria-label="Next page"

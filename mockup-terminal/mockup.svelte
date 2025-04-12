@@ -117,7 +117,7 @@
 			{#if showCopyButton}
 				<div class="relative flex-shrink-0">
 					<button
-						on:click={copyToClipboard}
+						onclick={copyToClipboard}
 						type="button"
 						class="flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium transition-colors duration-150 ease-in-out focus:ring-2 focus:ring-orange-400 focus:ring-offset-1 focus:outline-none dark:focus:ring-offset-inherit"
 						class:text-gray-500={theme === 'light'}

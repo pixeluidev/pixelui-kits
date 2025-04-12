@@ -29,7 +29,7 @@
 		aria-expanded={isOpen}
 		aria-haspopup="true"
 		class="inline-flex items-center rounded-lg p-1.5 text-center text-sm font-medium text-gray-500 hover:text-gray-800 focus:ring-2 focus:ring-gray-300 focus:outline-none dark:text-gray-400 dark:hover:text-gray-100 dark:focus:ring-gray-600"
-		on:click|stopPropagation={toggleDropdown}
+		onclick={toggleDropdown}
 		type="button"
 	>
 		<MoreHorizontal class="h-5 w-5" />
@@ -49,7 +49,7 @@
 					type="button"
 					class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600"
 					role="menuitem"
-					on:click={() => handleAction('view')}
+					onclick={() => handleAction('view')}
 				>
 					<Eye class="mr-2 inline h-4 w-4" />
 					View
@@ -58,7 +58,7 @@
 					type="button"
 					class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600"
 					role="menuitem"
-					on:click={() => handleAction('edit')}
+					onclick={() => handleAction('edit')}
 				>
 					<Pencil class="mr-2 inline h-4 w-4" />
 					Edit
@@ -67,7 +67,7 @@
 					type="button"
 					class="block w-full px-4 py-2 text-left text-sm text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-900/30"
 					role="menuitem"
-					on:click={() => handleAction('delete')}
+					onclick={() => handleAction('delete')}
 				>
 					<Trash2 class="mr-2 inline h-4 w-4" />
 					Delete

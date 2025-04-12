@@ -17,7 +17,7 @@
 		aria-controls={`faq-answer-${item.id}`}
 		aria-expanded={isOpen}
 		class="flex w-full items-center rounded-md py-2 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-orange-500 dark:focus-visible:ring-offset-gray-900"
-		on:click={() => onToggle(item.id)}
+		onclick={() => onToggle(item.id)}
 		type="button"
 	>
 		<!-- Icon changes based on state -->

@@ -113,7 +113,7 @@
 			<h1 class="mb-5 text-center text-lg font-semibold text-gray-800 dark:text-white">
 				Payment Details
 			</h1>
-			<form class="space-y-4" on:submit|preventDefault={handleSubmit}>
+			<form class="space-y-4" onclick={handleSubmit}>
 				<div>
 					<label class="sr-only" for="cardholder">Card Holder</label>
 					<input
@@ -137,7 +137,7 @@
 						inputmode="numeric"
 						maxlength="16"
 						name="cardNumber"
-						on:input={formatCardNumberInput}
+						oninput={formatCardNumberInput}
 						placeholder="0000 0000 0000 0000"
 						required
 						type="text"
@@ -225,9 +225,9 @@
 							inputmode="numeric"
 							maxlength="3"
 							name="securityCode"
-							on:blur={flipToFront}
-							on:focus={flipToBack}
-							on:input={formatSecurityCodeInput}
+							onblur={flipToFront}
+							onfocus={flipToBack}
+							oninput={formatSecurityCodeInput}
 							placeholder="CVV"
 							required
 							type="text"
@@ -254,7 +254,7 @@
 				class:to-red-500={isValid}
 				disabled={!isValid}
 				form="payment-form"
-				on:click={handleSubmit}
+				onclick={handleSubmit}
 				type="submit"
 			>
 				Pay Now

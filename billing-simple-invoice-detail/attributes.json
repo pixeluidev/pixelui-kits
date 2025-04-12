@@ -1,0 +1,12 @@
+{
+  "title": "Invoice Detail Page",
+  "category": "billings",
+  "description": "Provides a comprehensive view of a single invoice, including sender and recipient details, line items with quantities and prices, order summary (subtotal, tax, shipping, total), payment instructions, and an event timeline. Designed for clarity and easy access to all invoice information.",
+  "canvas": {
+    "center": true,
+    "maxWidth": 1280
+  },
+  "packages": [
+    "date-fns"
+  ]
+}

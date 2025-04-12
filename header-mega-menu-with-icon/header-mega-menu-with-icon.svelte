@@ -109,7 +109,7 @@
 				aria-label="Open main menu"
 				bind:this={mobileToggleBtnEl}
 				class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none md:hidden dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600"
-				on:click|stopPropagation={toggleMobileMenu}
+				onclick={toggleMobileMenu}
 				type="button"
 			>
 				<span class="sr-only">Open main menu</span>
@@ -144,14 +144,14 @@
 								class:hover:bg-gray-100={currentPath !== '/'}
 								class:dark:hover:bg-neutral-700={currentPath !== '/'}
 								aria-current={currentPath === '/' ? 'page' : undefined}
-								on:click={closeMobileMenu}>Home</a
+								onclick={closeMobileMenu}>Home</a
 							>
 						</li>
 						<li>
 							<!-- Mobile Mega Menu Trigger (simplified) -->
 							<button
 								bind:this={megaMenuButtonEl}
-								on:click|stopPropagation={toggleMegaMenu}
+								onclick={toggleMobileMenu}
 								type="button"
 								class="flex w-full items-center justify-between rounded px-3 py-2 font-medium text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-700"
 								aria-expanded={isMegaMenuOpen}
@@ -181,7 +181,7 @@
 								class:dark:text-white={currentPath !== '/team'}
 								class:hover:bg-gray-100={currentPath !== '/'}
 								class:dark:hover:bg-neutral-700={currentPath !== '/'}
-								on:click={closeMobileMenu}>Team</a
+								onclick={closeMobileMenu}>Team</a
 							>
 						</li>
 					</ul>
@@ -218,7 +218,7 @@
 						class:text-gray-900={!isMegaMenuOpen}
 						class:text-orange-600={isMegaMenuOpen}
 						id="mega-menu-icons-dropdown-button"
-						on:click|stopPropagation={toggleMegaMenu}
+						onclick={toggleMobileMenu}
 						type="button"
 					>
 						Company

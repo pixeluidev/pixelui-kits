@@ -35,7 +35,7 @@
 			{max}
 			{step}
 			value={minValue}
-			on:input={handleMinInput}
+			oninput={handleMinInput}
 			class="absolute z-20 h-2 w-full cursor-pointer appearance-none bg-transparent"
 		/>
 
@@ -45,7 +45,7 @@
 			{max}
 			{step}
 			value={maxValue}
-			on:input={handleMaxInput}
+			oninput={handleMaxInput}
 			class="absolute z-10 h-2 w-full cursor-pointer appearance-none bg-transparent"
 		/>
 
