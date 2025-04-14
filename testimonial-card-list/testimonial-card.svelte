@@ -25,7 +25,7 @@
 				</h6>
 				{#if testimonial.isVerified}
 					<CheckCircle2
-						class="h-4 w-4 text-orange-500 dark:text-orange-400"
+						class="h-4 w-4 text-primary dark:text-orange-400"
 						title="Verified Account"
 					/>
 				{/if}
@@ -48,7 +48,7 @@
 		class="flex items-center justify-between gap-2 border-t border-gray-100 bg-gray-50/50 p-4 dark:border-neutral-700/50 dark:bg-neutral-700/20"
 	>
 		<a
-			class="flex items-center gap-1.5 text-xs font-medium text-gray-500 transition-colors duration-150 hover:text-orange-600 dark:text-neutral-400 dark:hover:text-orange-400"
+			class="flex items-center gap-1.5 text-xs font-medium text-gray-500 transition-colors duration-150 hover:text-primary dark:text-neutral-400 dark:hover:text-orange-400"
 			href={testimonial.sourceUrl ?? '#'}
 			rel="noopener noreferrer"
 			target="_blank"

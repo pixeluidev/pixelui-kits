@@ -64,7 +64,7 @@
 			</div>
 			<button
 				type="button"
-				class="flex w-full shrink-0 items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none md:w-auto dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+				class="flex w-full shrink-0 items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none md:w-auto dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 				onclick={handleDateFilterClick}
 			>
 				<CalendarDays class="h-4 w-4 text-gray-500 dark:text-neutral-400" />

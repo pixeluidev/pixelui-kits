@@ -33,7 +33,7 @@
 					<label
 						for={`radio-${option.value}`}
 						class="group focus-within:ring-secondary relative flex w-full cursor-pointer items-center justify-between rounded-lg border-2 p-3 transition-all duration-200 ease-in-out focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-white md:p-4 dark:focus-within:ring-offset-gray-800"
-						class:border-orange-500={isSelected}
+						class:border-primary={isSelected}
 						class:bg-slate-50={isSelected}
 						class:dark:bg-slate-800={isSelected}
 						class:border-gray-200={!isSelected}
@@ -101,8 +101,8 @@
 						<!-- Custom Check Indicator (Optional but looks good) -->
 						<span
 							class="absolute top-2 right-2 flex h-5 w-5 items-center justify-center rounded-full border-2 transition-all duration-200 ease-in-out"
-							class:border-orange-500={isSelected}
-							class:bg-orange-500={isSelected}
+							class:border-primary={isSelected}
+							class:bg-primary={isSelected}
 							class:border-gray-300={!isSelected}
 							class:dark:border-gray-600={!isSelected}
 							aria-hidden="true"

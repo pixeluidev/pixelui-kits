@@ -61,7 +61,7 @@
 					type="text"
 					id="new-full_name"
 					name="newFullName"
-					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 					placeholder="BONNIE GREEN"
 					required
 					bind:value={fullName}
@@ -80,7 +80,7 @@
 					type="text"
 					id="new-card-number"
 					name="newCardNumber"
-					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 					placeholder="0000 0000 0000 0000"
 					required
 					inputmode="numeric"
@@ -102,7 +102,7 @@
 				<select
 					id="new-expiry-month"
 					name="newExpiryMonth"
-					class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-orange-600/50"
+					class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
 					required
 					bind:value={expiryMonth}
 				>
@@ -135,7 +135,7 @@
 				<select
 					id="new-expiry-year"
 					name="newExpiryYear"
-					class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-orange-600/50"
+					class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
 					required
 					bind:value={expiryYear}
 				>
@@ -192,7 +192,7 @@
 					type="text"
 					id="new-cvv"
 					name="newCvv"
-					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+					class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 					placeholder="•••"
 					required
 					inputmode="numeric"

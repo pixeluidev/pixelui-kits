@@ -168,7 +168,7 @@
 		<!-- Section Header -->
 		<div class="mx-auto mb-16 max-w-3xl text-center md:mb-20">
 			<p
-				class="mb-2 text-base leading-relaxed font-semibold tracking-wider text-orange-600 uppercase dark:text-orange-400"
+				class="mb-2 text-base leading-relaxed font-semibold tracking-wider text-primary uppercase dark:text-orange-400"
 			>
 				Testimonials
 			</p>
@@ -209,7 +209,7 @@
 			{#if totalSlides > 1}
 				<button
 					onclick={prevSlide}
-					class="absolute top-1/2 left-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-left-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
+					class="absolute top-1/2 left-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-left-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Previous testimonial"
 					disabled={totalSlides <= 1}
 				>
@@ -217,7 +217,7 @@
 				</button>
 				<button
 					onclick={nextSlide}
-					class="absolute top-1/2 right-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-right-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
+					class="absolute top-1/2 right-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-right-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Next testimonial"
 					disabled={totalSlides <= 1}
 				>
@@ -238,7 +238,7 @@
 						onclick={() => goToSlide(i)}
 						class="block h-2 rounded-full transition-all duration-300 ease-in-out focus:ring-1 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-gray-100 focus:outline-none dark:focus:ring-offset-neutral-900"
 						class:w-6={currentCenterIndex === i}
-						class:bg-orange-500={currentCenterIndex === i}
+						class:bg-primary={currentCenterIndex === i}
 						class:w-2={currentCenterIndex !== i}
 						class:bg-gray-300={currentCenterIndex !== i}
 						class:dark:bg-neutral-600={currentCenterIndex !== i}

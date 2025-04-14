@@ -97,7 +97,7 @@
 					{@const isCompleted = i < currentStepIndex}
 					{@const isCurrent = i === currentStepIndex}
 					<li
-						class={`flex items-center md:w-full ${isCompleted || isCurrent ? 'text-orange-600 dark:text-orange-400' : ''} ${i < checkoutSteps.length - 1 ? "after:mx-6 after:hidden after:h-1 after:w-full after:border-1 after:border-b after:border-gray-200 sm:after:inline-block sm:after:content-[''] xl:after:mx-10 dark:after:border-neutral-700" : ''}`}
+						class={`flex items-center md:w-full ${isCompleted || isCurrent ? 'text-primary dark:text-orange-400' : ''} ${i < checkoutSteps.length - 1 ? "after:mx-6 after:hidden after:h-1 after:w-full after:border-1 after:border-b after:border-gray-200 sm:after:inline-block sm:after:content-[''] xl:after:mx-10 dark:after:border-neutral-700" : ''}`}
 					>
 						<span
 							class={`flex items-center ${i < checkoutSteps.length - 1 ? "sm:after:content-['/']" : ''} after:mx-2 after:text-gray-200 sm:after:hidden dark:after:text-neutral-500`}
@@ -106,10 +106,10 @@
 								<CheckCircle2 class="me-2 h-4 w-4 sm:me-2.5 sm:h-5 sm:w-5" />
 							{:else}
 								<span
-									class={`me-2 flex h-4 w-4 items-center justify-center rounded-full border sm:me-2.5 sm:h-5 sm:w-5 ${isCurrent ? 'border-orange-600 dark:border-orange-400' : 'border-gray-400 dark:border-neutral-600'} shrink-0`}
+									class={`me-2 flex h-4 w-4 items-center justify-center rounded-full border sm:me-2.5 sm:h-5 sm:w-5 ${isCurrent ? 'border-primary dark:border-orange-400' : 'border-gray-400 dark:border-neutral-600'} shrink-0`}
 								>
 									{#if isCurrent}<span
-										class="h-1.5 w-1.5 rounded-full bg-orange-600 dark:bg-orange-400"
+										class="h-1.5 w-1.5 rounded-full bg-primary dark:bg-orange-400"
 									></span>{/if}
 								</span>
 							{/if}
@@ -140,7 +140,7 @@
 							>
 							<input
 								bind:value={fullName}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 								id="full_name-2"
 								name="fullName"
 								placeholder="BONNIE GREEN"
@@ -159,7 +159,7 @@
 							</label>
 							<input
 								bind:value={cardNumberRaw}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 								id="card-number-input-2"
 								inputmode="numeric"
 								maxlength="16"
@@ -187,7 +187,7 @@
 							>
 							<select
 								bind:value={expiryMonth}
-								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-orange-600/50"
+								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
 								id="expiry-month-2"
 								name="expiryMonth"
 								required
@@ -224,7 +224,7 @@
 							>
 							<select
 								bind:value={expiryYear}
-								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-orange-600/50"
+								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
 								id="expiry-year-2"
 								name="expiryYear"
 								required
@@ -286,7 +286,7 @@
 							</label>
 							<input
 								bind:value={cvv}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-orange-500 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-orange-600/50"
+								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
 								id="cvv-input-2"
 								inputmode="numeric"
 								maxlength="3"
@@ -378,7 +378,7 @@
 			<!-- Footer Text -->
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
-				class="font-medium text-orange-600 underline hover:no-underline dark:text-orange-400"
+				class="font-medium text-primary underline hover:no-underline dark:text-orange-400"
 				href="/components"
 				title="Payment Processor">SecurePay Inc.</a
 			>

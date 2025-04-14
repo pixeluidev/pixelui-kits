@@ -10,14 +10,14 @@
 		<div class="mb-12 text-center md:mb-16">
 			<!-- Sup Title/Badge -->
 			<span
-				class="mb-2 inline-block text-sm font-semibold tracking-wider text-orange-600 uppercase dark:text-orange-400"
+				class="mb-2 inline-block text-sm font-semibold tracking-wider text-primary uppercase dark:text-orange-400"
 			>
 				Use Cases
 			</span>
 
 			<!-- Main Title -->
 			<h2 class="mb-4 text-3xl leading-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-				Our Platform is <span class="text-orange-500 italic dark:text-orange-400">not</span> just for
+				Our Platform is <span class="text-primary italic dark:text-orange-400">not</span> just for
 				one industry
 			</h2>
 

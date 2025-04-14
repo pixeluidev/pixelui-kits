@@ -102,7 +102,7 @@
 					aria-expanded={isMobileMenuOpen}
 					aria-label="Toggle navigation"
 					bind:this={mobileToggleBtnEl}
-					class="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:ring-offset-neutral-900"
+					class="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:ring-offset-neutral-900"
 					onclick={toggleMobileMenu}
 					type="button"
 				>
@@ -138,7 +138,7 @@
 						>
 							<a
 								class="block rounded-md px-3 py-2 text-base font-medium focus:bg-orange-50 focus:text-orange-700 focus:outline-none sm:inline-block sm:py-6 sm:text-sm dark:focus:bg-orange-900/30 dark:focus:text-orange-400"
-								class:text-orange-600={currentPath === '/active'}
+								class:text-primary={currentPath === '/active'}
 								class:dark:text-orange-400={currentPath === '/active'}
 								class:font-semibold={currentPath === '/active'}
 								class:text-gray-700={currentPath !== '/active'}
@@ -181,7 +181,7 @@
 
 							<a
 								class="block rounded-md px-3 py-2 text-base font-medium focus:bg-orange-50 focus:text-orange-700 focus:outline-none sm:inline-block sm:py-6 sm:text-sm dark:focus:bg-orange-900/30 dark:focus:text-orange-400"
-								class:text-orange-600={currentPath === '/project'}
+								class:text-primary={currentPath === '/project'}
 								class:dark:text-orange-400={currentPath === '/project'}
 								class:font-semibold={currentPath === '/project'}
 								class:text-gray-700={currentPath !== '/project'}
@@ -199,13 +199,13 @@
 					<!-- Desktop Links -->
 					<div class="hidden items-center justify-end sm:flex sm:gap-x-2">
 						<a
-							class="px-3 py-5 text-sm font-medium focus:text-orange-600 focus:outline-none dark:focus:text-orange-400"
-							class:text-orange-600={currentPath === '/active'}
+							class="px-3 py-5 text-sm font-medium focus:text-primary focus:outline-none dark:focus:text-orange-400"
+							class:text-primary={currentPath === '/active'}
 							class:dark:text-orange-400={currentPath === '/active'}
 							class:font-semibold={currentPath === '/active'}
 							class:text-gray-700={currentPath !== '/active'}
 							class:dark:text-neutral-300={currentPath !== '/active'}
-							class:hover:text-orange-600={currentPath !== '/active'}
+							class:hover:text-primary={currentPath !== '/active'}
 							class:dark:hover:text-orange-400={currentPath !== '/active'}
 							href="/active"
 							aria-current={currentPath === '/active' ? 'page' : undefined}>Active</a
@@ -217,7 +217,7 @@
 								bind:this={megaMenuButtonEl}
 								id="hs-mega-menu"
 								type="button"
-								class="flex items-center px-3 py-5 text-sm font-medium text-gray-700 hover:text-orange-600 focus:text-orange-600 focus:outline-none dark:text-neutral-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
+								class="flex items-center px-3 py-5 text-sm font-medium text-gray-700 hover:text-primary focus:text-primary focus:outline-none dark:text-neutral-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
 								aria-haspopup="menu"
 								aria-expanded={isMegaMenuOpen}
 								onclick={toggleMobileMenu}
@@ -235,13 +235,13 @@
 						</div>
 
 						<a
-							class="px-3 py-5 text-sm font-medium focus:text-orange-600 focus:outline-none dark:focus:text-orange-400"
-							class:text-orange-600={currentPath === '/project'}
+							class="px-3 py-5 text-sm font-medium focus:text-primary focus:outline-none dark:focus:text-orange-400"
+							class:text-primary={currentPath === '/project'}
 							class:dark:text-orange-400={currentPath === '/project'}
 							class:font-semibold={currentPath === '/project'}
 							class:text-gray-700={currentPath !== '/project'}
 							class:dark:text-neutral-300={currentPath !== '/project'}
-							class:hover:text-orange-600={currentPath !== '/project'}
+							class:hover:text-primary={currentPath !== '/project'}
 							class:dark:hover:text-orange-400={currentPath !== '/project'}
 							href="/project">Project</a
 						>

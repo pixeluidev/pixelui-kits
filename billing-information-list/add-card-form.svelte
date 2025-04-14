@@ -104,7 +104,7 @@
 					aria-invalid={$errors.cardholderName ? 'true' : undefined}
 					class:border-red-500={$errors.cardholderName}
 					class:dark:border-red-600={$errors.cardholderName}
-					class="block w-full rounded-lg border bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardholderName
+					class="block w-full rounded-lg border bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardholderName
 						? 'border-red-500'
 						: 'border-gray-200'}"
 					{...$constraints.cardholderName}
@@ -129,7 +129,7 @@
 						aria-invalid={$errors.cardNumber ? 'true' : undefined}
 						class:border-red-500={$errors.cardNumber}
 						class:dark:border-red-600={$errors.cardNumber}
-						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 pr-10 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardNumber
+						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 pr-10 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardNumber
 							? 'border-red-500'
 							: 'border-gray-200'}"
 						{...$constraints.cardNumber}
@@ -158,7 +158,7 @@
 						id="expiryMonth"
 						class:border-red-500={$errors.expiryDate && !expiryMonth}
 						class:dark:border-red-600={$errors.expiryDate && !expiryMonth}
-						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
+						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
 						!expiryMonth
 							? 'border-red-500'
 							: 'border-gray-200'}"
@@ -191,7 +191,7 @@
 						id="expiryYear"
 						class:border-red-500={$errors.expiryDate && !expiryYear}
 						class:dark:border-red-600={$errors.expiryDate && !expiryYear}
-						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
+						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
 						!expiryYear
 							? 'border-red-500'
 							: 'border-gray-200'}"
@@ -230,7 +230,7 @@
 						aria-invalid={$errors.cvv ? 'true' : undefined}
 						class:border-red-500={$errors.cvv}
 						class:dark:border-red-600={$errors.cvv}
-						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cvv
+						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cvv
 							? 'border-red-500'
 							: 'border-gray-200'}"
 						{...$constraints.cvv}
@@ -265,9 +265,9 @@
 				class:bg-gray-400={$submitting}
 				class:dark:bg-neutral-600={$submitting}
 				class:bg-gradient-to-r={!$submitting}
-				class:from-orange-500={!$submitting}
+				class:from-primary={!$submitting}
 				class:to-red-500={!$submitting}
-				class:hover:from-orange-600={!$submitting}
+				class:hover:from-primary={!$submitting}
 				class:hover:to-red-600={!$submitting}
 				class:hover:shadow-lg={!$submitting}
 			>

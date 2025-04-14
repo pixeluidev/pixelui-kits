@@ -67,14 +67,14 @@
 				<div class="flex items-center">
 					<button
 						aria-label="calendar backward"
-						class="rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-orange-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
+						class="rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-primary focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
 						onclick={goToPreviousMonth}
 					>
 						<ChevronLeft class="h-5 w-5" />
 					</button>
 					<button
 						aria-label="calendar forward"
-						class="ml-2 rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-orange-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
+						class="ml-2 rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-primary focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
 						onclick={goToNextMonth}
 					>
 						<ChevronRight class="h-5 w-5" />
@@ -107,11 +107,11 @@
 							class:hover:bg-gray-100={!day.isSelected}
 							class:dark:hover:bg-neutral-700={!day.isSelected}
 							class:font-semibold={day.isSelected || day.isToday}
-							class:bg-orange-600={day.isSelected}
+							class:bg-primary={day.isSelected}
 							class:text-white={day.isSelected}
-							class:hover:bg-orange-500={day.isSelected}
+							class:hover:bg-primary={day.isSelected}
 							class:ring-1={day.isToday && !day.isSelected}
-							class:ring-orange-500={day.isToday && !day.isSelected}
+							class:ring-primary={day.isToday && !day.isSelected}
 							class:dark:ring-orange-400={day.isToday && !day.isSelected}
 							aria-pressed={day.isSelected}
 							aria-label={`Select date ${format(day.date, 'MMMM d, yyyy')}`}
@@ -144,7 +144,7 @@
 							>
 								<span
 									class="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full {event.color ??
-										'bg-orange-500'}"
+										'bg-primary'}"
 								></span>
 								<div class="flex-1 text-sm">
 									<p class="font-medium text-gray-800 dark:text-neutral-100">{event.title}</p>

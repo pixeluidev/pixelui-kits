@@ -11,7 +11,7 @@
 		<!-- Section Header -->
 		<div class="mx-auto mb-12 max-w-3xl text-center md:mb-16">
 			<p
-				class="mb-2 text-base leading-relaxed font-semibold tracking-wider text-orange-600 uppercase dark:text-orange-400"
+				class="mb-2 text-base leading-relaxed font-semibold tracking-wider text-primary uppercase dark:text-orange-400"
 			>
 				Testimonials
 			</p>

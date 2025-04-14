@@ -230,7 +230,7 @@
 					cy="18"
 					r="16"
 					fill="none"
-					class="stroke-current text-orange-600 dark:text-orange-500"
+					class="stroke-current text-primary dark:text-primary"
 					stroke-width="1"
 					stroke-dasharray="25 100"
 					stroke-linecap="round"
@@ -239,8 +239,8 @@
 
 			<!-- Value Text -->
 			<div class="absolute start-1/2 top-9 -translate-x-1/2 transform text-center">
-				<span class="text-2xl font-bold text-orange-600 dark:text-orange-500">50</span>
-				<span class="block text-xs text-orange-600 dark:text-orange-500">Average</span>
+				<span class="text-2xl font-bold text-primary dark:text-primary">50</span>
+				<span class="block text-xs text-primary dark:text-primary">Average</span>
 			</div>
 		</div>
 		<!-- End Gauge Component -->

@@ -57,11 +57,11 @@
 		<label
 			class="relative mb-4 flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
 			class:border-gray-200={!isAddingNewCard}
-			class:border-orange-500={isAddingNewCard}
+			class:border-primary={isAddingNewCard}
 			class:dark:border-neutral-700={!isAddingNewCard}
 			class:dark:border-orange-400={isAddingNewCard}
 			class:dark:ring-opacity-50={isAddingNewCard}
-			class:dark:ring-orange-600={isAddingNewCard}
+			class:dark:ring-primary={isAddingNewCard}
 			class:ring-2={isAddingNewCard}
 			class:ring-orange-200={isAddingNewCard}
 			for="radio-new-card"
@@ -69,7 +69,7 @@
 			<div class="flex grow items-center">
 				<input
 					bind:group={selectedSubMethodId}
-					class="h-4 w-4 border-gray-300 bg-gray-100 text-orange-600 focus:ring-2 focus:ring-orange-500 dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-orange-600"
+					class="h-4 w-4 border-gray-300 bg-gray-100 text-primary focus:ring-2 focus:ring-primary dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-primary"
 					id="radio-new-card"
 					name="credit-card-payment-method"
 					type="radio"

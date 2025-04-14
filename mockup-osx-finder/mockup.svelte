@@ -75,7 +75,7 @@
 			controlBgColor = 'bg-neutral-400 ';
 			// Sidebar Dark - Penyesuaian Kontras
 			sidebarHoverBg = 'dark:hover:bg-white/10 hover:bg-white/10 '; // Hover lebih terlihat
-			sidebarActiveBg = 'dark:bg-orange-600/30 bg-orange-600/30'; // Background aktif dengan aksen oranye
+			sidebarActiveBg = 'dark:bg-primary/30 bg-primary/30'; // Background aktif dengan aksen oranye
 			sidebarActiveText = 'dark:text-orange-200 text-orange-200'; // Teks aktif lebih cerah (oranye)
 			sidebarInactiveText = 'dark:text-neutral-400 text-neutral-400'; // Teks inaktif sedikit lebih terang
 			sidebarInactiveHoverText = 'dark:hover:text-neutral-100 hover:text-neutral-100'; // Teks hover lebih terang

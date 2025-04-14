@@ -21,7 +21,7 @@
 				/>
 				<label
 					for={`crypto-${crypto.id}`}
-					class="inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white p-4 text-gray-600 transition-colors duration-150 peer-checked:border-orange-500 peer-checked:text-orange-600 hover:bg-gray-100 hover:text-gray-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:peer-checked:border-orange-400 dark:peer-checked:text-orange-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200"
+					class="inline-flex w-full cursor-pointer items-center justify-center rounded-lg border border-gray-200 bg-white p-4 text-gray-600 transition-colors duration-150 peer-checked:border-primary peer-checked:text-primary hover:bg-gray-100 hover:text-gray-700 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:peer-checked:border-orange-400 dark:peer-checked:text-orange-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200"
 				>
 					<span class="flex items-center gap-2">
 						<span class="inline-block h-5 w-5 align-middle">{@html crypto.iconSvg}</span>
@@ -32,7 +32,7 @@
 		{/each}
 	</ul>
 	<button
-		class="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 text-base font-medium text-white shadow-lg transition-all duration-200 ease-in-out hover:from-orange-600 hover:to-red-600 hover:shadow-orange-400/40 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:focus:ring-orange-800"
+		class="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-primary to-red-500 px-5 py-3 text-base font-medium text-white shadow-lg transition-all duration-200 ease-in-out hover:from-primary hover:to-red-600 hover:shadow-orange-400/40 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:focus:ring-orange-800"
 		type="button"
 	>
 		Connect Wallet

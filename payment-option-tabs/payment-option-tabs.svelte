@@ -130,9 +130,9 @@
 											<button
 												id={`tab-btn-${tab.id}`}
 												class="group inline-flex items-center justify-center rounded-t-lg border-b-2 p-4 transition-colors duration-150 ease-in-out focus:ring-1 focus:ring-orange-300 focus:outline-none"
-												class:border-orange-500={activePaymentTabId === tab.id}
+												class:border-primary={activePaymentTabId === tab.id}
 												class:dark:border-orange-400={activePaymentTabId === tab.id}
-												class:text-orange-600={activePaymentTabId === tab.id}
+												class:text-primary={activePaymentTabId === tab.id}
 												class:dark:text-orange-400={activePaymentTabId === tab.id}
 												class:border-transparent={activePaymentTabId !== tab.id}
 												class:hover:text-gray-700={activePaymentTabId !== tab.id}
@@ -147,7 +147,7 @@
 											>
 												<svelte:component
 													this={tab.icon}
-													class={`me-2 h-4 w-4 ${activePaymentTabId === tab.id ? 'text-orange-500 dark:text-orange-400' : 'text-gray-400 group-hover:text-gray-600 dark:text-neutral-500 dark:group-hover:text-neutral-300'}`}
+													class={`me-2 h-4 w-4 ${activePaymentTabId === tab.id ? 'text-primary dark:text-orange-400' : 'text-gray-400 group-hover:text-gray-600 dark:text-neutral-500 dark:group-hover:text-neutral-300'}`}
 													strokeWidth={2}
 												/>
 												{tab.label}
@@ -199,8 +199,8 @@
 							class:cursor-not-allowed={!isFormReadyToSubmit}
 							class:dark:bg-neutral-600={!isFormReadyToSubmit}
 							class:dark:text-neutral-400={!isFormReadyToSubmit}
-							class:from-orange-500={isFormReadyToSubmit}
-							class:hover:from-orange-600={isFormReadyToSubmit}
+							class:from-primary={isFormReadyToSubmit}
+							class:hover:from-primary={isFormReadyToSubmit}
 							class:hover:shadow-orange-200={isFormReadyToSubmit}
 							class:hover:to-red-600={isFormReadyToSubmit}
 							class:shadow-lg={isFormReadyToSubmit}
@@ -220,7 +220,7 @@
 			<!-- Footer Text -->
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
-				class="font-medium text-orange-600 underline hover:no-underline dark:text-orange-400"
+				class="font-medium text-primary underline hover:no-underline dark:text-orange-400"
 				href="/components"
 				title="Payment Processor">SecurePay Inc.</a
 			>

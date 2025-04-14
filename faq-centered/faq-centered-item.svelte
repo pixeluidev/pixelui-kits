@@ -16,10 +16,10 @@
 	class="rounded-lg border-2 transition-colors duration-300 ease-in-out"
 	class:bg-orange-50={isOpen}
 	class:border-gray-100={!isOpen}
-	class:border-orange-500={isOpen}
+	class:border-primary={isOpen}
 	class:dark:bg-orange-900={isOpen}
 	class:dark:border-gray-700={!isOpen}
-	class:dark:border-orange-600={isOpen}
+	class:dark:border-primary={isOpen}
 >
 	<button
 		aria-controls={`faq-answer-${faqItem.id}`}

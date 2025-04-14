@@ -239,7 +239,7 @@
 				class="relative flex items-center rounded-md bg-white shadow-sm md:items-stretch dark:bg-neutral-700"
 			>
 				<button
-					class="flex h-9 w-10 items-center justify-center rounded-l-md border border-e-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
+					class="flex h-9 w-10 items-center justify-center rounded-l-md border border-e-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
 					onclick={() => navigate('prev')}
 					title="Previous"
 					type="button"
@@ -248,14 +248,14 @@
 					<ChevronLeft class="h-5 w-5" />
 				</button>
 				<button
-					class="hidden border-y border-gray-300 px-3.5 text-sm font-semibold text-gray-700 transition-colors duration-150 hover:bg-gray-50 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none md:block dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-600"
+					class="hidden border-y border-gray-300 px-3.5 text-sm font-semibold text-gray-700 transition-colors duration-150 hover:bg-gray-50 focus:relative focus:z-10 focus:ring-1 focus:ring-primary focus:outline-none md:block dark:border-neutral-600 dark:text-neutral-200 dark:hover:bg-neutral-600"
 					onclick={() => navigate('today')}
 					type="button"
 				>Today
 				</button>
 				<span class="relative -mx-px h-5 w-px bg-gray-300 md:hidden dark:bg-neutral-600"></span>
 				<button
-					class="flex h-9 w-10 items-center justify-center rounded-r-md border border-s-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
+					class="flex h-9 w-10 items-center justify-center rounded-r-md border border-s-0 border-gray-300 text-gray-400 transition-colors duration-150 hover:text-gray-600 focus:relative focus:z-10 focus:ring-1 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"
 					onclick={() => navigate('next')}
 					title="Next"
 					type="button"
@@ -272,7 +272,7 @@
 						aria-expanded={isViewMenuOpen}
 						aria-haspopup="true"
 						bind:this={viewMenuButtonEl}
-						class="flex items-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 capitalize shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:bg-neutral-700 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:bg-neutral-600"
+						class="flex items-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 capitalize shadow-sm ring-1 ring-gray-300 ring-inset hover:bg-gray-50 focus:ring-1 focus:ring-primary focus:outline-none dark:bg-neutral-700 dark:text-neutral-100 dark:ring-neutral-600 dark:hover:bg-neutral-600"
 						onclick={toggleViewMenu}
 						type="button"
 					>
@@ -334,7 +334,7 @@
 				</div>
 				<div class="ml-6 h-6 w-px bg-gray-300 dark:bg-neutral-600"></div>
 				<button
-					class="ml-6 inline-flex items-center gap-1 rounded-md bg-orange-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+					class="ml-6 inline-flex items-center gap-1 rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
 					onclick={addEvent}
 					type="button"
 				>
@@ -349,7 +349,7 @@
 					aria-expanded={isMobileMenuOpen}
 					aria-haspopup="true"
 					bind:this={mobileMenuButtonEl}
-					class="-mx-2 flex items-center rounded-full border border-transparent p-1.5 text-gray-400 hover:text-gray-600 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200"
+					class="-mx-2 flex items-center rounded-full border border-transparent p-1.5 text-gray-400 hover:text-gray-600 focus:ring-1 focus:ring-primary focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200"
 					onclick={toggleMobileMenu}
 					type="button"
 				>
@@ -465,10 +465,10 @@
 									datetime={day.isoString}
 									class="absolute top-2 left-2 flex h-6 w-6 items-center justify-center rounded-full text-sm"
 									class:font-semibold={day.isToday || !day.isCurrentMonth}
-									class:bg-orange-600={day.isToday}
+									class:bg-primary={day.isToday}
 									class:text-white={day.isToday}
-									class:hover:bg-orange-500={day.isToday}
-									class:text-orange-600={day.isToday && !day.isCurrentMonth}
+									class:hover:bg-primary={day.isToday}
+									class:text-primary={day.isToday && !day.isCurrentMonth}
 								>
 									<!-- /* Highlight today even if not current month */-->
 									{day.dayOfMonth}
@@ -506,7 +506,7 @@
 							<button
 								type="button"
 								onclick={() => selectDay(day.isoString)}
-								class="flex h-14 flex-col px-3 py-2 transition-colors duration-100 hover:bg-gray-100 focus:z-10 focus:ring-1 focus:ring-orange-500 focus:outline-none dark:hover:bg-neutral-700"
+								class="flex h-14 flex-col px-3 py-2 transition-colors duration-100 hover:bg-gray-100 focus:z-10 focus:ring-1 focus:ring-primary focus:outline-none dark:hover:bg-neutral-700"
 								class:bg-white={day.isCurrentMonth}
 								class:dark:bg-neutral-800={day.isCurrentMonth}
 								class:bg-gray-50={!day.isCurrentMonth}
@@ -519,14 +519,14 @@
 									datetime={day.isoString}
 									class="ml-auto"
 									class:text-white={day.isToday}
-									class:bg-orange-600={day.isToday}
+									class:bg-primary={day.isToday}
 									class:rounded-full={day.isToday}
 									class:w-6={day.isToday}
 									class:h-6={day.isToday}
 									class:flex={day.isToday}
 									class:items-center={day.isToday}
 									class:justify-center={day.isToday}
-									class:text-orange-600={day.isToday && !day.isCurrentMonth}
+									class:text-primary={day.isToday && !day.isCurrentMonth}
 								>
 									{day.dayOfMonth}
 								</time>
@@ -563,7 +563,7 @@
 							<span
 								class="mt-1 flex h-7 w-7 items-center justify-center rounded-full text-sm"
 								class:font-semibold={day.isToday}
-								class:bg-orange-600={day.isToday}
+								class:bg-primary={day.isToday}
 								class:text-white={day.isToday}
 							>
 								{day.dayOfMonth}

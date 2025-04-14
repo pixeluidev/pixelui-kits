@@ -247,7 +247,7 @@
 							<!-- Indikator Aktif -->
 							{#if item.id === activeSidebarItemId}
 								<span
-									class="absolute inset-y-0 left-0 w-1 rounded-r-md bg-orange-500 dark:bg-orange-400"
+									class="absolute inset-y-0 left-0 w-1 rounded-r-md bg-primary dark:bg-orange-400"
 								></span>
 							{/if}
 						</button>

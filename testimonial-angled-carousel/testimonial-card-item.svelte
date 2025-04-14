@@ -29,7 +29,7 @@
 				</h6>
 				{#if testimonial.isVerified}
 					<CheckCircle2
-						class="h-4 w-4 flex-shrink-0 text-orange-500 dark:text-orange-400"
+						class="h-4 w-4 flex-shrink-0 text-primary dark:text-orange-400"
 						title="Verified Account"
 					/>
 				{/if}
@@ -64,7 +64,7 @@
 				href={testimonial.sourceUrl ?? '#'}
 				target="_blank"
 				rel="noopener noreferrer"
-				class="flex items-center gap-1.5 text-xs font-medium text-gray-500 transition-colors duration-150 hover:text-orange-600 focus:text-orange-600 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
+				class="flex items-center gap-1.5 text-xs font-medium text-gray-500 transition-colors duration-150 hover:text-primary focus:text-primary focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 				title={`View on ${testimonial.sourceName ?? 'Source'}`}
 			>
 				{#if testimonial.sourceIcon}

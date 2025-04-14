@@ -8,7 +8,7 @@
 	class="group flex h-full flex-col rounded-xl border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl md:p-8 dark:border-neutral-700/50 dark:bg-neutral-800"
 >
 	<!-- Icon -->
-	<div class="mb-5 text-orange-500 dark:text-orange-400">
+	<div class="mb-5 text-primary dark:text-orange-400">
 		<svelte:component this={feature.icon} class="h-10 w-10" strokeWidth={1.5} />
 	</div>
 

@@ -30,19 +30,19 @@ export function parseTweetText(text: string): string {
 		if (displayUrl.length > 30) {
 			displayUrl = displayUrl.substring(0, 27) + '...';
 		}
-		return `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer nofollow" class="text-orange-600 dark:text-orange-400 hover:underline">${displayUrl}</a>`;
+		return `<a href="${fullUrl}" target="_blank" rel="noopener noreferrer nofollow" class="text-primary dark:text-orange-400 hover:underline">${displayUrl}</a>`;
 	});
 
 	// Replace Hashtags
 	escapedText = escapedText.replace(
 		hashtagRegex,
-		'<a href="https://twitter.com/hashtag/$1?src=hashtag_click" target="_blank" rel="noopener noreferrer nofollow" class="text-orange-600 dark:text-orange-400 hover:underline">$1</a>'
+		'<a href="https://twitter.com/hashtag/$1?src=hashtag_click" target="_blank" rel="noopener noreferrer nofollow" class="text-primary dark:text-orange-400 hover:underline">$1</a>'
 	);
 
 	// Replace Mentions
 	escapedText = escapedText.replace(
 		mentionRegex,
-		'<a href="https://twitter.com/$1" target="_blank" rel="noopener noreferrer nofollow" class="text-orange-600 dark:text-orange-400 hover:underline">$1</a>'
+		'<a href="https://twitter.com/$1" target="_blank" rel="noopener noreferrer nofollow" class="text-primary dark:text-orange-400 hover:underline">$1</a>'
 	);
 
 	return escapedText;

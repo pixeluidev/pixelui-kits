@@ -15,7 +15,7 @@
 	target={tag === 'a' ? '_blank' : undefined}
 >
 	<div
-		class="mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 text-orange-600 dark:bg-orange-900/50 dark:text-orange-400"
+		class="mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 text-primary dark:bg-orange-900/50 dark:text-orange-400"
 	>
 		<svelte:component this={contact.icon} class="h-5 w-5" strokeWidth={2} />
 	</div>
@@ -24,7 +24,7 @@
 		<p
 			class="text-sm text-gray-500 transition-colors duration-200 dark:text-gray-400"
 			class:dark:group-hover:text-orange-400={!!contact.href}
-			class:group-hover:text-orange-600={!!contact.href}
+			class:group-hover:text-primary={!!contact.href}
 		>
 			{contact.description}
 		</p>

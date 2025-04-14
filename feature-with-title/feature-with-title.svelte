@@ -21,7 +21,7 @@
 				</p>
 
 				<a
-					class="inline-flex transform items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-orange-600 hover:to-red-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:focus:ring-red-800"
+					class="inline-flex transform items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-primary to-red-500 px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all duration-300 ease-in-out hover:scale-105 hover:from-primary hover:to-red-600 focus:ring-4 focus:ring-orange-300 focus:outline-none dark:focus:ring-red-800"
 					href="#get-started"
 				>
 					Get Started

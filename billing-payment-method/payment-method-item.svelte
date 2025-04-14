@@ -33,7 +33,7 @@
 
 <div
 	class="group flex flex-col gap-4 rounded-lg border border-gray-200 bg-white p-4 transition-all duration-200 hover:shadow-md sm:flex-row sm:items-center sm:justify-between dark:border-neutral-700 dark:bg-neutral-800"
-	class:border-orange-500={method.isDefault}
+	class:border-primary={method.isDefault}
 	class:dark:border-orange-400={method.isDefault}
 	class:shadow-orange-100={method.isDefault}
 	class:dark:shadow-orange-50={method.isDefault}
@@ -75,7 +75,7 @@
 		{#if !method.isDefault}
 			<button
 				type="button"
-				class="rounded px-2 py-1 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-800 focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+				class="rounded px-2 py-1 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-800 focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 				onclick={handleSetDefault}
 				aria-label="Set as default"
 			>
@@ -84,7 +84,7 @@
 		{/if}
 		<button
 			type="button"
-			class="flex h-8 w-8 items-center justify-center rounded text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+			class="flex h-8 w-8 items-center justify-center rounded text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 			onclick={handleEdit}
 			aria-label="Edit payment method"
 		>

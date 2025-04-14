@@ -16,7 +16,7 @@
 <!-- Removed outer div, as the grid container is in the parent -->
 <!-- Removed onClick={handleClick} for now, add back if needed -->
 <div class="flex flex-col gap-3 p-1">
-	<div class="inline-block w-fit rounded-lg bg-orange-500 p-3 text-white">
+	<div class="inline-block w-fit rounded-lg bg-primary p-3 text-white">
 		<HelpCircle class="h-6 w-6" strokeWidth={2} />
 	</div>
 

@@ -35,7 +35,7 @@
 			>
 				<svelte:component
 					this={link.icon}
-					class="h-4 w-4 shrink-0 text-gray-400 transition-colors duration-150 ease-in-out group-hover:text-orange-500 dark:text-neutral-500 dark:group-hover:text-orange-400"
+					class="h-4 w-4 shrink-0 text-gray-400 transition-colors duration-150 ease-in-out group-hover:text-primary dark:text-neutral-500 dark:group-hover:text-orange-400"
 					strokeWidth={2}
 				/>
 				<span class="text-xs font-medium">{link.label}</span>

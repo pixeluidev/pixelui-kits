@@ -53,12 +53,12 @@
 			cardBgColor = 'bg-white dark:bg-neutral-800';
 			headerBgColor = 'bg-white dark:bg-neutral-800';
 			hoverBgColor = 'hover:bg-gray-100';
-			activeTabBorderColor = 'border-orange-500';
-			activeTabTextColor = 'text-orange-600 font-semibold'; // Aktif lebih jelas
+			activeTabBorderColor = 'border-primary';
+			activeTabTextColor = 'text-primary font-semibold'; // Aktif lebih jelas
 			inactiveTabTextColor = 'text-gray-500';
 			inactiveTabHoverTextColor = 'hover:text-gray-700';
 			inactiveTabHoverBorderColor = 'hover:border-gray-300';
-			iconColorActive = 'text-orange-500';
+			iconColorActive = 'text-primary';
 			iconColorInactive = 'text-gray-400';
 			iconColorInactiveHover = 'group-hover:text-gray-500';
 			proseDarkClass = ''; // Tidak perlu invert di light mode

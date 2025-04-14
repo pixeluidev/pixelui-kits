@@ -75,7 +75,7 @@
 	type="button"
 	role="button"
 	tabindex="0"
-	class="flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-3 text-left transition-colors duration-150 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-orange-500 focus:ring-offset-1 focus:outline-none dark:hover:bg-neutral-700/50 dark:focus:bg-neutral-700/50 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+	class="flex w-full cursor-pointer items-center gap-3 rounded-lg px-3 py-3 text-left transition-colors duration-150 hover:bg-gray-100 focus:bg-gray-100 focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:outline-none dark:hover:bg-neutral-700/50 dark:focus:bg-neutral-700/50 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 	aria-label="View details for transaction {transaction.description}"
 	onclick={() => alert(`Details for ${transaction.description}`)}
 >

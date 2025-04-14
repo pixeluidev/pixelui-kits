@@ -36,7 +36,7 @@
 						class="mb-8 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
 					>
 						<a href="/" class="flex items-center text-gray-800 dark:text-white">
-							<PixelUiLogo class="mr-3 h-8 text-orange-500" />
+							<PixelUiLogo class="mr-3 h-8 text-primary" />
 							<!-- Gunakan logo Anda -->
 							<span class="self-center text-2xl font-semibold whitespace-nowrap">Pixel UI</span>
 						</a>
@@ -90,7 +90,7 @@
 								{invoiceData.billTo.country}<br />
 								{#if invoiceData.billTo.email}<a
 									href="mailto:{invoiceData.billTo.email}"
-									class="font-medium text-orange-600 hover:underline dark:text-orange-400"
+									class="font-medium text-primary hover:underline dark:text-orange-400"
 								>{invoiceData.billTo.email}</a
 								>{/if}
 							</address>
@@ -123,7 +123,7 @@
 					<button
 						type="button"
 						on:click={handleDownload}
-						class="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-900"
+						class="inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-900"
 					>
 						<DownloadIcon class="h-4 w-4" />
 						Download
@@ -131,7 +131,7 @@
 					<button
 						type="button"
 						on:click={handlePrint}
-						class="inline-flex items-center gap-1.5 rounded-lg bg-orange-500 px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-orange-600 focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:outline-none dark:bg-orange-600 dark:hover:bg-orange-700 dark:focus:ring-offset-neutral-900"
+						class="inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors hover:bg-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none dark:bg-primary dark:hover:bg-orange-700 dark:focus:ring-offset-neutral-900"
 					>
 						<Printer class="h-4 w-4" />
 						Print

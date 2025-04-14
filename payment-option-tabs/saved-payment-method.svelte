@@ -26,11 +26,11 @@
 <label
 	class="relative flex cursor-pointer items-center justify-between rounded-lg border p-4 transition-colors duration-200 ease-in-out hover:bg-gray-50 dark:hover:bg-neutral-700/50"
 	class:border-gray-200={selectedValue !== method.id}
-	class:border-orange-500={selectedValue === method.id}
+	class:border-primary={selectedValue === method.id}
 	class:dark:border-neutral-700={selectedValue !== method.id}
 	class:dark:border-orange-400={selectedValue === method.id}
 	class:dark:ring-opacity-50={selectedValue === method.id}
-	class:dark:ring-orange-600={selectedValue === method.id}
+	class:dark:ring-primary={selectedValue === method.id}
 	class:ring-2={selectedValue === method.id}
 	class:ring-orange-200={selectedValue === method.id}
 	for={`radio-${method.id}`}
@@ -40,7 +40,7 @@
 		<!-- The actual radio button -->
 		<input
 			bind:group={selectedValue}
-			class="h-4 w-4 border-gray-300 bg-gray-100 text-orange-600 focus:ring-2 focus:ring-orange-500 dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-orange-600"
+			class="h-4 w-4 border-gray-300 bg-gray-100 text-primary focus:ring-2 focus:ring-primary dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-primary"
 			id={`radio-${method.id}`}
 			name={groupName}
 			type="radio"
@@ -70,7 +70,7 @@
 		<!-- Vertical separator -->
 		<button
 			aria-label={`Edit ${method.label}`}
-			class="text-xs font-medium text-orange-600 hover:underline focus:underline focus:outline-none dark:text-orange-400"
+			class="text-xs font-medium text-primary hover:underline focus:underline focus:outline-none dark:text-orange-400"
 			onclick={handleEdit}
 			type="button"
 		>

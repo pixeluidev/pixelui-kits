@@ -100,7 +100,7 @@
 				href="/category/headers">Login</a
 			>
 			<a
-				class="rounded-lg bg-orange-600 px-4 py-2 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800"
+				class="rounded-lg bg-primary px-4 py-2 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800"
 				href="/category/headers">Sign up</a
 			>
 			<button
@@ -137,7 +137,7 @@
 							<a
 								href="/static"
 								class="block rounded px-3 py-2"
-								class:text-orange-600={currentPath === '/'}
+								class:text-primary={currentPath === '/'}
 								class:dark:text-orange-400={currentPath === '/'}
 								class:text-gray-900={currentPath !== '/'}
 								class:dark:text-white={currentPath !== '/'}
@@ -175,7 +175,7 @@
 							<a
 								href="/team"
 								class="block rounded px-3 py-2"
-								class:text-orange-600={currentPath === '/team'}
+								class:text-primary={currentPath === '/team'}
 								class:dark:text-orange-400={currentPath === '/team'}
 								class:text-gray-900={currentPath !== '/team'}
 								class:dark:text-white={currentPath !== '/team'}
@@ -195,14 +195,14 @@
 				<li>
 					<a
 						aria-current={currentPath === '/' ? 'page' : undefined}
-						class="block py-2 focus:text-orange-600 focus:outline-none md:p-0 dark:focus:text-orange-400"
+						class="block py-2 focus:text-primary focus:outline-none md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={currentPath !== '/'}
 						class:dark:text-orange-400={currentPath === '/'}
 						class:dark:text-white={currentPath !== '/'}
-						class:hover:text-orange-600={currentPath !== '/'}
+						class:hover:text-primary={currentPath !== '/'}
 						class:md:bg-transparent={true}
 						class:text-gray-900={currentPath !== '/'}
-						class:text-orange-600={currentPath === '/'}
+						class:text-primary={currentPath === '/'}
 						href="/static">Home</a
 					>
 				</li>
@@ -210,13 +210,13 @@
 					<button
 						aria-expanded={isMegaMenuOpen}
 						bind:this={megaMenuButtonEl}
-						class="flex w-full items-center justify-between py-2 font-medium focus:text-orange-600 focus:outline-none md:w-auto md:border-0 md:p-0 dark:focus:text-orange-400"
+						class="flex w-full items-center justify-between py-2 font-medium focus:text-primary focus:outline-none md:w-auto md:border-0 md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={true}
 						class:dark:text-orange-400={isMegaMenuOpen}
 						class:dark:text-white={!isMegaMenuOpen}
-						class:hover:text-orange-600={true}
+						class:hover:text-primary={true}
 						class:text-gray-900={!isMegaMenuOpen}
-						class:text-orange-600={isMegaMenuOpen}
+						class:text-primary={isMegaMenuOpen}
 						id="mega-menu-icons-dropdown-button"
 						onclick={toggleMobileMenu}
 						type="button"
@@ -234,14 +234,14 @@
 				</li>
 				<li>
 					<a
-						class="block py-2 focus:text-orange-600 focus:outline-none md:p-0 dark:focus:text-orange-400"
+						class="block py-2 focus:text-primary focus:outline-none md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={currentPath !== '/team'}
 						class:dark:text-orange-400={currentPath === '/team'}
 						class:dark:text-white={currentPath !== '/team'}
-						class:hover:text-orange-600={currentPath !== '/team'}
+						class:hover:text-primary={currentPath !== '/team'}
 						class:md:bg-transparent={true}
 						class:text-gray-900={currentPath !== '/team'}
-						class:text-orange-600={currentPath === '/team'}
+						class:text-primary={currentPath === '/team'}
 						href="/team">Team</a
 					>
 				</li>

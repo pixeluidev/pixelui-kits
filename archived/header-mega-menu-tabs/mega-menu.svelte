@@ -105,7 +105,7 @@
 													{#if contentBlock.icon}
 														<svelte:component
 															this={contentBlock.icon as typeof SvelteComponent<Icon>}
-															class="h-4 w-4 text-orange-500"
+															class="h-4 w-4 text-primary"
 															strokeWidth={2}
 														/>
 													{/if}
@@ -116,7 +116,7 @@
 												{#each contentBlock.value as link (link.label)}
 													<li>
 														<a
-															class="group flex flex-col text-sm text-gray-600 hover:text-orange-600 focus:text-orange-600 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
+															class="group flex flex-col text-sm text-gray-600 hover:text-primary focus:text-primary focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 															href={link.href}
 														>
 															<span class="font-medium underline-offset-2 group-hover:underline"

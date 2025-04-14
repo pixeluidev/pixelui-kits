@@ -45,8 +45,8 @@
 			borderColor = 'border-gray-100';
 			hoverBgColor = 'hover:bg-gray-50/70';
 			actionIconColor = 'text-gray-500';
-			actionHoverColor = 'hover:text-orange-600';
-			actionHoverBg = 'hover:bg-orange-500/10';
+			actionHoverColor = 'hover:text-primary';
+			actionHoverBg = 'hover:bg-primary/10';
 		}
 	}
 

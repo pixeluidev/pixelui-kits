@@ -48,7 +48,7 @@
 			<div class="w-full md:w-auto md:flex-shrink-0">
 				<button
 					type="button"
-					class="flex w-full items-center justify-center gap-2 rounded-lg border border-orange-500 px-4 py-2 text-xs font-bold text-orange-500 uppercase transition-all hover:bg-orange-500/10 focus:ring-2 focus:ring-orange-300 focus:ring-offset-1 focus:outline-none active:opacity-85 md:w-auto dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-400/10 dark:focus:ring-orange-600"
+					class="flex w-full items-center justify-center gap-2 rounded-lg border border-primary px-4 py-2 text-xs font-bold text-primary uppercase transition-all hover:bg-primary/10 focus:ring-2 focus:ring-orange-300 focus:ring-offset-1 focus:outline-none active:opacity-85 md:w-auto dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-400/10 dark:focus:ring-primary"
 					onclick={() => (isFormVisible = true)}
 					aria-expanded={isFormVisible}
 					aria-controls="add-card-form-region"

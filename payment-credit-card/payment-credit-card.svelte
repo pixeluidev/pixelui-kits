@@ -118,7 +118,7 @@
 					<label class="sr-only" for="cardholder">Card Holder</label>
 					<input
 						bind:value={cardholder}
-						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 						id="cardholder"
 						maxlength="30"
 						name="cardholder"
@@ -132,7 +132,7 @@
 					<label class="sr-only" for="cardNumber">Card Number</label>
 					<input
 						bind:value={cardNumberRaw}
-						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 						id="cardNumber"
 						inputmode="numeric"
 						maxlength="16"
@@ -153,7 +153,7 @@
 					<div class="relative col-span-1">
 						<select
 							bind:value={expired.month}
-							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
+							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 							id="expiryMonth"
 							name="expiryMonth"
 							required
@@ -186,7 +186,7 @@
 					<div class="relative col-span-1">
 						<select
 							bind:value={expired.year}
-							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
+							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 							id="expiryYear"
 							name="expiryYear"
 							required
@@ -220,7 +220,7 @@
 						<label class="sr-only" for="securityCode">Security Code (CVV)</label>
 						<input
 							bind:value={securityCode}
-							class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-orange-500 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+							class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 							id="securityCode"
 							inputmode="numeric"
 							maxlength="3"
@@ -245,8 +245,8 @@
 				class:cursor-not-allowed={!isValid}
 				class:dark:bg-neutral-600={!isValid}
 				class:dark:text-neutral-400={!isValid}
-				class:from-orange-500={isValid}
-				class:hover:from-orange-600={isValid}
+				class:from-primary={isValid}
+				class:hover:from-primary={isValid}
 				class:hover:shadow-xl={isValid}
 				class:hover:to-red-600={isValid}
 				class:shadow-lg={isValid}

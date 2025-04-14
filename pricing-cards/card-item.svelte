@@ -10,7 +10,7 @@
 	const baseCardClasses =
 		'relative w-full max-w-sm bg-white dark:bg-neutral-800 rounded-2xl shadow-lg transition-all duration-300 ease-in-out p-6 md:p-8 text-center';
 	const recommendedCardClasses =
-		'sm:scale-110 border-2 border-orange-500 dark:border-orange-400 shadow-2xl z-10'; // Scale up on larger screens
+		'sm:scale-110 border-2 border-primary dark:border-orange-400 shadow-2xl z-10'; // Scale up on larger screens
 	const adjacentCardClasses = 'sm:opacity-80 sm:hover:opacity-100'; // Slightly fade adjacent cards on larger screens
 
 	const cardClasses = `${baseCardClasses} ${plan.isRecommended ? recommendedCardClasses : ''} ${!plan.isRecommended && isCenter ? adjacentCardClasses : ''}`;
@@ -19,9 +19,9 @@
 	const buttonBaseClasses =
 		'w-full py-3.5 mt-8 rounded-xl text-white font-semibold transition-all duration-200 ease-in-out focus:outline-none focus:ring-4 flex items-center justify-center gap-2';
 	const buttonNormalClasses =
-		'bg-orange-600 hover:bg-orange-700 focus:ring-orange-300 dark:focus:ring-orange-800 shadow hover:shadow-md';
+		'bg-primary hover:bg-orange-700 focus:ring-orange-300 dark:focus:ring-orange-800 shadow hover:shadow-md';
 	const buttonRecommendedClasses =
-		'bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 focus:ring-orange-300 dark:focus:ring-red-800 shadow-lg hover:shadow-xl';
+		'bg-gradient-to-r from-primary to-red-500 hover:from-primary hover:to-red-600 focus:ring-orange-300 dark:focus:ring-red-800 shadow-lg hover:shadow-xl';
 	const buttonClasses = `${buttonBaseClasses} ${plan.isRecommended ? buttonRecommendedClasses : buttonNormalClasses}`;
 </script>
 
@@ -35,7 +35,7 @@
 	{#if plan.isRecommended}
 		<div class="absolute -top-3 left-1/2 -translate-x-1/2">
 			<span
-				class="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-orange-500 to-red-500 px-3 py-1 text-xs font-bold text-white shadow"
+				class="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary to-red-500 px-3 py-1 text-xs font-bold text-white shadow"
 			>
 				<Zap class="h-3 w-3" strokeWidth={3} /> Popular
 			</span>
@@ -60,7 +60,7 @@
 		{#each plan.features as feature (feature.text)}
 			<p class="flex items-center text-sm text-gray-600 dark:text-neutral-300">
 				<span
-					class="mr-2.5 inline-block rounded-full bg-orange-100 p-1 text-orange-600 dark:bg-orange-900/30 dark:text-orange-400"
+					class="mr-2.5 inline-block rounded-full bg-orange-100 p-1 text-primary dark:bg-orange-900/30 dark:text-orange-400"
 				>
 					<svelte:component this={feature.icon} class="h-3.5 w-3.5" strokeWidth={2.5} />
 				</span>

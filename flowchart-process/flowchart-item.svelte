@@ -44,7 +44,7 @@
 			stepMutedTextColor = 'text-gray-500';
 			connectorColor = 'text-gray-400';
 			completeColor = 'text-green-600';
-			currentColor = 'text-orange-600';
+			currentColor = 'text-primary';
 			pendingColor = 'text-gray-400';
 			errorColor = 'text-red-600';
 			baseIconColor = 'text-gray-400';
@@ -117,7 +117,7 @@
 					class:dark:bg-neutral-700={step.status === 'pending'}
 					class:ring-2={step.status === 'current'}
 					class:ring-orange-400={step.status === 'current'}
-					class:dark:ring-orange-500={step.status === 'current'}
+					class:dark:ring-primary={step.status === 'current'}
 					class:ring-offset-2={step.status === 'current'}
 					class:dark:ring-offset-neutral-900={step.status === 'current'}
 					title={step.status}
