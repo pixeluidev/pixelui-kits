@@ -63,6 +63,7 @@ export { default as PricingTabsDetail } from './pricing-tabs-detail/pricing-tabs
 export { default as PricingCardRadio } from './pricing-card-radio/pricing-card-radio.svelte';
 export { default as PricingSingleDetail } from './pricing-single-detail/pricing-single-detail.svelte';
 export { default as PricingCards } from './pricing-cards/pricing-cards.svelte';
+export { default as PricelistMenuWithImage } from './pricelist-menu-with-image/pricelist-menu-with-image.svelte';
 
 /**
  * FAQ
