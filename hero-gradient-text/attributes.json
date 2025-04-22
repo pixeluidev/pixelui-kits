@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Gradient Text & Minimal Background",
+	"category": "heroes",
+	"description": "A modern and visually striking hero section featuring a prominent headline with a text gradient effect. Paired with a minimalist background (solid color or subtle texture), this design focuses attention on the core message and brand colors. Ideal for SaaS products, apps, or design-focused brands.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}

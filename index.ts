@@ -170,3 +170,6 @@ export { default as HeroSplitImageText } from './hero-split-image-text/hero-spli
 export { default as HeroCenteredText } from './hero-centered-text/hero-centered-text.svelte';
 export { default as HeroVideoBackground} from "./hero-video-background/hero-video-background.svelte"
 export { default as HeroFormLeadgen } from './hero-form-leadgen/hero-form-leadgen.svelte';
+export { default as HeroGradientText } from './hero-gradient-text/hero-gradient-text.svelte';
+export { default as HeroTestimonialFocus } from './hero-testimonial-focus/hero-testimonial-focus.svelte';
+export { default as HeroAnimatedIllustration } from './hero-animated-illustration/hero-animated-illustration.svelte';

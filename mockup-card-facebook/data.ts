@@ -1,6 +1,3 @@
-// src/lib/data.ts
-import type { SvelteComponent } from 'svelte';
-import type { Icon } from 'lucide-svelte';
 
 // --- Ikon ---
 import Globe from 'lucide-svelte/icons/globe'; // Publik

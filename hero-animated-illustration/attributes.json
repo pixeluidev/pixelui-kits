@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Animated Illustration (Lottie)",
+	"category": "heroes",
+	"description": "Engages users with a dynamic Lottie animation alongside clear messaging. Ideal for illustrating complex concepts, workflows, or product features in an easily digestible and modern way. Layout is typically split and responsive.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": ["@lottiefiles/dotlottie-svelte"]
+}

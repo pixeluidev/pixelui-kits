@@ -6,7 +6,7 @@
 	// GANTI DENGAN PATH VIDEO ANDA (MP4 dan/atau WebM untuk kompatibilitas)
 	const videoMp4Url: string = 'https://videos.pexels.com/video-files/13422106/13422106-hd_1920_1080_24fps.mp4'; // Contoh Path
 	const videoWebmUrl: string | undefined = '/videos/hero-background.webm'; // Contoh Path (Opsional)
-    const posterImageUrl: string = '/images/hero-video-poster.jpg'; // Gambar fallback/placeholder
+    const posterImageUrl: string = 'https://images.unsplash.com/photo-1468581264429-2548ef9eb732?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; // Gambar fallback/placeholder
 	const headline: string = "Experience Innovation in Motion";
 	const description: string = "See how Pixel UI brings your interfaces to life. Dynamic, responsive, and built for the modern web.";
 	const primaryCtaText: string = "Watch Demo";

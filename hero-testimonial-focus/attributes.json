@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Testimonial Focus",
+	"category": "heroes",
+	"description": "Builds immediate trust by prominently featuring a powerful customer testimonial as the centerpiece. Includes the quote, author details (name, title, avatar), a supporting headline, and a call-to-action. Effective when social proof is a primary selling point.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}
