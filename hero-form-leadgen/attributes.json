@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Lead Generation Form",
+	"category": "heroes",
+	"description": "A hero section designed specifically for lead capture. Features a clear value proposition (headline, description) alongside a simple form (typically email input) and a prominent call-to-action button. Often includes a relevant image or illustration. Ideal for free trials, downloads, waitlists, or newsletter signups.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}

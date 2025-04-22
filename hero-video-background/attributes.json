@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Video Background",
+	"category": "heroes",
+	"description": "Creates an immersive first impression with a looping background video. Features centered, high-contrast text (headline, description) and calls-to-action overlaid on the video, ensuring readability via a semi-transparent overlay. Ideal for product showcases or atmospheric branding.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}

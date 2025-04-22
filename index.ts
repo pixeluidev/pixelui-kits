@@ -160,3 +160,13 @@ export { default as MockupCardLinkedin } from './mockup-card-linkedin/mockup-car
 export { default as MockupCardFacebook } from './mockup-card-facebook/mockup-card-facebook.svelte';
 
 export { default as FlowchartProcess } from './flowchart-process/flowchart-process.svelte';
+
+
+/**
+ * Heroes
+ */
+
+export { default as HeroSplitImageText } from './hero-split-image-text/hero-split-image-text.svelte';
+export { default as HeroCenteredText } from './hero-centered-text/hero-centered-text.svelte';
+export { default as HeroVideoBackground} from "./hero-video-background/hero-video-background.svelte"
+export { default as HeroFormLeadgen } from './hero-form-leadgen/hero-form-leadgen.svelte';

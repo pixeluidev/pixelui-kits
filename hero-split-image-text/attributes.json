@@ -1,8 +1,10 @@
 {
-  "title": "",
-  "category": "",
+  "title": "Hero Section Split Image & Text",
+  "category": "heroes",
+  "description": "A balanced hero section featuring a prominent image or illustration alongside compelling text content (headline, description) and clear calls-to-action. Ideal for showcasing products or key features, this layout adapts responsively by stacking columns on smaller screens.",
   "canvas": {
-    "center": true,
-    "maxWidth": 1200
+    "center": false,
+    "maxWidth": null
   }
+ 
 }

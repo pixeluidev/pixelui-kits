@@ -1,0 +1,10 @@
+{
+	"title": "Hero Section: Centered Text",
+	"category": "heroes",
+	"description": "A hero section component focusing attention on a strong central message. Features a large headline, supporting description, and prominent calls-to-action, often paired with a simple or atmospheric background. Ideal for impactful statements or minimalist designs.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}
