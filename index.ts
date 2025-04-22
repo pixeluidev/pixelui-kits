@@ -133,6 +133,7 @@ export { default as TestimonialBackgroundImage } from './testimonial-background-
 export { default as TestimonialWithProfileImages } from './testimonial-with-profile-images/testimonial-with-profile-images.svelte';
 export { default as TestimonialCardCarousel } from './testimonial-card-carousel/testimonial-card-carousel.svelte';
 export { default as TestimonialAngledCarousel } from './testimonial-angled-carousel/testimonial-angled-carousel.svelte';
+export { default as TestimonialMarquee } from './testimonial-marquee/testimonial-marquee.svelte';
 
 /**
  * Mockups
