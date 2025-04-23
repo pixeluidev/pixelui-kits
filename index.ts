@@ -151,7 +151,7 @@ export { default as MockupSmartwatch } from './mockup-smartwatch/mockup-smartwat
 export { default as MockupTerminal } from './mockup-terminal/mockup-terminal.svelte';
 export { default as MockupWindows } from './mockup-windows/mockup-windows.svelte';
 export { default as MockupOsxFinder } from './mockup-osx-finder/mockup-osx-finder.svelte';
-export { default as MockupEbook3d } from './mockup-ebook-3d/mockup-ebook-3d.svelte';
+// export { default as MockupEbook3d } from './mockup-ebook-3d/mockup-ebook-3d.svelte';
 export { default as MockupGithubRepository } from './mockup-github-repository/mockup-github-repository.svelte';
 export { default as MockupGitlabRepository } from './mockup-gitlab-repository/mockup-gitlab-repository.svelte';
 export { default as MockupCardTwitter } from './mockup-card-twitter/mockup-card-twitter.svelte';
