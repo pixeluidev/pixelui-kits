@@ -1,0 +1,10 @@
+{
+	"title": "Sign Up Form - Simple",
+	"category": "authentication",
+	"description": "Provides a standard interface for new user registration. Includes fields for name (optional), email, password, password confirmation, and a required terms/privacy policy agreement checkbox. Features clear calls-to-action and a link for existing users to log in.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}

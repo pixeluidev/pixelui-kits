@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Eye, EyeOff, Github, Twitter } from 'lucide-svelte'; // Import required icons
     // Import Google icon - Lucide doesn't have it, use a simple SVG or another library
-    import GoogleIcon from './google-icon.svelte'; // Assume you create this simple SVG component
+	import GoogleIcon from './google-icon.svelte'; // Assume you create this simple SVG component
 
 	// --- Form State ---
 	let email = $state('');
