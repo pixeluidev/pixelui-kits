@@ -1,6 +1,8 @@
 export { default as FooterCentered } from './footer-centered/footer-centered.svelte';
 export { default as FooterSimple } from './footer-simple/footer-simple.svelte';
 export { default as FooterLinks } from './footer-links/footer-links.svelte';
+export { default as SiteFooter } from './site-footer/site-footer.svelte';
+
 export { default as GridAsymmetrical } from './grid-asymmetrical/grid-asymmetrical.svelte';
 export { default as GridWithLead } from './grid-with-lead/grid-with-lead.svelte';
 
@@ -90,7 +92,7 @@ export { default as FeatureWithTitle } from './feature-with-title/feature-with-t
 export { default as HeaderMegaMenu } from './header-mega-menu/header-mega-menu.svelte';
 // export { default as HeaderMegaMenuTabs } from './archived/header-mega-menu-tabs/header-mega-menu-tabs.svelte';
 export { default as HeaderMegaMenuWithIcon } from './header-mega-menu-with-icon/header-mega-menu-with-icon.svelte';
-
+export { default as HeaderSiteNavbar } from './header-site-navbar/header-site-navbar.svelte';
 /**
  * payments forms
  */
@@ -181,3 +183,6 @@ export { default as SignupFormSocial } from './signup-form-social/signup-form-so
 export { default as PasswordResetRequest } from './password-reset-request/password-reset-request.svelte';
 export { default as PasswordResetConfirmForm } from './password-reset-confirm-form/password-reset-confirm-form.svelte';
 export { default as VerificationCodeForm } from './verification-code-form/verification-code-form.svelte';
+
+
+

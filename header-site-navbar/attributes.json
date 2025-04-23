@@ -1,0 +1,10 @@
+{
+	"title": "Simple Header Site Navbar",
+	"category": "headers",
+	"description": "Provides primary site navigation. Includes the site logo, main navigation links, optional call-to-action buttons, and a responsive hamburger menu for mobile devices. Features sticky behavior by default.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}

@@ -1,0 +1,11 @@
+
+{
+	"title": "Site Footer",
+	"category": "footers",
+	"description": "Provides concluding information and navigation at the bottom of site pages. Typically includes secondary navigation links grouped by category, social media links, copyright notice, and the site logo.",
+	"canvas": {
+		"center": false,
+		"maxWidth": null
+	},
+	"packages": []
+}
