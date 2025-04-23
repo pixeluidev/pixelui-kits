@@ -110,14 +110,16 @@
 		>
 			<div class="space-y-1 px-2 pt-2 pb-3">
 				{#each mainNavLinks as link (link.href)}
-					<a href={link.href} onclick={closeMobileMenu}
+					<a
+						href={link.href}
+						onclick={closeMobileMenu}
 						class="block rounded-md px-3 py-2 text-base font-medium transition-colors {isActive(
 							link.href
 						)
 							? 'bg-orange-50 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300'
 							: 'text-gray-600 hover:bg-gray-100 hover:text-gray-800 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-neutral-100'}"
 						aria-current={isActive(link.href) ? 'page' : undefined}
-						>
+					>
 						{link.label}
 					</a>
 				{/each}

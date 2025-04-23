@@ -10,5 +10,5 @@ export const mainNavLinks: NavLink[] = [
 	{ label: 'Components', href: '/components' },
 	{ label: 'Pricing', href: '/pricing' },
 	{ label: 'Blog', href: '/blog' },
-	{ label: 'Docs', href: '/docs' },
+	{ label: 'Docs', href: '/docs' }
 ];
