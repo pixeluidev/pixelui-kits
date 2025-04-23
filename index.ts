@@ -173,3 +173,9 @@ export { default as HeroFormLeadgen } from './hero-form-leadgen/hero-form-leadge
 export { default as HeroGradientText } from './hero-gradient-text/hero-gradient-text.svelte';
 export { default as HeroTestimonialFocus } from './hero-testimonial-focus/hero-testimonial-focus.svelte';
 export { default as HeroAnimatedIllustration } from './hero-animated-illustration/hero-animated-illustration.svelte';
+
+
+/**
+ * Authentication
+ */
+export { default as LoginFormSimple } from './login-form-simple/login-form-simple.svelte';

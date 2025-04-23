@@ -1,0 +1,10 @@
+{
+	"title": "Login Form - Simple Card",
+	"category": "authentication",
+	"description": "A standard, clean login form component. Includes fields for email and password, a 'forgot password' link, a primary submit button, and optional social login buttons (Google, GitHub, Twitter). Designed for straightforward user authentication.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}
