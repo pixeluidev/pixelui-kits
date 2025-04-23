@@ -77,7 +77,7 @@
 				</p>
 
                 <!-- Form Lead Gen -->
-				<form class="mt-8" on:submit|preventDefault={handleSubmit}>
+				<form class="mt-8" onsubmit={handleSubmit}>
 					<div class="flex flex-col gap-4 sm:flex-row sm:items-start">
 						<label for="email-address" class="sr-only">Email address</label>
 						<div class="relative flex-grow rounded-md shadow-sm">
@@ -89,7 +89,7 @@
                                 name="email-address"
                                 id="email-address"
                                 bind:value={email}
-                                on:input={handleInput}
+																oninput={handleInput}
                                 required
                                 class="block w-full rounded-md border-0 py-3 pl-10 pr-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 dark:bg-neutral-800 dark:text-white dark:ring-neutral-600 dark:placeholder:text-neutral-400 dark:focus:ring-orange-400 sm:text-sm sm:leading-6"
                                 placeholder={inputPlaceholder}

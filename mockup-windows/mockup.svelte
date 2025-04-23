@@ -9,7 +9,6 @@
 	export let title: string = 'Untitled Window';
 	/** Komponen ikon Svelte untuk ditampilkan sebelum judul (opsional) */
 	export let icon: typeof SvelteComponent | null = null; // Gunakan typeof SvelteComponent
-	/** Tinggi area konten (kelas Tailwind, misal 'h-64', 'h-96') */
 	export let contentHeight: string = 'h-80';
 	/** Tampilkan title bar? */
 	export let showHeader: boolean = true;

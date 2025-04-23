@@ -7,7 +7,6 @@
 	export let title: string = 'bash';
 	/** Warna background utama terminal: 'dark', 'light' */
 	export let theme: 'dark' | 'light' = 'dark';
-	/** Tinggi area konten (kelas Tailwind, misal 'h-64', 'h-96') */
 	export let contentHeight: string = 'h-64';
 	/** Tampilkan kontrol jendela? */
 	export let showControls: boolean = true;
@@ -22,8 +21,8 @@
 	let headerBg: string;
 	let contentBg: string;
 	let contentTextColor: string;
-	let scrollbarThumbColor: string;
-	let scrollbarTrackColor: string;
+	// let scrollbarThumbColor: string;
+	// let scrollbarTrackColor: string;
 
 	$: {
 		if (theme === 'light') {
