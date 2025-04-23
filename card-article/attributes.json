@@ -1,8 +1,8 @@
 {
-  "title": "Simple Article Card",
-  "category": "cards",
-  "canvas": {
-    "center": true,
-    "maxWidth": 800
-  }
+	"title": "Simple Article Card",
+	"category": "cards",
+	"canvas": {
+		"center": true,
+		"maxWidth": 800
+	}
 }

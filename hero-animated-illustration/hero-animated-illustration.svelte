@@ -5,8 +5,7 @@
 	// --- Hardcoded Content (English) ---
 	// IMPORTANT: Replace with your actual Lottie animation URL (JSON file)
 	// You can find free animations on LottieFiles: https://lottiefiles.com/
-	const lottieAnimationUrl: string =
-		'https://assets2.lottiefiles.com/packages/lf20_wxUJzo.json'; // Example: Data/Collaboration animation
+	const lottieAnimationUrl: string = 'https://assets2.lottiefiles.com/packages/lf20_wxUJzo.json'; // Example: Data/Collaboration animation
 	const headline: string = 'Visualize Your Success';
 	const description: string =
 		"Bring your data and ideas to life with dynamic visualizations and seamless collaboration, powered by Pixel UI's intuitive components.";
@@ -24,8 +23,8 @@
 		path: lottieAnimationUrl,
 		loop: true,
 		autoplay: true,
-		height:500,
-		width:500,
+		height: 500,
+		width: 500,
 		renderer: 'svg',
 		rendererSettings: {
 			preserveAspectRatio: 'xMidYMid slice' // How animation fits its container

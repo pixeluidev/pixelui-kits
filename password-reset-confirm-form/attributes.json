@@ -1,0 +1,10 @@
+{
+	"title": "Password Reset Confirmation Form",
+	"category": "authentication",
+	"description": "Allows users to set a new password after verifying their identity via a reset token (typically received via email). Includes fields for the new password, confirmation, and validation for matching passwords.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}

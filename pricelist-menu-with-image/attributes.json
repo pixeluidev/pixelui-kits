@@ -1,10 +1,10 @@
 {
-  "title": "Image Price List",
-  "category": "pricing",
-  "description": "Displays a list of items, typically for menus or product catalogs, featuring an image, title, description, and price for each entry. Items are optionally clickable links and include a decorative separator between title and price.",
-  "canvas": {
-    "center": true,
-    "maxWidth": 768
-  },
-  "packages": []
+	"title": "Image Price List",
+	"category": "pricing",
+	"description": "Displays a list of items, typically for menus or product catalogs, featuring an image, title, description, and price for each entry. Items are optionally clickable links and include a decorative separator between title and price.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 768
+	},
+	"packages": []
 }

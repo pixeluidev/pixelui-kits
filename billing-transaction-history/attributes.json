@@ -1,12 +1,10 @@
 {
-  "title": "Transaction History List",
-  "category": "billings",
-  "description": "Displays a chronologically grouped list of financial transactions. Features clear visual indicators for income, expenses, and pending status, along with transaction details like description, date, time, and amount. Includes a date range filter button for easy tracking and monitoring of financial activity.",
-  "canvas": {
-    "center": true,
-    "maxWidth": 768
-  },
-  "packages": [
-    "date-fns"
-  ]
+	"title": "Transaction History List",
+	"category": "billings",
+	"description": "Displays a chronologically grouped list of financial transactions. Features clear visual indicators for income, expenses, and pending status, along with transaction details like description, date, time, and amount. Includes a date range filter button for easy tracking and monitoring of financial activity.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 768
+	},
+	"packages": ["date-fns"]
 }

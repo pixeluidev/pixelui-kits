@@ -1,8 +1,8 @@
 {
-  "title": "FAQ Centered with Accordion",
-  "category": "faq",
-  "responsive": true,
-  "canvas": {
-    "maxWidth": 1200
-  }
+	"title": "FAQ Centered with Accordion",
+	"category": "faq",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
 }

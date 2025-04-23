@@ -2,8 +2,7 @@
 	import type { MegaMenuIconLink } from './data';
 
 	export let menuData: MegaMenuIconLink[];
-	export let onClose: () => void = () => {
-	};
+	export let onClose: () => void = () => {};
 
 	function handleLinkClick(event: MouseEvent & { currentTarget: EventTarget & HTMLDivElement }) {
 		// Close menu if an actual link *inside* the menu is clicked
@@ -35,7 +34,7 @@
 			>
 				<svelte:component
 					this={link.icon}
-					class="h-4 w-4 shrink-0 text-gray-400 transition-colors duration-150 ease-in-out group-hover:text-primary dark:text-neutral-500 dark:group-hover:text-orange-400"
+					class="group-hover:text-primary h-4 w-4 shrink-0 text-gray-400 transition-colors duration-150 ease-in-out dark:text-neutral-500 dark:group-hover:text-orange-400"
 					strokeWidth={2}
 				/>
 				<span class="text-xs font-medium">{link.label}</span>

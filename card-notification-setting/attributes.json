@@ -1,8 +1,8 @@
 {
-  "title": "Card Notification Setting WIth Switch Checkbox",
-  "category": "cards",
-  "canvas": {
-    "center": true,
-    "maxWidth": 500
-  }
+	"title": "Card Notification Setting WIth Switch Checkbox",
+	"category": "cards",
+	"canvas": {
+		"center": true,
+		"maxWidth": 500
+	}
 }

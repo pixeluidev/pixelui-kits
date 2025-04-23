@@ -14,7 +14,7 @@
 	<div class="container mx-auto max-w-6xl px-6 py-12 md:py-16 lg:py-20">
 		<!-- Header Section -->
 		<div
-			class="relative mb-10 flex flex-col items-center justify-between gap-8 rounded-lg bg-primary px-10 py-12 md:mb-16 md:flex-row md:gap-12"
+			class="bg-primary relative mb-10 flex flex-col items-center justify-between gap-8 rounded-lg px-10 py-12 md:mb-16 md:flex-row md:gap-12"
 		>
 			<!-- Title Area -->
 			<div class="relative flex-shrink-0">

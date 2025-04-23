@@ -1,8 +1,8 @@
 {
-  "title": "Faq Page Header",
-  "category": "faq",
-  "responsive": true,
-  "canvas": {
-    "maxWidth": 1200
-  }
+	"title": "Faq Page Header",
+	"category": "faq",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
 }

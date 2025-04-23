@@ -69,7 +69,7 @@
 				Reset To Default
 			</button>
 			<button
-				class="rounded-md bg-primary px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 ease-in-out hover:bg-primary focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:focus:ring-offset-gray-800"
+				class="bg-primary hover:bg-primary rounded-md px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-orange-400 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:focus:ring-offset-gray-800"
 				onclick={saveChanges}
 				type="button"
 			>

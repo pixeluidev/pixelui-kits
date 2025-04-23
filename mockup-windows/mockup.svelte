@@ -197,29 +197,29 @@
 </div>
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    @layer utilities {
-        .scrollbar::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
+	@reference "tailwindcss";
+	@layer utilities {
+		.scrollbar::-webkit-scrollbar {
+			width: 8px;
+			height: 8px;
+		}
 
-        .scrollbar::-webkit-scrollbar-track {
-            background-color: var(--scrollbar-track);
-        }
+		.scrollbar::-webkit-scrollbar-track {
+			background-color: var(--scrollbar-track);
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb {
-            @apply rounded;
-            background-color: var(--scrollbar-thumb);
-        }
+		.scrollbar::-webkit-scrollbar-thumb {
+			@apply rounded;
+			background-color: var(--scrollbar-thumb);
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb:hover {
-            background-color: var(--scrollbar-thumb-hover);
-        }
+		.scrollbar::-webkit-scrollbar-thumb:hover {
+			background-color: var(--scrollbar-thumb-hover);
+		}
 
-        .scrollbar {
-            scrollbar-width: thin;
-            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-        }
-    }
+		.scrollbar {
+			scrollbar-width: thin;
+			scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+		}
+	}
 </style>

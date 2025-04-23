@@ -222,7 +222,7 @@
 					<button
 						onclick={toggleCaption}
 						class="ml-1 text-gray-400 hover:text-gray-600 dark:text-neutral-500 dark:hover:text-neutral-400"
-					>more
+						>more
 					</button>
 				{/if}
 			</div>
@@ -245,7 +245,7 @@
 								href="#"
 								onclick={() => handleAction('Comment Profile')}
 								class={`text-sm font-semibold ${textColor} mr-1 hover:opacity-80`}
-							>{comment.username}</a
+								>{comment.username}</a
 							>
 							<span class={`text-sm ${textColor} font-normal`}>{comment.text}</span>
 						</li>

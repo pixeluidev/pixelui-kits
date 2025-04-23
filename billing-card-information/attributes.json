@@ -1,10 +1,10 @@
 {
-  "title": "Credit Card Display",
-  "category": "billings",
-  "description": "A visually engaging component showcasing credit/debit card visuals in both dark and light themes, featuring the bank/card brand. It includes an interactive flip-on-hover effect to reveal a simulated card back and a click-to-copy feature for the card number. Ideal for payment forms, checkout processes, wallet sections, or financial dashboards.",
-  "canvas": {
-    "center": true,
-    "maxWidth": 900
-  },
-  "packages": []
+	"title": "Credit Card Display",
+	"category": "billings",
+	"description": "A visually engaging component showcasing credit/debit card visuals in both dark and light themes, featuring the bank/card brand. It includes an interactive flip-on-hover effect to reveal a simulated card back and a click-to-copy feature for the card number. Ideal for payment forms, checkout processes, wallet sections, or financial dashboards.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 900
+	},
+	"packages": []
 }

@@ -107,7 +107,7 @@
 					aria-expanded={isMobileMenuOpen}
 					aria-label="Toggle navigation"
 					bind:this={mobileToggleBtnEl}
-					class="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-800"
+					class="focus:ring-primary inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 dark:focus:ring-offset-gray-800"
 					onclick={toggleMobileMenu}
 				>
 					{#if !isMobileMenuOpen}
@@ -204,7 +204,7 @@
 						class="hidden flex-col gap-y-3 sm:mt-0 sm:flex sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:ps-5"
 					>
 						<a
-							class="text-sm font-medium focus:text-primary focus:outline-none sm:px-3 sm:py-5 dark:focus:text-orange-400"
+							class="focus:text-primary text-sm font-medium focus:outline-none sm:px-3 sm:py-5 dark:focus:text-orange-400"
 							class:text-primary={currentPath === '/active'}
 							class:dark:text-orange-400={currentPath === '/active'}
 							class:font-semibold={currentPath === '/active'}
@@ -223,7 +223,7 @@
 								bind:this={megaMenuButtonEl}
 								id="hs-mega-menu"
 								type="button"
-								class="flex w-full items-center text-sm font-medium text-gray-700 hover:text-primary focus:text-primary focus:outline-none sm:w-auto sm:px-3 sm:py-5 dark:text-gray-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
+								class="hover:text-primary focus:text-primary flex w-full items-center text-sm font-medium text-gray-700 focus:outline-none sm:w-auto sm:px-3 sm:py-5 dark:text-gray-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
 								aria-haspopup="menu"
 								aria-expanded={isMegaMenuOpen}
 								onclick={toggleMegaMenu}
@@ -242,7 +242,7 @@
 						</div>
 
 						<a
-							class="text-sm font-medium focus:text-primary focus:outline-none sm:px-3 sm:py-5 dark:focus:text-orange-400"
+							class="focus:text-primary text-sm font-medium focus:outline-none sm:px-3 sm:py-5 dark:focus:text-orange-400"
 							class:text-primary={currentPath === '/project'}
 							class:dark:text-orange-400={currentPath === '/project'}
 							class:font-semibold={currentPath === '/project'}

@@ -1,0 +1,10 @@
+{
+	"title": "Verification Code Input Form",
+	"category": "authentication",
+	"description": "Allows users to enter a verification code (typically 6 digits) received via email or SMS for identity verification or two-factor authentication. Features individual input boxes for each digit with auto-focus shifting, a submit button, and a 'Resend Code' link with a cooldown timer.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}

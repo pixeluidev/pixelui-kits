@@ -8,15 +8,16 @@
 	// Props opsional untuk judul section
 	const sectionTitle: string | undefined = undefined; // Contoh: "Our Menu"
 	const sectionDescription: string | undefined = undefined;
-
 </script>
 
 <section class="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
 	{#if sectionTitle}
 		<div class="mb-8 text-center">
-			<h2 class="text-2xl font-bold text-gray-900 dark:text-white sm:text-3xl">{sectionTitle}</h2>
+			<h2 class="text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">{sectionTitle}</h2>
 			{#if sectionDescription}
-				<p class="mt-3 text-base text-gray-600 dark:text-neutral-400 sm:mt-4">{sectionDescription}</p>
+				<p class="mt-3 text-base text-gray-600 sm:mt-4 dark:text-neutral-400">
+					{sectionDescription}
+				</p>
 			{/if}
 		</div>
 	{/if}

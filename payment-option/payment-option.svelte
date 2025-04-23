@@ -137,7 +137,7 @@
 									<div class="flex grow items-center">
 										<input
 											bind:group={selectedPaymentMethodId}
-											class="h-4 w-4 border-gray-300 bg-gray-100 text-primary focus:ring-2 focus:ring-primary dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-primary"
+											class="text-primary focus:ring-primary dark:focus:ring-primary h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800"
 											id="radio-new"
 											name="payment-method"
 											type="radio"
@@ -239,10 +239,10 @@
 			<!-- Footer Text -->
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
-				class="font-medium text-primary underline hover:no-underline dark:text-orange-400"
-				href="/components"
-				title="Payment Processor">SecurePay Inc.</a
-			>
+					class="text-primary font-medium underline hover:no-underline dark:text-orange-400"
+					href="/components"
+					title="Payment Processor">SecurePay Inc.</a
+				>
 			</p>
 		</div>
 	</div>

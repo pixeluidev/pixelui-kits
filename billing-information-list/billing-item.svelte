@@ -22,11 +22,14 @@
 </script>
 
 <div
-	class="rounded-lg border border-gray-200 dark:border-neutral-700 p-4 transition-shadow duration-200 hover:shadow-md">
+	class="rounded-lg border border-gray-200 p-4 transition-shadow duration-200 hover:shadow-md dark:border-neutral-700"
+>
 	<div class="mb-4 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
 		<!-- Bagian Kiri: Info Perusahaan -->
 		<div class="flex items-center gap-3">
-			<div class="rounded-lg border border-gray-200 bg-gray-50 dark:bg-neutral-800 dark:border-neutral-800  p-2.5">
+			<div
+				class="rounded-lg border border-gray-200 bg-gray-50 p-2.5 dark:border-neutral-800 dark:bg-neutral-800"
+			>
 				<Building2 class="h-6 w-6 text-gray-600 dark:text-neutral-500" />
 			</div>
 			<div>
@@ -59,7 +62,7 @@
 	</div>
 
 	<!-- Detail Kontak -->
-	<div class="space-y-1 border-t border-gray-100 dark:border-neutral-700 pt-3">
+	<div class="space-y-1 border-t border-gray-100 pt-3 dark:border-neutral-700">
 		<div class="flex items-center gap-1.5 text-xs">
 			<p class="w-24 shrink-0 font-medium text-gray-500">Contact:</p>
 			<p class="font-semibold text-gray-800">{item.contactName}</p>

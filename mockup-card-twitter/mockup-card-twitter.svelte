@@ -96,7 +96,7 @@
 				<div class="flex min-w-0 items-center space-x-1 whitespace-nowrap">
 					<a class="group" href="#">
 						<span class="text-sm font-bold {textColor} truncate group-hover:underline"
-						>{tweet.authorName}</span
+							>{tweet.authorName}</span
 						>
 					</a>
 					{#if tweet.isVerified}
@@ -104,13 +104,13 @@
 					{/if}
 					<a class="group" href="#">
 						<span class="text-sm {mutedTextColor} truncate group-hover:underline"
-						>{tweet.authorHandle}</span
+							>{tweet.authorHandle}</span
 						>
 					</a>
 					<span class="text-sm {mutedTextColor}">·</span>
 					<a class="group" href="#">
 						<time class="text-sm {mutedTextColor} group-hover:underline" datetime={tweet.timestamp}
-						>{tweet.timestamp}</time
+							>{tweet.timestamp}</time
 						>
 					</a>
 				</div>
@@ -157,7 +157,7 @@
 					</div>
 					<span
 						class={`text-xs ${actionIconColor} transition-colors duration-150 group-hover:text-blue-500 dark:group-hover:text-blue-400`}
-					>{formatCount(tweet.replyCount)}</span
+						>{formatCount(tweet.replyCount)}</span
 					>
 				</button>
 
@@ -173,7 +173,7 @@
 					</div>
 					<span
 						class={`text-xs ${actionIconColor} transition-colors duration-150 group-hover:text-green-600 dark:group-hover:text-green-400`}
-					>{formatCount(tweet.retweetCount)}</span
+						>{formatCount(tweet.retweetCount)}</span
 					>
 				</button>
 
@@ -189,7 +189,7 @@
 					</div>
 					<span
 						class={`text-xs ${actionIconColor} transition-colors duration-150 group-hover:text-pink-600 dark:group-hover:text-pink-500`}
-					>{formatCount(tweet.likeCount)}</span
+						>{formatCount(tweet.likeCount)}</span
 					>
 				</button>
 
@@ -205,7 +205,7 @@
 					</div>
 					<span
 						class={`text-xs ${actionIconColor} transition-colors duration-150 group-hover:text-sky-600 dark:group-hover:text-sky-400`}
-					>{tweet.viewCount}</span
+						>{tweet.viewCount}</span
 					>
 				</button>
 

@@ -150,15 +150,15 @@
 			<slot>
 				<!-- Konten default -->
 				<pre><code
-				><span class="text-green-400">user@host</span>:<span class="text-blue-400">~</span
-				>$ ls -l
+						><span class="text-green-400">user@host</span>:<span class="text-blue-400">~</span
+						>$ ls -l
 total 8
 drwxr-xr-x 2 user user 4096 Mar 25 10:10 Documents
 drwxr-xr-x 2 user user 4096 Mar 25 10:11 Downloads
 <span class="text-green-400">user@host</span>:<span class="text-blue-400">~</span>$ <span
-						class="animate-pulse">▋</span
-					></code
-				></pre>
+							class="animate-pulse">▋</span
+						></code
+					></pre>
 			</slot>
 		</div>
 	{/key}

@@ -40,7 +40,9 @@
 			class="mx-4 mt-4 flex flex-col items-start justify-between gap-4 rounded-t-xl border-b border-gray-100 px-2 py-4 md:flex-row md:items-center md:px-6 md:py-5 dark:border-neutral-700"
 		>
 			<div class="w-full">
-				<h2 class="text-lg font-semibold text-gray-900 dark:text-neutral-300">Billing Information</h2>
+				<h2 class="text-lg font-semibold text-gray-900 dark:text-neutral-300">
+					Billing Information
+				</h2>
 				<p class="mt-1 text-sm font-normal text-gray-600 dark:text-neutral-400">
 					View, update, and manage your billing details here.
 				</p>
@@ -48,7 +50,7 @@
 			<div class="w-full md:w-auto md:flex-shrink-0">
 				<button
 					type="button"
-					class="flex w-full items-center justify-center gap-2 rounded-lg border border-primary px-4 py-2 text-xs font-bold text-primary uppercase transition-all hover:bg-primary/10 focus:ring-2 focus:ring-orange-300 focus:ring-offset-1 focus:outline-none active:opacity-85 md:w-auto dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-400/10 dark:focus:ring-primary"
+					class="border-primary text-primary hover:bg-primary/10 dark:focus:ring-primary flex w-full items-center justify-center gap-2 rounded-lg border px-4 py-2 text-xs font-bold uppercase transition-all focus:ring-2 focus:ring-orange-300 focus:ring-offset-1 focus:outline-none active:opacity-85 md:w-auto dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-400/10"
 					onclick={() => (isFormVisible = true)}
 					aria-expanded={isFormVisible}
 					aria-controls="add-card-form-region"

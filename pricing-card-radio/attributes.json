@@ -1,9 +1,9 @@
 {
-  "title": "Radio Pricing Card",
-  "category": "pricing",
-  "responsive": true,
-  "canvas": {
-    "center": true,
-    "maxWidth": 400
-  }
+	"title": "Radio Pricing Card",
+	"category": "pricing",
+	"responsive": true,
+	"canvas": {
+		"center": true,
+		"maxWidth": 400
+	}
 }

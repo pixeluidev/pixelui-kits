@@ -64,9 +64,9 @@
 		box-shadow: 8px 8px rgb(31, 8, 0);
 	}
 
-  @media screen and (prefers-color-scheme: light) {
-      .shadow-retro {
-          box-shadow: 8px 8px #2e2d2d;
-      }
-  }
+	@media screen and (prefers-color-scheme: light) {
+		.shadow-retro {
+			box-shadow: 8px 8px #2e2d2d;
+		}
+	}
 </style>

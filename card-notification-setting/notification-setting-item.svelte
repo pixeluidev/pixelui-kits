@@ -49,7 +49,7 @@
 		/>
 		<!-- Switch Track/Background -->
 		<div
-			class="h-6 w-11 rounded-full bg-gray-300 transition-colors duration-200 ease-in-out peer-checked:bg-primary peer-focus:ring-2 peer-focus:ring-orange-300 peer-focus:ring-offset-2 peer-focus:ring-offset-gray-100 dark:bg-gray-600 dark:peer-checked:bg-primary dark:peer-focus:ring-primary dark:peer-focus:ring-offset-gray-800/50"
+			class="peer-checked:bg-primary dark:peer-checked:bg-primary dark:peer-focus:ring-primary h-6 w-11 rounded-full bg-gray-300 transition-colors duration-200 ease-in-out peer-focus:ring-2 peer-focus:ring-orange-300 peer-focus:ring-offset-2 peer-focus:ring-offset-gray-100 dark:bg-gray-600 dark:peer-focus:ring-offset-gray-800/50"
 		></div>
 		<!-- Switch Thumb/Knob -->
 		<div

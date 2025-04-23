@@ -118,7 +118,7 @@
 					<label class="sr-only" for="cardholder">Card Holder</label>
 					<input
 						bind:value={cardholder}
-						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+						class="focus:ring-primary block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 						id="cardholder"
 						maxlength="30"
 						name="cardholder"
@@ -132,7 +132,7 @@
 					<label class="sr-only" for="cardNumber">Card Number</label>
 					<input
 						bind:value={cardNumberRaw}
-						class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+						class="focus:ring-primary block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 						id="cardNumber"
 						inputmode="numeric"
 						maxlength="16"
@@ -153,13 +153,13 @@
 					<div class="relative col-span-1">
 						<select
 							bind:value={expired.month}
-							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
+							class="form-select focus:ring-primary block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 							id="expiryMonth"
 							name="expiryMonth"
 							required
 						>
 							<option disabled selected value="">MM</option>
-							{#each Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, '0')) as month (month)}
+							{#each Array.from( { length: 12 }, (_, i) => String(i + 1).padStart(2, '0') ) as month (month)}
 								<option value={month}>{month}</option>
 							{/each}
 						</select>
@@ -186,7 +186,7 @@
 					<div class="relative col-span-1">
 						<select
 							bind:value={expired.year}
-							class="form-select block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
+							class="form-select focus:ring-primary block w-full appearance-none rounded-lg border border-gray-200 bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 							id="expiryYear"
 							name="expiryYear"
 							required
@@ -220,7 +220,7 @@
 						<label class="sr-only" for="securityCode">Security Code (CVV)</label>
 						<input
 							bind:value={securityCode}
-							class="block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
+							class="focus:ring-primary block w-full rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 							id="securityCode"
 							inputmode="numeric"
 							maxlength="3"
@@ -268,18 +268,18 @@
 </div>
 
 <style>
-    .perspective {
-        perspective: 1000px;
-    }
+	.perspective {
+		perspective: 1000px;
+	}
 
-    .card-flipper {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+	.card-flipper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
 
-    .form-select {
-        background-image: none;
-        padding-right: 2.5rem;
-    }
+	.form-select {
+		background-image: none;
+		padding-right: 2.5rem;
+	}
 </style>

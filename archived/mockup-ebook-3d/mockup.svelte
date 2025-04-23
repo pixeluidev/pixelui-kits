@@ -115,33 +115,33 @@
 </div>
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    /* Setup 3D */
-    .perspective {
-        perspective: 1500px;
-    }
+	@reference "tailwindcss";
+	/* Setup 3D */
+	.perspective {
+		perspective: 1500px;
+	}
 
-    .preserve-3d {
-        transform-style: preserve-3d;
-    }
+	.preserve-3d {
+		transform-style: preserve-3d;
+	}
 
-    .backface-hidden {
-        backface-visibility: hidden;
-        -webkit-backface-visibility: hidden;
-    }
+	.backface-hidden {
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
+	}
 
-    /* Tentukan transform origin agar rotasi benar */
-    .book-cover {
-        transform-origin: left center;
-    }
+	/* Tentukan transform origin agar rotasi benar */
+	.book-cover {
+		transform-origin: left center;
+	}
 
-    .book-spine {
-        transform-origin: left center;
-    }
+	.book-spine {
+		transform-origin: left center;
+	}
 
-    .book-pages {
-        transform-origin: right center;
-    }
+	.book-pages {
+		transform-origin: right center;
+	}
 
-    /* Styling scrollbar tidak relevan untuk komponen ini */
+	/* Styling scrollbar tidak relevan untuk komponen ini */
 </style>

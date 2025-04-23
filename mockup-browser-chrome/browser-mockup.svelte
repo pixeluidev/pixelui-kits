@@ -86,21 +86,21 @@
 </div>
 
 <style>
-    /* Opsi untuk scrollbar styling jika kontennya scrollable */
-    /*@tailwind base;*/
-    /*@tailwind components;*/
-    /*@tailwind utilities;*/
-    /*@layer utilities {*/
-    /*    div[class*="overflow-y-auto"]::-webkit-scrollbar { width: 6px; height: 6px; }*/
-    /*    div[class*="overflow-y-auto"]::-webkit-scrollbar-track { @apply bg-gray-100 dark:bg-neutral-700/50 rounded-b-lg; }*/
-    /*    div[class*="overflow-y-auto"]::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-neutral-600 rounded; }*/
-    /*    div[class*="overflow-y-auto"]::-webkit-scrollbar-thumb:hover { @apply bg-gray-400 dark:bg-neutral-500; }*/
-    /*    div[class*="overflow-y-auto"] {*/
-    /*        scrollbar-width: thin;*/
-    /*        scrollbar-color: theme('colors.gray.300') theme('colors.gray.100');*/
-    /*    }*/
-    /*    .dark div[class*="overflow-y-auto"] {*/
-    /*        scrollbar-color: theme('colors.neutral.600') theme('colors.neutral.700/50');*/
-    /*    }*/
-    /*}*/
+	/* Opsi untuk scrollbar styling jika kontennya scrollable */
+	/*@tailwind base;*/
+	/*@tailwind components;*/
+	/*@tailwind utilities;*/
+	/*@layer utilities {*/
+	/*    div[class*="overflow-y-auto"]::-webkit-scrollbar { width: 6px; height: 6px; }*/
+	/*    div[class*="overflow-y-auto"]::-webkit-scrollbar-track { @apply bg-gray-100 dark:bg-neutral-700/50 rounded-b-lg; }*/
+	/*    div[class*="overflow-y-auto"]::-webkit-scrollbar-thumb { @apply bg-gray-300 dark:bg-neutral-600 rounded; }*/
+	/*    div[class*="overflow-y-auto"]::-webkit-scrollbar-thumb:hover { @apply bg-gray-400 dark:bg-neutral-500; }*/
+	/*    div[class*="overflow-y-auto"] {*/
+	/*        scrollbar-width: thin;*/
+	/*        scrollbar-color: theme('colors.gray.300') theme('colors.gray.100');*/
+	/*    }*/
+	/*    .dark div[class*="overflow-y-auto"] {*/
+	/*        scrollbar-color: theme('colors.neutral.600') theme('colors.neutral.700/50');*/
+	/*    }*/
+	/*}*/
 </style>

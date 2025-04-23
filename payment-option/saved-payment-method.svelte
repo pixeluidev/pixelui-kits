@@ -33,7 +33,7 @@
 		<!-- Radio Input -->
 		<input
 			bind:group={selectedValue}
-			class="h-4 w-4 border-gray-300 bg-gray-100 text-primary focus:ring-2 focus:ring-primary dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800 dark:focus:ring-primary"
+			class="text-primary focus:ring-primary dark:focus:ring-primary h-4 w-4 border-gray-300 bg-gray-100 focus:ring-2 dark:border-neutral-600 dark:bg-neutral-700 dark:ring-offset-neutral-800"
 			id={`radio-${method.id}`}
 			name={groupName}
 			type="radio"
@@ -55,14 +55,14 @@
 			class="text-xs font-medium text-gray-600 hover:underline focus:underline focus:outline-none dark:text-gray-400"
 			onclick={handleDelete}
 			type="button"
-		>Delete
+			>Delete
 		</button>
 		<div class="h-4 w-px bg-gray-300 dark:bg-neutral-600"></div>
 		<button
 			class="text-xs font-medium text-gray-600 hover:underline focus:underline focus:outline-none dark:text-gray-400"
 			onclick={handleEdit}
 			type="button"
-		>Edit
+			>Edit
 		</button>
 	</div>
 

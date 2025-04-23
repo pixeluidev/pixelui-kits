@@ -35,7 +35,7 @@
 					>
 				</div>
 				<span class="mx-1 text-xs text-gray-600 dark:text-gray-300"
-				>{new Date().toLocaleDateString().split('T')[0]}</span
+					>{new Date().toLocaleDateString().split('T')[0]}</span
 				>
 			</div>
 		</div>

@@ -89,7 +89,7 @@
 		<a class="flex items-center space-x-3 rtl:space-x-reverse" href="/category/headers">
 			<Logo class="size-8" />
 			<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-			>Pixel UI</span
+				>Pixel UI</span
 			>
 		</a>
 
@@ -100,7 +100,7 @@
 				href="/category/headers">Login</a
 			>
 			<a
-				class="rounded-lg bg-primary px-4 py-2 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800"
+				class="bg-primary rounded-lg px-4 py-2 text-center text-sm font-medium text-white transition-colors duration-200 hover:bg-orange-700 focus:ring-4 focus:ring-orange-300 dark:focus:ring-orange-800"
 				href="/category/headers">Sign up</a
 			>
 			<button
@@ -195,7 +195,7 @@
 				<li>
 					<a
 						aria-current={currentPath === '/' ? 'page' : undefined}
-						class="block py-2 focus:text-primary focus:outline-none md:p-0 dark:focus:text-orange-400"
+						class="focus:text-primary block py-2 focus:outline-none md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={currentPath !== '/'}
 						class:dark:text-orange-400={currentPath === '/'}
 						class:dark:text-white={currentPath !== '/'}
@@ -210,7 +210,7 @@
 					<button
 						aria-expanded={isMegaMenuOpen}
 						bind:this={megaMenuButtonEl}
-						class="flex w-full items-center justify-between py-2 font-medium focus:text-primary focus:outline-none md:w-auto md:border-0 md:p-0 dark:focus:text-orange-400"
+						class="focus:text-primary flex w-full items-center justify-between py-2 font-medium focus:outline-none md:w-auto md:border-0 md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={true}
 						class:dark:text-orange-400={isMegaMenuOpen}
 						class:dark:text-white={!isMegaMenuOpen}
@@ -234,7 +234,7 @@
 				</li>
 				<li>
 					<a
-						class="block py-2 focus:text-primary focus:outline-none md:p-0 dark:focus:text-orange-400"
+						class="focus:text-primary block py-2 focus:outline-none md:p-0 dark:focus:text-orange-400"
 						class:dark:hover:text-orange-400={currentPath !== '/team'}
 						class:dark:text-orange-400={currentPath === '/team'}
 						class:dark:text-white={currentPath !== '/team'}

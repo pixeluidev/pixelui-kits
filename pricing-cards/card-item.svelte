@@ -35,7 +35,7 @@
 	{#if plan.isRecommended}
 		<div class="absolute -top-3 left-1/2 -translate-x-1/2">
 			<span
-				class="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-primary to-red-500 px-3 py-1 text-xs font-bold text-white shadow"
+				class="from-primary inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r to-red-500 px-3 py-1 text-xs font-bold text-white shadow"
 			>
 				<Zap class="h-3 w-3" strokeWidth={3} /> Popular
 			</span>
@@ -60,7 +60,7 @@
 		{#each plan.features as feature (feature.text)}
 			<p class="flex items-center text-sm text-gray-600 dark:text-neutral-300">
 				<span
-					class="mr-2.5 inline-block rounded-full bg-orange-100 p-1 text-primary dark:bg-orange-900/30 dark:text-orange-400"
+					class="text-primary mr-2.5 inline-block rounded-full bg-orange-100 p-1 dark:bg-orange-900/30 dark:text-orange-400"
 				>
 					<svelte:component this={feature.icon} class="h-3.5 w-3.5" strokeWidth={2.5} />
 				</span>

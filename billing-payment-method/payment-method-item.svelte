@@ -75,7 +75,7 @@
 		{#if !method.isDefault}
 			<button
 				type="button"
-				class="rounded px-2 py-1 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-800 focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+				class="focus:ring-primary rounded px-2 py-1 text-xs font-medium text-gray-600 transition-colors hover:bg-gray-100 hover:text-gray-800 focus:ring-2 focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 				onclick={handleSetDefault}
 				aria-label="Set as default"
 			>
@@ -84,7 +84,7 @@
 		{/if}
 		<button
 			type="button"
-			class="flex h-8 w-8 items-center justify-center rounded text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 focus:ring-2 focus:ring-primary focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
+			class="focus:ring-primary flex h-8 w-8 items-center justify-center rounded text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 focus:ring-2 focus:ring-offset-1 focus:outline-none dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-200 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-800"
 			onclick={handleEdit}
 			aria-label="Edit payment method"
 		>
@@ -102,5 +102,5 @@
 </div>
 
 <style>
-    /* Optional: Tambahkan style jika perlu */
+	/* Optional: Tambahkan style jika perlu */
 </style>

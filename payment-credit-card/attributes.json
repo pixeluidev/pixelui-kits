@@ -1,8 +1,8 @@
 {
-  "title": "Form Payment With Credit Card",
-  "category": "payments",
-  "responsive": true,
-  "canvas": {
-    "center": true
-  }
+	"title": "Form Payment With Credit Card",
+	"category": "payments",
+	"responsive": true,
+	"canvas": {
+		"center": true
+	}
 }

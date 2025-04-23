@@ -4,7 +4,7 @@
 	"description": "A login form prioritizing social sign-in options (Google, GitHub, Twitter) for faster user onboarding. Includes prominent social login buttons with brand logos and retains the standard email/password login as an alternative, separated by a visual divider.",
 	"canvas": {
 		"center": true,
-		"maxWidth": 480 
+		"maxWidth": 480
 	},
 	"packages": []
 }

@@ -1,11 +1,9 @@
 {
-  "title": "Calendar Full Page",
-  "category": "playground",
-  "canvas": {
-    "center": true,
-    "maxWidth": 1200
-  },
-  "packages": [
-    "date-fns"
-  ]
+	"title": "Calendar Full Page",
+	"category": "playground",
+	"canvas": {
+		"center": true,
+		"maxWidth": 1200
+	},
+	"packages": ["date-fns"]
 }

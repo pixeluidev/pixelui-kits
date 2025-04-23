@@ -80,7 +80,7 @@
 						<img
 							src={avatarUrl}
 							alt={`Avatar ${i + 1}`}
-							class="h-10 w-10 rounded-full border-2 border-white object-cover shadow-md transition-all duration-300 ease-out hover:-translate-y-1.5 hover:scale-110 hover:border-orange-300 hover:shadow-lg md:h-12 md:w-12 dark:border-neutral-800 dark:hover:border-primary"
+							class="dark:hover:border-primary h-10 w-10 rounded-full border-2 border-white object-cover shadow-md transition-all duration-300 ease-out hover:-translate-y-1.5 hover:scale-110 hover:border-orange-300 hover:shadow-lg md:h-12 md:w-12 dark:border-neutral-800"
 							loading="lazy"
 							style={`z-index: ${4 - i}; transition-delay: ${i * 50}ms;`}
 							class:opacity-0={!isInView}
@@ -113,7 +113,7 @@
 				>
 					<img
 						alt={data.mainImageAlt}
-						class="h-full w-full rounded-3xl border-4 border-white object-cover shadow-xl transition-all duration-300 ease-in-out hover:scale-105 hover:border-orange-200 hover:shadow-2xl dark:border-neutral-700 dark:hover:border-primary/50"
+						class="dark:hover:border-primary/50 h-full w-full rounded-3xl border-4 border-white object-cover shadow-xl transition-all duration-300 ease-in-out hover:scale-105 hover:border-orange-200 hover:shadow-2xl dark:border-neutral-700"
 						loading="lazy"
 						src={data.mainImageUrl}
 					/>

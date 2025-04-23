@@ -104,7 +104,7 @@
 					aria-invalid={$errors.cardholderName ? 'true' : undefined}
 					class:border-red-500={$errors.cardholderName}
 					class:dark:border-red-600={$errors.cardholderName}
-					class="block w-full rounded-lg border bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardholderName
+					class="focus:ring-primary block w-full rounded-lg border bg-gray-50 px-4 py-3 text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardholderName
 						? 'border-red-500'
 						: 'border-gray-200'}"
 					{...$constraints.cardholderName}
@@ -129,7 +129,7 @@
 						aria-invalid={$errors.cardNumber ? 'true' : undefined}
 						class:border-red-500={$errors.cardNumber}
 						class:dark:border-red-600={$errors.cardNumber}
-						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 pr-10 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardNumber
+						class="focus:ring-primary block w-full rounded-lg border bg-gray-50 px-4 py-3 pr-10 font-mono tracking-wider text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cardNumber
 							? 'border-red-500'
 							: 'border-gray-200'}"
 						{...$constraints.cardNumber}
@@ -147,7 +147,7 @@
 			<!-- Expiry Date & CVV Grid -->
 			<div class="grid grid-cols-4 gap-3">
 				<label class="col-span-4 -mb-2 text-sm font-medium text-gray-600 dark:text-neutral-300"
-				>Expiry Date</label
+					>Expiry Date</label
 				>
 
 				<!-- Expiry Month Select -->
@@ -158,7 +158,7 @@
 						id="expiryMonth"
 						class:border-red-500={$errors.expiryDate && !expiryMonth}
 						class:dark:border-red-600={$errors.expiryDate && !expiryMonth}
-						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
+						class="form-select focus:ring-primary block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
 						!expiryMonth
 							? 'border-red-500'
 							: 'border-gray-200'}"
@@ -171,15 +171,13 @@
 					<div
 						class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400 dark:text-neutral-500"
 					>
-						<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"
-						>
+						<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
 							<path
 								fill-rule="evenodd"
 								d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 								clip-rule="evenodd"
 							/>
-						</svg
-						>
+						</svg>
 					</div>
 				</div>
 
@@ -191,7 +189,7 @@
 						id="expiryYear"
 						class:border-red-500={$errors.expiryDate && !expiryYear}
 						class:dark:border-red-600={$errors.expiryDate && !expiryYear}
-						class="form-select block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
+						class="form-select focus:ring-primary block w-full appearance-none rounded-lg border bg-gray-50 py-3 ps-4 pe-9 text-gray-800 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white {$errors.expiryDate &&
 						!expiryYear
 							? 'border-red-500'
 							: 'border-gray-200'}"
@@ -204,15 +202,13 @@
 					<div
 						class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-400 dark:text-neutral-500"
 					>
-						<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20"
-						>
+						<svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
 							<path
 								fill-rule="evenodd"
 								d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 								clip-rule="evenodd"
 							/>
-						</svg
-						>
+						</svg>
 					</div>
 				</div>
 
@@ -230,7 +226,7 @@
 						aria-invalid={$errors.cvv ? 'true' : undefined}
 						class:border-red-500={$errors.cvv}
 						class:dark:border-red-600={$errors.cvv}
-						class="block w-full rounded-lg border bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:ring-primary focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cvv
+						class="focus:ring-primary block w-full rounded-lg border bg-gray-50 px-4 py-3 font-mono text-gray-800 placeholder-gray-400 transition duration-150 ease-in-out focus:border-transparent focus:ring-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 {$errors.cvv
 							? 'border-red-500'
 							: 'border-gray-200'}"
 						{...$constraints.cvv}
@@ -278,21 +274,14 @@
 						fill="none"
 						viewBox="0 0 24 24"
 					>
-						<circle
-							class="opacity-25"
-							cx="12"
-							cy="12"
-							r="10"
-							stroke="currentColor"
-							stroke-width="4"
+						<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
 						></circle>
 						<path
 							class="opacity-75"
 							fill="currentColor"
 							d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
 						></path>
-					</svg
-					>
+					</svg>
 				{:else}
 					Save Card
 				{/if}
@@ -302,8 +291,8 @@
 </div>
 
 <style>
-    .form-select {
-        background-image: none; /* Hapus panah default jika ada */
-        padding-right: 2.5rem; /* Ruang untuk panah kustom SVG */
-    }
+	.form-select {
+		background-image: none; /* Hapus panah default jika ada */
+		padding-right: 2.5rem; /* Ruang untuk panah kustom SVG */
+	}
 </style>

@@ -1,8 +1,8 @@
 {
-  "title": "Simple FAQ Collapse",
-  "category": "faq",
-  "responsive": true,
-  "canvas": {
-    "maxWidth": 1200
-  }
+	"title": "Simple FAQ Collapse",
+	"category": "faq",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
 }

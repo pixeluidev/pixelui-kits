@@ -1,8 +1,8 @@
 {
-  "title": "Faq Grid with Icon",
-  "category": "faq",
-  "responsive": true,
-  "canvas": {
-    "maxWidth": 1200
-  }
+	"title": "Faq Grid with Icon",
+	"category": "faq",
+	"responsive": true,
+	"canvas": {
+		"maxWidth": 1200
+	}
 }

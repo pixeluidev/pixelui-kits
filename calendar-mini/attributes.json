@@ -1,11 +1,9 @@
 {
-  "title": "Mini Calendar Cards",
-  "category": "playground",
-  "canvas": {
-    "center": true,
-    "maxWidth": 1200
-  },
-  "packages": [
-    "date-fns"
-  ]
+	"title": "Mini Calendar Cards",
+	"category": "playground",
+	"canvas": {
+		"center": true,
+		"maxWidth": 1200
+	},
+	"packages": ["date-fns"]
 }

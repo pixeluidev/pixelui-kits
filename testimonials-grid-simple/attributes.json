@@ -1,8 +1,8 @@
 {
-  "title": "Simple Testimonial Grid",
-  "category": "testimonials",
-  "responsive": false,
-  "canvas": {
-    "center": true
-  }
+	"title": "Simple Testimonial Grid",
+	"category": "testimonials",
+	"responsive": false,
+	"canvas": {
+		"center": true
+	}
 }

@@ -24,7 +24,7 @@
 
 	<div class="mt-4 flex items-center justify-between">
 		<a class="text-blue-600 hover:underline dark:text-blue-400" href="/components" tabindex="0"
-		>Read more</a
+			>Read more</a
 		>
 
 		<div class="flex items-center">
@@ -34,7 +34,7 @@
 				src="https://ui-avatars.com/api/?name=Budi"
 			/>
 			<a class="cursor-pointer font-bold text-gray-700 dark:text-gray-200" href="/blog" tabindex="0"
-			>Budi</a
+				>Budi</a
 			>
 		</div>
 	</div>

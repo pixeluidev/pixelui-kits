@@ -10,7 +10,7 @@
 		<!-- Header Text -->
 		<div class="mx-auto mb-12 max-w-2xl text-center font-semibold md:mb-16">
 			<h1 class="text-4xl font-bold sm:text-5xl">
-				<span class="tracking-wide text-primary dark:text-orange-400">Flexible </span>
+				<span class="text-primary tracking-wide dark:text-orange-400">Flexible </span>
 				<span class="text-gray-800 dark:text-white">Plans</span>
 			</h1>
 			<p class="pt-5 text-lg font-normal text-gray-500 dark:text-neutral-400">

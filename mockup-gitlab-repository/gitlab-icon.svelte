@@ -10,16 +10,16 @@
 >
 	<style type="text/css">
 		.st0 {
-        fill: #e24329;
-    }
+			fill: #e24329;
+		}
 
-    .st1 {
-        fill: #fc6d26;
-    }
+		.st1 {
+			fill: #fc6d26;
+		}
 
-    .st2 {
-        fill: #fca326;
-    }
+		.st2 {
+			fill: #fca326;
+		}
 	</style>
 	<desc>Created with Sketch.</desc>
 	<g>

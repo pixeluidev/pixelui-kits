@@ -67,14 +67,14 @@
 				<div class="flex items-center">
 					<button
 						aria-label="calendar backward"
-						class="rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-primary focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
+						class="focus:text-primary rounded-full p-1 text-gray-400 hover:text-gray-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
 						onclick={goToPreviousMonth}
 					>
 						<ChevronLeft class="h-5 w-5" />
 					</button>
 					<button
 						aria-label="calendar forward"
-						class="ml-2 rounded-full p-1 text-gray-400 hover:text-gray-600 focus:text-primary focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
+						class="focus:text-primary ml-2 rounded-full p-1 text-gray-400 hover:text-gray-600 focus:ring-1 focus:ring-orange-400 focus:outline-none dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-orange-400"
 						onclick={goToNextMonth}
 					>
 						<ChevronRight class="h-5 w-5" />
@@ -154,7 +154,7 @@
 								</div>
 								{#if event.time}
 									<span class="pt-0.5 text-xs text-gray-500 dark:text-neutral-400"
-									>{event.time}</span
+										>{event.time}</span
 									>
 								{/if}
 							</div>
@@ -171,34 +171,34 @@
 </div>
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    /* Optional: Ensure scrollbar styling works (Tailwind plugin or manual) */
+	@reference "tailwindcss";
+	/* Optional: Ensure scrollbar styling works (Tailwind plugin or manual) */
 
-    @layer utilities {
-        .scrollbar-thin::-webkit-scrollbar {
-            width: 4px;
-            height: 4px;
-        }
+	@layer utilities {
+		.scrollbar-thin::-webkit-scrollbar {
+			width: 4px;
+			height: 4px;
+		}
 
-        .scrollbar-thin::-webkit-scrollbar-track {
-            @apply bg-transparent;
-        }
+		.scrollbar-thin::-webkit-scrollbar-track {
+			@apply bg-transparent;
+		}
 
-        .scrollbar-thin::-webkit-scrollbar-thumb {
-            @apply rounded bg-gray-300 dark:bg-neutral-600;
-        }
+		.scrollbar-thin::-webkit-scrollbar-thumb {
+			@apply rounded bg-gray-300 dark:bg-neutral-600;
+		}
 
-        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-            @apply bg-gray-400 dark:bg-neutral-500;
-        }
+		.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+			@apply bg-gray-400 dark:bg-neutral-500;
+		}
 
-        .scrollbar-thin {
-            scrollbar-width: thin;
-            scrollbar-color: theme('colors.gray.300') transparent;
-        }
+		.scrollbar-thin {
+			scrollbar-width: thin;
+			scrollbar-color: theme('colors.gray.300') transparent;
+		}
 
-        .dark .scrollbar-thin {
-            scrollbar-color: theme('colors.neutral.600') transparent;
-        }
-    }
+		.dark .scrollbar-thin {
+			scrollbar-color: theme('colors.neutral.600') transparent;
+		}
+	}
 </style>

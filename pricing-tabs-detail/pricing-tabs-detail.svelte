@@ -23,7 +23,7 @@
 				Choose the plan that scales with your needs. No hidden fees.
 			</p>
 			<div class="mt-6 flex justify-center">
-				<span class="inline-block h-1 w-24 rounded-full bg-primary"></span>
+				<span class="bg-primary inline-block h-1 w-24 rounded-full"></span>
 			</div>
 		</div>
 
@@ -35,7 +35,7 @@
 					type="button"
 					onclick={() => (selectedPlanId = plan.id)}
 					aria-pressed={isSelected}
-					class="relative flex flex-col justify-between rounded-xl border px-6 py-5 text-left transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-gray-50 sm:flex-row sm:items-center dark:focus-visible:ring-offset-gray-950"
+					class="focus-visible:ring-primary relative flex flex-col justify-between rounded-xl border px-6 py-5 text-left transition-all duration-300 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-50 sm:flex-row sm:items-center dark:focus-visible:ring-offset-gray-950"
 					class:border-primary={isSelected}
 					class:dark:border-primary={isSelected}
 					class:border-gray-200={!isSelected}
@@ -54,7 +54,7 @@
 					{#if plan.isRecommended}
 						<div class="absolute -top-3 right-4">
 							<span
-								class="inline-flex items-center rounded-full bg-primary px-3 py-1 text-xs font-semibold tracking-wide text-white shadow-md"
+								class="bg-primary inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-wide text-white shadow-md"
 							>
 								Recommended
 							</span>
@@ -87,7 +87,7 @@
 							{plan.price}
 							{#if plan.priceSuffix}
 								<span class="text-base font-medium text-gray-500 dark:text-gray-400"
-								>/{plan.priceSuffix}</span
+									>/{plan.priceSuffix}</span
 								>
 							{/if}
 						</h2>
@@ -103,8 +103,8 @@
 			>
 				<h3 class="mb-6 text-xl font-semibold text-gray-800 dark:text-white">
 					Features included in <span class="text-primary dark:text-orange-400"
-				>{selectedPlan.name}</span
-				>:
+						>{selectedPlan.name}</span
+					>:
 				</h3>
 				<ul class="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
 					{#each selectedPlan.features as feature (feature.text)}
@@ -118,7 +118,7 @@
 						>
 							{#if feature.included}
 								<CheckCircle2
-									class="h-5 w-5 flex-shrink-0 text-primary"
+									class="text-primary h-5 w-5 flex-shrink-0"
 									strokeWidth={2.5}
 									aria-hidden="true"
 								/>
@@ -139,7 +139,7 @@
 		<!-- Main Call to Action Button -->
 		<div class="mt-10 flex justify-center md:mt-12">
 			<button
-				class="transform rounded-lg bg-primary px-8 py-3 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 hover:bg-orange-700 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-none dark:focus:ring-offset-gray-950"
+				class="bg-primary focus:ring-primary transform rounded-lg px-8 py-3 text-lg font-medium tracking-wide text-white capitalize transition-colors duration-300 hover:bg-orange-700 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:outline-none dark:focus:ring-offset-gray-950"
 			>
 				{selectedPlan ? selectedPlan.ctaText : 'Choose a Plan'}
 			</button>

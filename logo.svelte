@@ -1,7 +1,5 @@
-<svg {...$$restProps} fill="none" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"
->
-	<g clip-path="url(#clip0_71_202)"
-	>
+<svg {...$$restProps} fill="none" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+	<g clip-path="url(#clip0_71_202)">
 		<rect fill="#EB4F27" height="40" width="40"></rect>
 		<path
 			clip-rule="evenodd"
@@ -9,15 +7,10 @@
 			fill="white"
 			fill-rule="evenodd"
 		></path>
-	</g
-	>
-	<defs
-	>
+	</g>
+	<defs>
 		<clipPath id="clip0_71_202">
 			<rect fill="white" height="40" rx="20" width="40"></rect>
-		</clipPath
-		>
-	</defs
-	>
-</svg
->
+		</clipPath>
+	</defs>
+</svg>

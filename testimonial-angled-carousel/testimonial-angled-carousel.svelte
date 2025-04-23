@@ -168,7 +168,7 @@
 		<!-- Section Header -->
 		<div class="mx-auto mb-16 max-w-3xl text-center md:mb-20">
 			<p
-				class="mb-2 text-base leading-relaxed font-semibold tracking-wider text-primary uppercase dark:text-orange-400"
+				class="text-primary mb-2 text-base leading-relaxed font-semibold tracking-wider uppercase dark:text-orange-400"
 			>
 				Testimonials
 			</p>
@@ -209,7 +209,7 @@
 			{#if totalSlides > 1}
 				<button
 					onclick={prevSlide}
-					class="absolute top-1/2 left-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-left-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
+					class="hover:text-primary focus:ring-primary absolute top-1/2 left-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white focus:ring-2 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-left-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Previous testimonial"
 					disabled={totalSlides <= 1}
 				>
@@ -217,7 +217,7 @@
 				</button>
 				<button
 					onclick={nextSlide}
-					class="absolute top-1/2 right-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white hover:text-primary focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-right-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
+					class="hover:text-primary focus:ring-primary absolute top-1/2 right-0 z-20 -translate-y-1/2 rounded-full bg-white/60 p-2 text-gray-700 shadow-lg backdrop-blur-sm transition hover:bg-white focus:ring-2 focus:ring-offset-2 focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 md:-right-4 dark:bg-neutral-800/60 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:hover:text-orange-400 dark:focus:ring-offset-neutral-900"
 					aria-label="Next testimonial"
 					disabled={totalSlides <= 1}
 				>
@@ -256,12 +256,12 @@
 </section>
 
 <style>
-    /* Add perspective and preserve-3d for the 3D effect */
-    .perspective {
-        perspective: 1500px;
-    }
+	/* Add perspective and preserve-3d for the 3D effect */
+	.perspective {
+		perspective: 1500px;
+	}
 
-    .preserve-3d {
-        transform-style: preserve-3d;
-    }
+	.preserve-3d {
+		transform-style: preserve-3d;
+	}
 </style>

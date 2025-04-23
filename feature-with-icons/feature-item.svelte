@@ -12,7 +12,7 @@
 
 	<!-- Icon -->
 	<div
-		class="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 text-primary dark:bg-orange-900/50 dark:text-orange-400"
+		class="text-primary mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-orange-100 dark:bg-orange-900/50 dark:text-orange-400"
 	>
 		<svelte:component this={feature.icon} class="h-6 w-6" strokeWidth={2} />
 	</div>

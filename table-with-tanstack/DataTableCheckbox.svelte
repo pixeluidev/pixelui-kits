@@ -9,8 +9,7 @@
 	export let indeterminate: boolean = false; // Prop terpisah untuk indeterminate
 
 	export let checked: $$Props['checked'];
-	export let onCheckedChange: $$Props['onCheckedChange'] = () => {
-	};
+	export let onCheckedChange: $$Props['onCheckedChange'] = () => {};
 	$: indeterminate = checked === 'indeterminate';
 	// Propagate other attributes like aria-label
 	let restProps: Omit<$$Props, 'checked' | 'onCheckedChange'>;

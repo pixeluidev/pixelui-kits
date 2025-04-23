@@ -15,7 +15,7 @@
 	target={tag === 'a' ? '_blank' : undefined}
 >
 	<div
-		class="mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 text-primary dark:bg-orange-900/50 dark:text-orange-400"
+		class="text-primary mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 dark:bg-orange-900/50 dark:text-orange-400"
 	>
 		<svelte:component this={contact.icon} class="h-5 w-5" strokeWidth={2} />
 	</div>

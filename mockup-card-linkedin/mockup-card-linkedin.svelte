@@ -152,7 +152,7 @@
 				<button
 					onclick={toggleSeeMore}
 					class={`text-sm font-semibold ${mutedTextColor} ml-1 hover:underline`}
-				>{showFullText ? 'see less' : '.see more'}</button
+					>{showFullText ? 'see less' : '.see more'}</button
 				>
 			{/if}
 		</div>
@@ -202,7 +202,7 @@
 					class="flex min-h-[100px] w-full items-center justify-center bg-gray-100 p-4 dark:bg-neutral-700"
 				>
 					<span class="text-sm text-gray-500 dark:text-neutral-400"
-					>(Document Preview Placeholder)</span
+						>(Document Preview Placeholder)</span
 					>
 				</div>
 			{/if}
@@ -287,17 +287,17 @@
 <!-- <GitlabIcon ... /> -->
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    @layer utilities {
-        .scrollbar-hide {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
+	@reference "tailwindcss";
+	@layer utilities {
+		.scrollbar-hide {
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
+		.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+		}
 
-        /* Optional: Prose styles if needed */
-    }
+		/* Optional: Prose styles if needed */
+	}
 </style>

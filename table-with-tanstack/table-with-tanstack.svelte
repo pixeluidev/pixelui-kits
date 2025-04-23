@@ -226,7 +226,7 @@
 										onchange={column.getToggleVisibilityHandler()}
 									/>
 									<span class="ml-3 text-sm text-gray-700 capitalize dark:text-gray-200"
-									>{column.id}</span
+										>{column.id}</span
 									>
 								</label>
 							{/if}
@@ -240,44 +240,44 @@
 	<div class="overflow-hidden rounded-md border dark:border-gray-700">
 		<table class="w-full text-left text-sm text-gray-500 dark:text-gray-400">
 			<thead class="bg-gray-50 text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400">
-			{#each table.getHeaderGroups() as headerGroup (headerGroup.id)}
-				<tr class="border-b dark:border-gray-600">
-					{#each headerGroup.headers as header (header.id)}
-						<th scope="col" class="group relative" style:width="{header.getSize()}px">
-							{#if !header.isPlaceholder}
+				{#each table.getHeaderGroups() as headerGroup (headerGroup.id)}
+					<tr class="border-b dark:border-gray-600">
+						{#each headerGroup.headers as header (header.id)}
+							<th scope="col" class="group relative" style:width="{header.getSize()}px">
 								{#if !header.isPlaceholder}
-									<FlexRender
-										content={header.column.columnDef.header}
-										context={header.getContext()}
-									/>
+									{#if !header.isPlaceholder}
+										<FlexRender
+											content={header.column.columnDef.header}
+											context={header.getContext()}
+										/>
+									{/if}
 								{/if}
-							{/if}
-						</th>
-					{/each}
-				</tr>
-			{/each}
+							</th>
+						{/each}
+					</tr>
+				{/each}
 			</thead>
 			<tbody>
-			{#each table.getRowModel().rows as row (row.id)}
-				<tr
-					class="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600 [data-state='selected']:bg-blue-50 [data-state='selected']:hover:bg-blue-100 [data-state='selected']:dark:bg-blue-900/30 [data-state='selected']:dark:dark:bg-blue-900/40"
-					class:selected={row.getIsSelected()}
-					class:opacity-50={!row.getCanSelect()}
-					data-state={row.getIsSelected() ? 'selected' : undefined}
-				>
-					{#each row.getVisibleCells() as cell (cell.id)}
-						<td class="" style:width="{cell.column.getSize()}px">
-							<FlexRender content={cell.column.columnDef.cell} context={cell.getContext()} />
+				{#each table.getRowModel().rows as row (row.id)}
+					<tr
+						class="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600 [data-state='selected']:bg-blue-50 [data-state='selected']:hover:bg-blue-100 [data-state='selected']:dark:bg-blue-900/30 [data-state='selected']:dark:dark:bg-blue-900/40"
+						class:selected={row.getIsSelected()}
+						class:opacity-50={!row.getCanSelect()}
+						data-state={row.getIsSelected() ? 'selected' : undefined}
+					>
+						{#each row.getVisibleCells() as cell (cell.id)}
+							<td class="" style:width="{cell.column.getSize()}px">
+								<FlexRender content={cell.column.columnDef.cell} context={cell.getContext()} />
+							</td>
+						{/each}
+					</tr>
+				{:else}
+					<tr>
+						<td colspan={columns.length} class="h-24 text-center text-gray-500 dark:text-gray-400">
+							No results found.
 						</td>
-					{/each}
-				</tr>
-			{:else}
-				<tr>
-					<td colspan={columns.length} class="h-24 text-center text-gray-500 dark:text-gray-400">
-						No results found.
-					</td>
-				</tr>
-			{/each}
+					</tr>
+				{/each}
 			</tbody>
 		</table>
 	</div>

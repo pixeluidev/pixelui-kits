@@ -5,7 +5,5 @@
 	"canvas": {
 		"center": true
 	},
-  "packages": [
-    "@tanstack/table-core"
-  ]
+	"packages": ["@tanstack/table-core"]
 }

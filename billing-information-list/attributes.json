@@ -1,13 +1,10 @@
 {
-  "title": "Billing List Information with Form",
-  "category": "billings",
-  "description": "",
-  "canvas": {
-    "center": true,
-    "maxWidth": 1200
-  },
-  "packages": [
-    "sveltekit-superforms",
-    "zod"
-  ]
+	"title": "Billing List Information with Form",
+	"category": "billings",
+	"description": "",
+	"canvas": {
+		"center": true,
+		"maxWidth": 1200
+	},
+	"packages": ["sveltekit-superforms", "zod"]
 }

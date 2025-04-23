@@ -147,7 +147,7 @@
 						Star
 						<span
 							class={`ml-1 rounded-full bg-gray-100 px-1.5 py-0.5 text-[11px] dark:bg-neutral-700 ${mutedTextColor}`}
-						>{stars}</span
+							>{stars}</span
 						>
 					</button>
 					<button
@@ -157,7 +157,7 @@
 						Fork
 						<span
 							class={`ml-1 rounded-full bg-gray-100 px-1.5 py-0.5 text-[11px] dark:bg-neutral-700 ${mutedTextColor}`}
-						>{forks}</span
+							>{forks}</span
 						>
 					</button>
 				</div>
@@ -234,16 +234,16 @@
 										href="https://github.com/pixeluidev/pixelui-kits"
 										target="_blank"
 										class={`-ml-0.5 truncate rounded px-0.5 hover:underline focus:ring-1 focus:ring-orange-400 focus:outline-none ${textColor}`}
-									>{file.name}</a
+										>{file.name}</a
 									>
 								</div>
 								<div class="ml-4 flex flex-shrink-0 items-center space-x-4">
 									<span
 										class={`truncate text-xs ${mutedTextColor} hidden max-w-[200px] md:inline lg:max-w-[300px]`}
-									>{file.lastCommitMessage}</span
+										>{file.lastCommitMessage}</span
 									>
 									<span class={`text-xs ${mutedTextColor} hidden w-20 text-right sm:inline`}
-									>{file.lastCommitDate}</span
+										>{file.lastCommitDate}</span
 									>
 								</div>
 							</li>
@@ -264,9 +264,9 @@
 							dashboard, eCommerce store and much more.
 						</p>
 						<pre class="font-mono"><code
-						>yarn add pixelui
+								>yarn add pixelui
 yarn dev</code
-						></pre>
+							></pre>
 						<p>Find more information in the official documentation.</p>
 					</div>
 				</div>
@@ -284,38 +284,38 @@ yarn dev</code
 </div>
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    @layer utilities {
-        .scrollbar-hide {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
+	@reference "tailwindcss";
+	@layer utilities {
+		.scrollbar-hide {
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-    }
+		.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+		}
+	}
 
-    /* Ensure prose styles apply if using @tailwindcss/typography */
-    /* (Pastikan plugin typography sudah diinstall & dikonfigurasi) */
-    .prose :where(code):not(:where([class~='not-prose'] *))::before {
-        content: '' !important;
-    }
+	/* Ensure prose styles apply if using @tailwindcss/typography */
+	/* (Pastikan plugin typography sudah diinstall & dikonfigurasi) */
+	.prose :where(code):not(:where([class~='not-prose'] *))::before {
+		content: '' !important;
+	}
 
-    .prose :where(code):not(:where([class~='not-prose'] *))::after {
-        content: '' !important;
-    }
+	.prose :where(code):not(:where([class~='not-prose'] *))::after {
+		content: '' !important;
+	}
 
-    /* Penyesuaian warna kode di prose */
-    .prose code {
-        @apply rounded bg-orange-100/60 px-1 py-0.5 text-xs font-medium text-orange-800 dark:bg-orange-900/40 dark:text-orange-300;
-    }
+	/* Penyesuaian warna kode di prose */
+	.prose code {
+		@apply rounded bg-orange-100/60 px-1 py-0.5 text-xs font-medium text-orange-800 dark:bg-orange-900/40 dark:text-orange-300;
+	}
 
-    .prose pre {
-        @apply overflow-x-auto rounded-md border border-gray-200 bg-gray-50 p-4 text-xs dark:border-neutral-700 dark:bg-neutral-800/60;
-    }
+	.prose pre {
+		@apply overflow-x-auto rounded-md border border-gray-200 bg-gray-50 p-4 text-xs dark:border-neutral-700 dark:bg-neutral-800/60;
+	}
 
-    .prose pre code {
-        @apply border-none bg-transparent p-0 font-normal whitespace-pre text-inherit dark:bg-transparent;
-    }
+	.prose pre code {
+		@apply border-none bg-transparent p-0 font-normal whitespace-pre text-inherit dark:bg-transparent;
+	}
 </style>

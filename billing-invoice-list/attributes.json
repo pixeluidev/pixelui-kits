@@ -1,12 +1,10 @@
 {
-  "title": "Invoices List",
-  "category": "billings",
-  "description": "Presents a clear list of invoices, showing invoice number, issue date, amount, and status (due or overdue with remaining/past days, or paid). Each item includes a download button. An export button allows exporting the entire list data (functionality to be implemented). Ideal for billing dashboards and financial tracking.",
-  "canvas": {
-    "center": true,
-    "maxWidth": 960
-  },
-  "packages": [
-    "date-fns"
-  ]
+	"title": "Invoices List",
+	"category": "billings",
+	"description": "Presents a clear list of invoices, showing invoice number, issue date, amount, and status (due or overdue with remaining/past days, or paid). Each item includes a download button. An export button allows exporting the entire list data (functionality to be implemented). Ideal for billing dashboards and financial tracking.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 960
+	},
+	"packages": ["date-fns"]
 }

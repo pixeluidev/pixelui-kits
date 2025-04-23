@@ -1,0 +1,10 @@
+{
+	"title": "Password Reset Request Form",
+	"category": "authentication",
+	"description": "A simple form to initiate the password reset process. Collects the user's email address and provides feedback upon submission, instructing them to check their inbox for a reset link. Includes a link back to the login page.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}

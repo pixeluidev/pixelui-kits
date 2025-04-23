@@ -146,16 +146,16 @@
 </div>
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    /* Optional: hide scrollbar if needed */
-    @layer utilities {
-        .scrollbar-hide {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
+	@reference "tailwindcss";
+	/* Optional: hide scrollbar if needed */
+	@layer utilities {
+		.scrollbar-hide {
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+		}
 
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-    }
+		.scrollbar-hide::-webkit-scrollbar {
+			display: none;
+		}
+	}
 </style>

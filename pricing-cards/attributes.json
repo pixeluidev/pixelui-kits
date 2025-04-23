@@ -1,8 +1,8 @@
 {
-  "title": "Pricing Cards 3 Options",
-  "category": "pricing",
-  "responsive": true,
-  "canvas": {
-    "center": false
-  }
+	"title": "Pricing Cards 3 Options",
+	"category": "pricing",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
 }

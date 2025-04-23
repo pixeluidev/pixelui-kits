@@ -400,7 +400,7 @@
 											>
 												{brand}
 												<span class="text-xs text-gray-500 dark:text-gray-400"
-												>({brandCounts.get(brand) || 0}
+													>({brandCounts.get(brand) || 0}
 													)</span
 												>
 											</label>
@@ -428,7 +428,7 @@
 											>
 												{category}
 												<span class="text-xs text-gray-500 dark:text-gray-400"
-												>({categoryCounts.get(category) || 0})</span
+													>({categoryCounts.get(category) || 0})</span
 												>
 											</label>
 										</li>
@@ -460,37 +460,37 @@
 					<thead
 						class="bg-gray-50 text-xs text-gray-700 uppercase dark:bg-gray-700 dark:text-gray-400"
 					>
-					<tr>
-						<th class="px-4 py-3" scope="col">Product name</th>
-						<th class="px-4 py-3" scope="col">Brand</th>
-						<th class="px-4 py-3" scope="col">Category</th>
-						<th class="px-4 py-3" scope="col">Price</th>
-					</tr>
+						<tr>
+							<th class="px-4 py-3" scope="col">Product name</th>
+							<th class="px-4 py-3" scope="col">Brand</th>
+							<th class="px-4 py-3" scope="col">Category</th>
+							<th class="px-4 py-3" scope="col">Price</th>
+						</tr>
 					</thead>
 					<tbody>
-					{#each displayedItems as item (item.id)}
-						<tr class="border-b hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-600">
-							<th scope="row" class="px-4 py-3 ...">{item.product_name}</th>
-							<td class="px-4 py-3">{item.brand}</td>
-							<td class="px-4 py-3">{item.category}</td>
-							<td class="px-4 py-3">{item.price}</td>
-						</tr>
-					{:else}
-						<tr>
-							<td colspan="4" class="px-4 py-8 text-center text-gray-500 dark:text-gray-400">
-								{#if totalItems === 0 && (searchTerm || hasActiveFilters)}
-									No products found matching your criteria.
-								{:else if items.length === 0}
-									No products available.
-								{:else if totalItems === 0 && !searchTerm && !hasActiveFilters}
-									<!-- Should not happen if items has data, maybe loading state? -->
-									No data.
-								{:else}
-									No results for this page. <!-- Jika halaman > totalPages -->
-								{/if}
-							</td>
-						</tr>
-					{/each}
+						{#each displayedItems as item (item.id)}
+							<tr class="border-b hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-600">
+								<th scope="row" class="px-4 py-3 ...">{item.product_name}</th>
+								<td class="px-4 py-3">{item.brand}</td>
+								<td class="px-4 py-3">{item.category}</td>
+								<td class="px-4 py-3">{item.price}</td>
+							</tr>
+						{:else}
+							<tr>
+								<td colspan="4" class="px-4 py-8 text-center text-gray-500 dark:text-gray-400">
+									{#if totalItems === 0 && (searchTerm || hasActiveFilters)}
+										No products found matching your criteria.
+									{:else if items.length === 0}
+										No products available.
+									{:else if totalItems === 0 && !searchTerm && !hasActiveFilters}
+										<!-- Should not happen if items has data, maybe loading state? -->
+										No data.
+									{:else}
+										No results for this page. <!-- Jika halaman > totalPages -->
+									{/if}
+								</td>
+							</tr>
+						{/each}
 					</tbody>
 				</table>
 			</div>
@@ -502,8 +502,8 @@
 			>
 				<span class="text-sm font-normal text-gray-500 dark:text-gray-400">
 					Showing <span class="font-semibold text-gray-900 dark:text-white"
-				>{startRange}-{endRange}</span
-				>
+						>{startRange}-{endRange}</span
+					>
 					of <span class="font-semibold text-gray-900 dark:text-white">{totalItems}</span>
 				</span>
 				{#if totalPages > 1}
@@ -514,7 +514,7 @@
 								disabled={currentPage === 1}
 								class="..."
 								aria-label="Previous page"
-							>...
+								>...
 							</button>
 						</li>
 						{#each pagesToShow as pageNumber (pageNumber)}
@@ -534,7 +534,7 @@
 								disabled={currentPage === totalPages}
 								class="..."
 								aria-label="Next page"
-							>...
+								>...
 							</button>
 						</li>
 					</ul>

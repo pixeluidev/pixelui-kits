@@ -299,33 +299,33 @@
 <!-- End Frame Mockup -->
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    @layer utilities {
-        .scrollbar::-webkit-scrollbar {
-            @apply h-[6px] w-[6px];
-        }
+	@reference "tailwindcss";
+	@layer utilities {
+		.scrollbar::-webkit-scrollbar {
+			@apply h-[6px] w-[6px];
+		}
 
-        .scrollbar::-webkit-scrollbar-track {
-            background-color: var(--scrollbar-track);
-        }
+		.scrollbar::-webkit-scrollbar-track {
+			background-color: var(--scrollbar-track);
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb {
-            @apply rounded opacity-0;
-            background-color: var(--scrollbar-thumb);
-        }
+		.scrollbar::-webkit-scrollbar-thumb {
+			@apply rounded opacity-0;
+			background-color: var(--scrollbar-thumb);
+		}
 
-        .scrollbar:hover::-webkit-scrollbar-thumb {
-            @apply opacity-100;
-            transition: opacity 0.2s ease-in-out;
-        }
+		.scrollbar:hover::-webkit-scrollbar-thumb {
+			@apply opacity-100;
+			transition: opacity 0.2s ease-in-out;
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb:hover {
-            background-color: var(--scrollbar-thumb-hover);
-        }
+		.scrollbar::-webkit-scrollbar-thumb:hover {
+			background-color: var(--scrollbar-thumb-hover);
+		}
 
-        .scrollbar {
-            scrollbar-width: thin;
-            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-        }
-    }
+		.scrollbar {
+			scrollbar-width: thin;
+			scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+		}
+	}
 </style>

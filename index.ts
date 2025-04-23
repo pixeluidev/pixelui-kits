@@ -109,9 +109,7 @@ export { default as BillingCardInformation } from './billing-card-information/bi
 export { default as BillingPaymentMethod } from './billing-payment-method/billing-payment-method.svelte';
 export { default as BillingTransactionHistory } from './billing-transaction-history/billing-transaction-history.svelte';
 export { default as BillingInvoiceList } from './billing-invoice-list/billing-invoice-list.svelte';
-export {
-	default as BillingSimpleInvoiceDetail
-} from './billing-simple-invoice-detail/billing-simple-invoice-detail.svelte';
+export { default as BillingSimpleInvoiceDetail } from './billing-simple-invoice-detail/billing-simple-invoice-detail.svelte';
 
 /**
  * Calendars
@@ -161,19 +159,17 @@ export { default as MockupCardFacebook } from './mockup-card-facebook/mockup-car
 
 export { default as FlowchartProcess } from './flowchart-process/flowchart-process.svelte';
 
-
 /**
  * Heroes
  */
 
 export { default as HeroSplitImageText } from './hero-split-image-text/hero-split-image-text.svelte';
 export { default as HeroCenteredText } from './hero-centered-text/hero-centered-text.svelte';
-export { default as HeroVideoBackground} from "./hero-video-background/hero-video-background.svelte"
+export { default as HeroVideoBackground } from './hero-video-background/hero-video-background.svelte';
 export { default as HeroFormLeadgen } from './hero-form-leadgen/hero-form-leadgen.svelte';
 export { default as HeroGradientText } from './hero-gradient-text/hero-gradient-text.svelte';
 export { default as HeroTestimonialFocus } from './hero-testimonial-focus/hero-testimonial-focus.svelte';
 export { default as HeroAnimatedIllustration } from './hero-animated-illustration/hero-animated-illustration.svelte';
-
 
 /**
  * Authentication
@@ -182,3 +178,6 @@ export { default as LoginFormSimple } from './login-form-simple/login-form-simpl
 export { default as LoginFormSocial } from './login-form-social/login-form-social.svelte';
 export { default as SignupFormSimple } from './signup-form-simple/signup-form-simple.svelte';
 export { default as SignupFormSocial } from './signup-form-social/signup-form-social.svelte';
+export { default as PasswordResetRequest } from './password-reset-request/password-reset-request.svelte';
+export { default as PasswordResetConfirmForm } from './password-reset-confirm-form/password-reset-confirm-form.svelte';
+export { default as VerificationCodeForm } from './verification-code-form/verification-code-form.svelte';

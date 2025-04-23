@@ -5,8 +5,7 @@
 	import type { Icon } from 'lucide-svelte';
 
 	export let menuData: MegaMenuTab[];
-	export let onClose: () => void = () => {
-	};
+	export let onClose: () => void = () => {};
 
 	// State to track the active tab ID
 	let activeTabId: string | number | null = menuData[0]?.id ?? null;
@@ -105,7 +104,7 @@
 													{#if contentBlock.icon}
 														<svelte:component
 															this={contentBlock.icon as typeof SvelteComponent<Icon>}
-															class="h-4 w-4 text-primary"
+															class="text-primary h-4 w-4"
 															strokeWidth={2}
 														/>
 													{/if}
@@ -116,15 +115,15 @@
 												{#each contentBlock.value as link (link.label)}
 													<li>
 														<a
-															class="group flex flex-col text-sm text-gray-600 hover:text-primary focus:text-primary focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
+															class="group hover:text-primary focus:text-primary flex flex-col text-sm text-gray-600 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 															href={link.href}
 														>
 															<span class="font-medium underline-offset-2 group-hover:underline"
-															>{link.label}</span
+																>{link.label}</span
 															>
 															{#if link.description}
 																<span class="text-xs text-gray-500 dark:text-neutral-500"
-																>{link.description}</span
+																	>{link.description}</span
 																>
 															{/if}
 														</a>

@@ -176,7 +176,7 @@
 				<span class="hidden sm:inline">Star</span>
 				<span
 					class={`ml-1 rounded-full bg-gray-100 px-1.5 py-0.5 text-[10px] dark:bg-neutral-700 ${mutedTextColor}`}
-				>{stars}</span
+					>{stars}</span
 				>
 			</button>
 			<button
@@ -186,7 +186,7 @@
 				<span class="hidden sm:inline">Fork</span>
 				<span
 					class={`ml-1 rounded-full bg-gray-100 px-1.5 py-0.5 text-[10px] dark:bg-neutral-700 ${mutedTextColor}`}
-				>{forks}</span
+					>{forks}</span
 				>
 			</button>
 			<!-- Tombol dropdown placeholder -->
@@ -247,7 +247,7 @@
 							<!-- Indikator Aktif -->
 							{#if item.id === activeSidebarItemId}
 								<span
-									class="absolute inset-y-0 left-0 w-1 rounded-r-md bg-primary dark:bg-orange-400"
+									class="bg-primary absolute inset-y-0 left-0 w-1 rounded-r-md dark:bg-orange-400"
 								></span>
 							{/if}
 						</button>
@@ -338,16 +338,16 @@
 											<a
 												href="#"
 												class={`-ml-0.5 truncate rounded px-0.5 hover:underline focus:ring-1 focus:ring-orange-400 focus:outline-none ${linkColor} ${linkHoverColor}`}
-											>{file.name}</a
+												>{file.name}</a
 											>
 										</div>
 										<div class="ml-4 flex flex-shrink-0 items-center space-x-4">
 											<span
 												class={`truncate text-xs ${mutedTextColor} hidden max-w-[200px] md:inline lg:max-w-[300px]`}
-											>{file.lastCommitMessage}</span
+												>{file.lastCommitMessage}</span
 											>
 											<span class={`text-xs ${mutedTextColor} hidden w-20 text-right sm:inline`}
-											>{file.lastCommitDate}</span
+												>{file.lastCommitDate}</span
 											>
 										</div>
 									</li>
@@ -363,10 +363,10 @@
 							<div class={`prose prose-sm dark:prose-invert max-w-none ${mutedTextColor}`}>
 								<p>GitLab project description, setup guide, contribution details, etc.</p>
 								<pre><code
-								>git clone your-repo.git
+										>git clone your-repo.git
 cd your-repo
 npm install</code
-								></pre>
+									></pre>
 							</div>
 						</div>
 					{:else}
@@ -398,48 +398,48 @@ npm install</code
 <!-- End Frame Mockup -->
 
 <style lang="postcss">
-    @reference "tailwindcss";
-    @layer utilities {
-        /* Scrollbar */
-        .scrollbar::-webkit-scrollbar {
-            @apply h-[5px] w-[5px];
-        }
+	@reference "tailwindcss";
+	@layer utilities {
+		/* Scrollbar */
+		.scrollbar::-webkit-scrollbar {
+			@apply h-[5px] w-[5px];
+		}
 
-        .scrollbar::-webkit-scrollbar-track {
-            background-color: var(--scrollbar-track);
-        }
+		.scrollbar::-webkit-scrollbar-track {
+			background-color: var(--scrollbar-track);
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb {
-            @apply rounded;
-            background-color: var(--scrollbar-thumb);
-            opacity: 0;
-        }
+		.scrollbar::-webkit-scrollbar-thumb {
+			@apply rounded;
+			background-color: var(--scrollbar-thumb);
+			opacity: 0;
+		}
 
-        .scrollbar:hover::-webkit-scrollbar-thumb {
-            @apply opacity-100;
-            transition: opacity 0.2s ease-in-out;
-        }
+		.scrollbar:hover::-webkit-scrollbar-thumb {
+			@apply opacity-100;
+			transition: opacity 0.2s ease-in-out;
+		}
 
-        .scrollbar::-webkit-scrollbar-thumb:hover {
-            background-color: var(--scrollbar-thumb-hover);
-        }
+		.scrollbar::-webkit-scrollbar-thumb:hover {
+			background-color: var(--scrollbar-thumb-hover);
+		}
 
-        .scrollbar {
-            scrollbar-width: thin;
-            scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-        }
+		.scrollbar {
+			scrollbar-width: thin;
+			scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+		}
 
-        /* Prose adjustments if needed */
-        .prose code {
-            @apply rounded bg-orange-100/60 px-1 py-0.5 text-xs font-medium text-orange-800 dark:bg-orange-900/40 dark:text-orange-300;
-        }
+		/* Prose adjustments if needed */
+		.prose code {
+			@apply rounded bg-orange-100/60 px-1 py-0.5 text-xs font-medium text-orange-800 dark:bg-orange-900/40 dark:text-orange-300;
+		}
 
-        .prose pre {
-            @apply overflow-x-auto rounded-md border border-gray-200 bg-gray-50 p-4 text-xs dark:border-neutral-700 dark:bg-neutral-800/60;
-        }
+		.prose pre {
+			@apply overflow-x-auto rounded-md border border-gray-200 bg-gray-50 p-4 text-xs dark:border-neutral-700 dark:bg-neutral-800/60;
+		}
 
-        .prose pre code {
-            @apply border-none bg-transparent p-0 font-normal whitespace-pre text-inherit dark:bg-transparent;
-        }
-    }
+		.prose pre code {
+			@apply border-none bg-transparent p-0 font-normal whitespace-pre text-inherit dark:bg-transparent;
+		}
+	}
 </style>

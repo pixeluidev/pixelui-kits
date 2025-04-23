@@ -102,7 +102,7 @@
 					aria-expanded={isMobileMenuOpen}
 					aria-label="Toggle navigation"
 					bind:this={mobileToggleBtnEl}
-					class="inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:ring-offset-neutral-900"
+					class="focus:ring-primary inline-flex items-center justify-center gap-x-2 rounded-lg border border-gray-200 bg-white p-2 text-gray-800 shadow-sm hover:bg-gray-100 focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:outline-none dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:ring-offset-neutral-900"
 					onclick={toggleMobileMenu}
 					type="button"
 				>
@@ -199,7 +199,7 @@
 					<!-- Desktop Links -->
 					<div class="hidden items-center justify-end sm:flex sm:gap-x-2">
 						<a
-							class="px-3 py-5 text-sm font-medium focus:text-primary focus:outline-none dark:focus:text-orange-400"
+							class="focus:text-primary px-3 py-5 text-sm font-medium focus:outline-none dark:focus:text-orange-400"
 							class:text-primary={currentPath === '/active'}
 							class:dark:text-orange-400={currentPath === '/active'}
 							class:font-semibold={currentPath === '/active'}
@@ -217,7 +217,7 @@
 								bind:this={megaMenuButtonEl}
 								id="hs-mega-menu"
 								type="button"
-								class="flex items-center px-3 py-5 text-sm font-medium text-gray-700 hover:text-primary focus:text-primary focus:outline-none dark:text-neutral-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
+								class="hover:text-primary focus:text-primary flex items-center px-3 py-5 text-sm font-medium text-gray-700 focus:outline-none dark:text-neutral-300 dark:hover:text-orange-400 dark:focus:text-orange-400"
 								aria-haspopup="menu"
 								aria-expanded={isMegaMenuOpen}
 								onclick={toggleMobileMenu}
@@ -235,7 +235,7 @@
 						</div>
 
 						<a
-							class="px-3 py-5 text-sm font-medium focus:text-primary focus:outline-none dark:focus:text-orange-400"
+							class="focus:text-primary px-3 py-5 text-sm font-medium focus:outline-none dark:focus:text-orange-400"
 							class:text-primary={currentPath === '/project'}
 							class:dark:text-orange-400={currentPath === '/project'}
 							class:font-semibold={currentPath === '/project'}

@@ -1,13 +1,10 @@
 {
-  "title": "Payment Methods List",
-  "category": "billings",
-  "description": "Displays a list of saved payment methods with brand logos adapting to light/dark themes. Allows users to manage their cards (view masked number, set default, edit, delete) and provides a button to add a new payment method using an integrated form. Suitable for user account settings or checkout processes.",
-  "canvas": {
-    "center": true,
-    "maxWidth": 1024
-  },
-  "packages": [
-    "sveltekit-superforms",
-    "zod"
-  ]
+	"title": "Payment Methods List",
+	"category": "billings",
+	"description": "Displays a list of saved payment methods with brand logos adapting to light/dark themes. Allows users to manage their cards (view masked number, set default, edit, delete) and provides a button to add a new payment method using an integrated form. Suitable for user account settings or checkout processes.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 1024
+	},
+	"packages": ["sveltekit-superforms", "zod"]
 }

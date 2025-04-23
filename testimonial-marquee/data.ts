@@ -38,7 +38,8 @@ export const sampleTestimonials: TestimonialData[] = [
 		authorName: 'Svelte Dev',
 		authorHandle: '@sveltefan',
 		avatarUrl: legoAvatar(5),
-		tweetText: 'Baru mencoba Pixel UI untuk proyek SvelteKit saya, komponennya sangat mudah digunakan dan terlihat bagus dengan Tailwind! Hemat banyak waktu. Recommended! 👍 #svelte #tailwindcss #webdev',
+		tweetText:
+			'Baru mencoba Pixel UI untuk proyek SvelteKit saya, komponennya sangat mudah digunakan dan terlihat bagus dengan Tailwind! Hemat banyak waktu. Recommended! 👍 #svelte #tailwindcss #webdev',
 		tweetUrl: '#' // Link ke tweet asli
 	},
 	{
@@ -46,7 +47,8 @@ export const sampleTestimonials: TestimonialData[] = [
 		authorName: 'UI Designer Pro',
 		authorHandle: '@designerpro',
 		avatarUrl: legoAvatar(2),
-		tweetText: 'Suka dengan konsistensi desain dan fleksibilitas komponen Pixel UI. Warna orange-500 sebagai aksen utama juga pilihan yang menarik. #uikits #designsystem',
+		tweetText:
+			'Suka dengan konsistensi desain dan fleksibilitas komponen Pixel UI. Warna orange-500 sebagai aksen utama juga pilihan yang menarik. #uikits #designsystem',
 		tweetUrl: '#'
 	},
 	{
@@ -54,7 +56,8 @@ export const sampleTestimonials: TestimonialData[] = [
 		authorName: 'Frontend Joe',
 		authorHandle: '@frontendjoe',
 		avatarUrl: legoAvatar(8),
-		tweetText: 'Integrasi dengan TypeScript di Pixel UI sangat mulus. Kudos untuk tim @pixeluidev! Membuat pengembangan lebih cepat dan aman. 🔥',
+		tweetText:
+			'Integrasi dengan TypeScript di Pixel UI sangat mulus. Kudos untuk tim @pixeluidev! Membuat pengembangan lebih cepat dan aman. 🔥',
 		tweetUrl: '#'
 	},
 	{
@@ -70,7 +73,8 @@ export const sampleTestimonials: TestimonialData[] = [
 		authorName: 'Startup Sally',
 		authorHandle: '@startupsally',
 		avatarUrl: legoAvatar(1),
-		tweetText: 'Menggunakan Pixel UI untuk landing page startup kami. Prosesnya cepat dan hasilnya profesional. Komponen testimoninya juga keren!',
+		tweetText:
+			'Menggunakan Pixel UI untuk landing page startup kami. Prosesnya cepat dan hasilnya profesional. Komponen testimoninya juga keren!',
 		tweetUrl: '#'
-	},
+	}
 ];

@@ -1,7 +1,6 @@
 <script lang="ts">
 	// Prop to notify the parent to close the menu
-	export let onClose: () => void = () => {
-	};
+	export let onClose: () => void = () => {};
 
 	function handleLinkClick(event: MouseEvent & { currentTarget: EventTarget & HTMLDivElement }) {
 		event.stopPropagation();

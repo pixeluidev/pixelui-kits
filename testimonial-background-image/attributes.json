@@ -1,8 +1,8 @@
 {
-  "title": "Background Image Testimonial Slider",
-  "category": "testimonials",
-  "responsive": false,
-  "canvas": {
-    "center": true
-  }
+	"title": "Background Image Testimonial Slider",
+	"category": "testimonials",
+	"responsive": false,
+	"canvas": {
+		"center": true
+	}
 }

@@ -1,8 +1,8 @@
 {
-  "title": "Simple no-tricks pricing",
-  "category": "pricing",
-  "responsive": true,
-  "canvas": {
-    "center": false
-  }
+	"title": "Simple no-tricks pricing",
+	"category": "pricing",
+	"responsive": true,
+	"canvas": {
+		"center": false
+	}
 }

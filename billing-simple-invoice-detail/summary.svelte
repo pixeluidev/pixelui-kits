@@ -23,19 +23,19 @@
 		<li class="flex justify-between">
 			<span class="text-gray-600 dark:text-neutral-400">Subtotal</span>
 			<span class="font-medium text-gray-800 dark:text-neutral-200"
-			>{formatCurrency(subtotal, currency)}</span
+				>{formatCurrency(subtotal, currency)}</span
 			>
 		</li>
 		<li class="flex justify-between">
 			<span class="text-gray-600 dark:text-neutral-400">Tax</span>
 			<span class="font-medium text-gray-800 dark:text-neutral-200"
-			>{formatCurrency(taxAmount, currency)}</span
+				>{formatCurrency(taxAmount, currency)}</span
 			>
 		</li>
 		<li class="flex justify-between pb-2">
 			<span class="text-gray-600 dark:text-neutral-400">Shipping</span>
 			<span class="font-medium text-gray-800 dark:text-neutral-200"
-			>{formatCurrency(shippingAmount, currency)}</span
+				>{formatCurrency(shippingAmount, currency)}</span
 			>
 		</li>
 		<li
@@ -43,7 +43,7 @@
 		>
 			<span class="text-base text-gray-900 dark:text-white">Order total</span>
 			<span class="text-base text-gray-900 dark:text-white"
-			>{formatCurrency(totalAmount, currency)}</span
+				>{formatCurrency(totalAmount, currency)}</span
 			>
 		</li>
 	</ul>

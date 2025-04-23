@@ -1,9 +1,9 @@
 {
-  "title": "Payment form with stepper",
-  "category": "payments",
-  "responsive": true,
-  "canvas": {
-    "center": true,
-    "maxWidth": 1200
-  }
+	"title": "Payment form with stepper",
+	"category": "payments",
+	"responsive": true,
+	"canvas": {
+		"center": true,
+		"maxWidth": 1200
+	}
 }

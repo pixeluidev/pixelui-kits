@@ -109,8 +109,8 @@
 									class={`me-2 flex h-4 w-4 items-center justify-center rounded-full border sm:me-2.5 sm:h-5 sm:w-5 ${isCurrent ? 'border-primary dark:border-orange-400' : 'border-gray-400 dark:border-neutral-600'} shrink-0`}
 								>
 									{#if isCurrent}<span
-										class="h-1.5 w-1.5 rounded-full bg-primary dark:bg-orange-400"
-									></span>{/if}
+											class="bg-primary h-1.5 w-1.5 rounded-full dark:bg-orange-400"
+										></span>{/if}
 								</span>
 							{/if}
 							{step.label}
@@ -140,7 +140,7 @@
 							>
 							<input
 								bind:value={fullName}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
+								class="focus:border-primary dark:focus:ring-primary/50 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 								id="full_name-2"
 								name="fullName"
 								placeholder="BONNIE GREEN"
@@ -159,7 +159,7 @@
 							</label>
 							<input
 								bind:value={cardNumberRaw}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
+								class="focus:border-primary dark:focus:ring-primary/50 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 pe-12 font-mono text-sm tracking-wider text-gray-900 placeholder-gray-400 transition duration-150 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 								id="card-number-input-2"
 								inputmode="numeric"
 								maxlength="16"
@@ -187,13 +187,13 @@
 							>
 							<select
 								bind:value={expiryMonth}
-								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
+								class="focus:border-primary dark:focus:ring-primary/50 block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 								id="expiry-month-2"
 								name="expiryMonth"
 								required
 							>
 								<option disabled selected value="">MM</option>
-								{#each Array.from({ length: 12 }, (_, i) => String(i + 1).padStart(2, '0')) as month (month)}
+								{#each Array.from( { length: 12 }, (_, i) => String(i + 1).padStart(2, '0') ) as month (month)}
 									<option value={month}>{month}</option>
 								{/each}
 							</select>
@@ -224,7 +224,7 @@
 							>
 							<select
 								bind:value={expiryYear}
-								class="block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:focus:ring-primary/50"
+								class="focus:border-primary dark:focus:ring-primary/50 block w-full appearance-none rounded-lg border border-gray-300 bg-gray-50 p-3 ps-4 pe-9 text-sm text-gray-900 transition duration-150 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white"
 								id="expiry-year-2"
 								name="expiryYear"
 								required
@@ -286,7 +286,7 @@
 							</label>
 							<input
 								bind:value={cvv}
-								class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:border-primary focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400 dark:focus:ring-primary/50"
+								class="focus:border-primary dark:focus:ring-primary/50 block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 font-mono text-sm text-gray-900 placeholder-gray-400 transition duration-150 focus:ring-2 focus:ring-orange-300 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-white dark:placeholder-neutral-400"
 								id="cvv-input-2"
 								inputmode="numeric"
 								maxlength="3"
@@ -307,7 +307,7 @@
 						</div>
 						<div class="relative bg-white px-3 dark:bg-neutral-800">
 							<span class="text-sm font-medium text-gray-500 dark:text-neutral-400"
-							>or pay with</span
+								>or pay with</span
 							>
 						</div>
 					</div>
@@ -378,10 +378,10 @@
 			<!-- Footer Text -->
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
-				class="font-medium text-primary underline hover:no-underline dark:text-orange-400"
-				href="/components"
-				title="Payment Processor">SecurePay Inc.</a
-			>
+					class="text-primary font-medium underline hover:no-underline dark:text-orange-400"
+					href="/components"
+					title="Payment Processor">SecurePay Inc.</a
+				>
 			</p>
 		</div>
 	</div>

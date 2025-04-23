@@ -1,8 +1,8 @@
 {
-  "title": "Angled Testimonial Carousel",
-  "category": "testimonials",
-  "responsive": false,
-  "canvas": {
-    "center": true
-  }
+	"title": "Angled Testimonial Carousel",
+	"category": "testimonials",
+	"responsive": false,
+	"canvas": {
+		"center": true
+	}
 }

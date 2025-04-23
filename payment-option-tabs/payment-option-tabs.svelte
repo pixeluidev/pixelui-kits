@@ -220,10 +220,10 @@
 			<!-- Footer Text -->
 			<p class="mt-8 text-center text-sm text-gray-500 lg:mt-10 lg:text-left dark:text-neutral-400">
 				Payment processed securely by <a
-				class="font-medium text-primary underline hover:no-underline dark:text-orange-400"
-				href="/components"
-				title="Payment Processor">SecurePay Inc.</a
-			>
+					class="text-primary font-medium underline hover:no-underline dark:text-orange-400"
+					href="/components"
+					title="Payment Processor">SecurePay Inc.</a
+				>
 			</p>
 		</div>
 	</div>
