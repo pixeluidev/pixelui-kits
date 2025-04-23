@@ -1,0 +1,10 @@
+{
+	"title": "Sign Up Form - Social Focus",
+	"category": "authentication",
+	"description": "A user registration form that prioritizes signing up via social providers (Google, GitHub, Twitter) for a faster onboarding experience. It features prominent social sign-up buttons and includes the traditional email/password registration as a secondary option below a visual divider.",
+	"canvas": {
+		"center": true,
+		"maxWidth": 480
+	},
+	"packages": []
+}

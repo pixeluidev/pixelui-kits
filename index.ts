@@ -181,3 +181,4 @@ export { default as HeroAnimatedIllustration } from './hero-animated-illustratio
 export { default as LoginFormSimple } from './login-form-simple/login-form-simple.svelte';
 export { default as LoginFormSocial } from './login-form-social/login-form-social.svelte';
 export { default as SignupFormSimple } from './signup-form-simple/signup-form-simple.svelte';
+export { default as SignupFormSocial } from './signup-form-social/signup-form-social.svelte';
