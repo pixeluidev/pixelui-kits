@@ -1,7 +1,7 @@
 <script lang="ts">
+	import { Quote } from '@lucide/svelte';
 	import type { SimpleTestimonialData } from './data'; // Adjust path
 	import { simpleTestimonialData as defaultData } from './data'; // Use imported data as default
-	import Quote from 'lucide-svelte/icons/quote';
 	import { viewport } from './viewport'; // Import the action
 
 	export let data: SimpleTestimonialData = defaultData;

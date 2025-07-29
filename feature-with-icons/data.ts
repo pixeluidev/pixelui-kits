@@ -1,16 +1,10 @@
 // src/lib/data.ts
-import type { SvelteComponent } from 'svelte';
 
-// Import corresponding Lucide icons
-import Truck from 'lucide-svelte/icons/truck';
-import Award from 'lucide-svelte/icons/award'; // Or BadgeCheck / ShieldCheck
-import CircleDollarSign from 'lucide-svelte/icons/circle-dollar-sign';
-
-type IconType = typeof SvelteComponent;
+import { Truck, Award, CircleDollarSign } from '@lucide/svelte';
 
 export interface FeatureItemData {
 	id: string; // Use a unique ID for keys
-	icon?: IconType;
+	icon?: typeof CircleDollarSign;
 	title: string;
 	description: string;
 }
@@ -18,21 +12,21 @@ export interface FeatureItemData {
 export const featuresData: FeatureItemData[] = [
 	{
 		id: 'shipping',
-		icon: Truck as IconType,
+		icon: Truck,
 		title: 'Global Shipping', // Changed title slightly
 		description:
 			'Reliable and efficient shipping options available worldwide, ensuring your products arrive safely and on time.'
 	},
 	{
 		id: 'quality',
-		icon: Award as IconType,
+		icon: Award,
 		title: 'Premium Quality Product', // Changed title slightly
 		description:
 			'Crafted with the finest materials and attention to detail, delivering an exceptional and long-lasting experience.'
 	},
 	{
 		id: 'pricing',
-		icon: CircleDollarSign as IconType,
+		icon: CircleDollarSign,
 		title: 'Competitive Pricing', // Changed title slightly
 		description:
 			'Get the best value for your investment with our fair and transparent pricing structure, suitable for all budgets.'

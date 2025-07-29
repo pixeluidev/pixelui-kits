@@ -122,7 +122,7 @@
 				<div class="mt-6 flex justify-end gap-3">
 					<button
 						type="button"
-						on:click={handleDownload}
+						onclick={handleDownload}
 						class="focus:ring-primary inline-flex items-center gap-1.5 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 focus:ring-2 focus:ring-offset-2 focus:outline-none dark:border-neutral-600 dark:bg-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:ring-orange-400 dark:focus:ring-offset-neutral-900"
 					>
 						<DownloadIcon class="h-4 w-4" />
@@ -130,7 +130,7 @@
 					</button>
 					<button
 						type="button"
-						on:click={handlePrint}
+						onclick={handlePrint}
 						class="bg-primary hover:bg-primary focus:ring-primary dark:bg-primary inline-flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-white shadow-sm transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none dark:hover:bg-orange-700 dark:focus:ring-offset-neutral-900"
 					>
 						<Printer class="h-4 w-4" />

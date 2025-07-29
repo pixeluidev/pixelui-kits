@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { ChevronLeft, ChevronRight, Search } from '@lucide/svelte';
+
 	// Data & Tipe
 	import {
 		finderSidebarItems,
@@ -6,10 +8,6 @@
 		type SidebarItem,
 		type ToolbarItem
 	} from './sidebar'; // Sesuaikan path
-
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
-	import ChevronRight from 'lucide-svelte/icons/chevron-right';
-	import Search from 'lucide-svelte/icons/search';
 
 	// --- Props ---
 	export let title: string = 'Documents';

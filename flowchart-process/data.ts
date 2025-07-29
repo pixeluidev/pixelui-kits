@@ -1,11 +1,8 @@
 // src/lib/data.ts (atau di dalam script jika lebih sederhana)
 
+import { FileText, Search, Settings, CheckCircle2, Send } from '@lucide/svelte';
+
 // Import ikon contoh
-import FileText from 'lucide-svelte/icons/file-text'; // Input/Document
-import Settings from 'lucide-svelte/icons/settings'; // Process
-import Search from 'lucide-svelte/icons/search'; // Review/Check
-import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Approval/Done
-import Send from 'lucide-svelte/icons/send'; // Deploy/Send
 
 export interface FlowchartStep {
 	id: string;

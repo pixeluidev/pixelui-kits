@@ -3,15 +3,10 @@
 	import type { InstagramPostData } from './data'; // Adjust path
 	import { exampleInstaPost as defaultPost } from './data'; // Default data
 	// Ikon Lucide
-	import MoreHorizontal from 'lucide-svelte/icons/more-horizontal';
-	import Heart from 'lucide-svelte/icons/heart';
-	import MessageCircle from 'lucide-svelte/icons/message-circle';
-	import Send from 'lucide-svelte/icons/send'; // Share icon
-	import Bookmark from 'lucide-svelte/icons/bookmark';
-	import Smile from 'lucide-svelte/icons/smile'; // Emoji icon
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified (opsional)
+	import { Heart, MessageCircle, Send, Bookmark, Smile, CheckCircle2 } from '@lucide/svelte';
 	// Utility
 	import { parseTweetText } from '../assets/helper/tweetParser'; // Adjust path
+	import { MoreHorizontal } from '@lucide/svelte';
 
 	// --- Props ---
 	export let post: InstagramPostData = defaultPost;
@@ -110,12 +105,12 @@
 						onclick={() => handleAction('Profile')}>{post.authorUsername}</a
 					>
 					{#if post.isVerified}
-						<CheckCircle2 class="h-3.5 w-3.5 flex-shrink-0 text-blue-500" title="Verified" />
+						<CheckCircle2 class="h-3.5 w-3.5 flex-shrink-0 text-blue-500" />
 					{/if}
 				</div>
 				{#if post.location}
 					<a
-						href="#"
+						href="#location"
 						onclick={() => handleAction('Location')}
 						class="text-xs {mutedTextColor} block truncate hover:opacity-80">{post.location}</a
 					>

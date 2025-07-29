@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Lock from 'lucide-svelte/icons/lock';
+	import { Lock } from '@lucide/svelte';
 
 	// --- Props ---
 	/** URL yang ditampilkan di address bar */

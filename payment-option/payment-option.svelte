@@ -15,8 +15,8 @@
 	import OrderSummaryDisplay from './order-summary-display.svelte';
 	import PromoSection from './promo-section.svelte';
 
-	import RadioGroup from 'lucide-svelte/icons/radio-tower';
 	import { formatCurrency } from './helper'; // Just using an icon for "Add New" radio
+	import { Radio } from '@lucide/svelte';
 
 	// --- Component State ---
 	let currentStepId: string = 'payment';
@@ -148,7 +148,7 @@
 										</div>
 									</div>
 									<div class="ms-4 shrink-0 text-gray-400 dark:text-neutral-500">
-										<RadioGroup class="h-6 w-6" />
+										<Radio class="h-6 w-6" />
 										<!-- Generic icon for new card -->
 									</div>
 								</label>

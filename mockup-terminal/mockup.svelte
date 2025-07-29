@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Copy from 'lucide-svelte/icons/copy';
+	import { Copy } from '@lucide/svelte';
 	import { onDestroy } from 'svelte';
 
 	// --- Props ---

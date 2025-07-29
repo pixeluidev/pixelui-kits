@@ -1,18 +1,22 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte';
-// --- New Data for Payment Tabs ---
-import Landmark from 'lucide-svelte/icons/landmark'; // For Monthly Fees
-import Send from 'lucide-svelte/icons/send';
-import CheckCircle from 'lucide-svelte/icons/check-circle-2'; // For Paypal (example)
-import { CreditCard, ShoppingCart, ClipboardList, Bitcoin } from '@lucide/svelte';
+// import type { Icon } from '@lucide/svelte';
+
+import {
+	Send,
+	Landmark,
+	CheckCircle,
+	CreditCard,
+	ShoppingCart,
+	Bitcoin,
+	Truck
+} from '@lucide/svelte';
 // --- Reused Types from previous examples ---
 // Stepper
 
 export interface CheckoutStep {
 	id: string;
 	label: string;
-	icon: ComponentType<Icon>;
+	icon: typeof Bitcoin;
 }
 
 export const checkoutStepsData: CheckoutStep[] = [
@@ -73,19 +77,17 @@ export const orderCurrency = 'USD';
 
 // Promo Data
 export interface PromoInfo {
-	icon: ComponentType<Icon>;
+	icon: typeof Landmark;
 	title: string;
 	description: string;
 	linkText?: string;
 	linkHref?: string;
 }
 
-import Truck from 'lucide-svelte/icons/truck';
-
 export interface PaymentTab {
 	id: 'credit-card' | 'monthly-fees' | 'crypto' | 'paypal';
 	label: string;
-	icon: ComponentType<Icon>;
+	icon: typeof Landmark;
 	// We'll associate content components directly later
 }
 
@@ -135,7 +137,7 @@ export const cryptoOptionsData: CryptoOption[] = [
 
 // --- Promo Data --- (Example)
 export interface PromoInfo {
-	icon: ComponentType<Icon>;
+	icon: typeof Truck;
 	title: string;
 	description: string;
 	linkText?: string;

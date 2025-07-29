@@ -1,20 +1,8 @@
-// src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte';
-
-// Import relevant Lucide icons
-import MessageCircle from 'lucide-svelte/icons/message-circle';
-import Users from 'lucide-svelte/icons/users';
-import Cloud from 'lucide-svelte/icons/cloud';
-import PhoneCall from 'lucide-svelte/icons/phone-call';
-import BarChart from 'lucide-svelte/icons/bar-chart-2';
-import Check from 'lucide-svelte/icons/check'; // For basic checkmark if needed
-import Zap from 'lucide-svelte/icons/zap'; // For recommended plan
-
+import { Check, BarChart, PhoneCall, Cloud, Users, MessageCircle } from '@lucide/svelte';
 export interface PricingFeature {
 	text: string; // Allows simple text
 	highlight?: string; // Optional highlighted text part
-	icon: ComponentType<Icon>;
+	icon: typeof MessageCircle;
 }
 
 export interface PricingPlan {

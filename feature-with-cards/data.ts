@@ -1,13 +1,9 @@
 // src/lib/data.ts
-import type { SvelteComponent } from 'svelte';
-import type { Icon } from '@lucide/svelte';
+import { Gauge, ShieldCheck, Puzzle } from '@lucide/svelte';
 
-type IconType = typeof SvelteComponent;
+type IconType = typeof ShieldCheck;
 
 // Import corresponding Lucide icons
-import Gauge from 'lucide-svelte/icons/gauge'; // Replaces IconGauge
-import ShieldCheck from 'lucide-svelte/icons/shield-check'; // Replaces IconUser (for privacy focus)
-import Puzzle from 'lucide-svelte/icons/puzzle'; // Replaces IconCookie (for 'no third parties'/integration)
 
 export interface FeatureCardData {
 	id: string; // Unique ID for keys

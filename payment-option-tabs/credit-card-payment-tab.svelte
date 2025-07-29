@@ -2,7 +2,7 @@
 	import { savedPaymentMethodsData } from './data';
 	import SavedPaymentMethodComponent from './saved-payment-method.svelte';
 	import AddNewCardForm from './add-new-card-form.svelte';
-	import RadioGroupIcon from 'lucide-svelte/icons/radio-tower'; // Corrected Icon name likely
+	import { RadioIcon } from '@lucide/svelte'; // Corrected Icon name likely
 	import { fade } from 'svelte/transition';
 
 	// State specific to this tab
@@ -80,7 +80,7 @@
 				</div>
 			</div>
 			<div class="mCreditCardPaymentTabs-4 shrink-0 text-gray-400 dark:text-neutral-500">
-				<RadioGroupIcon class="h-6 w-6" />
+				<RadioIcon class="h-6 w-6" />
 			</div>
 		</label>
 

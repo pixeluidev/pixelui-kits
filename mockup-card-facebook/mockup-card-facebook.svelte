@@ -4,10 +4,7 @@
 	import { exampleFacebookPost as defaultPost, privacyIcons } from './data'; // Default data & ikon privasi
 	// Ikon Lucide
 
-	import Ellipsis from 'lucide-svelte/icons/ellipsis';
-	import ThumbsUp from 'lucide-svelte/icons/thumbs-up';
-	import MessageCircle from 'lucide-svelte/icons/message-circle';
-	import Forward from 'lucide-svelte/icons/forward';
+	import { Ellipsis, Forward, MessageCircle, ThumbsUp } from '@lucide/svelte';
 	// Utility
 	import { parseFacebookText, formatFacebookCount } from './facebook-parser'; // Adjust path
 

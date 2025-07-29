@@ -1,8 +1,6 @@
 // --- Ikon ---
-import Globe from 'lucide-svelte/icons/globe'; // Publik
-import Users from 'lucide-svelte/icons/users'; // Teman
-import Lock from 'lucide-svelte/icons/lock'; // Hanya Saya
 
+import { Globe, Users, Lock } from '@lucide/svelte';
 // --- Tipe Data Postingan Facebook ---
 export interface FacebookPostData {
 	id: string;

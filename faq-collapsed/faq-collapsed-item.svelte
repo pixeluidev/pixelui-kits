@@ -1,8 +1,7 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import type { FaqItemData } from './data';
-	import Plus from 'lucide-svelte/icons/plus';
-	import Minus from 'lucide-svelte/icons/minus';
+	import { Minus, Plus } from '@lucide/svelte';
 
 	export let item: FaqItemData;
 	export let isOpen: boolean = false;

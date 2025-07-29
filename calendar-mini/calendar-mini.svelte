@@ -8,10 +8,9 @@
 		type MiniCalendarEvent
 	} from './calendar-utils'; // Adjust path
 	import { addMonths, subMonths, startOfToday, format } from 'date-fns';
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 
 	// Icons
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
-	import ChevronRight from 'lucide-svelte/icons/chevron-right';
 
 	// --- State ---
 	let displayDate = startOfToday(); // The month/year being displayed

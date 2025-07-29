@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { CheckCircle2 } from '@lucide/svelte';
 	import type { TestimonialListItemData } from './data'; // Adjust path
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified badge
 
 	export let testimonial: TestimonialListItemData;
 </script>
@@ -24,10 +24,7 @@
 					{testimonial.authorName}
 				</h6>
 				{#if testimonial.isVerified}
-					<CheckCircle2
-						class="text-primary h-4 w-4 dark:text-orange-400"
-						title="Verified Account"
-					/>
+					<CheckCircle2 class="text-primary h-4 w-4 dark:text-orange-400" />
 				{/if}
 			</div>
 			<p class="text-xs font-medium text-gray-500 dark:text-neutral-400">

@@ -6,9 +6,7 @@
 	import { fade } from 'svelte/transition';
 	import MegaMenuWithTabs from './mega-menu.svelte'; // Import the new mega menu
 	import { megaMenuTabsData } from './data'; // Import the tab data
-	import Menu from 'lucide-svelte/icons/menu';
-	import X from 'lucide-svelte/icons/x';
-	import ChevronDown from 'lucide-svelte/icons/chevron-down';
+	import { ChevronDown, Menu, X } from '@lucide/svelte';
 
 	let isMobileMenuOpen: boolean = false;
 	let isMegaMenuOpen: boolean = false;

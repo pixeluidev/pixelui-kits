@@ -1,8 +1,10 @@
 <script lang="ts">
 	import type { TestimonialListItemData } from './data'; // Sesuaikan path
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified badge
+	import { CheckCircle2 } from '@lucide/svelte'; // Verified badge
 
-	export let testimonial: TestimonialListItemData;
+	const { testimonial }: { testimonial: TestimonialListItemData } = $props();
+
+	const Icon = testimonial.sourceIcon as unknown as typeof CheckCircle2;
 </script>
 
 <div
@@ -28,10 +30,7 @@
 					{testimonial.authorName}
 				</h6>
 				{#if testimonial.isVerified}
-					<CheckCircle2
-						class="text-primary h-4 w-4 flex-shrink-0 dark:text-orange-400"
-						title="Verified Account"
-					/>
+					<CheckCircle2 class="text-primary h-4 w-4 flex-shrink-0 dark:text-orange-400" />
 				{/if}
 			</div>
 			{#if testimonial.authorHandle}
@@ -67,8 +66,8 @@
 				class="hover:text-primary focus:text-primary flex items-center gap-1.5 text-xs font-medium text-gray-500 transition-colors duration-150 focus:outline-none dark:text-neutral-400 dark:hover:text-orange-400"
 				title={`View on ${testimonial.sourceName ?? 'Source'}`}
 			>
-				{#if testimonial.sourceIcon}
-					<svelte:component this={testimonial.sourceIcon} class="h-4 w-4" />
+				{#if Icon}
+					<Icon class="h-4 w-4" />
 					<!-- Tidak perlu fallback sourceLogoUrl di sini jika kita standarkan pakai sourceIcon -->
 				{:else if testimonial.sourceName}
 					<!-- Placeholder jika hanya ada nama tapi tidak ada ikon -->

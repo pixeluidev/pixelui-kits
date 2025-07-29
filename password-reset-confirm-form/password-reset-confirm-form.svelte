@@ -1,5 +1,13 @@
 <script lang="ts">
-	import { Lock, Eye, EyeOff, AlertCircle, CheckCircle, RefreshCw, ArrowLeft } from '@lucide/svelte';
+	import {
+		Lock,
+		Eye,
+		EyeOff,
+		AlertCircle,
+		CheckCircle,
+		RefreshCw,
+		ArrowLeft
+	} from '@lucide/svelte';
 
 	// --- Component Props (Essential for Functionality) ---
 	/**

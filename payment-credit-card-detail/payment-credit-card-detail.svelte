@@ -1,9 +1,8 @@
 <script lang="ts">
 	// import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import CreditCard from 'lucide-svelte/icons/credit-card';
-	import HelpCircle from 'lucide-svelte/icons/help-circle';
 
+	import { CreditCard, HelpCircle } from '@lucide/svelte';
 	// --- Order Summary Data (Static example) ---
 	const orderSummary = {
 		originalPrice: 6122.0,

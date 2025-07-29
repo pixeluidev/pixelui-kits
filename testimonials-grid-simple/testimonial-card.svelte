@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { TestimonialData } from './data'; // Adjust path
-	import Quote from 'lucide-svelte/icons/quote'; // Icon for quote marks
+	import { Quote } from '@lucide/svelte';
 
 	export let testimonial: TestimonialData;
 

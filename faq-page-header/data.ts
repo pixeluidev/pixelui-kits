@@ -1,9 +1,6 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte'; // Assuming lucide-svelte icons
-import Mail from 'lucide-svelte/icons/mail';
-import Phone from 'lucide-svelte/icons/phone';
-import MapPin from 'lucide-svelte/icons/map-pin';
+
+import { Mail, Phone, MapPin } from '@lucide/svelte';
 
 // --- FAQ Categories ---
 export interface FaqCategory {
@@ -35,7 +32,7 @@ export interface ContactIconInfo {
 	id: string;
 	title: string;
 	description: string;
-	icon: ComponentType<Icon>; // Use ComponentType for Svelte components
+	icon: typeof Mail; // Use typeof for @lucide/svelte icon components
 	href?: string; // Optional link
 }
 

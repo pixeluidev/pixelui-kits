@@ -1,19 +1,21 @@
 // src/lib/data.ts (Jika membuat sidebar/toolbar dinamis)
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte';
-import Home from 'lucide-svelte/icons/home';
-import HardDrive from 'lucide-svelte/icons/hard-drive';
-import Download from 'lucide-svelte/icons/download';
-import Clock from 'lucide-svelte/icons/clock';
-import Star from 'lucide-svelte/icons/star';
-import Trash2 from 'lucide-svelte/icons/trash-2';
-import Cloud from 'lucide-svelte/icons/cloud';
-import Tag from 'lucide-svelte/icons/tag';
+
 // Ikon Toolbar
-import List from 'lucide-svelte/icons/list';
-import LayoutGrid from 'lucide-svelte/icons/layout-grid';
-import Share2 from 'lucide-svelte/icons/share-2';
-import Info from 'lucide-svelte/icons/info';
+
+import {
+	Clock,
+	Cloud,
+	Download,
+	HardDrive,
+	Home,
+	Info,
+	LayoutGrid,
+	List,
+	Share2,
+	Star,
+	Tag,
+	Trash2
+} from '@lucide/svelte';
 
 export interface SidebarItem {
 	id: string;

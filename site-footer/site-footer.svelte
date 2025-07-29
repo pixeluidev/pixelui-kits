@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { Github, Twitter, Send, Dribbble } from '@lucide/svelte'; // Import potential icons
-	import type { ComponentType } from 'svelte';
+	import type { Component } from 'svelte';
 	import type { Icon } from '@lucide/svelte';
 	import { footerLinkGroups, socialLinks } from './data';
 	import { PixelUiLogo } from '../pixel-ui-logo'; // Assuming logo component path
 
 	// Map string keys from data to actual Lucide components
-	const iconMap: Record<string, ComponentType<Icon>> = {
+	const iconMap: Record<string, Component<Icon>> = {
 		github: Github,
 		twitter: Twitter,
 		discord: Send, // Replace with actual Discord icon if available/imported
@@ -53,6 +53,7 @@
 				<!-- Social Links -->
 				<div class="flex space-x-6">
 					{#each socialLinks as link (link.label)}
+						{@const IconComponent = iconMap[link.icon] as Component}
 						<a
 							href={link.href}
 							target="_blank"
@@ -61,7 +62,7 @@
 						>
 							<span class="sr-only">{link.label}</span>
 							{#if iconMap[link.icon]}
-								<svelte:component this={iconMap[link.icon]} class="h-6 w-6" aria-hidden="true" />
+								<IconComponent class="h-6 w-6" aria-hidden="true" />
 							{:else}
 								<!-- Fallback text if icon key is wrong -->
 								{link.label.slice(0, 1)}

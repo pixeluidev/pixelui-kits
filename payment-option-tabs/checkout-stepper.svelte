@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { CheckoutStep } from './data'; // Adjust path if needed
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
+	import { CheckCircle2 } from '@lucide/svelte';
 
 	export let steps: CheckoutStep[];
 	export let currentStepId: string;

@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { titledFeaturesData, type TitledFeatureData } from './data'; // Adjust path
+	import { ArrowRight } from '@lucide/svelte';
+	import { titledFeaturesData } from './data'; // Adjust path
 	import TitledFeatureItem from './TitledFeatureItem.svelte';
-	import { fade, fly } from 'svelte/transition';
-	import ArrowRight from 'lucide-svelte/icons/arrow-right';
+	import { fade } from 'svelte/transition';
 </script>
 
 <section class="bg-white py-16 md:py-24 dark:bg-neutral-900">

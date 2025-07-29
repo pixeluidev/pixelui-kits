@@ -1,6 +1,5 @@
 <script lang="ts">
 	// Impor ikon jika diperlukan (opsional)
-	// import SomeIcon from 'lucide-svelte/icons/some-icon';
 
 	// --- Props ---
 	import type { SvelteComponent } from 'svelte';

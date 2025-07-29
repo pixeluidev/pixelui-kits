@@ -4,13 +4,7 @@
 	import { checkoutSteps, orderSummaryData, orderCurrency } from './data'; // Adjust path if needed
 
 	// Import icons
-	// import GoogleIcon from './components/icons/GoogleIcon.svelte'; // Assuming you create these simple SVG components
-	// import PaypalIcon from './components/icons/PaypalIcon.svelte';
-	// import Calendar from 'lucide-svelte/icons/calendar-days';
-	import CreditCardIcon from 'lucide-svelte/icons/credit-card';
-	import HelpCircle from 'lucide-svelte/icons/help-circle';
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
-
+	import { CheckCircle2, CreditCardIcon, HelpCircle } from '@lucide/svelte';
 	// --- State ---
 	let currentStepId: string = 'payment'; // Set the current active step
 

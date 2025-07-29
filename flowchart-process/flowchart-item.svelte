@@ -1,12 +1,10 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	// Data & Tipe
 	import type { FlowchartStep } from './data'; // Adjust path
 	import { exampleFlowchartSteps as defaultSteps } from './data'; // Default data
 	// Ikon default jika tidak ada di data
-	import CircleDot from 'lucide-svelte/icons/circle-dot'; // Default/Pending
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Complete
-	import AlertCircle from 'lucide-svelte/icons/alert-circle'; // Current/Error
+
+	import { AlertCircle, CheckCircle2, CircleDot } from '@lucide/svelte';
 	import type { SvelteComponent } from 'svelte';
 	import type { Icon } from '@lucide/svelte';
 
@@ -68,7 +66,7 @@
 	}
 
 	// Fungsi untuk mendapatkan ikon berdasarkan status (atau ikon dari data step)
-	function getStatusIcon(step: FlowchartStep): typeof SvelteComponent<Icon> {
+	function getStatusIcon(step: FlowchartStep): typeof CheckCircle2 {
 		if (step.icon) return step.icon; // Prioritaskan ikon dari data
 		switch (step.status) {
 			case 'complete':

@@ -1,8 +1,6 @@
 <script lang="ts">
+	import { CreditCardIcon, HelpCircle } from '@lucide/svelte';
 	import { fade } from 'svelte/transition';
-
-	import CreditCardIcon from 'lucide-svelte/icons/credit-card';
-	import HelpCircle from 'lucide-svelte/icons/help-circle';
 
 	// Props for binding form values (two-way)
 	export let fullName: string = '';

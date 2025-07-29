@@ -2,8 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { testimonialListData, type TestimonialListItemData } from './data'; // Adjust path
 	import TestimonialCardItem from './testimonial-card-item.svelte'; // Adjust path
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
-	import ChevronRight from 'lucide-svelte/icons/chevron-right';
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 
 	// --- Props ---
 	export let testimonials: TestimonialListItemData[] = testimonialListData;

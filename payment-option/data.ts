@@ -1,18 +1,13 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte';
 
 // --- Stepper ---
-import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
-import ClipboardList from 'lucide-svelte/icons/clipboard-list';
-import CreditCard from 'lucide-svelte/icons/credit-card';
-import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
-import Truck from 'lucide-svelte/icons/truck';
+
+import { ShoppingCart, ClipboardList, CreditCard, CheckCircle2, Truck } from '@lucide/svelte';
 
 export interface CheckoutStep {
 	id: string;
 	label: string;
-	icon: ComponentType<Icon>;
+	icon: typeof ShoppingCart;
 }
 
 export const checkoutStepsData: CheckoutStep[] = [
@@ -77,7 +72,7 @@ export const orderCurrency = 'USD';
 
 // --- Promo Data --- (Example)
 export interface PromoInfo {
-	icon: ComponentType<Icon>;
+	icon: typeof ShoppingCart;
 	title: string;
 	description: string;
 	linkText?: string;

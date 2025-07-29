@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PromoInfo } from './data'; // Adjust path
-	import ArrowRight from 'lucide-svelte/icons/arrow-right';
+	import { ArrowRight } from '@lucide/svelte';
 
 	export let promo: PromoInfo;
 </script>

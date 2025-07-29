@@ -1,19 +1,6 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { SvelteComponent } from 'svelte';
-import type { Icon } from '@lucide/svelte';
 
-// --- Ikon ---
-import Building2 from 'lucide-svelte/icons/building-2'; // Untuk Perusahaan
-import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified/Premium
-import Globe from 'lucide-svelte/icons/globe'; // Publik ikon
-import Ellipsis from 'lucide-svelte/icons/ellipsis'; // More
-import ThumbsUp from 'lucide-svelte/icons/thumbs-up';
-import MessageSquare from 'lucide-svelte/icons/message-square';
-import Repeat from 'lucide-svelte/icons/repeat'; // Repost
-import Send from 'lucide-svelte/icons/send';
-import UserPlus from 'lucide-svelte/icons/user-plus'; // Follow
-import Link from 'lucide-svelte/icons/link'; // Untuk tautan di teks
+// // --- Ikon ---
 
 // --- Tipe Data ---
 export interface LinkedinPostData {

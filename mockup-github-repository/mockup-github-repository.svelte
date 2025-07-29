@@ -2,13 +2,7 @@
 	// Impor data dan tipe
 	import { repoNavItems, repoFilesData, type RepoNavItem, type RepoFileData } from './data'; // Adjust path
 	// Impor ikon Lucide
-	import Book from 'lucide-svelte/icons/book';
-	import Lock from 'lucide-svelte/icons/lock';
-	import GitBranch from 'lucide-svelte/icons/git-branch';
-	import Star from 'lucide-svelte/icons/star';
-	import GitFork from 'lucide-svelte/icons/git-fork';
-	import FileIcon from 'lucide-svelte/icons/file-text';
-	import FolderIcon from 'lucide-svelte/icons/folder';
+	import { Book, FileIcon, FolderIcon, GitBranch, GitFork, Lock, Star } from '@lucide/svelte';
 
 	// --- Props ---
 	export let contentBg: string = 'bg-gray-200 dark:bg-gray-800';

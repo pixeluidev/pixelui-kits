@@ -1,5 +1,4 @@
-import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
-import Info from 'lucide-svelte/icons/info'; // Contoh ikon lain jika perlu
+import { CheckCircle2, Info } from '@lucide/svelte'; // Contoh ikon lain jika perlu
 
 export const plans = [
 	{

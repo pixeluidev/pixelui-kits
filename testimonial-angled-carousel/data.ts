@@ -3,9 +3,7 @@ import type { SvelteComponent } from 'svelte'; // Gunakan SvelteComponent modern
 import type { Icon } from '@lucide/svelte';
 
 // --- Ikon untuk Testimonial & Sumber ---
-import Twitter from 'lucide-svelte/icons/twitter';
-import Linkedin from 'lucide-svelte/icons/linkedin';
-import Globe from 'lucide-svelte/icons/globe';
+import { Globe, Linkedin, Twitter } from '@lucide/svelte';
 // --- (Tambahkan ikon lain jika perlu) ---
 type IconType = typeof SvelteComponent<Icon>;
 

@@ -1,14 +1,17 @@
 <script lang="ts">
 	import type { TweetData } from './data'; // Default data
 	import { exampleTweet as defaultTweet } from './data'; // Default data
-	// Ikon Lucide
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified badge
-	import MoreHorizontal from 'lucide-svelte/icons/more-horizontal';
-	import MessageCircle from 'lucide-svelte/icons/message-circle'; // Reply
-	import Repeat2 from 'lucide-svelte/icons/repeat-2'; // Retweet
-	import Heart from 'lucide-svelte/icons/heart'; // Like
-	import BarChart2 from 'lucide-svelte/icons/bar-chart-2'; // Views/Stats
-	import Share from 'lucide-svelte/icons/share'; // Share
+	//icon
+	import {
+		BarChart2,
+		CheckCircle2,
+		Heart,
+		MessageCircle,
+		MoreHorizontal,
+		Repeat2,
+		Share
+	} from '@lucide/svelte';
+
 	// Utility
 	import { parseTweetText } from '../assets/helper/tweetParser'; // Adjust path
 

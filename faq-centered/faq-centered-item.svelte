@@ -2,8 +2,7 @@
 	// REMOVED: import { createEventDispatcher } from 'svelte';
 	import { slide } from 'svelte/transition';
 	import type { FaqItemData } from './data';
-	import Plus from 'lucide-svelte/icons/plus';
-	import Minus from 'lucide-svelte/icons/minus';
+	import { Minus, Plus } from '@lucide/svelte';
 
 	export let faqItem: FaqItemData;
 	export let isOpen: boolean = false;

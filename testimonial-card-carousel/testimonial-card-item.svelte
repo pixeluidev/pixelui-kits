@@ -1,6 +1,6 @@
 <script lang="ts">
+	import { CheckCircle2 } from '@lucide/svelte';
 	import type { TestimonialListItemData } from './data'; // Sesuaikan path
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Verified badge
 
 	export let testimonial: TestimonialListItemData;
 </script>

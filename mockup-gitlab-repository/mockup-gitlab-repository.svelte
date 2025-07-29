@@ -9,19 +9,21 @@
 		type RepoFileData
 	} from './data'; // Adjust path
 	// Ikon Lucide
-	import FolderIcon from 'lucide-svelte/icons/folder';
-	import FileIcon from 'lucide-svelte/icons/file-text';
-	import GitBranch from 'lucide-svelte/icons/git-branch';
-	import Lock from 'lucide-svelte/icons/lock';
-	import Star from 'lucide-svelte/icons/star';
-	import GitFork from 'lucide-svelte/icons/git-fork';
-	import ChevronDown from 'lucide-svelte/icons/chevron-down';
-	import Download from 'lucide-svelte/icons/download';
-	import Plus from 'lucide-svelte/icons/plus';
-	import History from 'lucide-svelte/icons/history';
-	import GitlabIcon from './gitlab-icon.svelte';
-	import Code2 from 'lucide-svelte/icons/code-2';
-	import Book from 'lucide-svelte/icons/book'; // Placeholder ikon GitLab
+	import {
+		Book,
+		ChevronDown,
+		Code2,
+		Download,
+		FileIcon,
+		FolderIcon,
+		GitBranch,
+		GitFork,
+		GitlabIcon,
+		Plus,
+		Star,
+		History,
+		Lock
+	} from '@lucide/svelte';
 
 	// --- Props ---
 	// Props untuk data utama, bisa diambil dari gitlabRepoData default

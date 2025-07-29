@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { FaqGridItemData } from './data';
 	// Import the icon (using HelpCircle as it matches the original SVG intent)
-	import HelpCircle from 'lucide-svelte/icons/help-circle';
+	import { HelpCircle } from '@lucide/svelte';
 
 	export let item: FaqGridItemData;
 

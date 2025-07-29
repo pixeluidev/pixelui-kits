@@ -1,6 +1,6 @@
 // src/lib/data.ts
 // Import required icons
-import Twitter from 'lucide-svelte/icons/twitter'; // Source icon
+import { Twitter } from '@lucide/svelte'; // Source icon
 
 export interface TestimonialListItemData {
 	id: string;

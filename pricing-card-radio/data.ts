@@ -1,7 +1,6 @@
 // src/lib/data.js (Contoh dengan ikon Lucide Svelte)
-import Briefcase from 'lucide-svelte/icons/briefcase';
-import Users from 'lucide-svelte/icons/users';
-import Building from 'lucide-svelte/icons/building';
+
+import { Briefcase, Building, Users } from '@lucide/svelte';
 
 export const radioOptions = [
 	{

@@ -1,13 +1,10 @@
 // src/lib/data.ts
-import type { SvelteComponent } from 'svelte'; // Gunakan SvelteComponent modern
-import type { Icon } from '@lucide/svelte';
+import { Globe, Linkedin, Twitter } from '@lucide/svelte';
 
 // --- Ikon untuk Testimonial & Sumber ---
-import Twitter from 'lucide-svelte/icons/twitter';
-import Linkedin from 'lucide-svelte/icons/linkedin';
-import Globe from 'lucide-svelte/icons/globe';
+
 // --- (Tambahkan ikon lain jika perlu) ---
-type IconType = typeof SvelteComponent<Icon>;
+type IconType = typeof Twitter;
 
 // --- Interface untuk Testimonial ---
 export interface TestimonialListItemData {
@@ -37,7 +34,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'Switching to this framework significantly sped up our development cycle. The component structure is logical and the documentation is top-notch.',
 		sourceName: 'Twitter',
-		sourceIcon: Twitter as IconType, // Pastikan ini adalah komponen ikon Svelte
+		sourceIcon: Twitter, // Pastikan ini adalah komponen ikon Svelte
 		date: 'Mar 05, 2024',
 		sourceUrl: '#'
 	},
@@ -51,7 +48,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'As a designer, I appreciate the aesthetic consistency and the ease with which I can translate mockups into functional components. Looks great out of the box!',
 		sourceName: 'LinkedIn',
-		sourceIcon: Linkedin as IconType, // Pastikan ini adalah komponen ikon Svelte
+		sourceIcon: Linkedin, // Pastikan ini adalah komponen ikon Svelte
 		date: 'Mar 08, 2024',
 		sourceUrl: '#'
 	},
@@ -65,7 +62,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'Even though I primarily work on the backend, integrating the API was straightforward. The clear structure makes collaboration much easier.',
 		sourceName: 'Website',
-		sourceIcon: Globe as IconType, // Pastikan ini adalah komponen ikon Svelte
+		sourceIcon: Globe, // Pastikan ini adalah komponen ikon Svelte
 		date: 'Mar 11, 2024'
 		// sourceUrl: '#' // URL bisa opsional
 	},
@@ -79,7 +76,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'The performance is impressive! Our app feels much snappier, and the bundle size remained manageable despite the rich feature set.',
 		sourceName: 'Twitter',
-		sourceIcon: Twitter as IconType,
+		sourceIcon: Twitter,
 		date: 'Mar 14, 2024',
 		sourceUrl: '#'
 	},
@@ -92,7 +89,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'This tool helped us iterate faster and get our MVP to market ahead of schedule. The flexibility allowed us to adapt as requirements evolved.',
 		sourceName: 'LinkedIn',
-		sourceIcon: Linkedin as IconType,
+		sourceIcon: Linkedin,
 		date: 'Mar 18, 2024',
 		sourceUrl: '#'
 	},
@@ -106,7 +103,7 @@ export const testimonialListData: TestimonialListItemData[] = [
 		quote:
 			'Onboarding new developers onto the project has been significantly easier thanks to the consistent coding patterns and excellent documentation.',
 		sourceName: 'Twitter',
-		sourceIcon: Twitter as IconType,
+		sourceIcon: Twitter,
 		date: 'Mar 21, 2024',
 		sourceUrl: '#'
 	}

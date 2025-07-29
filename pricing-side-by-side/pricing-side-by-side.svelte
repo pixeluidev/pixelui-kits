@@ -1,9 +1,6 @@
 <script>
 	// Jika Anda menggunakan Svelte, Anda perlu mengimpor ikon di sini
 	// Contoh:
-	// import CheckCircle2 from 'lucide-svelte/icons/check-circle-2';
-	// import ArrowRight from 'lucide-svelte/icons/arrow-right';
-	// import XCircle from 'lucide-svelte/icons/x-circle'; // Untuk fitur yang tidak termasuk
 </script>
 
 <div class="container mx-auto px-6 py-16 lg:py-20">

@@ -1,18 +1,19 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	// Data & Tipe
 	import type { LinkedinPostData } from './data'; // Adjust path
 	import { exampleLinkedinPost as defaultPost } from './data'; // Default data
 
-	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Premium/Verified
-	import Globe from 'lucide-svelte/icons/globe';
-	import Ellipsis from 'lucide-svelte/icons/ellipsis';
-	import ThumbsUp from 'lucide-svelte/icons/thumbs-up';
-	import MessageSquare from 'lucide-svelte/icons/message-square';
-	import Repeat from 'lucide-svelte/icons/repeat';
-	import Send from 'lucide-svelte/icons/send';
 	// Utility
 	import { parseLinkedinText, formatLinkedinCount } from './linkedinParser'; // Adjust path
+	import {
+		CheckCircle2,
+		Ellipsis,
+		Globe,
+		MessageSquare,
+		Repeat,
+		Send,
+		ThumbsUp
+	} from '@lucide/svelte';
 
 	// --- Props ---
 	export let post: LinkedinPostData = defaultPost;

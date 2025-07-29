@@ -1,7 +1,5 @@
 <script lang="ts">
 	import FinderMockup from './mockup.svelte';
-	// Impor ikon jika Anda ingin meneruskannya sebagai prop
-	// import FolderIcon from 'lucide-svelte/icons/folder';
 </script>
 
 <main class="flex min-h-screen items-center justify-center bg-gray-100 p-10 dark:bg-neutral-900">

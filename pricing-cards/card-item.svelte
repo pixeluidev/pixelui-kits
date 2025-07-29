@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { PricingPlan } from './data';
-	import ArrowRight from 'lucide-svelte/icons/arrow-right';
-	import Zap from 'lucide-svelte/icons/zap'; // Icon for recommended badge
+	import { ArrowRight, Zap } from '@lucide/svelte'; // Icon for recommended badge
 
 	export let plan: PricingPlan;
 	export let isCenter: boolean = false; // To apply slight overlap/lift effect

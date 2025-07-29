@@ -4,9 +4,7 @@
 	import { slide } from 'svelte/transition'; // Use slide for mobile menu
 	import { fade } from 'svelte/transition'; // Use fade for mega menu
 	import MegaMenu from './mega-menu.svelte';
-	import Menu from 'lucide-svelte/icons/menu';
-	import X from 'lucide-svelte/icons/x';
-	import ChevronDown from 'lucide-svelte/icons/chevron-down';
+	import { ChevronDown, Menu, X } from '@lucide/svelte';
 
 	let isMobileMenuOpen: boolean = false;
 	let isMegaMenuOpen: boolean = false;

@@ -33,13 +33,9 @@
 		startOfWeek,
 		getDay
 	} from 'date-fns';
+	import { ChevronDown, ChevronLeft, ChevronRight, MoreVertical, Plus } from '@lucide/svelte';
 
 	// Icons
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
-	import ChevronRight from 'lucide-svelte/icons/chevron-right';
-	import ChevronDown from 'lucide-svelte/icons/chevron-down';
-	import Plus from 'lucide-svelte/icons/plus';
-	import MoreVertical from 'lucide-svelte/icons/more-vertical';
 
 	// --- Types ---
 	type CalendarView = 'day' | 'week' | 'month' | 'year';

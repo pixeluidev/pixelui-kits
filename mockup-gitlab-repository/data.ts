@@ -1,5 +1,3 @@
-import AlertCircle from 'lucide-svelte/icons/alert-circle';
-
 // --- Tipe File (Sama seperti sebelumnya) ---
 export interface RepoFileData {
 	type: 'file' | 'dir';
@@ -9,21 +7,24 @@ export interface RepoFileData {
 }
 
 // --- GitLab Sidebar Items ---
-import Info from 'lucide-svelte/icons/info';
-import Book from 'lucide-svelte/icons/book'; // Repository
-import Code2 from 'lucide-svelte/icons/code-2'; // Code files
-import GitCommit from 'lucide-svelte/icons/git-commit';
-import GitMerge from 'lucide-svelte/icons/git-merge';
-import Rocket from 'lucide-svelte/icons/rocket'; // Deploy
-import Monitor from 'lucide-svelte/icons/monitor'; // Monitor
-import Settings from 'lucide-svelte/icons/settings';
-import Shield from 'lucide-svelte/icons/shield'; // Security
-import Package from 'lucide-svelte/icons/package';
+import {
+	AlertCircle,
+	Book,
+	Code2,
+	GitCommit,
+	GitMerge,
+	Info,
+	Monitor,
+	Package,
+	Rocket,
+	Settings,
+	Shield
+} from '@lucide/svelte';
 
 export interface GitlabSidebarItem {
 	id: string;
 	label: string;
-	icon: typeof Info;
+	icon: typeof AlertCircle;
 	href?: string;
 	isActive?: boolean; // Tandai item aktif
 	isSection?: boolean; // Tandai sebagai judul section

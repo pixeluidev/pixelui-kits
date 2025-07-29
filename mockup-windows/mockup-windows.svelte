@@ -1,7 +1,6 @@
 <script lang="ts">
 	import WindowsMockup from './mockup.svelte';
 	// Contoh ikon jika Anda mau
-	// import TerminalSquare from 'lucide-svelte/icons/terminal-square';
 </script>
 
 <main class="flex min-h-screen flex-col items-center gap-10 bg-gray-200 p-10 dark:bg-neutral-900">

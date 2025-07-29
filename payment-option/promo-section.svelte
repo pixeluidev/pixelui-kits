@@ -1,16 +1,17 @@
 <script lang="ts">
+	import { ArrowRight } from '@lucide/svelte';
 	import type { PromoInfo } from './data'; // Adjust path
-	import ArrowRight from 'lucide-svelte/icons/arrow-right';
 
-	export let promo: PromoInfo;
+	const { promo }: { promo: PromoInfo } = $props();
+	const Icon = promo.icon;
 </script>
 
 <div
 	class="flex items-start gap-4 rounded-lg border border-orange-200 bg-orange-50 p-4 dark:border-orange-800/50 dark:bg-orange-900/20"
 >
-	{#if promo.icon}
+	{#if Icon}
 		<div class="text-primary mt-0.5 flex-shrink-0 dark:text-orange-400">
-			<svelte:component this={promo.icon} class="h-5 w-5" strokeWidth={2} />
+			<Icon class="h-5 w-5" strokeWidth={2} />
 		</div>
 	{/if}
 	<div class="flex-1">

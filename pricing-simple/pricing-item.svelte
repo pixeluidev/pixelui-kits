@@ -2,7 +2,7 @@
 	export let item;
 	export let pricingOption;
 
-	import Check from 'lucide-svelte/icons/check';
+	import { Check } from '@lucide/svelte';
 
 	$: cardClassName = `flex flex-col rounded-lg p-4 md:p-6 rounded-large  max-w-xs w-full transition-all duration-300 ease-in-out ${
 		item.heading === 'Pro' ? 'border-2 border-orange-400 shadow-2xl  scale-105' : ''

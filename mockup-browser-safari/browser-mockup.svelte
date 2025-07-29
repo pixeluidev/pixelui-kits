@@ -1,47 +1,39 @@
 <script lang="ts">
-	import Lock from 'lucide-svelte/icons/lock';
-	import RefreshCw from 'lucide-svelte/icons/refresh-cw';
+	import { Lock, RefreshCw } from '@lucide/svelte';
 	import { ChevronLeft, ChevronRight } from '@lucide/svelte'; // Atau ChevronsLeft/Right untuk back/forward
 
-	// --- Props ---
-	/** URL yang ditampilkan di address bar */
-	export let url: string = 'https://apple.com/safari';
+	type Props = {
+		url: string;
+		tabTitle: string;
+		contentHeight: string;
+		hideControls: boolean;
+		hideHeader: boolean;
+	};
 
-	/** Judul Tab (opsional) */
-	export let tabTitle: string = 'Safari';
-
-	/** Tinggi area konten (kelas Tailwind, misal 'h-64', 'h-96') */
-	export let contentHeight: string = 'h-80';
-
-	/** Kelas CSS tambahan untuk frame terluar */
-	export let frameClass: string = '';
-
-	/** Opsi untuk menyembunyikan kontrol jendela */
-	export let hideControls: boolean = false;
-
-	/** Opsi untuk menyembunyikan header sepenuhnya (kontrol & address bar) */
-	export let hideHeader: boolean = false;
+	const { url, tabTitle, contentHeight, hideControls, hideHeader }: Props = $props();
 
 	// Gabungkan kelas default dengan kelas kustom
-	$: finalFrameClasses = `
-        relative w-full bg-gray-100 dark:bg-neutral-800/50 rounded-lg sm:rounded-xl shadow-xl
-        border border-gray-200/80 dark:border-neutral-700/60 overflow-hidden backdrop-blur-md bg-opacity-80 dark:bg-opacity-80
-        ${frameClass}
-    `.trim();
+	const finalFrameClasses = $derived(`
+		relative w-full bg-gray-100 dark:bg-neutral-800/50 rounded-lg sm:rounded-xl shadow-xl
+		border border-gray-200/80 dark:border-neutral-700/60 overflow-hidden backdrop-blur-md bg-opacity-80 dark:bg-opacity-80
+		${contentHeight}
+	`);
 
 	// Ekstrak domain dari URL untuk tampilan yang lebih bersih di address bar (opsional)
-	$: displayUrl = (() => {
-		try {
-			const parsedUrl = new URL(url);
-			// Opsi: Tampilkan hanya domain atau bagian path yang lebih pendek
-			return (
-				parsedUrl.hostname.replace(/^www\./, '') +
-				(parsedUrl.pathname.length > 1 ? parsedUrl.pathname : '')
-			);
-		} catch (e) {
-			return url; // Fallback jika URL tidak valid
-		}
-	})();
+	const displayUrl = $derived(
+		(() => {
+			try {
+				const parsedUrl = new URL(url);
+				// Opsi: Tampilkan hanya domain atau bagian path yang lebih pendek
+				return (
+					parsedUrl.hostname.replace(/^www\./, '') +
+					(parsedUrl.pathname.length > 1 ? parsedUrl.pathname : '')
+				);
+			} catch (e) {
+				return url; // Fallback jika URL tidak valid
+			}
+		})()
+	);
 </script>
 
 <!-- Frame Mockup Browser Safari -->

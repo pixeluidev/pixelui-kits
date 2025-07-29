@@ -1,27 +1,28 @@
 // src/lib/data.ts
-import type { ComponentType } from 'svelte';
-import type { Icon } from '@lucide/svelte';
+
+import {
+	Archive,
+	Award,
+	BookOpen,
+	FileCheck,
+	FileText,
+	HelpCircle,
+	Info,
+	Library,
+	List,
+	Mailbox,
+	Phone,
+	Puzzle
+} from '@lucide/svelte';
 
 // Import desired Lucide icons
-import Info from 'lucide-svelte/icons/info';
-import Library from 'lucide-svelte/icons/library';
-import Archive from 'lucide-svelte/icons/archive';
-import Award from 'lucide-svelte/icons/award';
-import FileText from 'lucide-svelte/icons/file-text';
-import Mailbox from 'lucide-svelte/icons/mailbox';
-import Puzzle from 'lucide-svelte/icons/puzzle';
-import List from 'lucide-svelte/icons/list';
-import Phone from 'lucide-svelte/icons/phone';
-import HelpCircle from 'lucide-svelte/icons/help-circle';
-import BookOpen from 'lucide-svelte/icons/book-open';
-import FileCheck from 'lucide-svelte/icons/file-check-2';
 
 // Interface for a single link in the mega menu
 export interface MegaMenuIconLink {
 	id: string; // Unique identifier for {#each} key
 	label: string;
 	href: string;
-	icon: ComponentType<Icon>; // Lucide icon component
+	icon: typeof Info; // Lucide icon component
 	srText?: string; // Optional screen reader text if label isn't descriptive enough
 }
 

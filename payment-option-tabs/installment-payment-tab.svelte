@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import { bankInstallmentOptions, type BankInstallmentOption } from './data'; // Adjust path
-	import Eye from 'lucide-svelte/icons/eye';
+	import { EyeIcon } from '@lucide/svelte';
 
 	let selectedInstallmentPlan: string | null = bankInstallmentOptions[0]?.id ?? null; // Default selection
 	let selectedOccupation: string = 'student';
@@ -85,7 +85,7 @@
 								href={option.detailsUrl}
 								class="text-primary inline-flex items-center font-medium hover:underline dark:text-orange-400"
 							>
-								<Eye class="me-1.5 h-4 w-4" />
+								<EyeIcon class="me-1.5 h-4 w-4" />
 								View details
 							</a>
 						</td>

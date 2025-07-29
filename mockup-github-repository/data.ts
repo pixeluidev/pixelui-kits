@@ -2,14 +2,16 @@
 import type { Icon } from '@lucide/svelte';
 
 // Ikon untuk tab
-import Code from 'lucide-svelte/icons/code-2';
-import AlertCircle from 'lucide-svelte/icons/alert-circle';
-import GitPullRequest from 'lucide-svelte/icons/git-pull-request';
-import Play from 'lucide-svelte/icons/play-circle'; // Actions
-import Kanban from 'lucide-svelte/icons/kanban-square'; // Projects
-import BookOpen from 'lucide-svelte/icons/book-open'; // Wiki
-import Shield from 'lucide-svelte/icons/shield'; // Security
-import Settings from 'lucide-svelte/icons/settings';
+import {
+	Code,
+	AlertCircle,
+	GitPullRequest,
+	Play,
+	Kanban,
+	BookOpen,
+	Shield,
+	Settings
+} from '@lucide/svelte';
 
 export interface RepoNavItem {
 	id: string;

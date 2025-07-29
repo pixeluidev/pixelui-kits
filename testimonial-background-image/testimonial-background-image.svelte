@@ -2,8 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import { fly } from 'svelte/transition';
 	import { backgroundTestimonialsData, type BackgroundTestimonialData } from './data'; // Sesuaikan path
-	import ChevronLeft from 'lucide-svelte/icons/chevron-left';
-	import ChevronRight from 'lucide-svelte/icons/chevron-right';
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte';
 
 	// --- Props ---
 	export let testimonials: BackgroundTestimonialData[] = backgroundTestimonialsData;

@@ -1,19 +1,12 @@
 // src/lib/data.ts
+import { BarChart, Briefcase, Info, LifeBuoy, Settings, ShoppingCart, Users } from '@lucide/svelte';
 import { SvelteComponent } from 'svelte';
-import type { Icon } from '@lucide/svelte';
-import Info from 'lucide-svelte/icons/info';
-import Settings from 'lucide-svelte/icons/settings';
-import Users from 'lucide-svelte/icons/users';
-import LifeBuoy from 'lucide-svelte/icons/life-buoy';
-import Briefcase from 'lucide-svelte/icons/briefcase';
-import BarChart from 'lucide-svelte/icons/bar-chart-2';
-import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
 
 export interface MegaMenuTabContent {
 	type: 'text' | 'component' | 'links'; // Type of content
 	value: string | typeof SvelteComponent | MegaMenuLink[]; // Content value
 	title?: string; // Optional title for link lists
-	icon?: typeof SvelteComponent<Icon>; // Optional icon for link lists
+	icon?: typeof Settings; // Optional icon for link lists
 }
 
 export interface MegaMenuLink {
@@ -25,7 +18,7 @@ export interface MegaMenuLink {
 export interface MegaMenuTab {
 	id: string; // Unique ID for the tab
 	label: string; // Text displayed on the tab button
-	icon?: typeof SvelteComponent<Icon>; // Optional icon for the tab
+	icon?: typeof Settings; // Optional icon for the tab
 	content: MegaMenuTabContent[]; // Array of content blocks for the panel
 }
 
@@ -34,7 +27,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'overview',
 		label: 'Overview',
-		icon: Info as typeof SvelteComponent<Icon>,
+		icon: Info,
 		content: [
 			{
 				type: 'text',
@@ -44,7 +37,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Key Sections',
-				icon: Settings as typeof SvelteComponent<Icon>,
+				icon: Settings,
 				value: [
 					{ href: '#', label: 'Core Features' },
 					{ href: '#', label: 'Pricing Plans' },
@@ -56,7 +49,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'features',
 		label: 'Features',
-		icon: Settings as typeof SvelteComponent<Icon>,
+		icon: Settings,
 		content: [
 			{
 				type: 'text',
@@ -66,7 +59,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Feature Categories',
-				icon: Briefcase as typeof SvelteComponent<Icon>,
+				icon: Briefcase,
 				value: [
 					{ href: '#', label: 'Automation Tools', description: 'Save time on repetitive tasks.' },
 					{ href: '#', label: 'Collaboration Suite', description: 'Work better together.' },
@@ -83,7 +76,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'solutions',
 		label: 'Solutions',
-		icon: Users as typeof SvelteComponent<Icon>,
+		icon: Users,
 		content: [
 			{
 				type: 'text',
@@ -93,7 +86,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'By Industry',
-				icon: BarChart as typeof SvelteComponent<Icon>,
+				icon: BarChart,
 				value: [
 					{ href: '#', label: 'E-commerce' },
 					{ href: '#', label: 'Healthcare' },
@@ -103,7 +96,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'By Team Size',
-				icon: Users as typeof SvelteComponent<Icon>,
+				icon: Users,
 				value: [
 					{ href: '#', label: 'Startups' },
 					{ href: '#', label: 'SMBs' },
@@ -115,7 +108,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'support',
 		label: 'Support',
-		icon: LifeBuoy as typeof SvelteComponent<Icon>,
+		icon: LifeBuoy,
 		content: [
 			{
 				type: 'text',
@@ -125,7 +118,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Get Help',
-				icon: ShoppingCart as typeof SvelteComponent<Icon>,
+				icon: ShoppingCart,
 				value: [
 					{ href: '#', label: 'Knowledge Base' },
 					{ href: '#', label: 'Community Forum' },
@@ -137,7 +130,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 	{
 		id: 'pricing',
 		label: 'Pricing',
-		icon: ShoppingCart as typeof SvelteComponent<Icon>,
+		icon: ShoppingCart,
 		content: [
 			{
 				type: 'text',
@@ -147,7 +140,7 @@ export const megaMenuTabsData: MegaMenuTab[] = [
 			{
 				type: 'links',
 				title: 'Plans',
-				icon: Briefcase as typeof SvelteComponent<Icon>,
+				icon: Briefcase,
 				value: [
 					{ href: '#', label: 'Free Tier' },
 					{ href: '#', label: 'Pro Plan' },
