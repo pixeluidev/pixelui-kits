@@ -41,7 +41,7 @@
 			<div
 				class="shadow-retro dark\:shadow-retro max-w-sm transform bg-yellow-400 px-6 py-4 transition duration-500 ease-in-out hover:scale-110 md:translate-x-0"
 			>
-				<svelte:component this={item.icon} class="mb-4 size-16" />
+				<item.icon class="mb-4 size-16" />
 
 				<p class="mb-1 uppercase">{item.label}</p>
 				<p class="title-font mb-3 text-xl font-bold tracking-widest">{item.title}</p>

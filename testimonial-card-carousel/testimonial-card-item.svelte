@@ -68,7 +68,7 @@
 				title={`View on ${testimonial.sourceName ?? 'Source'}`}
 			>
 				{#if testimonial.sourceIcon}
-					<svelte:component this={testimonial.sourceIcon} class="h-4 w-4" />
+					<testimonial.sourceIcon class="h-4 w-4" />
 					<!-- Tidak perlu fallback sourceLogoUrl di sini jika kita standarkan pakai sourceIcon -->
 				{:else if testimonial.sourceName}
 					<!-- Placeholder jika hanya ada nama tapi tidak ada ikon -->

@@ -9,7 +9,7 @@
 	<div
 		class="text-primary mt-1 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-orange-100 transition-colors duration-200 dark:bg-orange-900/30 dark:text-orange-400"
 	>
-		<svelte:component this={feature.icon} class="h-6 w-6" strokeWidth={1.75} />
+		<feature.icon  class="h-6 w-6" strokeWidth={1.75} />
 	</div>
 	<!-- Content -->
 	<div class="flex-1">

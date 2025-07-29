@@ -9,7 +9,7 @@
 >
 	<!-- Icon -->
 	<div class="text-primary mb-5 dark:text-orange-400">
-		<svelte:component this={feature.icon} class="h-10 w-10" strokeWidth={1.5} />
+		<feature.icon class="h-10 w-10" strokeWidth={1.5} />
 	</div>
 
 	<!-- Title -->

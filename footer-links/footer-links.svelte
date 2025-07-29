@@ -73,7 +73,7 @@
 						href={item.href}
 						class="flex size-8 items-center justify-center rounded-sm hover:bg-gray-100 hover:dark:bg-gray-800"
 					>
-						<svelte:component this={item.icon} class="size-4" />
+						<item.icon class="size-4" />
 
 						<span class="sr-only">{item.label}</span>
 					</a>

@@ -30,7 +30,7 @@
 		<div class="flex flex-nowrap justify-end">
 			{#each socials as item (item.label)}
 				<a href={item.href} class="flex size-10 items-center justify-center rounded-full border">
-					<svelte:component this={item.icon} class="size-4" />
+					<item.icon class="size-4" />
 
 					<span class="sr-only">{item.label}</span>
 				</a>

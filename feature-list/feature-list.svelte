@@ -75,8 +75,7 @@
 						class="bg-primary-100 dark:bg-primary-900 mb-4 flex h-10 w-10 items-center justify-center rounded-full lg:h-12 lg:w-12"
 					>
 						<!-- Render ikon secara dinamis -->
-						<svelte:component
-							this={feature.icon}
+						<feature.icon
 							class="{primaryColorClass} {iconSizeClass} lg:h-6 lg:w-6"
 							strokeWidth={2}
 						/>

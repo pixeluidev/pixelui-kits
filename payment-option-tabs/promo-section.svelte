@@ -10,7 +10,7 @@
 >
 	{#if promo.icon}
 		<div class="text-primary mt-0.5 flex-shrink-0 dark:text-orange-400">
-			<svelte:component this={promo.icon} class="h-5 w-5" strokeWidth={2} />
+			<promo.icon class="h-5 w-5" strokeWidth={2} />
 		</div>
 	{/if}
 	<div class="flex-1">

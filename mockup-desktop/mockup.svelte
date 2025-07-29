@@ -1,8 +1,12 @@
+<script lang="ts">
+	const {children} = $props();
+</script>
+
 <div
 	class="relative mx-auto h-[172px] max-w-[301px] rounded-t-xl border-[16px] border-gray-800 bg-gray-800 md:h-[294px] md:max-w-[512px] dark:border-gray-800"
 >
 	<div class="h-[140px] overflow-hidden rounded-xl md:h-[262px]">
-		<slot></slot>
+		{@render children()}
 	</div>
 </div>
 <div

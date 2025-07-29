@@ -72,7 +72,7 @@
 >
 	<!-- Alert/Status Badge -->
 	<div class="flex items-center gap-3 rounded-lg p-3 {statusBadge.colorClasses}">
-		<svelte:component this={statusBadge.icon} class="h-5 w-5 flex-shrink-0" />
+		<statusBadge.icon class="h-5 w-5 flex-shrink-0" />
 		<span class="text-sm font-medium">{statusBadge.text}</span>
 	</div>
 

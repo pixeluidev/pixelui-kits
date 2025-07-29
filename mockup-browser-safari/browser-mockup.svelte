@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Lock, RefreshCw } from '@lucide/svelte';
 	import { ChevronLeft, ChevronRight } from '@lucide/svelte'; // Atau ChevronsLeft/Right untuk back/forward
+	import type { Snippet } from 'svelte';
 
 	type Props = {
 		url: string;
@@ -8,9 +9,10 @@
 		contentHeight: string;
 		hideControls: boolean;
 		hideHeader: boolean;
+		children: Snippet<[]>;
 	};
 
-	const { url, tabTitle, contentHeight, hideControls, hideHeader }: Props = $props();
+	const { url, tabTitle, contentHeight, hideControls, hideHeader, children }: Props = $props();
 
 	// Gabungkan kelas default dengan kelas kustom
 	const finalFrameClasses = $derived(`
@@ -106,13 +108,14 @@
 
 	<!-- Area Konten (Gunakan slot) -->
 	<div class="bg-white dark:bg-neutral-800 {contentHeight} overflow-y-auto">
-		<slot>
-			<!-- Konten default jika tidak ada yang dimasukkan -->
+		{#if children}
+			{@render children()}
+		{:else}
 			<div
 				class="flex h-full items-center justify-center p-4 text-center text-gray-400 italic dark:text-neutral-500"
 			>
 				Safari content area...<br /> Embed your page or component here.
 			</div>
-		</slot>
+		{/if}
 	</div>
 </div>

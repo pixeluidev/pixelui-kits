@@ -146,7 +146,7 @@
 
 			<!-- Expiry Date & CVV Grid -->
 			<div class="grid grid-cols-4 gap-3">
-				<label class="col-span-4 -mb-2 text-sm font-medium text-gray-600 dark:text-neutral-300"
+				<label for="expiryMonth" class="col-span-4 -mb-2 text-sm font-medium text-gray-600 dark:text-neutral-300"
 					>Expiry Date</label
 				>
 

@@ -61,7 +61,7 @@
 				<span
 					class="text-primary mr-2.5 inline-block rounded-full bg-orange-100 p-1 dark:bg-orange-900/30 dark:text-orange-400"
 				>
-					<svelte:component this={feature.icon} class="h-3.5 w-3.5" strokeWidth={2.5} />
+					<feature.icon  class="h-3.5 w-3.5" strokeWidth={2.5} />
 				</span>
 				<span class="flex-1">
 					{feature.text}

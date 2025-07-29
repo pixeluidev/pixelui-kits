@@ -76,6 +76,8 @@
 	function close() {
 		console.log('Close clicked (mockup)');
 	}
+
+	const Icon = icon;
 </script>
 
 <!-- Frame Mockup Windows -->
@@ -87,7 +89,7 @@
 			<div class="flex min-w-0 flex-grow items-center gap-2 pl-1">
 				{#if icon}
 					<div class="h-4 w-4 flex-shrink-0 {headerTextColor} opacity-80">
-						<svelte:component this={icon} class="h-full w-full" />
+						<Icon class="h-full w-full" />
 					</div>
 				{/if}
 				{#if title}

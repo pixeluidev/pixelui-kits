@@ -45,7 +45,7 @@
 				class="inline-flex items-center gap-2 rounded-md bg-orange-500 px-7 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
 			>
 				{#if primaryCtaIcon}
-					<svelte:component this={primaryCtaIcon} class="h-5 w-5" aria-hidden="true" />
+					<Rocket class="h-5 w-5" aria-hidden="true" />
 				{/if}
 				<span>{primaryCtaText}</span>
 			</a>

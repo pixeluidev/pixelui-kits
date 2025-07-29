@@ -69,7 +69,7 @@
 							onmouseenter={() => setActiveTab(tab.id)}
 						>
 							{#if tab.icon}
-								<svelte:component this={tab.icon} class="h-4 w-4 shrink-0" strokeWidth={2.5} />
+								<tab.icon class="h-4 w-4 shrink-0" strokeWidth={2.5} />
 							{/if}
 							<span class="flex-1">{tab.label}</span>
 						</button>
@@ -102,8 +102,8 @@
 													class="mb-3 flex items-center gap-2 text-sm font-semibold text-gray-700 dark:text-neutral-200"
 												>
 													{#if contentBlock.icon}
-														<svelte:component
-															this={contentBlock.icon as typeof SvelteComponent<Icon>}
+														<contentBlock.icon
+															
 															class="text-primary h-4 w-4"
 															strokeWidth={2}
 														/>
@@ -133,7 +133,7 @@
 										</div>
 									{:else if contentBlock.type === 'component'}
 										<!-- *** FIX: Gunakan Type Assertion di sini *** -->
-										<svelte:component this={contentBlock.value as typeof SvelteComponent} />
+										<contentBlock.value />
 									{/if}
 								{/each}
 							</div>

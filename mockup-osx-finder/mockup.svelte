@@ -199,7 +199,7 @@
 								title={item.label}
 								class={`rounded p-1 text-neutral-500 dark:text-neutral-400 ${sidebarHoverBg} focus:bg-black/10 focus:outline-none disabled:opacity-50 dark:focus:bg-white/10`}
 							>
-								<svelte:component this={item.icon} class="h-4 w-4" strokeWidth={2} />
+								<item.icon class="h-4 w-4" strokeWidth={2} />
 							</button>
 						{/each}
 						<div class="relative ml-2 hidden max-w-[150px] flex-grow sm:block">

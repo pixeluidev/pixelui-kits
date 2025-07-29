@@ -17,7 +17,7 @@
 	<div
 		class="text-primary mt-1 flex-shrink-0 rounded-md bg-orange-100 p-2 dark:bg-orange-900/50 dark:text-orange-400"
 	>
-		<svelte:component this={contact.icon} class="h-5 w-5" strokeWidth={2} />
+		<contact.icon class="h-5 w-5" strokeWidth={2} />
 	</div>
 	<div>
 		<h3 class="text-base font-medium text-gray-800 dark:text-white">{contact.title}</h3>

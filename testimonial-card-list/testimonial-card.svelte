@@ -52,7 +52,7 @@
 			title={`View on ${testimonial.sourceName}`}
 		>
 			{#if testimonial.sourceIcon}
-				<svelte:component this={testimonial.sourceIcon} class="h-4 w-4" />
+				<testimonial.sourceIcon class="h-4 w-4" />
 			{:else if testimonial.sourceLogoUrl}
 				<img src={testimonial.sourceLogoUrl} class="h-4 w-auto" alt={testimonial.sourceName} />
 			{:else}

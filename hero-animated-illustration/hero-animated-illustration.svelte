@@ -11,7 +11,7 @@
 		"Bring your data and ideas to life with dynamic visualizations and seamless collaboration, powered by Pixel UI's intuitive components.";
 	const primaryCtaText: string = 'Explore Features';
 	const primaryCtaHref: string = '/features'; // Adjust link
-	const primaryCtaIcon = BarChart;
+	// const primaryCtaIcon = BarChart;
 	const secondaryCtaText: string = 'Sign Up Free';
 	const secondaryCtaHref: string = '/signup'; // Adjust link
 	const animationPosition: 'left' | 'right' = 'right'; // Animation placement: 'left' or 'right'
@@ -56,9 +56,7 @@
 						class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start"
 					>
 						<a href={primaryCtaHref} class="{primaryCtaComputedClass} w-full sm:w-auto">
-							{#if primaryCtaIcon}
-								<svelte:component this={primaryCtaIcon} class="h-5 w-5" aria-hidden="true" />
-							{/if}
+						<BarChart class="h-5 w-5" aria-hidden="true" />
 							<span>{primaryCtaText}</span>
 						</a>
 						<a href={secondaryCtaHref} class="{secondaryCtaComputedClass} w-full sm:w-auto">
