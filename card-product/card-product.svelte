@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { HeartIcon, SearchIcon, ShoppingCartIcon } from 'lucide-svelte';
+	import { HeartIcon, SearchIcon, ShoppingCartIcon } from '@lucide/svelte';
 
 	const products = [
 		{

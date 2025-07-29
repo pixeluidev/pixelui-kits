@@ -1,5 +1,5 @@
 <script lang="ts">
-	// import { Check } from 'lucide-svelte'; // Atau Minus jika butuh indeterminate state visual
+	// import { Check } from '@lucide/svelte'; // Atau Minus jika butuh indeterminate state visual
 	import type { HTMLInputAttributes } from 'svelte/elements';
 
 	type $$Props = {

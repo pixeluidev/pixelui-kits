@@ -17,6 +17,7 @@
   Main wrapper for positioning and background/shadow.
   Visibility is controlled by the parent's {#if}.
 -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
 <div
 	aria-labelledby="hs-mega-menu"
 	aria-orientation="vertical"

@@ -14,7 +14,7 @@
 		Trash2,
 		Edit,
 		X // Icon untuk hapus badge/reset
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	// Import Data
 	import { tablesData } from '../assets/data/tables-data';

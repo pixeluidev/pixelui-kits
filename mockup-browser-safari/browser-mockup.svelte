@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Lock from 'lucide-svelte/icons/lock';
 	import RefreshCw from 'lucide-svelte/icons/refresh-cw';
-	import { ChevronLeft, ChevronRight } from 'lucide-svelte'; // Atau ChevronsLeft/Right untuk back/forward
+	import { ChevronLeft, ChevronRight } from '@lucide/svelte'; // Atau ChevronsLeft/Right untuk back/forward
 
 	// --- Props ---
 	/** URL yang ditampilkan di address bar */

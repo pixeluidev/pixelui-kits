@@ -1,7 +1,7 @@
 <!-- src/lib/components/testimonial-marquee/testimonial-card.svelte -->
 <script lang="ts">
 	import type { TestimonialData } from './types';
-	import { MessageSquareQuote, Twitter } from 'lucide-svelte';
+	import { MessageSquareQuote, Twitter } from '@lucide/svelte';
 
 	export let testimonial: TestimonialData;
 

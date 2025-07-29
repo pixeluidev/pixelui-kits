@@ -1,6 +1,6 @@
 <!-- src/lib/components/invoice-detail/invoice-detail-page.svelte -->
 <script lang="ts">
-	import { Printer, DownloadIcon } from 'lucide-svelte';
+	import { Printer, DownloadIcon } from '@lucide/svelte';
 	import { sampleDetailedInvoice } from './data'; // Impor data contoh
 	import InvoiceItemsTable from './invoice-item.svelte';
 	import InvoiceSummary from './summary.svelte';

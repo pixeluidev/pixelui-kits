@@ -1,6 +1,6 @@
 <!-- src/lib/components/transaction-history/transaction-history-section.svelte -->
 <script lang="ts">
-	import { CalendarDays } from 'lucide-svelte';
+	import { CalendarDays } from '@lucide/svelte';
 	import TransactionItem from './transaction-item.svelte';
 	import TransactionGroupHeader from './transaction-group-header.svelte';
 	import { sampleTransactions } from './data';

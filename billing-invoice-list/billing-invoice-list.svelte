@@ -1,6 +1,6 @@
 <!-- src/lib/components/invoice-list/invoice-list-section.svelte -->
 <script lang="ts">
-	import { Upload } from 'lucide-svelte'; // Atau Share, FileDown
+	import { Upload } from '@lucide/svelte'; // Atau Share, FileDown
 	import InvoiceItem from './invoice-list-item.svelte';
 	import { sampleInvoices } from './data';
 	import type { InvoiceData } from './data';

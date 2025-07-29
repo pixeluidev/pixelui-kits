@@ -1,11 +1,11 @@
 // src/lib/data.ts
 import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 // --- New Data for Payment Tabs ---
 import Landmark from 'lucide-svelte/icons/landmark'; // For Monthly Fees
 import Send from 'lucide-svelte/icons/send';
 import CheckCircle from 'lucide-svelte/icons/check-circle-2'; // For Paypal (example)
-import { CreditCard, ShoppingCart, ClipboardList, Bitcoin } from 'lucide-svelte';
+import { CreditCard, ShoppingCart, ClipboardList, Bitcoin } from '@lucide/svelte';
 // --- Reused Types from previous examples ---
 // Stepper
 

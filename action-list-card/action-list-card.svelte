@@ -6,7 +6,7 @@
 		Trash2Icon,
 		UserRoundMinusIcon,
 		Wallet2Icon
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	const actions = [
 		{

@@ -1,6 +1,6 @@
 <!-- src/lib/components/transaction-history/transaction-item.svelte -->
 <script lang="ts">
-	import { ArrowDownCircle, ArrowUpCircle, Clock, AlertCircle, RotateCcw } from 'lucide-svelte';
+	import { ArrowDownCircle, ArrowUpCircle, Clock, AlertCircle, RotateCcw } from '@lucide/svelte';
 	import type { TransactionData } from './data';
 	import { format } from 'date-fns';
 

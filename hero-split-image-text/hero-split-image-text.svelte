@@ -1,6 +1,6 @@
 <!-- src/lib/components/hero-split-image-text/hero-split-image-text.svelte -->
 <script lang="ts">
-	import { ArrowRight } from 'lucide-svelte'; // Impor ikon yang akan digunakan
+	import { ArrowRight } from '@lucide/svelte'; // Impor ikon yang akan digunakan
 
 	// --- Konten Hardcoded (Bahasa Inggris) ---
 	const imageUrl: string =

@@ -1,6 +1,6 @@
 // src/lib/data.ts
 import { SvelteComponent } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 import Info from 'lucide-svelte/icons/info';
 import Settings from 'lucide-svelte/icons/settings';
 import Users from 'lucide-svelte/icons/users';

@@ -9,7 +9,7 @@
 		CheckCircle,
 		AlertTriangle,
 		Clock
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 	import type { DetailedInvoiceData } from './types';
 	import { format } from 'date-fns';
 

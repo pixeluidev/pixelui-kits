@@ -1,6 +1,6 @@
 // src/lib/data.ts
 import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte'; // Assuming lucide-svelte icons
+import type { Icon } from '@lucide/svelte'; // Assuming lucide-svelte icons
 import Mail from 'lucide-svelte/icons/mail';
 import Phone from 'lucide-svelte/icons/phone';
 import MapPin from 'lucide-svelte/icons/map-pin';

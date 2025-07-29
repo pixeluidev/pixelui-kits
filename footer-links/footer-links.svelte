@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { PixelUiLogo } from '../pixel-ui-logo';
-	import { GithubIcon, TwitterIcon, YoutubeIcon } from 'lucide-svelte';
+	import { GithubIcon, TwitterIcon, YoutubeIcon } from '@lucide/svelte';
 
 	const menus = [
 		{

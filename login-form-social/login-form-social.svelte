@@ -1,6 +1,6 @@
 <!-- src/lib/components/login-form-social/login-form-social.svelte -->
 <script lang="ts">
-	import { Eye, EyeOff, Github, Mail } from 'lucide-svelte';
+	import { Eye, EyeOff, Github, Mail } from '@lucide/svelte';
 	import GoogleIcon from './google-icon.svelte';
 	import TwitterIcon from './twitter-icon.svelte'; // Gunakan ikon SVG Twitter
 

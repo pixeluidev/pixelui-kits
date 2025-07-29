@@ -6,7 +6,7 @@
 		ReceiptIcon,
 		TicketSlashIcon,
 		WalletIcon
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	const actions = [
 		{

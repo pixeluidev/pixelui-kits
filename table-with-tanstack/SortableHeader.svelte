@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { HeaderContext } from '@tanstack/table-core';
-	import { ArrowUpDown } from 'lucide-svelte';
+	import { ArrowUpDown } from '@lucide/svelte';
 	import type { ProductProps } from './/table-with-tanstack/type';
 
 	// Konteks yang diterima dari flexRender

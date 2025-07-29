@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppleIcon, ArrowRight, CandyIcon, PizzaIcon, UtensilsIcon } from 'lucide-svelte';
+	import { AppleIcon, ArrowRight, CandyIcon, PizzaIcon, UtensilsIcon } from '@lucide/svelte';
 
 	const items = [
 		{

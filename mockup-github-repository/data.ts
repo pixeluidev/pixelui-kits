@@ -1,5 +1,5 @@
 // src/lib/data.ts (atau langsung di script jika sederhana)
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 
 // Ikon untuk tab
 import Code from 'lucide-svelte/icons/code-2';

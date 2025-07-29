@@ -8,7 +8,7 @@
 	import CheckCircle2 from 'lucide-svelte/icons/check-circle-2'; // Complete
 	import AlertCircle from 'lucide-svelte/icons/alert-circle'; // Current/Error
 	import type { SvelteComponent } from 'svelte';
-	import type { Icon } from 'lucide-svelte';
+	import type { Icon } from '@lucide/svelte';
 
 	// --- Props ---
 	export let steps: FlowchartStep[] = defaultSteps;

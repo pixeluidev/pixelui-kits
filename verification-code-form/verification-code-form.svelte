@@ -1,6 +1,6 @@
 <!-- src/lib/components/verification-code-form/verification-code-form.svelte -->
 <script lang="ts">
-	import { Mail, Smartphone, Send, RefreshCw, AlertCircle, CheckCircle } from 'lucide-svelte';
+	import { Mail, Smartphone, Send, RefreshCw, AlertCircle, CheckCircle } from '@lucide/svelte';
 	import { onDestroy } from 'svelte';
 
 	// --- Component Props ---

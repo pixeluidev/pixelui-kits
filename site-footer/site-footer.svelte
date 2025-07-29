@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Github, Twitter, Send, Dribbble } from 'lucide-svelte'; // Import potential icons
+	import { Github, Twitter, Send, Dribbble } from '@lucide/svelte'; // Import potential icons
 	import type { ComponentType } from 'svelte';
-	import type { Icon } from 'lucide-svelte';
+	import type { Icon } from '@lucide/svelte';
 	import { footerLinkGroups, socialLinks } from './data';
 	import { PixelUiLogo } from '../pixel-ui-logo'; // Assuming logo component path
 

@@ -2,7 +2,7 @@
 	import { fade } from 'svelte/transition';
 	import type { SvelteComponent } from 'svelte';
 	import type { MegaMenuTab } from './data';
-	import type { Icon } from 'lucide-svelte';
+	import type { Icon } from '@lucide/svelte';
 
 	export let menuData: MegaMenuTab[];
 	export let onClose: () => void = () => {};

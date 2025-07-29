@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { MoreHorizontal, Trash2, Pencil, Eye } from 'lucide-svelte';
+	import { MoreHorizontal, Trash2, Pencil, Eye } from '@lucide/svelte';
 	import { clickOutside } from './helpers';
 	import { createEventDispatcher } from 'svelte'; // Impor action clickOutside
 

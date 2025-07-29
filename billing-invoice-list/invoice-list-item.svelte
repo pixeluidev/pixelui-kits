@@ -1,6 +1,6 @@
 <!-- src/lib/components/invoice-list/invoice-item.svelte -->
 <script lang="ts">
-	import { DownloadIcon, CheckCheck } from 'lucide-svelte';
+	import { DownloadIcon, CheckCheck } from '@lucide/svelte';
 	import type { InvoiceData } from './data';
 	import { format, differenceInDays, isPast, formatDistanceToNowStrict } from 'date-fns';
 

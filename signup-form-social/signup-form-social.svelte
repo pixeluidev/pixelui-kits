@@ -1,6 +1,6 @@
 <!-- src/lib/components/signup-form-social/signup-form-social.svelte -->
 <script lang="ts">
-	import { Eye, EyeOff, Github, AlertCircle } from 'lucide-svelte';
+	import { Eye, EyeOff, Github, AlertCircle } from '@lucide/svelte';
 	import GoogleIcon from './google-icon.svelte'; // Reuse Google icon
 	import TwitterIcon from './twitter-icon.svelte'; // Reuse or create Twitter icon
 

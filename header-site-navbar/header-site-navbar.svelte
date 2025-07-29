@@ -1,6 +1,6 @@
 <!-- src/lib/components/site-navbar/site-navbar.svelte -->
 <script lang="ts">
-	import { Menu, X, ArrowRight, LogIn } from 'lucide-svelte';
+	import { Menu, X, ArrowRight, LogIn } from '@lucide/svelte';
 	import { page } from '$app/stores'; // To detect current route for active links
 	import { mainNavLinks, type NavLink } from './data';
 

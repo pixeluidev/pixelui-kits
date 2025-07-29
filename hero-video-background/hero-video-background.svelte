@@ -1,6 +1,6 @@
 <!-- src/lib/components/hero-video-background/hero-video-background.svelte -->
 <script lang="ts">
-	import { PlayCircle, ChevronRight } from 'lucide-svelte'; // Contoh ikon
+	import { PlayCircle, ChevronRight } from '@lucide/svelte'; // Contoh ikon
 
 	// --- Konten Hardcoded (Bahasa Inggris) ---
 	// GANTI DENGAN PATH VIDEO ANDA (MP4 dan/atau WebM untuk kompatibilitas)

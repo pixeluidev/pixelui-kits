@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Mail, Send, ArrowLeft, AlertCircle, CheckCircle } from 'lucide-svelte'; // Import icons
+	import { Mail, Send, ArrowLeft, AlertCircle, CheckCircle } from '@lucide/svelte'; // Import icons
 
 	// --- Component State ---
 	let email: string = $state('');

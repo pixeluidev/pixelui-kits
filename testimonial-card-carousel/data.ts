@@ -1,6 +1,6 @@
 // src/lib/data.ts
 import type { SvelteComponent } from 'svelte'; // Gunakan SvelteComponent modern
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 
 // --- Ikon untuk Testimonial & Sumber ---
 import Twitter from 'lucide-svelte/icons/twitter';

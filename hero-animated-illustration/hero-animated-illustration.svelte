@@ -1,6 +1,6 @@
 <!-- src/lib/components/hero-animated-illustration/hero-animated-illustration.svelte -->
 <script lang="ts">
-	import { ArrowRight, BarChart } from 'lucide-svelte'; // Example icons
+	import { ArrowRight, BarChart } from '@lucide/svelte'; // Example icons
 	import { DotLottieSvelte } from '@lottiefiles/dotlottie-svelte';
 	// --- Hardcoded Content (English) ---
 	// IMPORTANT: Replace with your actual Lottie animation URL (JSON file)

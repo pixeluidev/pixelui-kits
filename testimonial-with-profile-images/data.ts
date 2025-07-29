@@ -1,6 +1,6 @@
 // src/lib/data.ts
 import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 
 // (Pastikan tipe dan data lain dari contoh sebelumnya ada di sini jika diperlukan)
 

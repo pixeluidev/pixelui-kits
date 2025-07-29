@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Rocket } from 'lucide-svelte'; // Contoh ikon
+	import { Rocket } from '@lucide/svelte'; // Contoh ikon
 
 	// --- Konten Hardcoded (Bahasa Inggris) ---
 	const headline: string = 'Build Your Next Idea Faster';

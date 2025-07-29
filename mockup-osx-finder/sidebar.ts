@@ -1,6 +1,6 @@
 // src/lib/data.ts (Jika membuat sidebar/toolbar dinamis)
 import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 import Home from 'lucide-svelte/icons/home';
 import HardDrive from 'lucide-svelte/icons/hard-drive';
 import Download from 'lucide-svelte/icons/download';

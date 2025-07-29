@@ -1,6 +1,6 @@
 <!-- src/lib/components/payment-methods/payment-methods-section.svelte -->
 <script lang="ts">
-	import { Plus } from 'lucide-svelte';
+	import { Plus } from '@lucide/svelte';
 	import PaymentMethodItem from './payment-method-item.svelte';
 	// Import form dari lokasi *tetangganya* (billing)
 	import AddCardForm from '../billing-information-list/add-card-form.svelte';

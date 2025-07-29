@@ -1,7 +1,7 @@
 // src/lib/data.ts (or keep within the script block if preferred for a single component)
 
 import type { ComponentType } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 import ShoppingCart from 'lucide-svelte/icons/shopping-cart';
 import CreditCard from 'lucide-svelte/icons/credit-card';
 import ClipboardList from 'lucide-svelte/icons/clipboard-list';

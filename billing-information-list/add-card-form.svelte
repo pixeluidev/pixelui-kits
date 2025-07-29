@@ -1,6 +1,6 @@
 <!-- src/lib/components/billing/add-card-form.svelte -->
 <script lang="ts">
-	import { X, CreditCard } from 'lucide-svelte';
+	import { X, CreditCard } from '@lucide/svelte';
 	import { superForm } from 'sveltekit-superforms';
 	import { zod } from 'sveltekit-superforms/adapters';
 	import { type BillingFormSchema, cardSchema } from './schema'; // Import skema dari file terpisah

@@ -1,7 +1,7 @@
 // src/lib/data.ts
 import type { ComponentType } from 'svelte';
 import type { SvelteComponent } from 'svelte';
-import type { Icon } from 'lucide-svelte';
+import type { Icon } from '@lucide/svelte';
 
 // --- Ikon ---
 import Building2 from 'lucide-svelte/icons/building-2'; // Untuk Perusahaan

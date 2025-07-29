@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ChevronDown, Search, ChevronLeft, ChevronRight } from 'lucide-svelte';
+	import { ChevronDown, Search, ChevronLeft, ChevronRight } from '@lucide/svelte';
 	import {
 		getCoreRowModel,
 		getPaginationRowModel,

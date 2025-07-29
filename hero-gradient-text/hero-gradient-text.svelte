@@ -1,6 +1,6 @@
 <!-- src/lib/components/hero-gradient-text/hero-gradient-text.svelte -->
 <script lang="ts">
-	import { MoveRight, Sparkles } from 'lucide-svelte';
+	import { MoveRight, Sparkles } from '@lucide/svelte';
 
 	// --- Konten Hardcoded (Bahasa Inggris) ---
 	const headlinePart1: string = 'Build Stunning UIs';

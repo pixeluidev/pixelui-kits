@@ -13,7 +13,7 @@
 		Edit,
 		X,
 		Funnel as FilterIcon
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	import { tablesData } from '../assets/data/tables-data';
 

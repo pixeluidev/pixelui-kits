@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Pencil, Trash2, CheckCircle } from 'lucide-svelte';
+	import { Pencil, Trash2, CheckCircle } from '@lucide/svelte';
 	import type { PaymentMethodData } from './types';
 	import { createEventDispatcher } from 'svelte';
 

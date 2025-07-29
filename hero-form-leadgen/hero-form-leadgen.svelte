@@ -1,6 +1,6 @@
 <!-- src/lib/components/hero-form-leadgen/hero-form-leadgen.svelte -->
 <script lang="ts">
-	import { Mail, Send } from 'lucide-svelte'; // Contoh ikon
+	import { Mail, Send } from '@lucide/svelte'; // Contoh ikon
 
 	// --- State untuk Form Sederhana ---
 	let email: string = $state('');

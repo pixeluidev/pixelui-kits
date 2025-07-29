@@ -1,6 +1,6 @@
 <!-- src/lib/components/signup-form-simple/signup-form-simple.svelte -->
 <script lang="ts">
-	import { User, Mail, Lock, Eye, EyeOff, AlertCircle } from 'lucide-svelte'; // Import icons
+	import { User, Mail, Lock, Eye, EyeOff, AlertCircle } from '@lucide/svelte'; // Import icons
 
 	// --- Component State ---
 	let name: string = $state(''); // Optional name field

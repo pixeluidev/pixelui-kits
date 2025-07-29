@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Quote, ArrowRight, Star } from 'lucide-svelte'; // Import Star icon
+	import { Quote, ArrowRight, Star } from '@lucide/svelte'; // Import Star icon
 
 	// --- Hardcoded Content (English) ---
 	const quoteText: string =

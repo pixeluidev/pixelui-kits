@@ -7,7 +7,7 @@
 		DollarSign, // atau CircleDollarSign
 		Rocket,
 		Cog
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	// Data untuk fitur (lebih mudah dikelola daripada hardcoding)
 	const features = [

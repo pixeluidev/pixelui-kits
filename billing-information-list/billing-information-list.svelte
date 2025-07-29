@@ -1,6 +1,6 @@
 <!-- src/lib/components/billing/billing-section.svelte -->
 <script lang="ts">
-	import { Plus } from 'lucide-svelte';
+	import { Plus } from '@lucide/svelte';
 	import BillingItem from './billing-item.svelte';
 	import AddCardForm from './add-card-form.svelte'; // Import komponen form
 	import { billingItems } from './data';

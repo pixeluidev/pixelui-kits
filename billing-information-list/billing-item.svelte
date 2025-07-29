@@ -1,7 +1,7 @@
 <!-- src/lib/components/billing/billing-item.svelte -->
 <script lang="ts">
 	import type { BillingItemData } from './data';
-	import { Building2, Pencil, Trash2 } from 'lucide-svelte';
+	import { Building2, Pencil, Trash2 } from '@lucide/svelte';
 	import { createEventDispatcher } from 'svelte';
 
 	// Definisikan props yang diterima dari parent component
